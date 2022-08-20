@@ -1,0 +1,17 @@
+.\objects\bas.o: ..\..\..\src\ble\profile\server\bas.c
+.\objects\bas.o: ..\..\..\src\app\pxp\app_flags.h
+.\objects\bas.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\bas.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\bas.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\bas.o: ..\..\..\inc\platform\trace.h
+.\objects\bas.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\bas.o: ..\..\..\inc\bluetooth\profile\profile_server.h
+.\objects\bas.o: ..\..\..\inc\bluetooth\gap\bt_types.h
+.\objects\bas.o: ..\..\..\inc\bluetooth\profile\gatt.h
+.\objects\bas.o: ..\..\..\inc\bluetooth\gap\gap_le.h
+.\objects\bas.o: ..\..\..\inc\bluetooth\gap\gap.h
+.\objects\bas.o: ..\..\..\inc\bluetooth\gap\gap_callback_le.h
+.\objects\bas.o: ..\..\..\inc\bluetooth\gap\gap_storage_le.h
+.\objects\bas.o: ..\..\..\inc\bluetooth\gap\gap_le_types.h
+.\objects\bas.o: ..\..\..\inc\bluetooth\profile\server\bas.h
+.\objects\bas.o: ..\..\..\inc\bluetooth\profile\server\bas_config.h
