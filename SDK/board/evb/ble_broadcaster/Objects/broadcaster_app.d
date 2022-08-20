@@ -1,0 +1,16 @@
+.\objects\broadcaster_app.o: ..\..\..\src\sample\ble_broadcaster\broadcaster_app.c
+.\objects\broadcaster_app.o: ..\..\..\src\sample\ble_broadcaster\app_flags.h
+.\objects\broadcaster_app.o: ..\..\..\inc\platform\trace.h
+.\objects\broadcaster_app.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\broadcaster_app.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\broadcaster_app.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\broadcaster_app.o: ..\..\..\inc\bluetooth\gap\gap.h
+.\objects\broadcaster_app.o: ..\..\..\inc\bluetooth\gap\bt_types.h
+.\objects\broadcaster_app.o: ..\..\..\inc\bluetooth\gap\gap_adv.h
+.\objects\broadcaster_app.o: ..\..\..\inc\bluetooth\gap\gap_le.h
+.\objects\broadcaster_app.o: ..\..\..\inc\bluetooth\gap\gap_callback_le.h
+.\objects\broadcaster_app.o: ..\..\..\inc\bluetooth\gap\gap_storage_le.h
+.\objects\broadcaster_app.o: ..\..\..\inc\bluetooth\gap\gap_le_types.h
+.\objects\broadcaster_app.o: ..\..\..\inc\bluetooth\gap\gap_msg.h
+.\objects\broadcaster_app.o: ..\..\..\inc\app\app_msg.h
+.\objects\broadcaster_app.o: ..\..\..\src\sample\ble_broadcaster\broadcaster_app.h

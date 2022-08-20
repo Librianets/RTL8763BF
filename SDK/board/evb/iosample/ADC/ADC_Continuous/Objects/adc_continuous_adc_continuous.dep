@@ -1,0 +1,89 @@
+Dependencies for Project 'adc_continuous', Target 'adc_continuous': (DO NOT MODIFY !)
+F (..\..\..\..\..\inc\platform\rom_uuid.h)(0x5B1F6154)()
+F (..\..\..\..\..\inc\platform\app_define.h)(0x5B1F6154)()
+F (..\..\..\..\..\bin\ROM.lib)(0x5B90C5A8)()
+F (..\..\..\..\..\bin\gap_utils.lib)(0x5B986FBA)()
+F (..\..\..\..\..\bin\bee2_adc_lib.lib)(0x5B7FA8D8)()
+F (..\..\..\..\..\src\mcu\rtl876x\arm\startup_rtl8762c.s)(0x5B1F6154)(--cpu Cortex-M4.fp --li -g --16 --apcs=interwork -I ..\..\..\inc\platform --cpreproc-I.\RTE\_adc_continuous-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0--pd "__UVISION_VERSION SETA 525" --pd "ARMCM4_FP SETA 1"--list .\listings\startup_rtl8762c.lst --xref -o .\objects\startup_rtl8762c.o --depend .\objects\startup_rtl8762c.d)
+F (..\..\..\..\..\src\mcu\rtl876x\system_rtl8762c.c)(0x5BA333F2)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\..\..\inc\peripheral -I ..\..\..\..\..\inc\platform -I ..\..\..\..\..\inc\platform\cmsis -I ..\..\..\..\..\inc\os -I ..\..\..\..\..\src\sample\peripheral\ADC\ADC_Continuous -I ..\ADC_Continuous --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_adc_continuous-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\system_rtl8762c.o --omf_browse .\objects\system_rtl8762c.crf --depend .\objects\system_rtl8762c.d)
+I (..\..\..\..\..\src\sample\peripheral\ADC\ADC_Continuous\app_flags.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\locale.h)(0x599ECD2A)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\..\..\inc\platform\version.h)(0x5BA47B1D)
+I (..\..\..\..\..\inc\platform\rtl876x.h)(0x5B986FBA)
+I (..\..\..\..\..\inc\platform\cmsis\core_cm4.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\inc\platform\cmsis\core_cmInstr.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\cmsis\core_cmFunc.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\cmsis\core_cmSimd.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\system_rtl876x.h)(0x5B7A98F6)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\..\..\inc\platform\patch_header_check.h)(0x5B7FA8D8)
+I (..\..\..\..\..\inc\platform\app_section.h)(0x5B7A98F6)
+I (..\..\..\..\..\inc\platform\rom_uuid.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (..\ADC_Continuous\mem_config.h)(0x5B90C5A8)
+I (..\ADC_Continuous\flash_map.h)(0x5B90C5A8)
+I (..\..\..\..\..\inc\platform\otp.h)(0x5B7FA8D8)
+I (..\..\..\..\..\inc\platform\platform_autoconf.h)(0x5B7A98F6)
+I (..\..\..\..\..\inc\peripheral\rtl876x_wdg.h)(0x5B7A98F6)
+I (..\..\..\..\..\inc\peripheral\rtl876x_bitfields.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\overlay_mgr.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\flash_device.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\os\os_sched.h)(0x5B1F6154)
+I (..\ADC_Continuous\otp_config.h)(0x5B9A17EC)
+F (..\..\..\..\..\src\mcu\peripheral\rtl876x_rcc.c)(0x5B7A98FA)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\..\..\inc\peripheral -I ..\..\..\..\..\inc\platform -I ..\..\..\..\..\inc\platform\cmsis -I ..\..\..\..\..\inc\os -I ..\..\..\..\..\src\sample\peripheral\ADC\ADC_Continuous -I ..\ADC_Continuous --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_adc_continuous-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\rtl876x_rcc.o --omf_browse .\objects\rtl876x_rcc.crf --depend .\objects\rtl876x_rcc.d)
+I (..\..\..\..\..\src\sample\peripheral\ADC\ADC_Continuous\app_flags.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\rtl876x.h)(0x5B986FBA)
+I (..\..\..\..\..\inc\platform\cmsis\core_cm4.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\inc\platform\cmsis\core_cmInstr.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\cmsis\core_cmFunc.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\cmsis\core_cmSimd.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\system_rtl876x.h)(0x5B7A98F6)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\..\..\inc\peripheral\rtl876x_bitfields.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\peripheral\rtl876x_rcc.h)(0x5B1F6154)
+F (..\..\..\..\..\src\mcu\peripheral\rtl876x_adc.c)(0x5BA4BB16)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\..\..\inc\peripheral -I ..\..\..\..\..\inc\platform -I ..\..\..\..\..\inc\platform\cmsis -I ..\..\..\..\..\inc\os -I ..\..\..\..\..\src\sample\peripheral\ADC\ADC_Continuous -I ..\ADC_Continuous --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_adc_continuous-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\rtl876x_adc.o --omf_browse .\objects\rtl876x_adc.crf --depend .\objects\rtl876x_adc.d)
+I (..\..\..\..\..\src\sample\peripheral\ADC\ADC_Continuous\app_flags.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\rtl876x.h)(0x5B986FBA)
+I (..\..\..\..\..\inc\platform\cmsis\core_cm4.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\inc\platform\cmsis\core_cmInstr.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\cmsis\core_cmFunc.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\cmsis\core_cmSimd.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\system_rtl876x.h)(0x5B7A98F6)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\..\..\inc\peripheral\rtl876x_bitfields.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\peripheral\rtl876x_rcc.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\peripheral\rtl876x_adc.h)(0x5BA4BB16)
+I (..\..\..\..\..\inc\platform\platform_utils.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\bee2_adc_lib.h)(0x5B7FA8D8)
+F (..\..\..\..\..\src\mcu\rtl876x\overlay_mgr.c)(0x5B1F6154)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\..\..\inc\peripheral -I ..\..\..\..\..\inc\platform -I ..\..\..\..\..\inc\platform\cmsis -I ..\..\..\..\..\inc\os -I ..\..\..\..\..\src\sample\peripheral\ADC\ADC_Continuous -I ..\ADC_Continuous --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_adc_continuous-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\overlay_mgr.o --omf_browse .\objects\overlay_mgr.crf --depend .\objects\overlay_mgr.d)
+I (..\..\..\..\..\src\sample\peripheral\ADC\ADC_Continuous\app_flags.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\..\..\inc\platform\overlay_mgr.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+F (..\..\..\..\..\src\sample\peripheral\ADC\ADC_Continuous\main.c)(0x5B1F6154)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\..\..\inc\peripheral -I ..\..\..\..\..\inc\platform -I ..\..\..\..\..\inc\platform\cmsis -I ..\..\..\..\..\inc\os -I ..\..\..\..\..\src\sample\peripheral\ADC\ADC_Continuous -I ..\ADC_Continuous --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_adc_continuous-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\..\..\..\..\src\sample\peripheral\ADC\ADC_Continuous\app_flags.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\peripheral\rtl876x_rcc.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\rtl876x.h)(0x5B986FBA)
+I (..\..\..\..\..\inc\platform\cmsis\core_cm4.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\..\..\inc\platform\cmsis\core_cmInstr.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\cmsis\core_cmFunc.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\cmsis\core_cmSimd.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\platform\system_rtl876x.h)(0x5B7A98F6)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\..\..\inc\peripheral\rtl876x_bitfields.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\peripheral\rtl876x_pinmux.h)(0x5B986FBA)
+I (..\..\..\..\..\inc\peripheral\rtl876x_adc.h)(0x5BA4BB16)
+I (..\..\..\..\..\inc\platform\platform_utils.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\peripheral\rtl876x_nvic.h)(0x5B1F6154)
+I (..\..\..\..\..\inc\peripheral\rtl876x_tim.h)(0x5B986FBA)
+I (..\..\..\..\..\inc\peripheral\rtl876x_wdg.h)(0x5B7A98F6)
+I (..\..\..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (..\ADC_Continuous\board.h)(0x5B1F6150)
+I (..\..\..\..\..\inc\os\os_sched.h)(0x5B1F6154)

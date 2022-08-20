@@ -1,0 +1,88 @@
+Dependencies for Project 'broadcaster', Target 'broadcaster': (DO NOT MODIFY !)
+F (..\..\..\inc\platform\rom_uuid.h)(0x5B1F6154)()
+F (..\..\..\inc\platform\app_define.h)(0x5B1F6154)()
+F (..\..\..\bin\ROM.lib)(0x5B90C5A8)()
+F (..\..\..\bin\gap_utils.lib)(0x5B986FBA)()
+F (..\..\..\src\mcu\rtl876x\arm\startup_rtl8762c.s)(0x5B1F6154)(--cpu Cortex-M4.fp --li -g --16 --apcs=interwork -I ..\..\..\inc\platform --cpreproc-I.\RTE\_broadcaster-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0--pd "__UVISION_VERSION SETA 525" --pd "ARMCM4_FP SETA 1"--list .\listings\startup_rtl8762c.lst --xref -o .\objects\startup_rtl8762c.o --depend .\objects\startup_rtl8762c.d)
+F (..\..\..\src\mcu\rtl876x\system_rtl8762c.c)(0x5BA333F2)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\..\..\src\sample\ble_broadcaster -I ..\ble_broadcaster --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_broadcaster-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\system_rtl8762c.o --omf_browse .\objects\system_rtl8762c.crf --depend .\objects\system_rtl8762c.d)
+I (..\..\..\src\sample\ble_broadcaster\app_flags.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\locale.h)(0x599ECD2A)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\inc\platform\version.h)(0x5BA47B1D)
+I (..\..\..\inc\platform\rtl876x.h)(0x5B986FBA)
+I (..\..\..\inc\platform\cmsis\core_cm4.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\inc\platform\cmsis\core_cmInstr.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmFunc.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmSimd.h)(0x5B1F6154)
+I (..\..\..\inc\platform\system_rtl876x.h)(0x5B7A98F6)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\inc\platform\patch_header_check.h)(0x5B7FA8D8)
+I (..\..\..\inc\platform\app_section.h)(0x5B7A98F6)
+I (..\..\..\inc\platform\rom_uuid.h)(0x5B1F6154)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (..\ble_broadcaster\mem_config.h)(0x5B90C5A8)
+I (..\ble_broadcaster\flash_map.h)(0x5B90C5A8)
+I (..\..\..\inc\platform\otp.h)(0x5B7FA8D8)
+I (..\..\..\inc\platform\platform_autoconf.h)(0x5B7A98F6)
+I (..\..\..\inc\peripheral\rtl876x_wdg.h)(0x5B7A98F6)
+I (..\..\..\inc\peripheral\rtl876x_bitfields.h)(0x5B1F6154)
+I (..\..\..\inc\platform\overlay_mgr.h)(0x5B1F6154)
+I (..\..\..\inc\platform\flash_device.h)(0x5B1F6154)
+I (..\..\..\inc\os\os_sched.h)(0x5B1F6154)
+I (..\ble_broadcaster\otp_config.h)(0x5B9A1605)
+F (..\..\..\src\sample\ble_broadcaster\app_task.c)(0x5B1F6154)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\..\..\src\sample\ble_broadcaster -I ..\ble_broadcaster --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_broadcaster-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\app_task.o --omf_browse .\objects\app_task.crf --depend .\objects\app_task.d)
+I (..\..\..\src\sample\ble_broadcaster\app_flags.h)(0x5B1F6154)
+I (..\..\..\inc\os\os_msg.h)(0x5B90C5A8)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\inc\os\os_task.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\bt_types.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_callback_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_storage_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le_types.h)(0x5B7A98F6)
+I (..\..\..\inc\app\app_msg.h)(0x5B90C5A8)
+I (..\..\..\src\sample\ble_broadcaster\app_task.h)(0x5B1F6154)
+I (..\..\..\src\sample\ble_broadcaster\broadcaster_app.h)(0x5B1F6154)
+F (..\..\..\src\sample\ble_broadcaster\broadcaster_app.c)(0x5B1F6154)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\..\..\src\sample\ble_broadcaster -I ..\ble_broadcaster --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_broadcaster-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\broadcaster_app.o --omf_browse .\objects\broadcaster_app.crf --depend .\objects\broadcaster_app.d)
+I (..\..\..\src\sample\ble_broadcaster\app_flags.h)(0x5B1F6154)
+I (..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\inc\bluetooth\gap\gap.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\bt_types.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_adv.h)(0x5B90C5A8)
+I (..\..\..\inc\bluetooth\gap\gap_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_callback_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_storage_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le_types.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_msg.h)(0x5B7A98F6)
+I (..\..\..\inc\app\app_msg.h)(0x5B90C5A8)
+I (..\..\..\src\sample\ble_broadcaster\broadcaster_app.h)(0x5B1F6154)
+F (..\..\..\src\sample\ble_broadcaster\main.c)(0x5B1F6154)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\..\..\src\sample\ble_broadcaster -I ..\ble_broadcaster --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_broadcaster-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\..\..\src\sample\ble_broadcaster\app_flags.h)(0x5B1F6154)
+I (..\..\..\inc\os\os_sched.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\bt_types.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_adv.h)(0x5B90C5A8)
+I (..\..\..\inc\bluetooth\gap\gap_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_callback_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_storage_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le_types.h)(0x5B7A98F6)
+I (..\..\..\src\sample\ble_broadcaster\app_task.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\profile\gatt.h)(0x5B1F6154)
+I (..\..\..\inc\platform\dlps.h)(0x5B7A98F6)
+F (..\..\..\src\mcu\rtl876x\overlay_mgr.c)(0x5B1F6154)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\..\..\src\sample\ble_broadcaster -I ..\ble_broadcaster --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_broadcaster-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\overlay_mgr.o --omf_browse .\objects\overlay_mgr.crf --depend .\objects\overlay_mgr.d)
+I (..\..\..\src\sample\ble_broadcaster\app_flags.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\inc\platform\overlay_mgr.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)

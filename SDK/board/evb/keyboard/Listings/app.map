@@ -1,0 +1,1895 @@
+Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
+
+==============================================================================
+
+Section Cross References
+
+    startup_rtl8762c.o(VECTOR) refers to startup_rtl8762c.o(RESET) for Reset_Handler
+    startup_rtl8762c.o(VECTOR) refers to startup_rtl8762c.o(.text) for NMI_Handler
+    startup_rtl8762c.o(VECTOR) refers to main.o(.text) for System_Handler
+    startup_rtl8762c.o(VECTOR) refers to system_rtl8762c.o(.ram.dataon.data) for GPIO_Group3_Handler
+    startup_rtl8762c.o(VECTOR) refers to keyscan.o(.text) for Keyscan_Handler
+    startup_rtl8762c.o(RESET) refers to system_rtl8762c.o(.app.flash.text) for SystemInit
+    system_rtl8762c.o(.app.flash.text) refers to overlay_mgr.o(.text) for load_overlay
+    system_rtl8762c.o(.app.flash.text) refers to system_rtl8762c.o(.app.overlay_a) for AppUpdateVectorTable
+    system_rtl8762c.o(.app.flash.text) refers to system_rtl8762c.o(.TRACE) for .TRACE
+    system_rtl8762c.o(.app.flash.text) refers to system_rtl8762c.o(.text) for common_main
+    system_rtl8762c.o(.app.overlay_a) refers to system_rtl8762c.o(.constdata) for .constdata
+    system_rtl8762c.o(.app.overlay_a) refers to startup_rtl8762c.o(.text) for Default_Handler
+    system_rtl8762c.o(.app.overlay_a) refers to system_rtl8762c.o(.TRACE) for .TRACE
+    system_rtl8762c.o(.ram.dataon.data) refers to startup_rtl8762c.o(.text) for GPIO3_Handler
+    system_rtl8762c.o(.ram.dataon.data) refers to keyboard_button.o(.text) for GPIO20_Handler
+    system_rtl8762c.o(.text) refers to main.o(.text) for main
+    system_rtl8762c.o(.text) refers to system_rtl8762c.o(.bss) for .bss
+    system_rtl8762c.o(.app.flash.header) refers to system_rtl8762c.o(.constdata) for app_cb_table
+    system_rtl8762c.o(.constdata) refers to system_rtl8762c.o(.text) for app_cb0_wdg_reset
+    system_rtl8762c.o(.constdata) refers to system_rtl8762c.o(.conststring) for .conststring
+    hids_kb.o(.text) refers to hids_kb.o(.bss) for .bss
+    hids_kb.o(.text) refers to hids_kb.o(.data) for .data
+    hids_kb.o(.text) refers to hids_kb.o(.constdata) for .constdata
+    hids_kb.o(.text) refers to hids_kb.o(.TRACE) for .TRACE
+    hids_kb.o(.constdata) refers to hids_kb.o(.text) for hids_attr_read_cb
+    bas.o(.text) refers to bas.o(.TRACE) for .TRACE
+    bas.o(.text) refers to bas.o(.bss) for .bss
+    bas.o(.text) refers to bas.o(.constdata) for .constdata
+    bas.o(.constdata) refers to bas.o(.text) for bas_attr_read_cb
+    dis.o(.text) refers to dis.o(.bss) for .bss
+    dis.o(.text) refers to dis.o(.TRACE) for .TRACE
+    dis.o(.text) refers to dis.o(.data) for .data
+    dis.o(.text) refers to dis.o(.constdata) for .constdata
+    dis.o(.constdata) refers to dis.o(.text) for dis_attr_read_cb
+    ota_service.o(.text) refers to ota_service.o(.bss) for .bss
+    ota_service.o(.text) refers to ota_service.o(.TRACE) for .TRACE
+    ota_service.o(.text) refers to ota_service.o(.constdata) for .constdata
+    ota_service.o(.constdata) refers to ota_service.o(.constdata) for GATT_UUID_OTA_SERVICE
+    ota_service.o(.constdata) refers to ota_service.o(.text) for ota_attr_read_cb
+    rtl876x_io_dlps.o(.ram.dataon.data) refers to system_rtl8762c.o(.app.flash.text) for debug_monitor_enable
+    rtl876x_io_dlps.o(.ram.dataon.data) refers to rtl876x_io_dlps.o(.bss) for .bss
+    rtl876x_io_dlps.o(.ram.dataon.data) refers to rtl876x_io_dlps.o(.TRACE) for .TRACE
+    rtl876x_io_dlps.o(.text) refers to rtl876x_io_dlps.o(.bss) for .bss
+    rtl876x_io_dlps.o(.text) refers to rtl876x_io_dlps.o(.ram.dataon.data) for DLPS_IO_ExitDlpsCb
+    rtl876x_gpio.o(.text) refers to rtl876x_rcc.o(.text) for RCC_PeriphClockCmd
+    rtl876x_keyscan.o(.text) refers to rtl876x_rcc.o(.text) for RCC_PeriphClockCmd
+    main.o(.text) refers to hids_kb.o(.text) for hids_add_service
+    main.o(.text) refers to bas.o(.text) for bas_add_service
+    main.o(.text) refers to dis.o(.text) for dis_add_service
+    main.o(.text) refers to ota_service.o(.text) for ota_add_service
+    main.o(.text) refers to keyscan.o(.text) for keyscan_init_data
+    main.o(.text) refers to keyboard_button.o(.text) for gpio_button_pinmux_config
+    main.o(.text) refers to keyboard_led.o(.text) for adv_led_timer_init
+    main.o(.text) refers to profile_init.o(.text) for connection_param_updata_timer_init
+    main.o(.text) refers to rtl876x_io_dlps.o(.text) for DLPS_IORegister
+    main.o(.text) refers to app_task.o(.text) for app_task_init
+    main.o(.text) refers to gap_lib.o(.text) for gap_lib_init
+    main.o(.text) refers to main.o(.constdata) for .constdata
+    main.o(.text) refers to keyboard_app.o(.text) for app_gap_callback
+    main.o(.text) refers to keyboard_app.o(.bss) for hid_srv_id
+    main.o(.text) refers to keyboard_app.o(.bss) for dis_srv_id
+    main.o(.text) refers to keyscan.o(.bss) for keyscan_global_data
+    main.o(.text) refers to main.o(.TRACE) for .TRACE
+    main.o(.text) refers to rtl876x_io_dlps.o(.bss) for User_IO_EnterDlpsCB
+    app_task.o(.text) refers to main.o(.text) for driver_init
+    app_task.o(.text) refers to keyboard_app.o(.text) for app_handle_io_msg
+    app_task.o(.text) refers to app_task.o(.constdata) for .constdata
+    app_task.o(.text) refers to app_task.o(.bss) for .bss
+    app_task.o(.text) refers to app_task.o(.TRACE) for .TRACE
+    keyboard_app.o(.text) refers to privacy_mgnt.o(.text) for privacy_add_device
+    keyboard_app.o(.text) refers to profile_init.o(.text) for stop_con_update_timer
+    keyboard_app.o(.text) refers to system_rtl8762c.o(.text) for WDG_SystemReset
+    keyboard_app.o(.text) refers to keyboard_led.o(.text) for start_adv_led_timer
+    keyboard_app.o(.text) refers to gap_lib_patch.o(.text) for le_bond_just_work_confirm
+    keyboard_app.o(.text) refers to keyboard_app.o(.TRACE) for .TRACE
+    keyboard_app.o(.text) refers to keyboard_app.o(.bss) for .bss
+    keyboard_app.o(.text) refers to key_handler.o(.bss) for passkey
+    keyboard_app.o(.text) refers to keyboard_button.o(.bss) for start_pair_adv
+    keyboard_app.o(.text) refers to keyboard_button.o(.text) for handle_pair_button_event
+    keyboard_app.o(.text) refers to key_handler.o(.text) for keyboard_handle_release_event
+    keyboard_app.o(.text) refers to bas.o(.text) for bas_set_parameter
+    keyscan.o(.text) refers to rtl876x_rcc.o(.text) for RCC_PeriphClockCmd
+    keyscan.o(.text) refers to rtl876x_keyscan.o(.text) for KeyScan_StructInit
+    keyscan.o(.text) refers to app_task.o(.text) for app_send_msg_to_apptask
+    keyscan.o(.text) refers to rtl876x_gpio.o(.text) for GPIO_GetPin
+    keyscan.o(.text) refers to keyscan.o(.bss) for .bss
+    keyscan.o(.text) refers to keyscan.o(.TRACE) for .TRACE
+    key_handler.o(.text) refers to key_handler.o(.bss) for .bss
+    key_handler.o(.text) refers to key_handler.o(.TRACE) for .TRACE
+    key_handler.o(.text) refers to key_handler.o(.constdata) for .constdata
+    key_handler.o(.text) refers to keyboard_app.o(.bss) for keyboard_con_id
+    keyboard_button.o(.text) refers to rtl876x_rcc.o(.text) for RCC_PeriphClockCmd
+    keyboard_button.o(.text) refers to rtl876x_gpio.o(.text) for GPIO_StructInit
+    keyboard_button.o(.text) refers to keyboard_led.o(.text) for reset_adv_count
+    keyboard_button.o(.text) refers to profile_init.o(.text) for keyboard_start_adv
+    keyboard_button.o(.text) refers to app_task.o(.text) for app_send_msg_to_apptask
+    keyboard_button.o(.text) refers to keyboard_button.o(.TRACE) for .TRACE
+    keyboard_button.o(.text) refers to keyboard_app.o(.bss) for resolv_list_exist
+    keyboard_button.o(.text) refers to keyboard_button.o(.bss) for .bss
+    keyboard_button.o(.text) refers to privacy_mgnt.o(.bss) for app_privacy_resolution_state
+    keyboard_led.o(.text) refers to keyboard_led.o(.bss) for .bss
+    keyboard_led.o(.text) refers to keyboard_led.o(.TRACE) for .TRACE
+    profile_init.o(.text) refers to privacy_mgnt.o(.bss) for app_privacy_resolution_state
+    profile_init.o(.text) refers to keyboard_app.o(.bss) for gap_conn_state
+    profile_init.o(.text) refers to profile_init.o(.TRACE) for .TRACE
+    profile_init.o(.text) refers to profile_init.o(.bss) for .bss
+    privacy_mgnt.o(.text) refers to privacy_mgnt.o(.TRACE) for .TRACE
+    privacy_mgnt.o(.text) refers to privacy_mgnt.o(.bss) for .bss
+    privacy_mgnt.o(.text) refers to keyboard_app.o(.bss) for resolv_list_exist
+    overlay_mgr.o(.text) refers to overlay_mgr.o(.data) for .data
+    overlay_mgr.o(.text) refers to overlay_mgr.o(.bss) for .bss
+    overlay_mgr.o(.data) refers to overlay_mgr.o(.conststring) for .conststring
+    gap_lib.o(.text) refers to gap_vendor_cmd.o(.text) for le_handle_vendor_cmd_rsp
+    gap_lib.o(.text) refers to gap_lib.o(.TRACE) for .TRACE
+    gap_lib_patch.o(.text) refers to gap_lib_patch.o(.TRACE) for .TRACE
+    __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for __rt_entry_sh
+    __rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to main.o(.text) for main
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    __rtentry4.o(.ARM.Collect$$rtentry$$00000004) refers to startup_rtl8762c.o(.text) for __user_setup_stackheap
+    __rtentry4.o(.ARM.exidx) refers to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002E) for __rt_lib_init_alloca_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002C) for __rt_lib_init_argv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_atexit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_clock_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000032) for __rt_lib_init_cpp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_exceptions_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000001) for __rt_lib_init_fp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_fp_trap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_getenv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000A) for __rt_lib_init_heap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000011) for __rt_lib_init_lc_collate_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_ctype_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_monetary_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_numeric_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_lc_time_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000004) for __rt_lib_init_preinit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000E) for __rt_lib_init_rand_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000033) for __rt_lib_init_return
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_signal_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000025) for __rt_lib_init_stdio_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_user_alloc_1
+    libinit2.o(.ARM.Collect$$libinit$$00000001) refers to fpinit.o(x$fpl$fpinit) for _fp_init
+    libinit2.o(.ARM.Collect$$libinit$$00000010) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000018) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000026) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    libinit2.o(.ARM.Collect$$libinit$$00000027) refers to argv_veneer.o(.emb_text) for __ARM_argv_veneer
+    argv_veneer.o(.emb_text) refers to no_argv.o(.text) for __ARM_get_argv
+    _get_argv_nomalloc.o(.text) refers (Special) to hrguard.o(.text) for __heap_region$guard
+    _get_argv_nomalloc.o(.text) refers to defsig_rtmem_outer.o(.text) for __rt_SIGRTMEM
+    _get_argv_nomalloc.o(.text) refers to sys_command.o(.text) for _sys_command_string
+    sys_command.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig_rtmem_outer.o(.text) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_exit.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    sys_exit.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to sys_wrch.o(.text) for _ttywrch
+    sys_wrch.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_wrch.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig.o(CL$$defsig) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing system_rtl8762c.o(.rev16_text), (4 bytes).
+    Removing system_rtl8762c.o(.revsh_text), (4 bytes).
+    Removing system_rtl8762c.o(.rrx_text), (6 bytes).
+    Removing dis.o(.constdata), (2 bytes).
+    Removing ota_service.o(.bss), (4 bytes).
+    Removing ota_service.o(.bss), (1 bytes).
+    Removing rtl876x_io_dlps.o(.rev16_text), (4 bytes).
+    Removing rtl876x_io_dlps.o(.revsh_text), (4 bytes).
+    Removing rtl876x_io_dlps.o(.rrx_text), (6 bytes).
+    Removing rtl876x_rcc.o(.rev16_text), (4 bytes).
+    Removing rtl876x_rcc.o(.revsh_text), (4 bytes).
+    Removing rtl876x_rcc.o(.rrx_text), (6 bytes).
+    Removing rtl876x_gpio.o(.rev16_text), (4 bytes).
+    Removing rtl876x_gpio.o(.revsh_text), (4 bytes).
+    Removing rtl876x_gpio.o(.rrx_text), (6 bytes).
+    Removing rtl876x_keyscan.o(.rev16_text), (4 bytes).
+    Removing rtl876x_keyscan.o(.revsh_text), (4 bytes).
+    Removing rtl876x_keyscan.o(.rrx_text), (6 bytes).
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing main.o(.rrx_text), (6 bytes).
+    Removing keyboard_app.o(.rev16_text), (4 bytes).
+    Removing keyboard_app.o(.revsh_text), (4 bytes).
+    Removing keyboard_app.o(.rrx_text), (6 bytes).
+    Removing keyscan.o(.rev16_text), (4 bytes).
+    Removing keyscan.o(.revsh_text), (4 bytes).
+    Removing keyscan.o(.rrx_text), (6 bytes).
+    Removing key_handler.o(.rev16_text), (4 bytes).
+    Removing key_handler.o(.revsh_text), (4 bytes).
+    Removing key_handler.o(.rrx_text), (6 bytes).
+    Removing keyboard_button.o(.rev16_text), (4 bytes).
+    Removing keyboard_button.o(.revsh_text), (4 bytes).
+    Removing keyboard_button.o(.rrx_text), (6 bytes).
+    Removing keyboard_led.o(.rev16_text), (4 bytes).
+    Removing keyboard_led.o(.revsh_text), (4 bytes).
+    Removing keyboard_led.o(.rrx_text), (6 bytes).
+    Removing profile_init.o(.rev16_text), (4 bytes).
+    Removing profile_init.o(.revsh_text), (4 bytes).
+    Removing profile_init.o(.rrx_text), (6 bytes).
+
+39 unused section(s) (total 175 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit3.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit2.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_copy.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_zi.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry4.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry2.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_raise.o ABSOLUTE
+    ../clib/angel/scatter.s                  0x00000000   Number         0  __scatter.o ABSOLUTE
+    ../clib/angel/startup.s                  0x00000000   Number         0  __main.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_wrch.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  _get_argv_nomalloc.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
+    ../clib/heapalloc.c                      0x00000000   Number         0  hrguard.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
+    ../clib/signal.s                         0x00000000   Number         0  defsig.o ABSOLUTE
+    ../fplib/fpinit.s                        0x00000000   Number         0  fpinit.o ABSOLUTE
+    ..\..\..\src\app\gap_lib\common\gap_lib_patch.c 0x00000000   Number         0  gap_lib_patch.o ABSOLUTE
+    ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c 0x00000000   Number         0  gap_vendor_cmd.o ABSOLUTE
+    ..\..\..\src\app\gap_lib\gap_lib\gap_lib.c 0x00000000   Number         0  gap_lib.o ABSOLUTE
+    ..\..\..\src\app\keyboard\app_task.c     0x00000000   Number         0  app_task.o ABSOLUTE
+    ..\..\..\src\app\keyboard\key_handler.c  0x00000000   Number         0  key_handler.o ABSOLUTE
+    ..\..\..\src\app\keyboard\keyboard_app.c 0x00000000   Number         0  keyboard_app.o ABSOLUTE
+    ..\..\..\src\app\keyboard\keyboard_button.c 0x00000000   Number         0  keyboard_button.o ABSOLUTE
+    ..\..\..\src\app\keyboard\keyboard_led.c 0x00000000   Number         0  keyboard_led.o ABSOLUTE
+    ..\..\..\src\app\keyboard\keyscan.c      0x00000000   Number         0  keyscan.o ABSOLUTE
+    ..\..\..\src\app\keyboard\main.c         0x00000000   Number         0  main.o ABSOLUTE
+    ..\..\..\src\app\keyboard\ota_service.c  0x00000000   Number         0  ota_service.o ABSOLUTE
+    ..\..\..\src\app\keyboard\privacy_mgnt.c 0x00000000   Number         0  privacy_mgnt.o ABSOLUTE
+    ..\..\..\src\app\keyboard\profile_init.c 0x00000000   Number         0  profile_init.o ABSOLUTE
+    ..\..\..\src\ble\profile\server\bas.c    0x00000000   Number         0  bas.o ABSOLUTE
+    ..\..\..\src\ble\profile\server\dis.c    0x00000000   Number         0  dis.o ABSOLUTE
+    ..\..\..\src\ble\profile\server\hids_kb.c 0x00000000   Number         0  hids_kb.o ABSOLUTE
+    ..\..\..\src\mcu\peripheral\rtl876x_gpio.c 0x00000000   Number         0  rtl876x_gpio.o ABSOLUTE
+    ..\..\..\src\mcu\peripheral\rtl876x_io_dlps.c 0x00000000   Number         0  rtl876x_io_dlps.o ABSOLUTE
+    ..\..\..\src\mcu\peripheral\rtl876x_keyscan.c 0x00000000   Number         0  rtl876x_keyscan.o ABSOLUTE
+    ..\..\..\src\mcu\peripheral\rtl876x_rcc.c 0x00000000   Number         0  rtl876x_rcc.o ABSOLUTE
+    ..\..\..\src\mcu\rtl876x\overlay_mgr.c   0x00000000   Number         0  overlay_mgr.o ABSOLUTE
+    ..\..\..\src\mcu\rtl876x\system_rtl8762c.c 0x00000000   Number         0  system_rtl8762c.o ABSOLUTE
+    ..\\..\\..\\src\\app\\keyboard\\key_handler.c 0x00000000   Number         0  key_handler.o ABSOLUTE
+    ..\\..\\..\\src\\app\\keyboard\\keyboard_app.c 0x00000000   Number         0  keyboard_app.o ABSOLUTE
+    ..\\..\\..\\src\\app\\keyboard\\keyboard_button.c 0x00000000   Number         0  keyboard_button.o ABSOLUTE
+    ..\\..\\..\\src\\app\\keyboard\\keyboard_led.c 0x00000000   Number         0  keyboard_led.o ABSOLUTE
+    ..\\..\\..\\src\\app\\keyboard\\keyscan.c 0x00000000   Number         0  keyscan.o ABSOLUTE
+    ..\\..\\..\\src\\app\\keyboard\\main.c   0x00000000   Number         0  main.o ABSOLUTE
+    ..\\..\\..\\src\\app\\keyboard\\profile_init.c 0x00000000   Number         0  profile_init.o ABSOLUTE
+    ..\\..\\..\\src\\mcu\\peripheral\\rtl876x_gpio.c 0x00000000   Number         0  rtl876x_gpio.o ABSOLUTE
+    ..\\..\\..\\src\\mcu\\peripheral\\rtl876x_io_dlps.c 0x00000000   Number         0  rtl876x_io_dlps.o ABSOLUTE
+    ..\\..\\..\\src\\mcu\\peripheral\\rtl876x_keyscan.c 0x00000000   Number         0  rtl876x_keyscan.o ABSOLUTE
+    ..\\..\\..\\src\\mcu\\peripheral\\rtl876x_rcc.c 0x00000000   Number         0  rtl876x_rcc.o ABSOLUTE
+    ..\\..\\..\\src\\mcu\\rtl876x\\arm\\startup_rtl8762c.s 0x00000000   Number         0  startup_rtl8762c.o ABSOLUTE
+    ..\\..\\..\\src\\mcu\\rtl876x\\system_rtl8762c.c 0x00000000   Number         0  system_rtl8762c.o ABSOLUTE
+    VECTOR                                   0x00200000   Section      244  startup_rtl8762c.o(VECTOR)
+    .ARM.Collect$$libinit$$00000000          0x00207c00   Section        2  libinit.o(.ARM.Collect$$libinit$$00000000)
+    .ARM.Collect$$libinit$$00000001          0x00207c02   Section        4  libinit2.o(.ARM.Collect$$libinit$$00000001)
+    .ARM.Collect$$libinit$$00000004          0x00207c06   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000004)
+    .ARM.Collect$$libinit$$0000000A          0x00207c06   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000A)
+    .ARM.Collect$$libinit$$0000000C          0x00207c06   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    .ARM.Collect$$libinit$$0000000E          0x00207c06   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000E)
+    .ARM.Collect$$libinit$$00000011          0x00207c06   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000011)
+    .ARM.Collect$$libinit$$00000013          0x00207c06   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    .ARM.Collect$$libinit$$00000015          0x00207c06   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    .ARM.Collect$$libinit$$00000017          0x00207c06   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    .ARM.Collect$$libinit$$00000019          0x00207c06   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    .ARM.Collect$$libinit$$0000001B          0x00207c06   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    .ARM.Collect$$libinit$$0000001D          0x00207c06   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    .ARM.Collect$$libinit$$0000001F          0x00207c06   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    .ARM.Collect$$libinit$$00000021          0x00207c06   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    .ARM.Collect$$libinit$$00000023          0x00207c06   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    .ARM.Collect$$libinit$$00000025          0x00207c06   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000025)
+    .ARM.Collect$$libinit$$0000002C          0x00207c06   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002C)
+    .ARM.Collect$$libinit$$0000002E          0x00207c06   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    .ARM.Collect$$libinit$$00000030          0x00207c06   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    .ARM.Collect$$libinit$$00000032          0x00207c06   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000032)
+    .ARM.Collect$$libinit$$00000033          0x00207c06   Section        2  libinit2.o(.ARM.Collect$$libinit$$00000033)
+    .ARM.Collect$$rtentry$$00000000          0x00207c08   Section        0  __rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    .ARM.Collect$$rtentry$$00000002          0x00207c08   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    .ARM.Collect$$rtentry$$00000004          0x00207c08   Section        6  __rtentry4.o(.ARM.Collect$$rtentry$$00000004)
+    .ARM.Collect$$rtentry$$00000009          0x00207c0e   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    .ARM.Collect$$rtentry$$0000000A          0x00207c0e   Section        4  __rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    .ARM.Collect$$rtentry$$0000000C          0x00207c12   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    .ARM.Collect$$rtentry$$0000000D          0x00207c12   Section        8  __rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    .ram.dataon.data                         0x00207c1c   Section        0  system_rtl8762c.o(.ram.dataon.data)
+    .ram.dataon.data                         0x00207d40   Section        0  rtl876x_io_dlps.o(.ram.dataon.data)
+    GPIO_DLPS_Exit                           0x00207e0f   Thumb Code    80  rtl876x_io_dlps.o(.ram.dataon.data)
+    .text                                    0x00207e78   Section       80  startup_rtl8762c.o(.text)
+    $v0                                      0x00207e78   Number         0  startup_rtl8762c.o(.text)
+    DEFAULT_HANDLER_TXT                      0x00207e8a   Data           0  startup_rtl8762c.o(.text)
+    .text                                    0x00207ec8   Section        0  system_rtl8762c.o(.text)
+    .text                                    0x00207f88   Section        0  hids_kb.o(.text)
+    hids_attr_read_cb                        0x00207fc9   Thumb Code   156  hids_kb.o(.text)
+    hids_attr_write_cb                       0x00208065   Thumb Code   136  hids_kb.o(.text)
+    .text                                    0x002081e0   Section        0  bas.o(.text)
+    .text                                    0x0020834c   Section        0  dis.o(.text)
+    .text                                    0x002085d0   Section        0  ota_service.o(.text)
+    .text                                    0x00208874   Section        0  rtl876x_io_dlps.o(.text)
+    .text                                    0x00208994   Section        0  rtl876x_rcc.o(.text)
+    .text                                    0x00208cec   Section        0  rtl876x_gpio.o(.text)
+    .text                                    0x00208e70   Section        0  rtl876x_keyscan.o(.text)
+    .text                                    0x00208fe4   Section        0  main.o(.text)
+    .text                                    0x002092b4   Section        0  app_task.o(.text)
+    .text                                    0x002093b0   Section        0  keyboard_app.o(.text)
+    .text                                    0x00209a84   Section        0  keyscan.o(.text)
+    .text                                    0x0020a000   Section        0  key_handler.o(.text)
+    .text                                    0x0020a2a4   Section        0  keyboard_button.o(.text)
+    GPIO_ReadInputDataBit                    0x0020a521   Thumb Code    16  keyboard_button.o(.text)
+    .text                                    0x0020a56c   Section        0  keyboard_led.o(.text)
+    .text                                    0x0020a6fc   Section        0  profile_init.o(.text)
+    .text                                    0x0020a88c   Section        0  privacy_mgnt.o(.text)
+    .text                                    0x0020ab40   Section        0  overlay_mgr.o(.text)
+    .text                                    0x0020abbc   Section        0  gap_lib.o(.text)
+    .text                                    0x0020ac24   Section        0  gap_lib_patch.o(.text)
+    .text                                    0x0020ad08   Section        0  gap_vendor_cmd.o(.text)
+    x$fpl$fpinit                             0x0020adc8   Section       10  fpinit.o(x$fpl$fpinit)
+    $v0                                      0x0020adc8   Number         0  fpinit.o(x$fpl$fpinit)
+    .constdata                               0x0020add4   Section       12  system_rtl8762c.o(.constdata)
+    .constdata                               0x0020ade0   Section      244  system_rtl8762c.o(.constdata)
+    .constdata                               0x0020aed4   Section      972  hids_kb.o(.constdata)
+    hids_attr_tbl                            0x0020af68   Data         812  hids_kb.o(.constdata)
+    .constdata                               0x0020b2a0   Section      124  bas.o(.constdata)
+    bas_attr_tbl                             0x0020b2a0   Data         112  bas.o(.constdata)
+    .constdata                               0x0020b31c   Section      544  dis.o(.constdata)
+    dis_attr_tbl                             0x0020b31c   Data         532  dis.o(.constdata)
+    .constdata                               0x0020b53c   Section       16  ota_service.o(.constdata)
+    .constdata                               0x0020b54c   Section      544  ota_service.o(.constdata)
+    .constdata                               0x0020b76c   Section       68  main.o(.constdata)
+    scan_rsp_data                            0x0020b76c   Data           4  main.o(.constdata)
+    adv_data                                 0x0020b770   Data          21  main.o(.constdata)
+    .constdata                               0x0020b7b0   Section       38  app_task.o(.constdata)
+    __func__                                 0x0020b7b0   Data          24  app_task.o(.constdata)
+    __func__                                 0x0020b7c8   Data          14  app_task.o(.constdata)
+    .constdata                               0x0020b7d6   Section       32  key_handler.o(.constdata)
+    .conststring                             0x0020b7f8   Section      544  system_rtl8762c.o(.conststring)
+    .conststring                             0x0020ba18   Section       25  overlay_mgr.o(.conststring)
+    .data                                    0x0020ba34   Section        6  hids_kb.o(.data)
+    .data                                    0x0020ba3a   Section       46  dis.o(.data)
+    dis_pnp_id                               0x0020ba3b   Data           7  dis.o(.data)
+    dis_system_id                            0x0020ba42   Data           8  dis.o(.data)
+    dis_ieee_data_list                       0x0020ba4a   Data          30  dis.o(.data)
+    .data                                    0x0020ba68   Section      108  overlay_mgr.o(.data)
+    overlay_sections                         0x0020ba68   Data         108  overlay_mgr.o(.data)
+    .bss                                     0x0020bad4   Section        4  system_rtl8762c.o(.bss)
+    .bss                                     0x0020bad8   Section        8  hids_kb.o(.bss)
+    pfn_hids_cb                              0x0020badc   Data           4  hids_kb.o(.bss)
+    .bss                                     0x0020bae0   Section        8  bas.o(.bss)
+    battery_level                            0x0020bae0   Data           1  bas.o(.bss)
+    bas_read_battery_level_pending           0x0020bae1   Data           1  bas.o(.bss)
+    pfn_bas_cb                               0x0020bae4   Data           4  bas.o(.bss)
+    .bss                                     0x0020bae8   Section      132  dis.o(.bss)
+    pfn_dis_cb                               0x0020baf0   Data           4  dis.o(.bss)
+    dis_manufacturer_name                    0x0020baf4   Data          20  dis.o(.bss)
+    dis_model_number                         0x0020bb08   Data          20  dis.o(.bss)
+    dis_serial_number                        0x0020bb1c   Data          20  dis.o(.bss)
+    dis_hardware_rev                         0x0020bb30   Data          20  dis.o(.bss)
+    dis_firmware_rev                         0x0020bb44   Data          20  dis.o(.bss)
+    dis_software_rev                         0x0020bb58   Data          20  dis.o(.bss)
+    .bss                                     0x0020bb6c   Section       52  ota_service.o(.bss)
+    DeviceInfo                               0x0020bb80   Data          12  ota_service.o(.bss)
+    version                                  0x0020bb8c   Data          20  ota_service.o(.bss)
+    .bss                                     0x0020bba0   Section      220  rtl876x_io_dlps.o(.bss)
+    .bss                                     0x0020bc7c   Section       12  app_task.o(.bss)
+    .bss                                     0x0020bc88   Section        9  keyboard_app.o(.bss)
+    .bss                                     0x0020bc91   Section        1  keyboard_app.o(.bss)
+    .bss                                     0x0020bc94   Section       48  keyscan.o(.bss)
+    .bss                                     0x0020bcc4   Section        8  key_handler.o(.bss)
+    .bss                                     0x0020bccc   Section        8  keyboard_button.o(.bss)
+    .bss                                     0x0020bcd4   Section        8  keyboard_led.o(.bss)
+    .bss                                     0x0020bcdc   Section        4  profile_init.o(.bss)
+    .bss                                     0x0020bce0   Section        2  privacy_mgnt.o(.bss)
+    .bss                                     0x0020bce2   Section        8  overlay_mgr.o(.bss)
+    .app.overlay_a                           0x0020bcec   Section        0  system_rtl8762c.o(.app.overlay_a)
+    AppUpdateVectorTable                     0x0020bced * Thumb Code   162  system_rtl8762c.o(.app.overlay_a)
+    .app.flash.header                        0x0080e000   Section     1024  system_rtl8762c.o(.app.flash.header)
+    __tagsym$$used                           0x0080e000   Number         0  system_rtl8762c.o(.app.flash.header)
+    __tagsym$$used                           0x0080e1e0   Number         0  system_rtl8762c.o(.app.flash.header)
+    RESET                                    0x0080e400   Section        8  startup_rtl8762c.o(RESET)
+    $v0                                      0x0080e400   Number         0  startup_rtl8762c.o(RESET)
+    !!!main                                  0x0080e408   Section        8  __main.o(!!!main)
+    !!!scatter                               0x0080e410   Section       52  __scatter.o(!!!scatter)
+    !!handler_copy                           0x0080e444   Section       26  __scatter_copy.o(!!handler_copy)
+    !!handler_zi                             0x0080e460   Section       28  __scatter_zi.o(!!handler_zi)
+    .app.flash.text                          0x0080e47c   Section        0  system_rtl8762c.o(.app.flash.text)
+    .TRACE                                   0x08800000   Section      106  system_rtl8762c.o(.TRACE)
+    __tagsym$$used                           0x08800000   Number         0  system_rtl8762c.o(.TRACE)
+    format                                   0x08800000   Data          31  system_rtl8762c.o(.TRACE)
+    __tagsym$$used                           0x08800020   Number         0  system_rtl8762c.o(.TRACE)
+    format                                   0x08800020   Data          34  system_rtl8762c.o(.TRACE)
+    __tagsym$$used                           0x08800044   Number         0  system_rtl8762c.o(.TRACE)
+    format                                   0x08800044   Data          38  system_rtl8762c.o(.TRACE)
+    .TRACE                                   0x0880006c   Section      114  hids_kb.o(.TRACE)
+    __tagsym$$used                           0x0880006c   Number         0  hids_kb.o(.TRACE)
+    format                                   0x0880006c   Data          46  hids_kb.o(.TRACE)
+    __tagsym$$used                           0x0880009c   Number         0  hids_kb.o(.TRACE)
+    format                                   0x0880009c   Data          32  hids_kb.o(.TRACE)
+    __tagsym$$used                           0x088000bc   Number         0  hids_kb.o(.TRACE)
+    format                                   0x088000bc   Data          34  hids_kb.o(.TRACE)
+    .TRACE                                   0x088000e0   Section      206  bas.o(.TRACE)
+    __tagsym$$used                           0x088000e0   Number         0  bas.o(.TRACE)
+    format                                   0x088000e0   Data          28  bas.o(.TRACE)
+    __tagsym$$used                           0x088000fc   Number         0  bas.o(.TRACE)
+    format                                   0x088000fc   Data          48  bas.o(.TRACE)
+    __tagsym$$used                           0x0880012c   Number         0  bas.o(.TRACE)
+    format                                   0x0880012c   Data          48  bas.o(.TRACE)
+    __tagsym$$used                           0x0880015c   Number         0  bas.o(.TRACE)
+    format                                   0x0880015c   Data          45  bas.o(.TRACE)
+    __tagsym$$used                           0x0880018c   Number         0  bas.o(.TRACE)
+    format                                   0x0880018c   Data          34  bas.o(.TRACE)
+    .TRACE                                   0x088001b0   Section      158  dis.o(.TRACE)
+    __tagsym$$used                           0x088001b0   Number         0  dis.o(.TRACE)
+    format                                   0x088001b0   Data          28  dis.o(.TRACE)
+    __tagsym$$used                           0x088001cc   Number         0  dis.o(.TRACE)
+    format                                   0x088001cc   Data          37  dis.o(.TRACE)
+    __tagsym$$used                           0x088001f4   Number         0  dis.o(.TRACE)
+    format                                   0x088001f4   Data          53  dis.o(.TRACE)
+    __tagsym$$used                           0x0880022c   Number         0  dis.o(.TRACE)
+    format                                   0x0880022c   Data          34  dis.o(.TRACE)
+    .TRACE                                   0x08800250   Section      391  ota_service.o(.TRACE)
+    __tagsym$$used                           0x08800250   Number         0  ota_service.o(.TRACE)
+    format                                   0x08800250   Data          59  ota_service.o(.TRACE)
+    __tagsym$$used                           0x0880028c   Number         0  ota_service.o(.TRACE)
+    format                                   0x0880028c   Data          46  ota_service.o(.TRACE)
+    __tagsym$$used                           0x088002bc   Number         0  ota_service.o(.TRACE)
+    format                                   0x088002bc   Data          19  ota_service.o(.TRACE)
+    __tagsym$$used                           0x088002d0   Number         0  ota_service.o(.TRACE)
+    format                                   0x088002d0   Data          22  ota_service.o(.TRACE)
+    __tagsym$$used                           0x088002e8   Number         0  ota_service.o(.TRACE)
+    format                                   0x088002e8   Data          17  ota_service.o(.TRACE)
+    __tagsym$$used                           0x088002fc   Number         0  ota_service.o(.TRACE)
+    format                                   0x088002fc   Data          20  ota_service.o(.TRACE)
+    __tagsym$$used                           0x08800310   Number         0  ota_service.o(.TRACE)
+    format                                   0x08800310   Data          23  ota_service.o(.TRACE)
+    __tagsym$$used                           0x08800328   Number         0  ota_service.o(.TRACE)
+    format                                   0x08800328   Data          23  ota_service.o(.TRACE)
+    __tagsym$$used                           0x08800340   Number         0  ota_service.o(.TRACE)
+    format                                   0x08800340   Data          26  ota_service.o(.TRACE)
+    __tagsym$$used                           0x0880035c   Number         0  ota_service.o(.TRACE)
+    format                                   0x0880035c   Data          19  ota_service.o(.TRACE)
+    __tagsym$$used                           0x08800370   Number         0  ota_service.o(.TRACE)
+    format                                   0x08800370   Data          22  ota_service.o(.TRACE)
+    __tagsym$$used                           0x08800388   Number         0  ota_service.o(.TRACE)
+    format                                   0x08800388   Data          17  ota_service.o(.TRACE)
+    __tagsym$$used                           0x0880039c   Number         0  ota_service.o(.TRACE)
+    format                                   0x0880039c   Data          20  ota_service.o(.TRACE)
+    __tagsym$$used                           0x088003b0   Number         0  ota_service.o(.TRACE)
+    format                                   0x088003b0   Data          39  ota_service.o(.TRACE)
+    .TRACE                                   0x088003d8   Section       42  rtl876x_io_dlps.o(.TRACE)
+    __tagsym$$used                           0x088003d8   Number         0  rtl876x_io_dlps.o(.TRACE)
+    format                                   0x088003d8   Data          42  rtl876x_io_dlps.o(.TRACE)
+    .TRACE                                   0x08800404   Section       39  main.o(.TRACE)
+    __tagsym$$used                           0x08800404   Number         0  main.o(.TRACE)
+    format                                   0x08800404   Data          39  main.o(.TRACE)
+    .TRACE                                   0x0880042c   Section       56  app_task.o(.TRACE)
+    __tagsym$$used                           0x0880042c   Number         0  app_task.o(.TRACE)
+    format                                   0x0880042c   Data          27  app_task.o(.TRACE)
+    __tagsym$$used                           0x08800448   Number         0  app_task.o(.TRACE)
+    format                                   0x08800448   Data          28  app_task.o(.TRACE)
+    .TRACE                                   0x08800464   Section     2235  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800464   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800464   Data          35  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800488   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800488   Data          47  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x088004b8   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x088004b8   Data          37  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x088004e0   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x088004e0   Data          69  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800528   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800528   Data          19  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x0880053c   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x0880053c   Data          46  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x0880056c   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x0880056c   Data          18  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800580   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800580   Data          17  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800594   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800594   Data          84  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x088005e8   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x088005e8   Data          57  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800624   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800624   Data          28  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800640   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800640   Data          98  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x088006a4   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x088006a4   Data          54  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x088006dc   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x088006dc   Data          57  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800718   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800718   Data          71  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800760   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800760   Data          70  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x088007a8   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x088007a8   Data          52  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x088007dc   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x088007dc   Data          57  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800818   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800818   Data         126  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800898   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800898   Data          37  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x088008c0   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x088008c0   Data          40  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x088008e8   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x088008e8   Data          62  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800928   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800928   Data          52  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x0880095c   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x0880095c   Data          31  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x0880097c   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x0880097c   Data          29  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x0880099c   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x0880099c   Data          46  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x088009cc   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x088009cc   Data          49  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800a00   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800a00   Data          45  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800a30   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800a30   Data          29  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800a50   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800a50   Data          42  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800a7c   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800a7c   Data          81  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800ad0   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800ad0   Data          58  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800b0c   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800b0c   Data          42  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800b38   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800b38   Data          44  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800b64   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800b64   Data          43  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800b90   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800b90   Data         102  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800bf8   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800bf8   Data          42  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800c24   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800c24   Data          41  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800c50   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800c50   Data          31  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800c70   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800c70   Data          24  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800c88   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800c88   Data          35  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800cac   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800cac   Data          36  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800cd0   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800cd0   Data          44  keyboard_app.o(.TRACE)
+    __tagsym$$used                           0x08800cfc   Number         0  keyboard_app.o(.TRACE)
+    format                                   0x08800cfc   Data          35  keyboard_app.o(.TRACE)
+    .TRACE                                   0x08800d20   Section      887  keyscan.o(.TRACE)
+    __tagsym$$used                           0x08800d20   Number         0  keyscan.o(.TRACE)
+    format                                   0x08800d20   Data          33  keyscan.o(.TRACE)
+    __tagsym$$used                           0x08800d44   Number         0  keyscan.o(.TRACE)
+    format                                   0x08800d44   Data          49  keyscan.o(.TRACE)
+    __tagsym$$used                           0x08800d78   Number         0  keyscan.o(.TRACE)
+    format                                   0x08800d78   Data          62  keyscan.o(.TRACE)
+    __tagsym$$used                           0x08800db8   Number         0  keyscan.o(.TRACE)
+    format                                   0x08800db8   Data          74  keyscan.o(.TRACE)
+    __tagsym$$used                           0x08800e04   Number         0  keyscan.o(.TRACE)
+    format                                   0x08800e04   Data          62  keyscan.o(.TRACE)
+    __tagsym$$used                           0x08800e44   Number         0  keyscan.o(.TRACE)
+    format                                   0x08800e44   Data          72  keyscan.o(.TRACE)
+    __tagsym$$used                           0x08800e8c   Number         0  keyscan.o(.TRACE)
+    format                                   0x08800e8c   Data          85  keyscan.o(.TRACE)
+    __tagsym$$used                           0x08800ee4   Number         0  keyscan.o(.TRACE)
+    format                                   0x08800ee4   Data          71  keyscan.o(.TRACE)
+    __tagsym$$used                           0x08800f2c   Number         0  keyscan.o(.TRACE)
+    format                                   0x08800f2c   Data          35  keyscan.o(.TRACE)
+    __tagsym$$used                           0x08800f50   Number         0  keyscan.o(.TRACE)
+    format                                   0x08800f50   Data          44  keyscan.o(.TRACE)
+    __tagsym$$used                           0x08800f7c   Number         0  keyscan.o(.TRACE)
+    format                                   0x08800f7c   Data          48  keyscan.o(.TRACE)
+    __tagsym$$used                           0x08800fac   Number         0  keyscan.o(.TRACE)
+    format                                   0x08800fac   Data          59  keyscan.o(.TRACE)
+    __tagsym$$used                           0x08800fe8   Number         0  keyscan.o(.TRACE)
+    format                                   0x08800fe8   Data          69  keyscan.o(.TRACE)
+    __tagsym$$used                           0x08801030   Number         0  keyscan.o(.TRACE)
+    format                                   0x08801030   Data          52  keyscan.o(.TRACE)
+    __tagsym$$used                           0x08801064   Number         0  keyscan.o(.TRACE)
+    format                                   0x08801064   Data          51  keyscan.o(.TRACE)
+    .TRACE                                   0x08801098   Section      488  key_handler.o(.TRACE)
+    __tagsym$$used                           0x08801098   Number         0  key_handler.o(.TRACE)
+    format                                   0x08801098   Data          48  key_handler.o(.TRACE)
+    __tagsym$$used                           0x088010c8   Number         0  key_handler.o(.TRACE)
+    format                                   0x088010c8   Data          18  key_handler.o(.TRACE)
+    __tagsym$$used                           0x088010dc   Number         0  key_handler.o(.TRACE)
+    format                                   0x088010dc   Data          18  key_handler.o(.TRACE)
+    __tagsym$$used                           0x088010f0   Number         0  key_handler.o(.TRACE)
+    format                                   0x088010f0   Data          18  key_handler.o(.TRACE)
+    __tagsym$$used                           0x08801104   Number         0  key_handler.o(.TRACE)
+    format                                   0x08801104   Data          18  key_handler.o(.TRACE)
+    __tagsym$$used                           0x08801118   Number         0  key_handler.o(.TRACE)
+    format                                   0x08801118   Data          18  key_handler.o(.TRACE)
+    __tagsym$$used                           0x0880112c   Number         0  key_handler.o(.TRACE)
+    format                                   0x0880112c   Data          18  key_handler.o(.TRACE)
+    __tagsym$$used                           0x08801140   Number         0  key_handler.o(.TRACE)
+    format                                   0x08801140   Data          18  key_handler.o(.TRACE)
+    __tagsym$$used                           0x08801154   Number         0  key_handler.o(.TRACE)
+    format                                   0x08801154   Data          18  key_handler.o(.TRACE)
+    __tagsym$$used                           0x08801168   Number         0  key_handler.o(.TRACE)
+    format                                   0x08801168   Data          18  key_handler.o(.TRACE)
+    __tagsym$$used                           0x0880117c   Number         0  key_handler.o(.TRACE)
+    format                                   0x0880117c   Data          18  key_handler.o(.TRACE)
+    __tagsym$$used                           0x08801190   Number         0  key_handler.o(.TRACE)
+    format                                   0x08801190   Data          31  key_handler.o(.TRACE)
+    __tagsym$$used                           0x088011b0   Number         0  key_handler.o(.TRACE)
+    format                                   0x088011b0   Data          16  key_handler.o(.TRACE)
+    __tagsym$$used                           0x088011c0   Number         0  key_handler.o(.TRACE)
+    format                                   0x088011c0   Data          71  key_handler.o(.TRACE)
+    __tagsym$$used                           0x08801208   Number         0  key_handler.o(.TRACE)
+    format                                   0x08801208   Data          35  key_handler.o(.TRACE)
+    __tagsym$$used                           0x0880122c   Number         0  key_handler.o(.TRACE)
+    format                                   0x0880122c   Data          35  key_handler.o(.TRACE)
+    __tagsym$$used                           0x08801250   Number         0  key_handler.o(.TRACE)
+    format                                   0x08801250   Data          48  key_handler.o(.TRACE)
+    .TRACE                                   0x08801280   Section       85  keyboard_button.o(.TRACE)
+    __tagsym$$used                           0x08801280   Number         0  keyboard_button.o(.TRACE)
+    format                                   0x08801280   Data          29  keyboard_button.o(.TRACE)
+    __tagsym$$used                           0x088012a0   Number         0  keyboard_button.o(.TRACE)
+    format                                   0x088012a0   Data          27  keyboard_button.o(.TRACE)
+    __tagsym$$used                           0x088012bc   Number         0  keyboard_button.o(.TRACE)
+    format                                   0x088012bc   Data          25  keyboard_button.o(.TRACE)
+    .TRACE                                   0x088012d8   Section       66  keyboard_led.o(.TRACE)
+    __tagsym$$used                           0x088012d8   Number         0  keyboard_led.o(.TRACE)
+    format                                   0x088012d8   Data          36  keyboard_led.o(.TRACE)
+    __tagsym$$used                           0x088012fc   Number         0  keyboard_led.o(.TRACE)
+    format                                   0x088012fc   Data          30  keyboard_led.o(.TRACE)
+    .TRACE                                   0x0880131c   Section       84  profile_init.o(.TRACE)
+    __tagsym$$used                           0x0880131c   Number         0  profile_init.o(.TRACE)
+    format                                   0x0880131c   Data          41  profile_init.o(.TRACE)
+    __tagsym$$used                           0x08801348   Number         0  profile_init.o(.TRACE)
+    format                                   0x08801348   Data          40  profile_init.o(.TRACE)
+    .TRACE                                   0x08801370   Section      725  privacy_mgnt.o(.TRACE)
+    __tagsym$$used                           0x08801370   Number         0  privacy_mgnt.o(.TRACE)
+    format                                   0x08801370   Data          44  privacy_mgnt.o(.TRACE)
+    __tagsym$$used                           0x0880139c   Number         0  privacy_mgnt.o(.TRACE)
+    format                                   0x0880139c   Data          24  privacy_mgnt.o(.TRACE)
+    __tagsym$$used                           0x088013b4   Number         0  privacy_mgnt.o(.TRACE)
+    format                                   0x088013b4   Data          26  privacy_mgnt.o(.TRACE)
+    __tagsym$$used                           0x088013d0   Number         0  privacy_mgnt.o(.TRACE)
+    format                                   0x088013d0   Data          22  privacy_mgnt.o(.TRACE)
+    __tagsym$$used                           0x088013e8   Number         0  privacy_mgnt.o(.TRACE)
+    format                                   0x088013e8   Data          24  privacy_mgnt.o(.TRACE)
+    __tagsym$$used                           0x08801400   Number         0  privacy_mgnt.o(.TRACE)
+    format                                   0x08801400   Data          29  privacy_mgnt.o(.TRACE)
+    __tagsym$$used                           0x08801420   Number         0  privacy_mgnt.o(.TRACE)
+    format                                   0x08801420   Data          25  privacy_mgnt.o(.TRACE)
+    __tagsym$$used                           0x0880143c   Number         0  privacy_mgnt.o(.TRACE)
+    format                                   0x0880143c   Data          27  privacy_mgnt.o(.TRACE)
+    __tagsym$$used                           0x08801458   Number         0  privacy_mgnt.o(.TRACE)
+    format                                   0x08801458   Data          32  privacy_mgnt.o(.TRACE)
+    __tagsym$$used                           0x08801478   Number         0  privacy_mgnt.o(.TRACE)
+    format                                   0x08801478   Data          45  privacy_mgnt.o(.TRACE)
+    __tagsym$$used                           0x088014a8   Number         0  privacy_mgnt.o(.TRACE)
+    format                                   0x088014a8   Data          51  privacy_mgnt.o(.TRACE)
+    __tagsym$$used                           0x088014dc   Number         0  privacy_mgnt.o(.TRACE)
+    format                                   0x088014dc   Data          49  privacy_mgnt.o(.TRACE)
+    __tagsym$$used                           0x08801510   Number         0  privacy_mgnt.o(.TRACE)
+    format                                   0x08801510   Data          38  privacy_mgnt.o(.TRACE)
+    __tagsym$$used                           0x08801538   Number         0  privacy_mgnt.o(.TRACE)
+    format                                   0x08801538   Data          30  privacy_mgnt.o(.TRACE)
+    __tagsym$$used                           0x08801558   Number         0  privacy_mgnt.o(.TRACE)
+    format                                   0x08801558   Data          66  privacy_mgnt.o(.TRACE)
+    __tagsym$$used                           0x0880159c   Number         0  privacy_mgnt.o(.TRACE)
+    format                                   0x0880159c   Data          81  privacy_mgnt.o(.TRACE)
+    __tagsym$$used                           0x088015f0   Number         0  privacy_mgnt.o(.TRACE)
+    format                                   0x088015f0   Data          38  privacy_mgnt.o(.TRACE)
+    __tagsym$$used                           0x08801618   Number         0  privacy_mgnt.o(.TRACE)
+    format                                   0x08801618   Data          45  privacy_mgnt.o(.TRACE)
+    .TRACE                                   0x08801648   Section      357  gap_lib.o(.TRACE)
+    __tagsym$$used                           0x08801648   Number         0  gap_lib.o(.TRACE)
+    format                                   0x08801648   Data         236  gap_lib.o(.TRACE)
+    __tagsym$$used                           0x08801734   Number         0  gap_lib.o(.TRACE)
+    format                                   0x08801734   Data         121  gap_lib.o(.TRACE)
+    .TRACE                                   0x088017b0   Section      133  gap_lib_patch.o(.TRACE)
+    __tagsym$$used                           0x088017b0   Number         0  gap_lib_patch.o(.TRACE)
+    format                                   0x088017b0   Data          48  gap_lib_patch.o(.TRACE)
+    __tagsym$$used                           0x088017e0   Number         0  gap_lib_patch.o(.TRACE)
+    format                                   0x088017e0   Data          55  gap_lib_patch.o(.TRACE)
+    __tagsym$$used                           0x08801818   Number         0  gap_lib_patch.o(.TRACE)
+    format                                   0x08801818   Data          29  gap_lib_patch.o(.TRACE)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$VFPi3$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$ROPI$EBA8$UX$STANDARDLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    Image$$CACHE_DATA_ON$$RO$$Length         0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    Image$$OVERLAY_A$$RW$$Length             0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    Image$$OVERLAY_A$$ZI$$Length             0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    Image$$OVERLAY_B$$RO$$Length             0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    Image$$OVERLAY_B$$RW$$Length             0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    Image$$OVERLAY_B$$ZI$$Length             0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    Image$$OVERLAY_C$$RO$$Length             0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    Image$$OVERLAY_C$$RW$$Length             0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    Image$$OVERLAY_C$$ZI$$Length             0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __ARM_exceptions_init                     - Undefined Weak Reference
+    __alloca_initialize                       - Undefined Weak Reference
+    __arm_preinit_                            - Undefined Weak Reference
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __rt_locale                               - Undefined Weak Reference
+    __sigvec_lookup                           - Undefined Weak Reference
+    _atexit_init                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _fp_trap_init                             - Undefined Weak Reference
+    _get_lc_collate                           - Undefined Weak Reference
+    _get_lc_ctype                             - Undefined Weak Reference
+    _get_lc_monetary                          - Undefined Weak Reference
+    _get_lc_numeric                           - Undefined Weak Reference
+    _get_lc_time                              - Undefined Weak Reference
+    _getenv_init                              - Undefined Weak Reference
+    _handle_redirection                       - Undefined Weak Reference
+    _init_alloc                               - Undefined Weak Reference
+    _init_user_alloc                          - Undefined Weak Reference
+    _initio                                   - Undefined Weak Reference
+    _rand_init                                - Undefined Weak Reference
+    _signal_init                              - Undefined Weak Reference
+    Image$$RAM_DATA_ON$$RW$$Length           0x000000a0   Number         0  anon$$obj.o ABSOLUTE
+    Image$$OVERLAY_A$$RO$$Length             0x000000c0   Number         0  anon$$obj.o ABSOLUTE
+    Image$$RAM_VECTOR_TABLE$$RO$$Length      0x000000f4   Number         0  anon$$obj.o ABSOLUTE
+    __Vectors_Size                           0x000000f4   Number         0  startup_rtl8762c.o ABSOLUTE
+    Image$$RAM_DATA_ON$$ZI$$Length           0x00000218   Number         0  anon$$obj.o ABSOLUTE
+    get_active_ota_bank_addr                 0x000011cd   Thumb Code     0  ROM.lib ABSOLUTE
+    SHA256_Init                              0x00001a17   Thumb Code     0  ROM.lib ABSOLUTE
+    SHA256_Update                            0x00001a33   Thumb Code     0  ROM.lib ABSOLUTE
+    SHA256_Final                             0x00001ab3   Thumb Code     0  ROM.lib ABSOLUTE
+    SHA256_Alloc                             0x00001bf7   Thumb Code     0  ROM.lib ABSOLUTE
+    SHA256_Free                              0x00001c37   Thumb Code     0  ROM.lib ABSOLUTE
+    SHA256                                   0x00001c3b   Thumb Code     0  ROM.lib ABSOLUTE
+    Image$$RAM_DATA_ON$$RO$$Length           0x00003e34   Number         0  anon$$obj.o ABSOLUTE
+    RamVectorTableInit                       0x00004ca9   Thumb Code     0  ROM.lib ABSOLUTE
+    RamVectorTableUpdate                     0x00004ccb   Thumb Code     0  ROM.lib ABSOLUTE
+    SystemCall                               0x000072a1   Thumb Code     0  ROM.lib ABSOLUTE
+    btxfcs                                   0x000073d5   Thumb Code     0  ROM.lib ABSOLUTE
+    platform_random                          0x000077b3   Thumb Code     0  ROM.lib ABSOLUTE
+    platform_ramdom_seed_update              0x000077c7   Thumb Code     0  ROM.lib ABSOLUTE
+    log_direct                               0x000079b1   Thumb Code     0  ROM.lib ABSOLUTE
+    log_buffer                               0x00007a5f   Thumb Code     0  ROM.lib ABSOLUTE
+    log_index                                0x00007b97   Thumb Code     0  ROM.lib ABSOLUTE
+    log_snoop                                0x00007c93   Thumb Code     0  ROM.lib ABSOLUTE
+    trace_bdaddr                             0x00007dd9   Thumb Code     0  ROM.lib ABSOLUTE
+    trace_string                             0x00007e6b   Thumb Code     0  ROM.lib ABSOLUTE
+    trace_binary                             0x00007f0b   Thumb Code     0  ROM.lib ABSOLUTE
+    LogBufferLowerStack                      0x00007fa9   Thumb Code     0  ROM.lib ABSOLUTE
+    LogBufferLowerStackData                  0x000080bb   Thumb Code     0  ROM.lib ABSOLUTE
+    log_module_trace_init                    0x000081d5   Thumb Code     0  ROM.lib ABSOLUTE
+    log_module_trace_set                     0x000081fd   Thumb Code     0  ROM.lib ABSOLUTE
+    log_module_bitmap_trace_set              0x00008243   Thumb Code     0  ROM.lib ABSOLUTE
+    dlps_check_cb_reg                        0x000085ff   Thumb Code     0  ROM.lib ABSOLUTE
+    dlps_hw_control_cb_reg                   0x000086ef   Thumb Code     0  ROM.lib ABSOLUTE
+    dlps_hw_control_cb_unreg                 0x00008729   Thumb Code     0  ROM.lib ABSOLUTE
+    lps_mode_pause                           0x00008825   Thumb Code     0  ROM.lib ABSOLUTE
+    lps_mode_resume                          0x00008841   Thumb Code     0  ROM.lib ABSOLUTE
+    lps_mode_set                             0x0000885f   Thumb Code     0  ROM.lib ABSOLUTE
+    lps_mode_get                             0x0000886f   Thumb Code     0  ROM.lib ABSOLUTE
+    lps_mode_stack_get                       0x00008875   Thumb Code     0  ROM.lib ABSOLUTE
+    hw_aes_encrypt128_use_dma                0x00008b47   Thumb Code     0  ROM.lib ABSOLUTE
+    hw_aes_decrypt128_use_dma                0x00008b77   Thumb Code     0  ROM.lib ABSOLUTE
+    hw_aes_encrypt256_use_dma                0x00008ba7   Thumb Code     0  ROM.lib ABSOLUTE
+    hw_aes_decrypt256_use_dma                0x00008bd7   Thumb Code     0  ROM.lib ABSOLUTE
+    aes128_ecb_encrypt                       0x00008c07   Thumb Code     0  ROM.lib ABSOLUTE
+    aes128_ecb_decrypt                       0x00008c63   Thumb Code     0  ROM.lib ABSOLUTE
+    aes128_ecb_encrypt_msb2lsb               0x00008cbd   Thumb Code     0  ROM.lib ABSOLUTE
+    aes128_ecb_decrypt_msb2lsb               0x00008cd5   Thumb Code     0  ROM.lib ABSOLUTE
+    aes256_ecb_encrypt                       0x00008ced   Thumb Code     0  ROM.lib ABSOLUTE
+    aes256_ecb_decrypt                       0x00008d49   Thumb Code     0  ROM.lib ABSOLUTE
+    aes256_ecb_encrypt_msb2lsb               0x00008da3   Thumb Code     0  ROM.lib ABSOLUTE
+    aes256_ecb_decrypt_msb2lsb               0x00008dbb   Thumb Code     0  ROM.lib ABSOLUTE
+    hw_aes_decrypt_code_init_slim            0x00008de5   Thumb Code     0  ROM.lib ABSOLUTE
+    hw_aes_decrypt_16byte                    0x00008e11   Thumb Code     0  ROM.lib ABSOLUTE
+    BTIF_VendorGetResponse                   0x00008f65   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_cmd_rx                             0x0000929d   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_cmd_tx                             0x00009369   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_write_enable                       0x00009421   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_get_rdid                           0x00009905   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_load_query_info                    0x00009d4b   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_lock                               0x0000a103   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_unlock                             0x0000a1ab   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_set_bit                            0x0000a237   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_get_bit                            0x0000a23f   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_split_read                         0x0000a39d   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_auto_write                         0x0000a4cd   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_get_block_protect                  0x0000a53b   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_set_block_protect                  0x0000a58f   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_sw_protect_unlock_by_addr          0x0000a637   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_set_top_bottom                     0x0000a803   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_get_query_info                     0x0000a9a9   Thumb Code     0  ROM.lib ABSOLUTE
+    ftl_ioctl                                0x0000b3a7   Thumb Code     0  ROM.lib ABSOLUTE
+    ftl_load                                 0x0000b907   Thumb Code     0  ROM.lib ABSOLUTE
+    ftl_save                                 0x0000b919   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_dump_flash_info                    0x0000beb9   Thumb Code     0  ROM.lib ABSOLUTE
+    crc16                                    0x0000bf13   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_get_flash_exist                    0x0000bf3b   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_get_bank_addr                      0x0000bf41   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_get_bank_size                      0x0000bfb9   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_erase_locked                       0x0000c027   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_ioctl                              0x0000c073   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_write_locked                       0x0000c48b   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_auto_write_locked                  0x0000c4b3   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_auto_write_buffer_locked           0x0000c4d5   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_read_locked                        0x0000c4fb   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_auto_read_locked                   0x0000c523   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_ds_erase                           0x0000c5c7   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_ds_auto_write                      0x0000c5e3   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_ds_auto_read                       0x0000c5fd   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_ds_write                           0x0000c617   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_ds_read                            0x0000c635   Thumb Code     0  ROM.lib ABSOLUTE
+    set_hci_mode_flag                        0x0000c741   Thumb Code     0  ROM.lib ABSOLUTE
+    check_hci_mode_flag                      0x0000c761   Thumb Code     0  ROM.lib ABSOLUTE
+    set_datatrans_patch_flag                 0x0000c76d   Thumb Code     0  ROM.lib ABSOLUTE
+    check_datatrans_patch_flag               0x0000c78d   Thumb Code     0  ROM.lib ABSOLUTE
+    check_image_chksum                       0x0000c79d   Thumb Code     0  ROM.lib ABSOLUTE
+    check_header_valid                       0x0000c7a9   Thumb Code     0  ROM.lib ABSOLUTE
+    get_header_addr_by_img_id                0x0000c7e5   Thumb Code     0  ROM.lib ABSOLUTE
+    is_ota_support_bank_switch               0x0000c843   Thumb Code     0  ROM.lib ABSOLUTE
+    get_temp_ota_bank_addr_by_img_id         0x0000c881   Thumb Code     0  ROM.lib ABSOLUTE
+    xQueueGenericSend                        0x0000cb85   Thumb Code     0  ROM.lib ABSOLUTE
+    xQueueGenericSendFromISR                 0x0000cf87   Thumb Code     0  ROM.lib ABSOLUTE
+    hw_aes_init                              0x00010c21   Thumb Code     0  ROM.lib ABSOLUTE
+    hw_aes_cpu_operate                       0x00010d91   Thumb Code     0  ROM.lib ABSOLUTE
+    hw_aes_set_dma_tx_done                   0x00010d9d   Thumb Code     0  ROM.lib ABSOLUTE
+    hw_aes_set_dma_rx_done                   0x00010da3   Thumb Code     0  ROM.lib ABSOLUTE
+    hw_aes_dma_operate                       0x00010da9   Thumb Code     0  ROM.lib ABSOLUTE
+    hw_aes_is_dma_rx_done                    0x00011005   Thumb Code     0  ROM.lib ABSOLUTE
+    hw_aes_is_dma_tx_done                    0x0001100b   Thumb Code     0  ROM.lib ABSOLUTE
+    hw_aes_dma_done                          0x00011011   Thumb Code     0  ROM.lib ABSOLUTE
+    hw_aes_set_dma_move_src                  0x0001101b   Thumb Code     0  ROM.lib ABSOLUTE
+    hw_aes_set_dma_move_dst                  0x00011021   Thumb Code     0  ROM.lib ABSOLUTE
+    hw_aes_set_dma_carry_size                0x00011027   Thumb Code     0  ROM.lib ABSOLUTE
+    aes_cmac_inverse                         0x0001119b   Thumb Code     0  ROM.lib ABSOLUTE
+    get_secure_reg_cfg_val                   0x00011269   Thumb Code     0  ROM.lib ABSOLUTE
+    NVIC_Init                                0x000112c1   Thumb Code     0  ROM.lib ABSOLUTE
+    Pinmux_Config                            0x00011375   Thumb Code     0  ROM.lib ABSOLUTE
+    Pinmux_Deinit                            0x000113a9   Thumb Code     0  ROM.lib ABSOLUTE
+    Pinmux_Reset                             0x000113c5   Thumb Code     0  ROM.lib ABSOLUTE
+    Pad_Config                               0x000113dd   Thumb Code     0  ROM.lib ABSOLUTE
+    System_WakeUpDebounceTime                0x0001146b   Thumb Code     0  ROM.lib ABSOLUTE
+    Pad_WKDebounceConfig                     0x0001148d   Thumb Code     0  ROM.lib ABSOLUTE
+    Pad_WakeupEnableValue                    0x000114b3   Thumb Code     0  ROM.lib ABSOLUTE
+    Pad_WakeupPolarityValue                  0x000114d9   Thumb Code     0  ROM.lib ABSOLUTE
+    System_WakeUpPinEnable                   0x000114ff   Thumb Code     0  ROM.lib ABSOLUTE
+    System_WakeUpPinDisable                  0x00011531   Thumb Code     0  ROM.lib ABSOLUTE
+    Pad_WakeupInterruptValue                 0x0001154f   Thumb Code     0  ROM.lib ABSOLUTE
+    System_WakeUpInterruptValue              0x00011577   Thumb Code     0  ROM.lib ABSOLUTE
+    Pad_ClearAllWakeupINT                    0x00011597   Thumb Code     0  ROM.lib ABSOLUTE
+    Pad_OutputEnableValue                    0x000115f5   Thumb Code     0  ROM.lib ABSOLUTE
+    Pad_OutputControlValue                   0x0001161b   Thumb Code     0  ROM.lib ABSOLUTE
+    Pad_PullEnableValue                      0x00011641   Thumb Code     0  ROM.lib ABSOLUTE
+    Pad_PullUpOrDownValue                    0x00011667   Thumb Code     0  ROM.lib ABSOLUTE
+    Pad_ControlSelectValue                   0x0001168d   Thumb Code     0  ROM.lib ABSOLUTE
+    Pad_ClearWakeupINTPendingBit             0x000116b3   Thumb Code     0  ROM.lib ABSOLUTE
+    Pad_PowerOrShutDownValue                 0x000116cb   Thumb Code     0  ROM.lib ABSOLUTE
+    Pad_PullConfigValue                      0x000116f1   Thumb Code     0  ROM.lib ABSOLUTE
+    RTC_WriteReg                             0x00011759   Thumb Code     0  ROM.lib ABSOLUTE
+    RTC_DeInit                               0x00011795   Thumb Code     0  ROM.lib ABSOLUTE
+    RTC_SetPrescaler                         0x00011815   Thumb Code     0  ROM.lib ABSOLUTE
+    RTC_SetComp                              0x0001181d   Thumb Code     0  ROM.lib ABSOLUTE
+    RTC_RunCmd                               0x00011827   Thumb Code     0  ROM.lib ABSOLUTE
+    RTC_MaskINTConfig                        0x00011843   Thumb Code     0  ROM.lib ABSOLUTE
+    RTC_CompINTConfig                        0x0001185f   Thumb Code     0  ROM.lib ABSOLUTE
+    RTC_TickINTConfig                        0x0001187b   Thumb Code     0  ROM.lib ABSOLUTE
+    RTC_GetINTStatus                         0x00011897   Thumb Code     0  ROM.lib ABSOLUTE
+    RTC_SystemWakeupConfig                   0x000118ab   Thumb Code     0  ROM.lib ABSOLUTE
+    WDG_ClockEnable                          0x000118d9   Thumb Code     0  ROM.lib ABSOLUTE
+    WDG_Config                               0x00011903   Thumb Code     0  ROM.lib ABSOLUTE
+    WDG_Enable                               0x00011931   Thumb Code     0  ROM.lib ABSOLUTE
+    WDG_Disable                              0x00011943   Thumb Code     0  ROM.lib ABSOLUTE
+    WDG_Restart                              0x00011955   Thumb Code     0  ROM.lib ABSOLUTE
+    AON_WDG_Config                           0x00011a79   Thumb Code     0  ROM.lib ABSOLUTE
+    AON_WDG_ConfigResetLevel                 0x00011acb   Thumb Code     0  ROM.lib ABSOLUTE
+    AON_WDG_ConfigComp                       0x00011b0f   Thumb Code     0  ROM.lib ABSOLUTE
+    AON_WDG_ConfigCntCtl                     0x00011b53   Thumb Code     0  ROM.lib ABSOLUTE
+    AON_WDG_ConfigCntReload                  0x00011b97   Thumb Code     0  ROM.lib ABSOLUTE
+    AON_WDG_Enable                           0x00011bdb   Thumb Code     0  ROM.lib ABSOLUTE
+    AON_WDG_Disable                          0x00011c21   Thumb Code     0  ROM.lib ABSOLUTE
+    AON_WDG_Restart                          0x00011c67   Thumb Code     0  ROM.lib ABSOLUTE
+    AON_WDG_SystemReset                      0x00011c7f   Thumb Code     0  ROM.lib ABSOLUTE
+    SPI_DeInit                               0x00011c95   Thumb Code     0  ROM.lib ABSOLUTE
+    SPI_Init                                 0x00011caf   Thumb Code     0  ROM.lib ABSOLUTE
+    SPI_StructInit                           0x00011da3   Thumb Code     0  ROM.lib ABSOLUTE
+    SPI_Cmd                                  0x00011def   Thumb Code     0  ROM.lib ABSOLUTE
+    SPI_SendBuffer                           0x00011e03   Thumb Code     0  ROM.lib ABSOLUTE
+    SPI_SendWord                             0x00011e1f   Thumb Code     0  ROM.lib ABSOLUTE
+    SPI_SendHalfWord                         0x00011e39   Thumb Code     0  ROM.lib ABSOLUTE
+    SPI_INTConfig                            0x00011e55   Thumb Code     0  ROM.lib ABSOLUTE
+    SPI_ClearINTPendingBit                   0x00011e69   Thumb Code     0  ROM.lib ABSOLUTE
+    LPC_Init                                 0x00011ee5   Thumb Code     0  ROM.lib ABSOLUTE
+    LPC_StructInit                           0x00011f23   Thumb Code     0  ROM.lib ABSOLUTE
+    LPC_Cmd                                  0x00011f2f   Thumb Code     0  ROM.lib ABSOLUTE
+    LPC_CounterCmd                           0x00011f57   Thumb Code     0  ROM.lib ABSOLUTE
+    LPC_CounterReset                         0x00011f75   Thumb Code     0  ROM.lib ABSOLUTE
+    LPC_WriteComparator                      0x00011f9f   Thumb Code     0  ROM.lib ABSOLUTE
+    LPC_ReadComparator                       0x00011fa5   Thumb Code     0  ROM.lib ABSOLUTE
+    LPC_ReadCounter                          0x00011fb3   Thumb Code     0  ROM.lib ABSOLUTE
+    LPC_INTConfig                            0x00011fc1   Thumb Code     0  ROM.lib ABSOLUTE
+    LPC_ClearINTPendingBit                   0x00011fdb   Thumb Code     0  ROM.lib ABSOLUTE
+    LPC_GetINTStatus                         0x00012009   Thumb Code     0  ROM.lib ABSOLUTE
+    hci_if_open                              0x00013cc9   Thumb Code     0  ROM.lib ABSOLUTE
+    hci_if_close                             0x00013ccd   Thumb Code     0  ROM.lib ABSOLUTE
+    hci_if_write                             0x00013cd1   Thumb Code     0  ROM.lib ABSOLUTE
+    hci_if_confirm                           0x00013cff   Thumb Code     0  ROM.lib ABSOLUTE
+    sm_le_sc_local_oob_init                  0x0001808d   Thumb Code     0  ROM.lib ABSOLUTE
+    sm_le_sc_peer_oob_init                   0x000180a1   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_buffer_get                          0x0002148f   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_buffer_put                          0x000214a9   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_vendor_cmd_req                      0x000214ed   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_just_work_req_cfm                   0x0002165b   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_sw_reset_req                        0x000216e3   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_credit_based_conn_req            0x00021e61   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_credit_based_conn_cfm            0x00021eaf   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_credit_based_disconn_req         0x00021f05   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_credit_based_disconn_cfm         0x00021f23   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_send_credit_req                  0x00021f41   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_credit_based_data_req            0x00021f63   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_credit_based_data_cfm            0x00021f9d   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_credit_based_security_reg_req    0x00021fbf   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_credit_based_psm_reg_req         0x00021fed   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_set_adv_set_rand_addr_req        0x00022395   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_modify_adv_set_req               0x000223bf   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_ext_adv_enable_req               0x000223dd   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_ext_adv_param_set_req            0x00022417   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_ext_adv_data_set_req             0x0002248f   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_ext_scan_req                     0x00022503   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_ext_scan_param_set_req           0x00022529   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_set_suppl_test_params_req        0x0002257f   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_set_conn_suppl_params_req        0x000225ab   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_conn_suppl_request_enable_req    0x000225fb   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_conn_suppl_response_enable_req   0x00022627   Thumb Code     0  ROM.lib ABSOLUTE
+    btif_le_read_antenna_info_req            0x00022645   Thumb Code     0  ROM.lib ABSOLUTE
+    os_mem_alloc_intern                      0x00025d61   Thumb Code     0  ROM.lib ABSOLUTE
+    os_mem_zalloc_intern                     0x00025db9   Thumb Code     0  ROM.lib ABSOLUTE
+    os_mem_aligned_alloc_intern              0x00025e17   Thumb Code     0  ROM.lib ABSOLUTE
+    os_mem_free                              0x00025e77   Thumb Code     0  ROM.lib ABSOLUTE
+    os_mem_aligned_free                      0x00025e95   Thumb Code     0  ROM.lib ABSOLUTE
+    os_mem_peek                              0x00025eb3   Thumb Code     0  ROM.lib ABSOLUTE
+    os_msg_queue_create_intern               0x00025ef5   Thumb Code     0  ROM.lib ABSOLUTE
+    os_msg_queue_delete_intern               0x00025f51   Thumb Code     0  ROM.lib ABSOLUTE
+    os_msg_queue_peek_intern                 0x00025f95   Thumb Code     0  ROM.lib ABSOLUTE
+    os_msg_send_intern                       0x00025fe5   Thumb Code     0  ROM.lib ABSOLUTE
+    os_msg_recv_intern                       0x00026045   Thumb Code     0  ROM.lib ABSOLUTE
+    os_msg_peek_intern                       0x000260a3   Thumb Code     0  ROM.lib ABSOLUTE
+    os_pool_create_intern                    0x000261e7   Thumb Code     0  ROM.lib ABSOLUTE
+    os_pool_extend_intern                    0x000262bb   Thumb Code     0  ROM.lib ABSOLUTE
+    os_pool_delete_intern                    0x0002638b   Thumb Code     0  ROM.lib ABSOLUTE
+    os_buffer_get_intern                     0x0002645d   Thumb Code     0  ROM.lib ABSOLUTE
+    os_buffer_put_intern                     0x00026561   Thumb Code     0  ROM.lib ABSOLUTE
+    os_pool_dump                             0x000265e1   Thumb Code     0  ROM.lib ABSOLUTE
+    os_queue_init                            0x0002666d   Thumb Code     0  ROM.lib ABSOLUTE
+    os_queue_in                              0x00026677   Thumb Code     0  ROM.lib ABSOLUTE
+    os_queue_out                             0x000266a3   Thumb Code     0  ROM.lib ABSOLUTE
+    os_queue_peek                            0x000266d1   Thumb Code     0  ROM.lib ABSOLUTE
+    os_queue_insert                          0x000266d5   Thumb Code     0  ROM.lib ABSOLUTE
+    os_queue_delete                          0x0002670f   Thumb Code     0  ROM.lib ABSOLUTE
+    os_delay                                 0x00026771   Thumb Code     0  ROM.lib ABSOLUTE
+    os_sys_time_get                          0x0002678f   Thumb Code     0  ROM.lib ABSOLUTE
+    os_sys_tick_get                          0x000267a9   Thumb Code     0  ROM.lib ABSOLUTE
+    os_sched_start                           0x000267c3   Thumb Code     0  ROM.lib ABSOLUTE
+    os_sched_suspend                         0x000267fb   Thumb Code     0  ROM.lib ABSOLUTE
+    os_sched_resume                          0x00026817   Thumb Code     0  ROM.lib ABSOLUTE
+    os_lock                                  0x00026851   Thumb Code     0  ROM.lib ABSOLUTE
+    os_unlock                                0x0002686b   Thumb Code     0  ROM.lib ABSOLUTE
+    os_sem_create                            0x00026889   Thumb Code     0  ROM.lib ABSOLUTE
+    os_sem_delete                            0x000268b3   Thumb Code     0  ROM.lib ABSOLUTE
+    os_sem_take                              0x000268d5   Thumb Code     0  ROM.lib ABSOLUTE
+    os_sem_give                              0x000268fb   Thumb Code     0  ROM.lib ABSOLUTE
+    os_mutex_create                          0x0002691d   Thumb Code     0  ROM.lib ABSOLUTE
+    os_mutex_delete                          0x0002693f   Thumb Code     0  ROM.lib ABSOLUTE
+    os_mutex_take                            0x00026961   Thumb Code     0  ROM.lib ABSOLUTE
+    os_mutex_give                            0x00026987   Thumb Code     0  ROM.lib ABSOLUTE
+    os_task_create                           0x000269d1   Thumb Code     0  ROM.lib ABSOLUTE
+    os_task_delete                           0x00026a17   Thumb Code     0  ROM.lib ABSOLUTE
+    os_task_suspend                          0x00026a39   Thumb Code     0  ROM.lib ABSOLUTE
+    os_task_resume                           0x00026a5b   Thumb Code     0  ROM.lib ABSOLUTE
+    os_task_yield                            0x00026a7d   Thumb Code     0  ROM.lib ABSOLUTE
+    os_task_handle_get                       0x00026a99   Thumb Code     0  ROM.lib ABSOLUTE
+    os_task_priority_get                     0x00026abb   Thumb Code     0  ROM.lib ABSOLUTE
+    os_task_priority_set                     0x00026ae1   Thumb Code     0  ROM.lib ABSOLUTE
+    os_task_signal_send                      0x00026b07   Thumb Code     0  ROM.lib ABSOLUTE
+    os_task_signal_recv                      0x00026b2d   Thumb Code     0  ROM.lib ABSOLUTE
+    os_task_signal_clear                     0x00026b53   Thumb Code     0  ROM.lib ABSOLUTE
+    os_timer_id_get                          0x00026ba1   Thumb Code     0  ROM.lib ABSOLUTE
+    os_timer_create                          0x00026bd7   Thumb Code     0  ROM.lib ABSOLUTE
+    os_timer_start                           0x00026c1d   Thumb Code     0  ROM.lib ABSOLUTE
+    os_timer_restart                         0x00026c3f   Thumb Code     0  ROM.lib ABSOLUTE
+    os_timer_stop                            0x00026c65   Thumb Code     0  ROM.lib ABSOLUTE
+    os_timer_delete                          0x00026c87   Thumb Code     0  ROM.lib ABSOLUTE
+    os_timer_dump                            0x00026ca9   Thumb Code     0  ROM.lib ABSOLUTE
+    os_timer_state_get                       0x00026cc5   Thumb Code     0  ROM.lib ABSOLUTE
+    rtk_write_modem_radio_reg                0x0002b11d   Thumb Code     0  ROM.lib ABSOLUTE
+    rtk_read_modem_radio_reg                 0x0002b183   Thumb Code     0  ROM.lib ABSOLUTE
+    hci_handle_le_receiver_test              0x0002d321   Thumb Code     0  ROM.lib ABSOLUTE
+    btaon_fast_read                          0x0003eded   Thumb Code     0  ROM.lib ABSOLUTE
+    btaon_fast_read_safe                     0x0003ee05   Thumb Code     0  ROM.lib ABSOLUTE
+    btaon_fast_write                         0x0003ee25   Thumb Code     0  ROM.lib ABSOLUTE
+    btaon_fast_write_safe                    0x0003ee47   Thumb Code     0  ROM.lib ABSOLUTE
+    btaon_fast_update                        0x0003ee73   Thumb Code     0  ROM.lib ABSOLUTE
+    dfu_report_target_ic_type                0x000474ab   Thumb Code     0  ROM.lib ABSOLUTE
+    dfu_report_target_fw_info                0x000474f5   Thumb Code     0  ROM.lib ABSOLUTE
+    dfu_flash_erase                          0x000475a5   Thumb Code     0  ROM.lib ABSOLUTE
+    dfu_update                               0x000475eb   Thumb Code     0  ROM.lib ABSOLUTE
+    dfu_reset                                0x000476f5   Thumb Code     0  ROM.lib ABSOLUTE
+    dfu_fw_active_reset                      0x00047713   Thumb Code     0  ROM.lib ABSOLUTE
+    dfu_checkbufcrc                          0x0004776b   Thumb Code     0  ROM.lib ABSOLUTE
+    dfu_flash_check_blank                    0x000477cb   Thumb Code     0  ROM.lib ABSOLUTE
+    dfu_check_checksum                       0x00047833   Thumb Code     0  ROM.lib ABSOLUTE
+    dfu_init                                 0x00047a91   Thumb Code     0  ROM.lib ABSOLUTE
+    dfu_switch_to_ota_mode                   0x00047ad7   Thumb Code     0  ROM.lib ABSOLUTE
+    dfu_set_ota_mode_flag                    0x0004820d   Thumb Code     0  ROM.lib ABSOLUTE
+    bt_crypto_f4                             0x00048ac9   Thumb Code     0  ROM.lib ABSOLUTE
+    ecc_make_key                             0x00049969   Thumb Code     0  ROM.lib ABSOLUTE
+    gap_register_extend_cb                   0x0004be11   Thumb Code     0  ROM.lib ABSOLUTE
+    gap_start_bt_stack                       0x0004be6b   Thumb Code     0  ROM.lib ABSOLUTE
+    gap_set_pairable_mode                    0x0004bedb   Thumb Code     0  ROM.lib ABSOLUTE
+    gap_handle_msg                           0x0004bf45   Thumb Code     0  ROM.lib ABSOLUTE
+    gap_register_app_cb                      0x0004bfa5   Thumb Code     0  ROM.lib ABSOLUTE
+    gap_set_param                            0x0004bfab   Thumb Code     0  ROM.lib ABSOLUTE
+    gap_get_param                            0x0004c037   Thumb Code     0  ROM.lib ABSOLUTE
+    gap_write_airplan_mode                   0x0004c0a5   Thumb Code     0  ROM.lib ABSOLUTE
+    gap_read_airplan_mode                    0x0004c0c7   Thumb Code     0  ROM.lib ABSOLUTE
+    gap_buffer_free                          0x0004c0e5   Thumb Code     0  ROM.lib ABSOLUTE
+    le_bond_clear_all_keys                   0x0004c151   Thumb Code     0  ROM.lib ABSOLUTE
+    le_bond_delete_by_idx                    0x0004c16d   Thumb Code     0  ROM.lib ABSOLUTE
+    le_bond_delete_by_bd                     0x0004c1a7   Thumb Code     0  ROM.lib ABSOLUTE
+    le_bond_set_param                        0x0004c1ef   Thumb Code     0  ROM.lib ABSOLUTE
+    le_bond_get_param                        0x0004c2e1   Thumb Code     0  ROM.lib ABSOLUTE
+    le_bond_pair                             0x0004c353   Thumb Code     0  ROM.lib ABSOLUTE
+    le_bond_passkey_input_confirm            0x0004c383   Thumb Code     0  ROM.lib ABSOLUTE
+    le_bond_oob_input_confirm                0x0004c3b7   Thumb Code     0  ROM.lib ABSOLUTE
+    le_bond_get_display_key                  0x0004c3eb   Thumb Code     0  ROM.lib ABSOLUTE
+    le_bond_user_confirm                     0x0004c415   Thumb Code     0  ROM.lib ABSOLUTE
+    le_bond_passkey_display_confirm          0x0004c475   Thumb Code     0  ROM.lib ABSOLUTE
+    le_bond_keypress_notify                  0x0004c4a5   Thumb Code     0  ROM.lib ABSOLUTE
+    le_bond_cfg_local_key_distribute         0x0004c4d5   Thumb Code     0  ROM.lib ABSOLUTE
+    le_gap_init                              0x0004cbbd   Thumb Code     0  ROM.lib ABSOLUTE
+    le_gap_msg_info_way                      0x0004cc23   Thumb Code     0  ROM.lib ABSOLUTE
+    le_load_upper_stack_efuse                0x0004cc29   Thumb Code     0  ROM.lib ABSOLUTE
+    le_get_max_link_num                      0x0004cc3b   Thumb Code     0  ROM.lib ABSOLUTE
+    le_register_app_cb                       0x0004cc43   Thumb Code     0  ROM.lib ABSOLUTE
+    le_set_gap_param                         0x0004cc49   Thumb Code     0  ROM.lib ABSOLUTE
+    le_get_gap_param                         0x0004cd91   Thumb Code     0  ROM.lib ABSOLUTE
+    le_modify_white_list                     0x0004ce55   Thumb Code     0  ROM.lib ABSOLUTE
+    le_gen_rand_addr                         0x0004ce65   Thumb Code     0  ROM.lib ABSOLUTE
+    le_set_rand_addr                         0x0004ce75   Thumb Code     0  ROM.lib ABSOLUTE
+    le_set_host_chann_classif                0x0004ce93   Thumb Code     0  ROM.lib ABSOLUTE
+    le_cfg_local_identity_address            0x0004cea3   Thumb Code     0  ROM.lib ABSOLUTE
+    le_write_default_data_len                0x0004ceb3   Thumb Code     0  ROM.lib ABSOLUTE
+    gap_send_dev_state                       0x0004cec3   Thumb Code     0  ROM.lib ABSOLUTE
+    le_read_rssi                             0x0004cf2f   Thumb Code     0  ROM.lib ABSOLUTE
+    le_read_chann_map                        0x0004cf59   Thumb Code     0  ROM.lib ABSOLUTE
+    le_set_data_len                          0x0004cf83   Thumb Code     0  ROM.lib ABSOLUTE
+    le_disable_slave_latency                 0x0004cfe9   Thumb Code     0  ROM.lib ABSOLUTE
+    le_set_conn_tx_power                     0x0004d03f   Thumb Code     0  ROM.lib ABSOLUTE
+    le_update_passed_chann_map               0x0004d093   Thumb Code     0  ROM.lib ABSOLUTE
+    le_vendor_set_rem_min_sca                0x0004d0b9   Thumb Code     0  ROM.lib ABSOLUTE
+    le_link_find_by_link_id                  0x0004d8f5   Thumb Code     0  ROM.lib ABSOLUTE
+    le_get_conn_id                           0x0004d9bb   Thumb Code     0  ROM.lib ABSOLUTE
+    le_link_check_conn_id_internal           0x0004da19   Thumb Code     0  ROM.lib ABSOLUTE
+    le_get_conn_param                        0x0004da7f   Thumb Code     0  ROM.lib ABSOLUTE
+    le_get_active_link_num                   0x0004db71   Thumb Code     0  ROM.lib ABSOLUTE
+    le_get_idle_link_num                     0x0004db75   Thumb Code     0  ROM.lib ABSOLUTE
+    le_get_conn_info                         0x0004db79   Thumb Code     0  ROM.lib ABSOLUTE
+    le_get_conn_addr                         0x0004dbef   Thumb Code     0  ROM.lib ABSOLUTE
+    le_disconnect                            0x0004dc25   Thumb Code     0  ROM.lib ABSOLUTE
+    le_update_conn_param                     0x0004dc8b   Thumb Code     0  ROM.lib ABSOLUTE
+    le_set_conn_param                        0x0004dccf   Thumb Code     0  ROM.lib ABSOLUTE
+    le_connect                               0x0004dd79   Thumb Code     0  ROM.lib ABSOLUTE
+    le_set_phy                               0x0004de43   Thumb Code     0  ROM.lib ABSOLUTE
+    client_init                              0x0004e341   Thumb Code     0  ROM.lib ABSOLUTE
+    client_register_general_client_cb        0x0004e36f   Thumb Code     0  ROM.lib ABSOLUTE
+    client_register_spec_client_cb           0x0004e375   Thumb Code     0  ROM.lib ABSOLUTE
+    client_all_primary_srv_discovery         0x0004e4f5   Thumb Code     0  ROM.lib ABSOLUTE
+    client_by_uuid_srv_discovery             0x0004e529   Thumb Code     0  ROM.lib ABSOLUTE
+    client_by_uuid128_srv_discovery          0x0004e55f   Thumb Code     0  ROM.lib ABSOLUTE
+    client_relationship_discovery            0x0004e591   Thumb Code     0  ROM.lib ABSOLUTE
+    client_all_char_discovery                0x0004e5bf   Thumb Code     0  ROM.lib ABSOLUTE
+    client_by_uuid_char_discovery            0x0004e5fb   Thumb Code     0  ROM.lib ABSOLUTE
+    client_by_uuid128_char_discovery         0x0004e63d   Thumb Code     0  ROM.lib ABSOLUTE
+    client_all_char_descriptor_discovery     0x0004e685   Thumb Code     0  ROM.lib ABSOLUTE
+    client_attr_read                         0x0004e6b3   Thumb Code     0  ROM.lib ABSOLUTE
+    client_attr_read_using_uuid              0x0004e70d   Thumb Code     0  ROM.lib ABSOLUTE
+    client_attr_write                        0x0004e8a1   Thumb Code     0  ROM.lib ABSOLUTE
+    client_attr_ind_confirm                  0x0004ea1f   Thumb Code     0  ROM.lib ABSOLUTE
+    client_get_notify_data_buffer            0x0004f29d   Thumb Code     0  ROM.lib ABSOLUTE
+    server_builtin_service_reg               0x0004f4f1   Thumb Code     0  ROM.lib ABSOLUTE
+    server_init                              0x0004f505   Thumb Code     0  ROM.lib ABSOLUTE
+    server_register_app_cb                   0x0004f537   Thumb Code     0  ROM.lib ABSOLUTE
+    server_add_service                       0x0004f66f   Thumb Code     0  ROM.lib ABSOLUTE
+    server_add_service_by_start_handle       0x0004f681   Thumb Code     0  ROM.lib ABSOLUTE
+    server_attr_read_confirm                 0x0004f693   Thumb Code     0  ROM.lib ABSOLUTE
+    server_attr_write_confirm                0x0004f731   Thumb Code     0  ROM.lib ABSOLUTE
+    server_exec_write_confirm                0x0004f779   Thumb Code     0  ROM.lib ABSOLUTE
+    server_send_data                         0x0004f7a5   Thumb Code     0  ROM.lib ABSOLUTE
+    server_get_write_cmd_data_buffer         0x0004fc1f   Thumb Code     0  ROM.lib ABSOLUTE
+    le_find_key_entry                        0x0005018f   Thumb Code     0  ROM.lib ABSOLUTE
+    le_find_key_entry_by_idx                 0x000502a1   Thumb Code     0  ROM.lib ABSOLUTE
+    le_get_bond_dev_num                      0x00050323   Thumb Code     0  ROM.lib ABSOLUTE
+    le_set_high_priority_bond                0x00050329   Thumb Code     0  ROM.lib ABSOLUTE
+    le_get_high_priority_bond                0x00050341   Thumb Code     0  ROM.lib ABSOLUTE
+    le_get_key                               0x00050365   Thumb Code     0  ROM.lib ABSOLUTE
+    le_save_key                              0x00050427   Thumb Code     0  ROM.lib ABSOLUTE
+    le_get_low_priority_bond                 0x000507a1   Thumb Code     0  ROM.lib ABSOLUTE
+    le_get_cccd_data                         0x000507c1   Thumb Code     0  ROM.lib ABSOLUTE
+    le_resolve_random_address                0x000509d5   Thumb Code     0  ROM.lib ABSOLUTE
+    le_gen_bond_dev                          0x00050a59   Thumb Code     0  ROM.lib ABSOLUTE
+    le_set_privacy_info                      0x00050b05   Thumb Code     0  ROM.lib ABSOLUTE
+    le_get_privacy_info                      0x00050b7b   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_save_local_name                    0x00051071   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_load_local_name                    0x0005108f   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_save_local_appearance              0x000510af   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_load_local_appearance              0x000510d1   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_save_local_irk                     0x000510f3   Thumb Code     0  ROM.lib ABSOLUTE
+    flash_load_local_irk                     0x00051115   Thumb Code     0  ROM.lib ABSOLUTE
+    gaps_set_parameter                       0x000518a1   Thumb Code     0  ROM.lib ABSOLUTE
+    gaps_set_peripheral_preferred_conn_param 0x0005193d   Thumb Code     0  ROM.lib ABSOLUTE
+    gatts_service_changed_indicate           0x0005195f   Thumb Code     0  ROM.lib ABSOLUTE
+    gatt_register_callback                   0x00051ac3   Thumb Code     0  ROM.lib ABSOLUTE
+    le_privacy_set_param                     0x00051b3d   Thumb Code     0  ROM.lib ABSOLUTE
+    le_privacy_get_param                     0x00051b91   Thumb Code     0  ROM.lib ABSOLUTE
+    le_privacy_register_cb                   0x00051bf1   Thumb Code     0  ROM.lib ABSOLUTE
+    le_privacy_set_addr_resolution           0x00051bf7   Thumb Code     0  ROM.lib ABSOLUTE
+    le_privacy_read_peer_resolv_addr         0x00051c77   Thumb Code     0  ROM.lib ABSOLUTE
+    le_privacy_read_local_resolv_addr        0x00051c87   Thumb Code     0  ROM.lib ABSOLUTE
+    le_privacy_set_resolv_priv_addr_timeout  0x00051c97   Thumb Code     0  ROM.lib ABSOLUTE
+    le_privacy_modify_resolv_list            0x00051cab   Thumb Code     0  ROM.lib ABSOLUTE
+    le_privacy_set_mode                      0x00051d63   Thumb Code     0  ROM.lib ABSOLUTE
+    le_privacy_convert_addr_type             0x00051d73   Thumb Code     0  ROM.lib ABSOLUTE
+    le_adv_set_param                         0x00051e91   Thumb Code     0  ROM.lib ABSOLUTE
+    le_adv_get_param                         0x00051f95   Thumb Code     0  ROM.lib ABSOLUTE
+    le_adv_read_tx_power                     0x0005202b   Thumb Code     0  ROM.lib ABSOLUTE
+    le_adv_start                             0x000520c7   Thumb Code     0  ROM.lib ABSOLUTE
+    le_adv_update_param                      0x0005213d   Thumb Code     0  ROM.lib ABSOLUTE
+    le_adv_stop                              0x0005218b   Thumb Code     0  ROM.lib ABSOLUTE
+    le_adv_set_tx_power                      0x000521d3   Thumb Code     0  ROM.lib ABSOLUTE
+    le_vendor_one_shot_adv                   0x000521f9   Thumb Code     0  ROM.lib ABSOLUTE
+    le_scan_set_param                        0x00052375   Thumb Code     0  ROM.lib ABSOLUTE
+    le_scan_get_param                        0x00052409   Thumb Code     0  ROM.lib ABSOLUTE
+    le_scan_start                            0x00052475   Thumb Code     0  ROM.lib ABSOLUTE
+    le_scan_stop                             0x000524d3   Thumb Code     0  ROM.lib ABSOLUTE
+    gap_send_msg_to_app                      0x00052601   Thumb Code     0  ROM.lib ABSOLUTE
+    le_dtm_receiver_test                     0x0005289d   Thumb Code     0  ROM.lib ABSOLUTE
+    le_dtm_transmitter_test                  0x000528ad   Thumb Code     0  ROM.lib ABSOLUTE
+    le_dtm_test_end                          0x000528bd   Thumb Code     0  ROM.lib ABSOLUTE
+    le_dtm_enhanced_receiver_test            0x000528cd   Thumb Code     0  ROM.lib ABSOLUTE
+    le_dtm_enhanced_transmitter_test         0x000528dd   Thumb Code     0  ROM.lib ABSOLUTE
+    vsnprintf                                0x00059911   Thumb Code     0  ROM.lib ABSOLUTE
+    setlocale                                0x00059df5   Thumb Code     0  ROM.lib ABSOLUTE
+    memcmp                                   0x00059e05   Thumb Code     0  ROM.lib ABSOLUTE
+    strlen                                   0x00059e5d   Thumb Code     0  ROM.lib ABSOLUTE
+    __aeabi_memcpy                           0x00059e9b   Thumb Code     0  ROM.lib ABSOLUTE
+    __rt_memcpy                              0x00059e9b   Thumb Code     0  ROM.lib ABSOLUTE
+    __aeabi_memcpy4                          0x00059fa9   Thumb Code     0  ROM.lib ABSOLUTE
+    __aeabi_memcpy8                          0x00059fa9   Thumb Code     0  ROM.lib ABSOLUTE
+    __aeabi_memset                           0x0005a00d   Thumb Code     0  ROM.lib ABSOLUTE
+    __aeabi_memclr                           0x0005a01d   Thumb Code     0  ROM.lib ABSOLUTE
+    __rt_memclr                              0x0005a01d   Thumb Code     0  ROM.lib ABSOLUTE
+    _memset                                  0x0005a021   Thumb Code     0  ROM.lib ABSOLUTE
+    __aeabi_memclr4                          0x0005a061   Thumb Code     0  ROM.lib ABSOLUTE
+    __aeabi_memclr8                          0x0005a061   Thumb Code     0  ROM.lib ABSOLUTE
+    __rt_memclr_w                            0x0005a061   Thumb Code     0  ROM.lib ABSOLUTE
+    _memset_w                                0x0005a065   Thumb Code     0  ROM.lib ABSOLUTE
+    exit                                     0x0005ae25   Thumb Code     0  ROM.lib ABSOLUTE
+    strcmp                                   0x0005ae39   Thumb Code     0  ROM.lib ABSOLUTE
+    __Vectors                                0x00200000   Data           4  startup_rtl8762c.o(VECTOR)
+    __Vectors_End                            0x002000f4   Data           0  startup_rtl8762c.o(VECTOR)
+    platform_delay_us                        0x00200154   Data           0  ROM.lib ABSOLUTE
+    platform_delay_ms                        0x00200158   Data           0  ROM.lib ABSOLUTE
+    flash_lock_flag                          0x002004f9   Data           0  ROM.lib ABSOLUTE
+    platform_seed                            0x00200504   Data           0  ROM.lib ABSOLUTE
+    platform_poly                            0x00200508   Data           0  ROM.lib ABSOLUTE
+    rand_gen_init                            0x0020050c   Data           0  ROM.lib ABSOLUTE
+    rand_gen_read_random_number              0x00200510   Data           0  ROM.lib ABSOLUTE
+    rand_gen_reset                           0x00200514   Data           0  ROM.lib ABSOLUTE
+    app_pre_main                             0x00200c38   Data           0  ROM.lib ABSOLUTE
+    app_main                                 0x00200c3c   Data           0  ROM.lib ABSOLUTE
+    is_log_init                              0x00200c52   Data           0  ROM.lib ABSOLUTE
+    DlpsErrorCode                            0x00200c7c   Data           0  ROM.lib ABSOLUTE
+    DlpsRefuseReason                         0x00200c80   Data           0  ROM.lib ABSOLUTE
+    g_BasePri                                0x00200cac   Data           0  ROM.lib ABSOLUTE
+    flash_device_info                        0x00200cb0   Data           0  ROM.lib ABSOLUTE
+    flash_split_read_info                    0x00200d04   Data           0  ROM.lib ABSOLUTE
+    flash_dma_cfg                            0x00200d1c   Data           0  ROM.lib ABSOLUTE
+    flash_sem                                0x00200d40   Data           0  ROM.lib ABSOLUTE
+    gap_device_state                         0x00202e38   Data           0  ROM.lib ABSOLUTE
+    gap_param_ds_pool_id                     0x00202e44   Data           0  ROM.lib ABSOLUTE
+    gap_param_ds_data_offset                 0x00202e46   Data           0  ROM.lib ABSOLUTE
+    gap_app_cb                               0x00202e48   Data           0  ROM.lib ABSOLUTE
+    gap_link_table                           0x00202e64   Data           0  ROM.lib ABSOLUTE
+    bond_storage_num                         0x00202ebc   Data           0  ROM.lib ABSOLUTE
+    Image$$RAM_DATA_ON$$RO$$Base             0x00207c00   Number         0  anon$$obj.o ABSOLUTE
+    __rt_lib_init                            0x00207c01   Thumb Code     0  libinit.o(.ARM.Collect$$libinit$$00000000)
+    __rt_lib_init_fp_1                       0x00207c03   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000001)
+    __rt_lib_init_alloca_1                   0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    __rt_lib_init_argv_1                     0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002C)
+    __rt_lib_init_atexit_1                   0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    __rt_lib_init_clock_1                    0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    __rt_lib_init_cpp_1                      0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000032)
+    __rt_lib_init_exceptions_1               0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    __rt_lib_init_fp_trap_1                  0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    __rt_lib_init_getenv_1                   0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    __rt_lib_init_heap_1                     0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000A)
+    __rt_lib_init_lc_collate_1               0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000011)
+    __rt_lib_init_lc_ctype_1                 0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    __rt_lib_init_lc_monetary_1              0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    __rt_lib_init_lc_numeric_1               0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    __rt_lib_init_lc_time_1                  0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    __rt_lib_init_preinit_1                  0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000004)
+    __rt_lib_init_rand_1                     0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000E)
+    __rt_lib_init_return                     0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000033)
+    __rt_lib_init_signal_1                   0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    __rt_lib_init_stdio_1                    0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000025)
+    __rt_lib_init_user_alloc_1               0x00207c07   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    __rt_entry                               0x00207c09   Thumb Code     0  __rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    __rt_entry_presh_1                       0x00207c09   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    __rt_entry_sh                            0x00207c09   Thumb Code     0  __rtentry4.o(.ARM.Collect$$rtentry$$00000004)
+    __rt_entry_li                            0x00207c0f   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    __rt_entry_postsh_1                      0x00207c0f   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    __rt_entry_main                          0x00207c13   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    __rt_entry_postli_1                      0x00207c13   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    GPIO_Group3_Handler                      0x00207c1d   Thumb Code    76  system_rtl8762c.o(.ram.dataon.data)
+    GPIO_Group2_Handler                      0x00207c69   Thumb Code    76  system_rtl8762c.o(.ram.dataon.data)
+    GPIO_Group1_Handler                      0x00207cb5   Thumb Code    68  system_rtl8762c.o(.ram.dataon.data)
+    GPIO_Group0_Handler                      0x00207cf9   Thumb Code    68  system_rtl8762c.o(.ram.dataon.data)
+    DLPS_IO_ExitDlpsCb                       0x00207d41   Thumb Code   206  rtl876x_io_dlps.o(.ram.dataon.data)
+    ADC_Handler                              0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    BTMAC_Handler                            0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    BusFault_Handler                         0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    DebugMon_Handler                         0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    Default_Handler                          0x00207e79   Thumb Code    16  startup_rtl8762c.o(.text)
+    GDMA0_Channel0_Handler                   0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GDMA0_Channel1_Handler                   0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GDMA0_Channel2_Handler                   0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GDMA0_Channel3_Handler                   0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GDMA0_Channel4_Handler                   0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GDMA0_Channel5_Handler                   0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO0_Handler                            0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO10_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO11_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO12_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO13_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO14_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO15_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO16_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO17_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO18_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO19_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO1_Handler                            0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO21_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO22_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO23_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO24_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO25_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO26_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO27_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO28_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO29_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO2_Handler                            0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO30_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO31_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO3_Handler                            0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO4_Handler                            0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO5_Handler                            0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO6_Handler                            0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO7_Handler                            0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO8_Handler                            0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    GPIO9_Handler                            0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    HardFault_Handler                        0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    I2C0_Handler                             0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    I2C1_Handler                             0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    I2S0_RX_Handler                          0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    I2S0_TX_Handler                          0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    I2S1_RX_Handler                          0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    I2S1_TX_Handler                          0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    IR_Handler                               0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    LCD_Handler                              0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    LPCOMP_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    MemManage_Handler                        0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    NMI_Handler                              0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    PTA_Mailbox_Handler                      0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    PendSV_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    Peripheral_Handler                       0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    Qdecode_Handler                          0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    RTC_Handler                              0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    SPI0_Handler                             0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    SPI1_Handler                             0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    SPI2W_Handler                            0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    SPI_Flash_Handler                        0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    SVC_Handler                              0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    SysTick_Handler                          0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    Timer2_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    Timer3_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    Timer4_7_Handler                         0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    Timer4_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    Timer5_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    Timer6_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    Timer7_Handler                           0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    UART0_Handler                            0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    UART1_Handler                            0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    UART2_Handler                            0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    UsageFault_Handler                       0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    WDG_Handler                              0x00207e79   Thumb Code     0  startup_rtl8762c.o(.text)
+    __user_setup_stackheap                   0x00207e89   Thumb Code     2  startup_rtl8762c.o(.text)
+    common_main                              0x00207ec9   Thumb Code    60  system_rtl8762c.o(.text)
+    WDG_SystemReset                          0x00207f05   Thumb Code    10  system_rtl8762c.o(.text)
+    flash_try_high_speed                     0x00207f0f   Thumb Code    48  system_rtl8762c.o(.text)
+    app_cb0_wdg_reset                        0x00207f3f   Thumb Code    12  system_rtl8762c.o(.text)
+    hids_set_parameter                       0x00207f89   Thumb Code    64  hids_kb.o(.text)
+    hids_cccd_update_cb                      0x002080ed   Thumb Code   100  hids_kb.o(.text)
+    hids_send_report                         0x00208151   Thumb Code    50  hids_kb.o(.text)
+    hids_add_service                         0x00208183   Thumb Code    68  hids_kb.o(.text)
+    bas_set_parameter                        0x002081e1   Thumb Code    40  bas.o(.text)
+    bas_battery_level_value_notify           0x00208209   Thumb Code    24  bas.o(.text)
+    bas_battery_level_value_read_confirm     0x00208221   Thumb Code    34  bas.o(.text)
+    bas_attr_read_cb                         0x00208243   Thumb Code   104  bas.o(.text)
+    bas_cccd_update_cb                       0x002082ab   Thumb Code    86  bas.o(.text)
+    bas_add_service                          0x00208301   Thumb Code    60  bas.o(.text)
+    dis_set_parameter                        0x0020834d   Thumb Code   204  dis.o(.text)
+    dis_attr_read_cb                         0x00208419   Thumb Code   354  dis.o(.text)
+    dis_add_service                          0x0020857b   Thumb Code    64  dis.o(.text)
+    ota_attr_write_cb                        0x002085d1   Thumb Code   164  ota_service.o(.text)
+    ota_attr_read_cb                         0x00208675   Thumb Code   428  ota_service.o(.text)
+    ota_add_service                          0x00208821   Thumb Code    64  ota_service.o(.text)
+    DLPS_IO_EnterDlpsCb                      0x00208875   Thumb Code   244  rtl876x_io_dlps.o(.text)
+    DLPS_IORegister                          0x00208969   Thumb Code    24  rtl876x_io_dlps.o(.text)
+    RCC_PeriphClockCmd                       0x00208995   Thumb Code   292  rtl876x_rcc.o(.text)
+    RCC_SPIClkDivConfig                      0x00208ab9   Thumb Code   112  rtl876x_rcc.o(.text)
+    RCC_I2CClkDivConfig                      0x00208b29   Thumb Code   110  rtl876x_rcc.o(.text)
+    RCC_UARTClkDivConfig                     0x00208b97   Thumb Code   114  rtl876x_rcc.o(.text)
+    RCC_PeriClockConfig                      0x00208c09   Thumb Code   106  rtl876x_rcc.o(.text)
+    RCC_PeriFunctionConfig                   0x00208c73   Thumb Code    90  rtl876x_rcc.o(.text)
+    GPIO_DeInit                              0x00208ced   Thumb Code    12  rtl876x_gpio.o(.text)
+    GPIO_Init                                0x00208cf9   Thumb Code   190  rtl876x_gpio.o(.text)
+    GPIO_StructInit                          0x00208db7   Thumb Code    26  rtl876x_gpio.o(.text)
+    GPIO_INTConfig                           0x00208dd1   Thumb Code    18  rtl876x_gpio.o(.text)
+    GPIO_ClearINTPendingBit                  0x00208de3   Thumb Code     6  rtl876x_gpio.o(.text)
+    GPIO_MaskINTConfig                       0x00208de9   Thumb Code    18  rtl876x_gpio.o(.text)
+    GPIO_GetPin                              0x00208dfb   Thumb Code    42  rtl876x_gpio.o(.text)
+    GPIO_GetNum                              0x00208e25   Thumb Code    38  rtl876x_gpio.o(.text)
+    GPIO_DBClkCmd                            0x00208e4b   Thumb Code    28  rtl876x_gpio.o(.text)
+    KeyScan_Init                             0x00208e71   Thumb Code   166  rtl876x_keyscan.o(.text)
+    KeyScan_DeInit                           0x00208f17   Thumb Code    10  rtl876x_keyscan.o(.text)
+    KeyScan_StructInit                       0x00208f21   Thumb Code    62  rtl876x_keyscan.o(.text)
+    KeyScan_INTConfig                        0x00208f5f   Thumb Code    16  rtl876x_keyscan.o(.text)
+    KeyScan_INTMask                          0x00208f6f   Thumb Code    16  rtl876x_keyscan.o(.text)
+    KeyScan_Read                             0x00208f7f   Thumb Code    22  rtl876x_keyscan.o(.text)
+    KeyScan_Cmd                              0x00208f95   Thumb Code    20  rtl876x_keyscan.o(.text)
+    KeyScan_FilterDataConfig                 0x00208fa9   Thumb Code    44  rtl876x_keyscan.o(.text)
+    app_le_gap_init                          0x00208fe5   Thumb Code   370  main.o(.text)
+    app_le_profile_init                      0x00209157   Thumb Code    58  main.o(.text)
+    board_init                               0x00209191   Thumb Code    26  main.o(.text)
+    driver_init                              0x002091ab   Thumb Code    42  main.o(.text)
+    keyboard_enter_dlps                      0x002091d5   Thumb Code    14  main.o(.text)
+    keyboard_exit_dlps                       0x002091e3   Thumb Code    14  main.o(.text)
+    keyboard_enter_dlps_check                0x002091f1   Thumb Code     6  main.o(.text)
+    System_Handler                           0x002091f7   Thumb Code    46  main.o(.text)
+    pwr_mgr_init                             0x00209225   Thumb Code    52  main.o(.text)
+    task_init                                0x00209259   Thumb Code     4  main.o(.text)
+    main                                     0x0020925d   Thumb Code    40  main.o(.text)
+    app_main_task                            0x002092b5   Thumb Code   122  app_task.o(.text)
+    app_task_init                            0x0020932f   Thumb Code    28  app_task.o(.text)
+    app_send_msg_to_apptask                  0x0020934b   Thumb Code    80  app_task.o(.text)
+    app_handle_authen_state_evt              0x002093b1   Thumb Code   116  keyboard_app.o(.text)
+    app_handle_conn_param_update_evt         0x00209425   Thumb Code   176  keyboard_app.o(.text)
+    app_handle_conn_mtu_info_evt             0x002094d5   Thumb Code    20  keyboard_app.o(.text)
+    app_handle_conn_state_evt                0x002094e9   Thumb Code   232  keyboard_app.o(.text)
+    app_handle_dev_state_evt                 0x002095d1   Thumb Code   158  keyboard_app.o(.text)
+    app_handle_gap_msg                       0x0020966f   Thumb Code   342  keyboard_app.o(.text)
+    app_handle_io_msg                        0x002097c5   Thumb Code   168  keyboard_app.o(.text)
+    app_gap_callback                         0x0020986d   Thumb Code   188  keyboard_app.o(.text)
+    app_profile_callback                     0x00209929   Thumb Code   316  keyboard_app.o(.text)
+    keyscan_pad_config                       0x00209a85   Thumb Code   134  keyscan.o(.text)
+    keyscan_pinmux_config                    0x00209b0b   Thumb Code    70  keyscan.o(.text)
+    keyscan_enable_wakeup_config             0x00209b51   Thumb Code    52  keyscan.o(.text)
+    keyscan_disable_wakeup_config            0x00209b85   Thumb Code    30  keyscan.o(.text)
+    keyscan_enter_dlps_config                0x00209ba3   Thumb Code   208  keyscan.o(.text)
+    keyscan_init_driver                      0x00209c73   Thumb Code   142  keyscan.o(.text)
+    keyscan_exit_dlps_config                 0x00209d01   Thumb Code    24  keyscan.o(.text)
+    keyscan_nvic_config                      0x00209d19   Thumb Code    26  keyscan.o(.text)
+    keyscan_init_data                        0x00209d33   Thumb Code    30  keyscan.o(.text)
+    Keyscan_Handler                          0x00209d51   Thumb Code   260  keyscan.o(.text)
+    keyscan_timer_callback                   0x00209e55   Thumb Code   102  keyscan.o(.text)
+    keyscan_init_timer                       0x00209ebb   Thumb Code    64  keyscan.o(.text)
+    handle_keyscan_wakeup                    0x00209efb   Thumb Code   262  keyscan.o(.text)
+    set_passkey                              0x0020a001   Thumb Code    52  key_handler.o(.text)
+    keyboard_handle_pair_event               0x0020a035   Thumb Code   406  key_handler.o(.text)
+    keyboard_handle_press_event              0x0020a1cb   Thumb Code   156  key_handler.o(.text)
+    keyboard_handle_release_event            0x0020a267   Thumb Code    34  key_handler.o(.text)
+    gpio_button_pinmux_config                0x0020a2a5   Thumb Code     8  keyboard_button.o(.text)
+    gpio_button_pad_config                   0x0020a2ad   Thumb Code    36  keyboard_button.o(.text)
+    gpio_button_enter_dlps_config            0x0020a2d1   Thumb Code    22  keyboard_button.o(.text)
+    gpio_button_exit_dlps_config             0x0020a2e7   Thumb Code    22  keyboard_button.o(.text)
+    keyboard_button_init                     0x0020a2fd   Thumb Code   112  keyboard_button.o(.text)
+    longpress_timeout                        0x0020a36d   Thumb Code   130  keyboard_button.o(.text)
+    longpress_timer_init                     0x0020a3ef   Thumb Code    30  keyboard_button.o(.text)
+    stop_longpress_timer                     0x0020a40d   Thumb Code    18  keyboard_button.o(.text)
+    start_longpress_timer                    0x0020a41f   Thumb Code    18  keyboard_button.o(.text)
+    GPIO20_Handler                           0x0020a431   Thumb Code   178  keyboard_button.o(.text)
+    handle_pair_button_event                 0x0020a4e3   Thumb Code    14  keyboard_button.o(.text)
+    handle_pair_button_wakeup                0x0020a4f1   Thumb Code    48  keyboard_button.o(.text)
+    adv_led_timeout                          0x0020a56d   Thumb Code   134  keyboard_led.o(.text)
+    adv_led_timer_init                       0x0020a5f3   Thumb Code    30  keyboard_led.o(.text)
+    start_adv_led_timer                      0x0020a611   Thumb Code    52  keyboard_led.o(.text)
+    stop_adv_led_timer                       0x0020a645   Thumb Code    40  keyboard_led.o(.text)
+    reset_adv_count                          0x0020a66d   Thumb Code    30  keyboard_led.o(.text)
+    keyboard_led_init                        0x0020a68b   Thumb Code    40  keyboard_led.o(.text)
+    capslock_led_on                          0x0020a6b3   Thumb Code    22  keyboard_led.o(.text)
+    capslock_led_off                         0x0020a6c9   Thumb Code    22  keyboard_led.o(.text)
+    keyboard_start_adv                       0x0020a6fd   Thumb Code   152  profile_init.o(.text)
+    keyboard_update_con_para                 0x0020a795   Thumb Code   138  profile_init.o(.text)
+    connection_param_updata_timer_init       0x0020a81f   Thumb Code    28  profile_init.o(.text)
+    stop_con_update_timer                    0x0020a83b   Thumb Code    16  profile_init.o(.text)
+    start_con_update_timer                   0x0020a84b   Thumb Code    16  profile_init.o(.text)
+    privacy_modify_resolving_list            0x0020a88d   Thumb Code   284  privacy_mgnt.o(.text)
+    privacy_add_device                       0x0020a9a9   Thumb Code   144  privacy_mgnt.o(.text)
+    privacy_handle_le_privacy_modify_resolv_list_rsp 0x0020aa39   Thumb Code    40  privacy_mgnt.o(.text)
+    privacy_handle_le_privacy_resolution_status_info 0x0020aa61   Thumb Code    24  privacy_mgnt.o(.text)
+    privacy_msg_callback                     0x0020aa79   Thumb Code    46  privacy_mgnt.o(.text)
+    privacy_init                             0x0020aaa7   Thumb Code    52  privacy_mgnt.o(.text)
+    privacy_handle_bond_modify_msg           0x0020aadb   Thumb Code    72  privacy_mgnt.o(.text)
+    load_overlay                             0x0020ab41   Thumb Code    76  overlay_mgr.o(.text)
+    get_current_scenario_index               0x0020ab8d   Thumb Code    38  overlay_mgr.o(.text)
+    gap_lib_handle_btif_msg                  0x0020abbd   Thumb Code    24  gap_lib.o(.text)
+    gap_lib_init                             0x0020abd5   Thumb Code    70  gap_lib.o(.text)
+    le_check_privacy_bond                    0x0020ac25   Thumb Code   106  gap_lib_patch.o(.text)
+    le_bond_just_work_confirm                0x0020ac8f   Thumb Code    36  gap_lib_patch.o(.text)
+    le_bond_get_sec_level                    0x0020acb3   Thumb Code    74  gap_lib_patch.o(.text)
+    gap_set_lps_bootup_active_time           0x0020ad09   Thumb Code    52  gap_vendor_cmd.o(.text)
+    lps_get_wakeup_time                      0x0020ad3d   Thumb Code    22  gap_vendor_cmd.o(.text)
+    le_handle_vendor_cmd_rsp                 0x0020ad53   Thumb Code    34  gap_vendor_cmd.o(.text)
+    le_vendor_modify_bt_le_fw_policy         0x0020ad75   Thumb Code    74  gap_vendor_cmd.o(.text)
+    _fp_init                                 0x0020adc9   Thumb Code    10  fpinit.o(x$fpl$fpinit)
+    __fplib_config_fpu_vfp                   0x0020add1   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __fplib_config_pureend_doubles           0x0020add1   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    app_cb_table                             0x0020add4   Data          12  system_rtl8762c.o(.constdata)
+    hids_report_descriptor                   0x0020aed4   Data         147  hids_kb.o(.constdata)
+    hids_cbs                                 0x0020b294   Data          12  hids_kb.o(.constdata)
+    bas_cbs                                  0x0020b310   Data          12  bas.o(.constdata)
+    dis_cbs                                  0x0020b530   Data          12  dis.o(.constdata)
+    GATT_UUID_OTA_SERVICE                    0x0020b53c   Data          16  ota_service.o(.constdata)
+    gattOtaServiceTable                      0x0020b54c   Data         532  ota_service.o(.constdata)
+    OTAServiceCBs                            0x0020b760   Data          12  ota_service.o(.constdata)
+    key_map                                  0x0020b7d6   Data          32  key_handler.o(.constdata)
+    Image$$RAM_DATA_ON$$RW$$Base             0x0020ba34   Number         0  anon$$obj.o ABSOLUTE
+    hids_attr_tbl_len                        0x0020ba34   Data           2  hids_kb.o(.data)
+    hid_info                                 0x0020ba36   Data           4  hids_kb.o(.data)
+    dis_ieee_data_list_len                   0x0020ba3a   Data           1  dis.o(.data)
+    Image$$RAM_DATA_ON$$ZI$$Base             0x0020bad4   Number         0  anon$$obj.o ABSOLUTE
+    user_wdg_cb                              0x0020bad4   Data           4  system_rtl8762c.o(.bss)
+    hid_protocol_mode                        0x0020bad8   Data           1  hids_kb.o(.bss)
+    hid_suspand_mode                         0x0020bad9   Data           1  hids_kb.o(.bss)
+    external_report_refer                    0x0020bada   Data           2  hids_kb.o(.bss)
+    dis_manufacturer_name_len                0x0020bae8   Data           1  dis.o(.bss)
+    dis_model_number_len                     0x0020bae9   Data           1  dis.o(.bss)
+    dis_serial_number_len                    0x0020baea   Data           1  dis.o(.bss)
+    dis_hardware_rev_len                     0x0020baeb   Data           1  dis.o(.bss)
+    dis_firmware_rev_len                     0x0020baec   Data           1  dis.o(.bss)
+    dis_software_rev_len                     0x0020baed   Data           1  dis.o(.bss)
+    pfnOTAExtendedCB                         0x0020bb6c   Data           4  ota_service.o(.bss)
+    patch_version                            0x0020bb70   Data           4  ota_service.o(.bss)
+    app_version                              0x0020bb74   Data           4  ota_service.o(.bss)
+    mac_addr                                 0x0020bb78   Data           6  ota_service.o(.bss)
+    PeriIntStoreReg                          0x0020bba0   Data           4  rtl876x_io_dlps.o(.bss)
+    User_IO_ExitDlpsCB                       0x0020bba4   Data           4  rtl876x_io_dlps.o(.bss)
+    User_IO_EnterDlpsCB                      0x0020bba8   Data           4  rtl876x_io_dlps.o(.bss)
+    CPU_StoreReg                             0x0020bbac   Data         132  rtl876x_io_dlps.o(.bss)
+    Pinmux_StoreReg                          0x0020bc30   Data          40  rtl876x_io_dlps.o(.bss)
+    GPIO_StoreReg                            0x0020bc58   Data          36  rtl876x_io_dlps.o(.bss)
+    app_task_handle                          0x0020bc7c   Data           4  app_task.o(.bss)
+    evt_queue_handle                         0x0020bc80   Data           4  app_task.o(.bss)
+    io_queue_handle                          0x0020bc84   Data           4  app_task.o(.bss)
+    gap_dev_state                            0x0020bc88   Data           1  keyboard_app.o(.bss)
+    gap_conn_state                           0x0020bc89   Data           1  keyboard_app.o(.bss)
+    switch_into_ota_pending                  0x0020bc8a   Data           1  keyboard_app.o(.bss)
+    report_cccd_enable                       0x0020bc8b   Data           1  keyboard_app.o(.bss)
+    resolv_list_exist                        0x0020bc8c   Data           1  keyboard_app.o(.bss)
+    hid_srv_id                               0x0020bc8d   Data           1  keyboard_app.o(.bss)
+    bas_srv_id                               0x0020bc8e   Data           1  keyboard_app.o(.bss)
+    ota_srv_id                               0x0020bc8f   Data           1  keyboard_app.o(.bss)
+    keyboard_con_id                          0x0020bc90   Data           1  keyboard_app.o(.bss)
+    dis_srv_id                               0x0020bc91   Data           1  keyboard_app.o(.bss)
+    keyscan_timer                            0x0020bc94   Data           4  keyscan.o(.bss)
+    keyscan_global_data                      0x0020bc98   Data          44  keyscan.o(.bss)
+    passkey                                  0x0020bcc4   Data           8  key_handler.o(.bss)
+    start_pair_adv                           0x0020bccc   Data           1  keyboard_button.o(.bss)
+    pair_press                               0x0020bccd   Data           1  keyboard_button.o(.bss)
+    longpress_timer                          0x0020bcd0   Data           4  keyboard_button.o(.bss)
+    adv_led_on                               0x0020bcd4   Data           1  keyboard_led.o(.bss)
+    adv_reconnect                            0x0020bcd5   Data           1  keyboard_led.o(.bss)
+    adv_count                                0x0020bcd6   Data           1  keyboard_led.o(.bss)
+    adv_led_timer                            0x0020bcd8   Data           4  keyboard_led.o(.bss)
+    con_update_timer                         0x0020bcdc   Data           4  profile_init.o(.bss)
+    privacy_whitelist                        0x0020bce0   Data           1  privacy_mgnt.o(.bss)
+    app_privacy_resolution_state             0x0020bce1   Data           1  privacy_mgnt.o(.bss)
+    scenario_name                            0x0020bce2   Data           8  overlay_mgr.o(.bss)
+    Image$$OVERLAY_A$$RO$$Base               0x0020bcec   Number         0  anon$$obj.o ABSOLUTE
+    Image$$OVERLAY_B$$RO$$Base               0x0020bcec   Number         0  anon$$obj.o ABSOLUTE
+    Image$$OVERLAY_B$$RW$$Base               0x0020bcec   Number         0  anon$$obj.o ABSOLUTE
+    Image$$OVERLAY_B$$ZI$$Base               0x0020bcec   Number         0  anon$$obj.o ABSOLUTE
+    Image$$OVERLAY_C$$RO$$Base               0x0020bcec   Number         0  anon$$obj.o ABSOLUTE
+    Image$$OVERLAY_C$$RW$$Base               0x0020bcec   Number         0  anon$$obj.o ABSOLUTE
+    Image$$OVERLAY_C$$ZI$$Base               0x0020bcec   Number         0  anon$$obj.o ABSOLUTE
+    Image$$OVERLAY_A$$RW$$Base               0x0020bdac   Number         0  anon$$obj.o ABSOLUTE
+    Image$$OVERLAY_A$$ZI$$Base               0x0020bdac   Number         0  anon$$obj.o ABSOLUTE
+    Image$$CACHE_DATA_ON$$RO$$Base           0x0021c000   Number         0  anon$$obj.o ABSOLUTE
+    img_header                               0x0080e000   Data         480  system_rtl8762c.o(.app.flash.header)
+    auth_header                              0x0080e1e0   Data         544  system_rtl8762c.o(.app.flash.header)
+    Image$$FLASH_START_ADDR$$RO$$Base        0x0080e400   Number         0  anon$$obj.o ABSOLUTE
+    Load$$FLASH_START_ADDR$$RO$$Base         0x0080e400   Number         0  anon$$obj.o ABSOLUTE
+    Reset_Handler                            0x0080e401   Thumb Code     4  startup_rtl8762c.o(RESET)
+    __main                                   0x0080e409   Thumb Code     8  __main.o(!!!main)
+    __scatterload                            0x0080e411   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_rt2                        0x0080e411   Thumb Code    44  __scatter.o(!!!scatter)
+    __scatterload_rt2_thumb_only             0x0080e411   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_null                       0x0080e41f   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_copy                       0x0080e445   Thumb Code    26  __scatter_copy.o(!!handler_copy)
+    __scatterload_zeroinit                   0x0080e461   Thumb Code    28  __scatter_zi.o(!!handler_zi)
+    debug_monitor_enable                     0x0080e47d   Thumb Code    30  system_rtl8762c.o(.app.flash.text)
+    ram_init                                 0x0080e49b   Thumb Code    44  system_rtl8762c.o(.app.flash.text)
+    pre_main                                 0x0080e4c7   Thumb Code    68  system_rtl8762c.o(.app.flash.text)
+    SystemInit                               0x0080e50b   Thumb Code   136  system_rtl8762c.o(.app.flash.text)
+    Region$$Table$$Base                      0x0080e610   Number         0  anon$$obj.o(Region$$Table)
+    Load$$RAM_VECTOR_TABLE$$RO$$Base         0x0080e650   Number         0  anon$$obj.o ABSOLUTE
+    Region$$Table$$Limit                     0x0080e650   Number         0  anon$$obj.o(Region$$Table)
+    Load$$RAM_DATA_ON$$RO$$Base              0x0080e744   Number         0  anon$$obj.o ABSOLUTE
+    Load$$RAM_DATA_ON$$RW$$Base              0x00812578   Number         0  anon$$obj.o ABSOLUTE
+    Load$$OVERLAY_A$$RO$$Base                0x00812618   Number         0  anon$$obj.o ABSOLUTE
+    Load$$CACHE_DATA_ON$$RO$$Base            0x008126d8   Number         0  anon$$obj.o ABSOLUTE
+    Load$$OVERLAY_A$$RW$$Base                0x008126d8   Number         0  anon$$obj.o ABSOLUTE
+    Load$$OVERLAY_B$$RO$$Base                0x008126d8   Number         0  anon$$obj.o ABSOLUTE
+    Load$$OVERLAY_B$$RW$$Base                0x008126d8   Number         0  anon$$obj.o ABSOLUTE
+    Load$$OVERLAY_C$$RO$$Base                0x008126d8   Number         0  anon$$obj.o ABSOLUTE
+    Load$$OVERLAY_C$$RW$$Base                0x008126d8   Number         0  anon$$obj.o ABSOLUTE
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x0080e409
+
+  Load Region LOAD_FLASH (Base: 0x0080e000, Size: 0x000046d8, Max: 0x00017000, ABSOLUTE)
+
+    Execution Region RAM_VECTOR_TABLE (Exec base: 0x00200000, Load base: 0x0080e650, Size: 0x000000f4, Max: 0x000000f4, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00200000   0x0080e650   0x000000f4   Data   RO            1    VECTOR              startup_rtl8762c.o
+
+
+    Execution Region RAM_DATA_ON (Exec base: 0x00207c00, Load base: 0x0080e744, Size: 0x000040ec, Max: 0x00008c00, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00207c00   0x0080e744   0x00000002   Code   RO          912    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x00207c02   0x0080e746   0x00000004   Code   RO          913    .ARM.Collect$$libinit$$00000001  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000000   Code   RO          916    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000000   Code   RO          919    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000000   Code   RO          921    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000000   Code   RO          923    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000000   Code   RO          926    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000000   Code   RO          928    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000000   Code   RO          930    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000000   Code   RO          932    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000000   Code   RO          934    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000000   Code   RO          936    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000000   Code   RO          938    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000000   Code   RO          940    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000000   Code   RO          942    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000000   Code   RO          944    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000000   Code   RO          946    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000000   Code   RO          950    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000000   Code   RO          952    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000000   Code   RO          954    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000000   Code   RO          956    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
+    0x00207c06   0x0080e74a   0x00000002   Code   RO          957    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
+    0x00207c08   0x0080e74c   0x00000000   Code   RO          891    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
+    0x00207c08   0x0080e74c   0x00000000   Code   RO          893    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
+    0x00207c08   0x0080e74c   0x00000006   Code   RO          905    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
+    0x00207c0e   0x0080e752   0x00000000   Code   RO          895    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
+    0x00207c0e   0x0080e752   0x00000004   Code   RO          896    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
+    0x00207c12   0x0080e756   0x00000000   Code   RO          898    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
+    0x00207c12   0x0080e756   0x00000008   Code   RO          899    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
+    0x00207c1a   0x0080e75e   0x00000002   PAD
+    0x00207c1c   0x0080e760   0x00000124   Code   RO           17    .ram.dataon.data    system_rtl8762c.o
+    0x00207d40   0x0080e884   0x00000138   Code   RO          284    .ram.dataon.data    rtl876x_io_dlps.o
+    0x00207e78   0x0080e9bc   0x00000050   Code   RO            3    .text               startup_rtl8762c.o
+    0x00207ec8   0x0080ea0c   0x000000c0   Code   RO           18    .text               system_rtl8762c.o
+    0x00207f88   0x0080eacc   0x00000258   Code   RO          145    .text               hids_kb.o
+    0x002081e0   0x0080ed24   0x0000016c   Code   RO          191    .text               bas.o
+    0x0020834c   0x0080ee90   0x00000284   Code   RO          220    .text               dis.o
+    0x002085d0   0x0080f114   0x000002a4   Code   RO          245    .text               ota_service.o
+    0x00208874   0x0080f3b8   0x00000120   Code   RO          285    .text               rtl876x_io_dlps.o
+    0x00208994   0x0080f4d8   0x00000358   Code   RO          341    .text               rtl876x_rcc.o
+    0x00208cec   0x0080f830   0x00000184   Code   RO          369    .text               rtl876x_gpio.o
+    0x00208e70   0x0080f9b4   0x00000174   Code   RO          396    .text               rtl876x_keyscan.o
+    0x00208fe4   0x0080fb28   0x000002d0   Code   RO          423    .text               main.o
+    0x002092b4   0x0080fdf8   0x000000fc   Code   RO          499    .text               app_task.o
+    0x002093b0   0x0080fef4   0x000006d4   Code   RO          525    .text               keyboard_app.o
+    0x00209a84   0x008105c8   0x0000057c   Code   RO          569    .text               keyscan.o
+    0x0020a000   0x00810b44   0x000002a4   Code   RO          607    .text               key_handler.o
+    0x0020a2a4   0x00810de8   0x000002c8   Code   RO          639    .text               keyboard_button.o
+    0x0020a56c   0x008110b0   0x00000190   Code   RO          674    .text               keyboard_led.o
+    0x0020a6fc   0x00811240   0x00000190   Code   RO          702    .text               profile_init.o
+    0x0020a88c   0x008113d0   0x000002b4   Code   RO          727    .text               privacy_mgnt.o
+    0x0020ab40   0x00811684   0x0000007c   Code   RO          747    .text               overlay_mgr.o
+    0x0020abbc   0x00811700   0x00000068   Code   RO          765    .text               gap_utils.lib(gap_lib.o)
+    0x0020ac24   0x00811768   0x000000e4   Code   RO          825    .text               gap_utils.lib(gap_lib_patch.o)
+    0x0020ad08   0x0081184c   0x000000c0   Code   RO          873    .text               gap_utils.lib(gap_vendor_cmd.o)
+    0x0020adc8   0x0081190c   0x0000000a   Code   RO          960    x$fpl$fpinit        fz_wm.l(fpinit.o)
+    0x0020add2   0x00811916   0x00000002   PAD
+    0x0020add4   0x00811918   0x0000000c   Data   RO           22    .constdata          system_rtl8762c.o
+    0x0020ade0   0x00811924   0x000000f4   Data   RO           23    .constdata          system_rtl8762c.o
+    0x0020aed4   0x00811a18   0x000003cc   Data   RO          148    .constdata          hids_kb.o
+    0x0020b2a0   0x00811de4   0x0000007c   Data   RO          194    .constdata          bas.o
+    0x0020b31c   0x00811e60   0x00000220   Data   RO          223    .constdata          dis.o
+    0x0020b53c   0x00812080   0x00000010   Data   RO          250    .constdata          ota_service.o
+    0x0020b54c   0x00812090   0x00000220   Data   RO          251    .constdata          ota_service.o
+    0x0020b76c   0x008122b0   0x00000044   Data   RO          425    .constdata          main.o
+    0x0020b7b0   0x008122f4   0x00000026   Data   RO          502    .constdata          app_task.o
+    0x0020b7d6   0x0081231a   0x00000020   Data   RO          610    .constdata          key_handler.o
+    0x0020b7f6   0x0081233a   0x00000002   PAD
+    0x0020b7f8   0x0081233c   0x00000220   Data   RO           24    .conststring        system_rtl8762c.o
+    0x0020ba18   0x0081255c   0x00000019   Data   RO          749    .conststring        overlay_mgr.o
+    0x0020ba31   0x00812575   0x00000003   PAD
+    0x0020ba34   0x00812578   0x00000006   Data   RW          149    .data               hids_kb.o
+    0x0020ba3a   0x0081257e   0x0000002e   Data   RW          225    .data               dis.o
+    0x0020ba68   0x008125ac   0x0000006c   Data   RW          750    .data               overlay_mgr.o
+    0x0020bad4        -       0x00000004   Zero   RW           21    .bss                system_rtl8762c.o
+    0x0020bad8        -       0x00000008   Zero   RW          147    .bss                hids_kb.o
+    0x0020bae0        -       0x00000008   Zero   RW          193    .bss                bas.o
+    0x0020bae8        -       0x00000084   Zero   RW          222    .bss                dis.o
+    0x0020bb6c        -       0x00000034   Zero   RW          247    .bss                ota_service.o
+    0x0020bba0        -       0x000000dc   Zero   RW          287    .bss                rtl876x_io_dlps.o
+    0x0020bc7c        -       0x0000000c   Zero   RW          501    .bss                app_task.o
+    0x0020bc88        -       0x00000009   Zero   RW          527    .bss                keyboard_app.o
+    0x0020bc91        -       0x00000001   Zero   RW          528    .bss                keyboard_app.o
+    0x0020bc92   0x00812618   0x00000002   PAD
+    0x0020bc94        -       0x00000030   Zero   RW          571    .bss                keyscan.o
+    0x0020bcc4        -       0x00000008   Zero   RW          609    .bss                key_handler.o
+    0x0020bccc        -       0x00000008   Zero   RW          641    .bss                keyboard_button.o
+    0x0020bcd4        -       0x00000008   Zero   RW          676    .bss                keyboard_led.o
+    0x0020bcdc        -       0x00000004   Zero   RW          704    .bss                profile_init.o
+    0x0020bce0        -       0x00000002   Zero   RW          729    .bss                privacy_mgnt.o
+    0x0020bce2        -       0x00000008   Zero   RW          748    .bss                overlay_mgr.o
+
+
+    Execution Region OVERLAY_A (Exec base: 0x0020bcec, Load base: 0x00812618, Size: 0x000000c0, Max: 0xffffffff, OVERLAY)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x0020bcec   0x00812618   0x000000c0   Code   RO           16    .app.overlay_a      system_rtl8762c.o
+
+
+    Execution Region OVERLAY_B (Exec base: 0x0020bcec, Load base: 0x008126d8, Size: 0x00000000, Max: 0xffffffff, OVERLAY)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region OVERLAY_C (Exec base: 0x0020bcec, Load base: 0x008126d8, Size: 0x00000000, Max: 0xffffffff, OVERLAY)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region CACHE_DATA_ON (Exec base: 0x0021c000, Load base: 0x008126d8, Size: 0x00000000, Max: 0x00004000, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region app.bin (Exec base: 0x0080e000, Load base: 0x0080e000, Size: 0x00000400, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x0080e000   0x0080e000   0x00000400   Data   RO           20    .app.flash.header   system_rtl8762c.o
+
+
+    Execution Region APP_FLASH_HEADER_EXT (Exec base: 0x0080e400, Load base: 0x0080e400, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region FLASH_START_ADDR (Exec base: 0x0080e400, Load base: 0x0080e400, Size: 0x00000008, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x0080e400   0x0080e400   0x00000008   Code   RO            2    RESET               startup_rtl8762c.o
+
+
+    Execution Region FLASH_TEXT (Exec base: 0x0080e408, Load base: 0x0080e408, Size: 0x00000248, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x0080e408   0x0080e408   0x00000008   Code   RO          889  * !!!main             c_w.l(__main.o)
+    0x0080e410   0x0080e410   0x00000034   Code   RO         1011    !!!scatter          c_w.l(__scatter.o)
+    0x0080e444   0x0080e444   0x0000001a   Code   RO         1013    !!handler_copy      c_w.l(__scatter_copy.o)
+    0x0080e45e   0x0080e45e   0x00000002   PAD
+    0x0080e460   0x0080e460   0x0000001c   Code   RO         1015    !!handler_zi        c_w.l(__scatter_zi.o)
+    0x0080e47c   0x0080e47c   0x00000194   Code   RO           15    .app.flash.text     system_rtl8762c.o
+    0x0080e610   0x0080e610   0x00000040   Data   RO         1009    Region$$Table       anon$$obj.o
+
+
+
+  Load Region LOAD_APP_TRACE (Base: 0x08800000, Size: 0x00001838, Max: 0x00400000, ABSOLUTE)
+
+    Execution Region App.trace (Exec base: 0x08800000, Load base: 0x08800000, Size: 0x00001838, Max: 0x00400000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08800000   0x08800000   0x0000006a   Data   RO           19    .TRACE              system_rtl8762c.o
+    0x0880006a   0x0880006a   0x00000002   PAD
+    0x0880006c   0x0880006c   0x00000072   Data   RO          146    .TRACE              hids_kb.o
+    0x088000de   0x088000de   0x00000002   PAD
+    0x088000e0   0x088000e0   0x000000ce   Data   RO          192    .TRACE              bas.o
+    0x088001ae   0x088001ae   0x00000002   PAD
+    0x088001b0   0x088001b0   0x0000009e   Data   RO          221    .TRACE              dis.o
+    0x0880024e   0x0880024e   0x00000002   PAD
+    0x08800250   0x08800250   0x00000187   Data   RO          246    .TRACE              ota_service.o
+    0x088003d7   0x088003d7   0x00000001   PAD
+    0x088003d8   0x088003d8   0x0000002a   Data   RO          286    .TRACE              rtl876x_io_dlps.o
+    0x08800402   0x08800402   0x00000002   PAD
+    0x08800404   0x08800404   0x00000027   Data   RO          424    .TRACE              main.o
+    0x0880042b   0x0880042b   0x00000001   PAD
+    0x0880042c   0x0880042c   0x00000038   Data   RO          500    .TRACE              app_task.o
+    0x08800464   0x08800464   0x000008bb   Data   RO          526    .TRACE              keyboard_app.o
+    0x08800d1f   0x08800d1f   0x00000001   PAD
+    0x08800d20   0x08800d20   0x00000377   Data   RO          570    .TRACE              keyscan.o
+    0x08801097   0x08801097   0x00000001   PAD
+    0x08801098   0x08801098   0x000001e8   Data   RO          608    .TRACE              key_handler.o
+    0x08801280   0x08801280   0x00000055   Data   RO          640    .TRACE              keyboard_button.o
+    0x088012d5   0x088012d5   0x00000003   PAD
+    0x088012d8   0x088012d8   0x00000042   Data   RO          675    .TRACE              keyboard_led.o
+    0x0880131a   0x0880131a   0x00000002   PAD
+    0x0880131c   0x0880131c   0x00000054   Data   RO          703    .TRACE              profile_init.o
+    0x08801370   0x08801370   0x000002d5   Data   RO          728    .TRACE              privacy_mgnt.o
+    0x08801645   0x08801645   0x00000003   PAD
+    0x08801648   0x08801648   0x00000165   Data   RO          766    .TRACE              gap_utils.lib(gap_lib.o)
+    0x088017ad   0x088017ad   0x00000003   PAD
+    0x088017b0   0x088017b0   0x00000085   Data   RO          826    .TRACE              gap_utils.lib(gap_lib_patch.o)
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       252         22         94          0         12       2609   app_task.o
+       364         16        330          0          8       5062   bas.o
+       644         50        702         46        132       5956   dis.o
+       600         38       1086          6          8      31544   hids_kb.o
+       676         42        520          0          8       6893   key_handler.o
+      1748         82       2235          0         10       9232   keyboard_app.o
+       712         60         85          0          8       9457   keyboard_button.o
+       400         30         66          0          8       2350   keyboard_led.o
+      1404         52        887          0         48      15069   keyscan.o
+       720         48        107          0          0      37539   main.o
+       676         20        951          0         52      12652   ota_service.o
+       124         10         25        108          8       3696   overlay_mgr.o
+       692         30        725          0          2       5211   privacy_mgnt.o
+       400         50         84          0          4       3109   profile_init.o
+       388         10          0          0          0       8088   rtl876x_gpio.o
+       600         46         42          0        220      33750   rtl876x_io_dlps.o
+       372         16          0          0          0       7145   rtl876x_keyscan.o
+       856         32          0          0          0       3249   rtl876x_rcc.o
+        88         66        244          0          0       1124   startup_rtl8762c.o
+      1080        222       1930          0          4      75118   system_rtl8762c.o
+
+    ----------------------------------------------------------------------
+     12796        942      10204        160        536     278853   Object Totals
+         0          0         64          0          0          0   (incl. Generated)
+         0          0         27          0          4          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         8          0          0          0          0         68   __main.o
+         0          0          0          0          0          0   __rtentry.o
+        12          0          0          0          0          0   __rtentry2.o
+         6          0          0          0          0          0   __rtentry4.o
+        52          8          0          0          0          0   __scatter.o
+        26          0          0          0          0          0   __scatter_copy.o
+        28          0          0          0          0          0   __scatter_zi.o
+         2          0          0          0          0          0   libinit.o
+         6          0          0          0          0          0   libinit2.o
+        10          0          0          0          0        116   fpinit.o
+       104         10        357          0          0      67214   gap_lib.o
+       228         12        133          0          0       4124   gap_lib_patch.o
+       192         10          0          0          0       3052   gap_vendor_cmd.o
+
+    ----------------------------------------------------------------------
+       680         40        496          0          0      74574   Library Totals
+         6          0          6          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       140          8          0          0          0         68   c_w.l
+        10          0          0          0          0        116   fz_wm.l
+       524         32        490          0          0      74390   gap_utils.lib
+
+    ----------------------------------------------------------------------
+       680         40        496          0          0      74574   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     13476        982      10700        160        536     350231   Grand Totals
+     13476        982      10700        160        536     350231   ELF Image Totals
+     13476        982      10700        160          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                24176 (  23.61kB)
+    Total RW  Size (RW Data + ZI Data)               696 (   0.68kB)
+    Total ROM Size (Code + RO Data + RW Data)      24336 (  23.77kB)
+
+==============================================================================
+

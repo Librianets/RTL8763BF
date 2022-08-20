@@ -1,0 +1,17 @@
+.\objects\privacy_mgnt.o: ..\..\..\src\app\keyboard\privacy_mgnt.c
+.\objects\privacy_mgnt.o: ..\..\..\inc\platform\app_define.h
+.\objects\privacy_mgnt.o: ..\..\..\inc\platform\trace.h
+.\objects\privacy_mgnt.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\privacy_mgnt.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\privacy_mgnt.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\privacy_mgnt.o: ..\..\..\inc\bluetooth\gap\gap.h
+.\objects\privacy_mgnt.o: ..\..\..\inc\bluetooth\gap\bt_types.h
+.\objects\privacy_mgnt.o: ..\..\..\src\app\keyboard\privacy_mgnt.h
+.\objects\privacy_mgnt.o: ..\..\..\inc\bluetooth\gap\gap_bond_le.h
+.\objects\privacy_mgnt.o: ..\..\..\inc\bluetooth\gap\gap_le.h
+.\objects\privacy_mgnt.o: ..\..\..\inc\bluetooth\gap\gap_callback_le.h
+.\objects\privacy_mgnt.o: ..\..\..\inc\bluetooth\gap\gap_storage_le.h
+.\objects\privacy_mgnt.o: ..\..\..\inc\bluetooth\gap\gap_le_types.h
+.\objects\privacy_mgnt.o: ..\..\..\inc\bluetooth\gap\gap_privacy.h
+.\objects\privacy_mgnt.o: ..\..\..\inc\bluetooth\gap\gap_conn_le.h
+.\objects\privacy_mgnt.o: ..\..\..\inc\bluetooth\gap\gap_msg.h

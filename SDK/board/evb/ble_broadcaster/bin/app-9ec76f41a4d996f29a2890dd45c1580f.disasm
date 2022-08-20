@@ -1,0 +1,2921 @@
+
+========================================================================
+
+** ELF Header Information
+
+    File Name: F:\zhoulonghui\Project-201902-before\À¶ÑÀMESH\REALTEK\SDK\00011936-BEE2-SDK-v1.0.2\BEE2-SDK-v1.0.2\board\evb\ble_broadcaster\Objects\app.axf
+
+    Machine class: ELFCLASS32 (32-bit)
+    Data encoding: ELFDATA2LSB (Little endian)
+    Header version: EV_CURRENT (Current version)
+    Operating System ABI: none
+    ABI Version: 0
+    File Type: ET_EXEC (Executable) (2)
+    Machine: EM_ARM (ARM)
+
+    Image Entry point: 0x0080e409
+    Flags: EF_ARM_HASENTRY + EF_ARM_ABI_FLOAT_HARD (0x05000402)
+
+    ARM ELF revision: 5 (ABI version 2)
+
+    Conforms to Hard float procedure-call standard
+
+    Built with
+    Component: ARM Compiler 5.06 update 6 (build 750) Tool: armasm [4d35ec]
+    Component: ARM Compiler 5.06 update 6 (build 750) Tool: armlink [4d35ed]
+
+    Header size: 52 bytes (0x34)
+    Program header entry size: 32 bytes (0x20)
+    Section header entry size: 40 bytes (0x28)
+
+    Program header entries: 2
+    Section header entries: 22
+
+    Program header offset: 203592 (0x00031b48)
+    Section header offset: 203656 (0x00031b88)
+
+    Section header string table index: 21
+
+========================================================================
+
+** Program header #0 (PT_LOAD) [PF_X + PF_W + PF_R + PF_ARM_ENTRY]
+    Size : 4652 bytes (4624 bytes in file)
+    Virtual address: 0x0080e000 (Alignment 4)
+
+
+====================================
+
+** Program header #1 (PT_LOAD) [PF_R]
+    Size : 676 bytes
+    Virtual address: 0x08800000 (Alignment 4)
+
+
+========================================================================
+
+** Section #1 'app.bin' (SHT_PROGBITS) [SHF_ALLOC]
+    Size   : 1024 bytes (alignment 4)
+    Address: 0x0080e000
+
+    0x80e000:   05 00 01 01 93 27 00 00 00 01 00 00 6d 67 de f1    .....'......mg..
+    0x80e010:   3e 33 e8 11 b1 02 4d 2d f4 0c de 01 00 e4 80 00    >3....M-........
+    0x80e020:   00 e4 80 00 00 00 00 00 00 e0 80 00 00 00 00 00    ................
+    0x80e030:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e040:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e050:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e060:   01 20 00 00 a8 ac 83 2a 73 64 6b 23 23 23 23 23    . .....*sdk#####
+    0x80e070:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e080:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e090:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e0a0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e0b0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e0c0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e0d0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e0e0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e0f0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e100:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e110:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e120:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e130:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e140:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e150:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e160:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e170:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e180:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e190:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e1a0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e1b0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e1c0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e1d0:   00 00 00 00 00 00 00 00 01 d1 85 0e 3c 82 20 00    ............<. .
+    0x80e1e0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e1f0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e200:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e210:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e220:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e230:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e240:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e250:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e260:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e270:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e280:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e290:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e2a0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e2b0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e2c0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e2d0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e2e0:   ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
+    0x80e2f0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e300:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e310:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e320:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e330:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e340:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e350:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e360:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e370:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e380:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e390:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e3a0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e3b0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e3c0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e3d0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e3e0:   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
+    0x80e3f0:   ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff    ................
+
+
+** Section #2 'FLASH_START_ADDR' (SHT_PROGBITS) [SHF_ALLOC + SHF_EXECINSTR]
+    Size   : 8 bytes (alignment 4)
+    Address: 0x0080e400
+
+    $t
+    RESET
+    $v0
+    Reset_Handler
+;;; ..\\..\\..\\src\\mcu\\rtl876x\\arm\\startup_rtl8762c.s
+;;;96                     IMPORT SystemInit
+;;;96                     LDR    R0, =SystemInit
+        0x0080e400:    4800        .H      LDR      r0,[pc,#0] ; [0x80e404] = 0x80e50b
+;;;97                     BX     R0
+        0x0080e402:    4700        .G      BX       r0
+    $d
+        0x0080e404:    0080e50b    ....    DCD    8447243
+
+** Section #3 'FLASH_TEXT' (SHT_PROGBITS) [SHF_ALLOC + SHF_EXECINSTR]
+    Size   : 584 bytes (alignment 4)
+    Address: 0x0080e408
+
+    $t
+    !!!main
+    __main
+        0x0080e408:    f000f802    ....    BL       __scatterload ; 0x80e410
+        0x0080e40c:    f5f9f3fc    ....    BL       __rt_entry ; 0x207c08
+    !!!scatter
+    __scatterload
+    __scatterload_rt2
+    __scatterload_rt2_thumb_only
+        0x0080e410:    a00a        ..      ADR      r0,{pc}+0x2c ; 0x80e43c
+        0x0080e412:    e8900c00    ....    LDM      r0,{r10,r11}
+        0x0080e416:    4482        .D      ADD      r10,r10,r0
+        0x0080e418:    4483        .D      ADD      r11,r11,r0
+        0x0080e41a:    f1aa0701    ....    SUB      r7,r10,#1
+    __scatterload_null
+        0x0080e41e:    45da        .E      CMP      r10,r11
+        0x0080e420:    d101        ..      BNE      0x80e426 ; __scatterload_null + 8
+        0x0080e422:    f5f9f3f1    ....    BL       __rt_entry ; 0x207c08
+        0x0080e426:    f2af0e09    ....    ADR      lr,{pc}-7 ; 0x80e41f
+        0x0080e42a:    e8ba000f    ....    LDM      r10!,{r0-r3}
+        0x0080e42e:    f0130f01    ....    TST      r3,#1
+        0x0080e432:    bf18        ..      IT       NE
+        0x0080e434:    1afb        ..      SUBNE    r3,r7,r3
+        0x0080e436:    f0430301    C...    ORR      r3,r3,#1
+        0x0080e43a:    4718        .G      BX       r3
+    $d
+        0x0080e43c:    000001d4    ....    DCD    468
+        0x0080e440:    00000214    ....    DCD    532
+    $t
+    !!handler_copy
+    __scatterload_copy
+        0x0080e444:    3a10        .:      SUBS     r2,r2,#0x10
+        0x0080e446:    bf24        $.      ITT      CS
+        0x0080e448:    c878        x.      LDMCS    r0!,{r3-r6}
+        0x0080e44a:    c178        x.      STMCS    r1!,{r3-r6}
+        0x0080e44c:    d8fa        ..      BHI      __scatterload_copy ; 0x80e444
+        0x0080e44e:    0752        R.      LSLS     r2,r2,#29
+        0x0080e450:    bf24        $.      ITT      CS
+        0x0080e452:    c830        0.      LDMCS    r0!,{r4,r5}
+        0x0080e454:    c130        0.      STMCS    r1!,{r4,r5}
+        0x0080e456:    bf44        D.      ITT      MI
+        0x0080e458:    6804        .h      LDRMI    r4,[r0,#0]
+        0x0080e45a:    600c        .`      STRMI    r4,[r1,#0]
+        0x0080e45c:    4770        pG      BX       lr
+        0x0080e45e:    0000        ..      MOVS     r0,r0
+    !!handler_zi
+    __scatterload_zeroinit
+        0x0080e460:    2300        .#      MOVS     r3,#0
+        0x0080e462:    2400        .$      MOVS     r4,#0
+        0x0080e464:    2500        .%      MOVS     r5,#0
+        0x0080e466:    2600        .&      MOVS     r6,#0
+        0x0080e468:    3a10        .:      SUBS     r2,r2,#0x10
+        0x0080e46a:    bf28        (.      IT       CS
+        0x0080e46c:    c178        x.      STMCS    r1!,{r3-r6}
+        0x0080e46e:    d8fb        ..      BHI      0x80e468 ; __scatterload_zeroinit + 8
+        0x0080e470:    0752        R.      LSLS     r2,r2,#29
+        0x0080e472:    bf28        (.      IT       CS
+        0x0080e474:    c130        0.      STMCS    r1!,{r4,r5}
+        0x0080e476:    bf48        H.      IT       MI
+        0x0080e478:    600b        .`      STRMI    r3,[r1,#0]
+        0x0080e47a:    4770        pG      BX       lr
+    .app.flash.text
+    debug_monitor_enable
+;;;1734           SCB->SHP[((uint32_t)(IRQn) & 0xF) - 4] = ((priority << (8 - __NVIC_PRIO_BITS)) & 0xff);
+        0x0080e47c:    4945        EI      LDR      r1,[pc,#276] ; [0x80e594] = 0xe000e00c
+        0x0080e47e:    2060        `       MOVS     r0,#0x60
+        0x0080e480:    f8810d14    ....    STRB     r0,[r1,#0xd14]
+;;; .\..\..\..\src\mcu\rtl876x\system_rtl8762c.c
+;;;298        CoreDebug->DEMCR |= CoreDebug_DEMCR_MON_EN_Msk | CoreDebug_DEMCR_TRCENA_Msk;
+        0x0080e484:    4844        DH      LDR      r0,[pc,#272] ; [0x80e598] = 0xe000edfc
+        0x0080e486:    6801        .h      LDR      r1,[r0,#0]
+        0x0080e488:    4a44        DJ      LDR      r2,[pc,#272] ; [0x80e59c] = 0x1010000
+        0x0080e48a:    4311        .C      ORRS     r1,r1,r2
+        0x0080e48c:    6001        .`      STR      r1,[r0,#0]
+;;;299    
+;;;300        //set DWT compare registers (max 4 comparators)
+;;;301        //watch_point_0_setting(0x1000180C, DWT_DATAVSIZE_WORD, DWT_FUNCTION_WRITE);
+;;;302        //watch_point_1_setting(0x10000004, DWT_DATAVSIZE_WORD, DWT_FUNCTION_READ_OR_WRITE);
+;;;303        //watch_point_2_setting(0x10000008, DWT_DATAVSIZE_WORD, DWT_FUNCTION_READ_OR_WRITE);
+;;;304        //watch_point_3_setting(0x1000000C, DWT_DATAVSIZE_WORD, DWT_FUNCTION_READ_OR_WRITE);
+;;;305    
+;;;306        //enable DWT control register
+;;;307        DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;
+        0x0080e48e:    4844        DH      LDR      r0,[pc,#272] ; [0x80e5a0] = 0xe0001000
+        0x0080e490:    6801        .h      LDR      r1,[r0,#0]
+        0x0080e492:    f0410101    A...    ORR      r1,r1,#1
+        0x0080e496:    6001        .`      STR      r1,[r0,#0]
+;;;308    
+;;;309        return;
+;;;310    }
+        0x0080e498:    4770        pG      BX       lr
+    ram_init
+;;;311    
+;;;312    APP_FLASH_TEXT_SECTION
+;;;313    void ram_init(void)
+;;;314    {
+        0x0080e49a:    b510        ..      PUSH     {r4,lr}
+;;;315        //copy data on ro
+;;;316        extern char Image$$RAM_DATA_ON$$RO$$Base[];
+;;;317        extern char Load$$RAM_DATA_ON$$RO$$Base[];
+;;;318        extern unsigned int Image$$RAM_DATA_ON$$RO$$Length;
+;;;319    
+;;;320        memcpy(Image$$RAM_DATA_ON$$RO$$Base,
+        0x0080e49c:    4a41        AJ      LDR      r2,[pc,#260] ; [0x80e5a4] = 0x9a0
+        0x0080e49e:    4942        BI      LDR      r1,[pc,#264] ; [0x80e5a8] = 0x80e744
+        0x0080e4a0:    4842        BH      LDR      r0,[pc,#264] ; [0x80e5ac] = 0x207c00
+        0x0080e4a2:    f44bf4fa    K...    BL       __aeabi_memcpy ; 0x59e9a
+;;;321               Load$$RAM_DATA_ON$$RO$$Base,
+;;;322               (unsigned int)&Image$$RAM_DATA_ON$$RO$$Length);
+;;;323    
+;;;324        //copy data on rw
+;;;325        extern char Image$$RAM_DATA_ON$$RW$$Base[];
+;;;326        extern char Load$$RAM_DATA_ON$$RW$$Base[];
+;;;327        extern unsigned int Image$$RAM_DATA_ON$$RW$$Length;
+;;;328    
+;;;329        memcpy(Image$$RAM_DATA_ON$$RW$$Base,
+        0x0080e4a6:    4a42        BJ      LDR      r2,[pc,#264] ; [0x80e5b0] = 0x6c
+        0x0080e4a8:    4942        BI      LDR      r1,[pc,#264] ; [0x80e5b4] = 0x80f0e4
+        0x0080e4aa:    4843        CH      LDR      r0,[pc,#268] ; [0x80e5b8] = 0x2085a0
+        0x0080e4ac:    f44bf4f5    K...    BL       __aeabi_memcpy ; 0x59e9a
+;;;330               Load$$RAM_DATA_ON$$RW$$Base,
+;;;331               (unsigned int)&Image$$RAM_DATA_ON$$RW$$Length);
+;;;332    
+;;;333        //clear data on zi
+;;;334        extern char Image$$RAM_DATA_ON$$ZI$$Base[];
+;;;335        extern unsigned int Image$$RAM_DATA_ON$$ZI$$Length;
+;;;336    
+;;;337        memset(Image$$RAM_DATA_ON$$ZI$$Base,
+        0x0080e4b0:    4942        BI      LDR      r1,[pc,#264] ; [0x80e5bc] = 0x1c
+        0x0080e4b2:    4843        CH      LDR      r0,[pc,#268] ; [0x80e5c0] = 0x20860c
+        0x0080e4b4:    f44bf5b2    K...    BL       __aeabi_memclr ; 0x5a01c
+;;;338               0,
+;;;339               (unsigned int)&Image$$RAM_DATA_ON$$ZI$$Length);
+;;;340    
+;;;341        //copy cache ro
+;;;342        extern char Image$$CACHE_DATA_ON$$RO$$Base[];
+;;;343        extern char Load$$CACHE_DATA_ON$$RO$$Base[];
+;;;344        extern unsigned int Image$$CACHE_DATA_ON$$RO$$Length;
+;;;345    
+;;;346        memcpy(Image$$CACHE_DATA_ON$$RO$$Base,
+        0x0080e4b8:    e8bd4010    ...@    POP      {r4,lr}
+        0x0080e4bc:    4a41        AJ      LDR      r2,[pc,#260] ; [0x80e5c4] = 0
+        0x0080e4be:    4942        BI      LDR      r1,[pc,#264] ; [0x80e5c8] = 0x80f210
+        0x0080e4c0:    4842        BH      LDR      r0,[pc,#264] ; [0x80e5cc] = 0x21c000
+        0x0080e4c2:    f44bb4ea    K...    B        __aeabi_memcpy ; 0x59e9a
+    pre_main
+;;;347               Load$$CACHE_DATA_ON$$RO$$Base,
+;;;348               (unsigned int)&Image$$CACHE_DATA_ON$$RO$$Length);
+;;;349    }
+;;;350    
+;;;351    APP_FLASH_TEXT_SECTION
+;;;352    void SystemInit(void)
+;;;353    {
+;;;354        //init pre_main and main functions
+;;;355        extern void pre_main(void);
+;;;356        app_pre_main = (APP_MAIN_FUNC)pre_main;
+;;;357        app_main = (APP_MAIN_FUNC)common_main;
+;;;358    
+;;;359        /******** update otp here**********/
+;;;360        //ram config
+;;;361        OTP->appDataSize = APP_GLOBAL_SIZE;
+;;;362        OTP->heapDataONSize = HEAP_DATA_ON_SIZE;
+;;;363        /* not share: SHARE_CACHE_RAM_0K; 8K: SHARE_CACHE_RAM_8K; 16K: SHARE_CACHE_RAM_16K */
+;;;364    #if ((16 * 1024) == SHARE_CACHE_RAM_SIZE)
+;;;365        OTP->share_cache_ram_reg = SHARE_CACHE_RAM_16K;
+;;;366    #elif ((8 * 1024) == SHARE_CACHE_RAM_SIZE)
+;;;367        OTP->share_cache_ram_reg = SHARE_CACHE_RAM_8K;
+;;;368    #else
+;;;369        OTP->share_cache_ram_reg = SHARE_CACHE_RAM_0K;
+;;;370    #endif
+;;;371    
+;;;372    
+;;;373        //flash config
+;;;374        /*config enable flash block proect depending on flash layout and flash id*/
+;;;375    #if (FLASH_BLOCK_PROTECT_ENABLE == 1)
+;;;376        OTP->bp_enable = 1;
+;;;377    #else
+;;;378        OTP->bp_enable = 0;
+;;;379    #endif
+;;;380        OTP->delay_10us_after_toggle_cs = AFTER_TOGGLE_CS_DELAY;
+;;;381    
+;;;382    
+;;;383        //os config
+;;;384        /*config enable check task stack overflow*/
+;;;385    #if (CHECK_STACK_OVERFLOW_ENABLE == 1)
+;;;386        OTP->checkForStackOverflow = 1;
+;;;387    #else
+;;;388        OTP->checkForStackOverflow = 0;
+;;;389    #endif
+;;;390    
+;;;391    
+;;;392        //platform config
+;;;393        /*config enable platform assert*/
+;;;394    #if (PLATFORM_ASSERT_ENABLE == 1)
+;;;395        OTP->enableASSERT = 1;
+;;;396    #else
+;;;397        OTP->enableASSERT = 0;
+;;;398    #endif
+;;;399    
+;;;400        /*Print all log in log buffer before entering DLPS */
+;;;401    #if (CHECK_LOG_BUFFER_BEFORE_DLPS_ENABLE == 1)
+;;;402        OTP->printAllLogBeforeEnterDLPS = 1;
+;;;403    #else
+;;;404        OTP->printAllLogBeforeEnterDLPS = 0;
+;;;405    #endif
+;;;406    
+;;;407        /*config enable log or not*/
+;;;408    #if (CONFIG_LOG_FUNCTION_ENABLE == 1)
+;;;409        OTP->logDisable = 0;
+;;;410    #else
+;;;411        OTP->logDisable = 1;
+;;;412    #endif
+;;;413    
+;;;414        /*config enable swd pinmux*/
+;;;415    #if (SWD_PINMUX_ENABLE == 1)
+;;;416        OTP->SWD_ENABLE = 1;
+;;;417    #else
+;;;418        OTP->SWD_ENABLE = 0;
+;;;419    #endif
+;;;420    
+;;;421        /*config enable watch dog in rom*/
+;;;422    #if (ROM_WATCH_DOG_ENABLE == 1)
+;;;423        OTP->wdgEnableInRom = 1;
+;;;424    #else
+;;;425        OTP->wdgEnableInRom = 0;
+;;;426    #endif
+;;;427    
+;;;428        /*config watch dog mode in rom, defualt reset all*/
+;;;429        OTP->wdgMode = ROM_WATCH_DOG_MODE;
+;;;430    
+;;;431    
+;;;432        //app config
+;;;433        OTP->ota_timeout_total = OTA_TIMEOUT_TOTAL;
+;;;434        OTP->ota_timeout_wait4_conn = OTA_TIMEOUT_WAIT4_CONN;
+;;;435        OTP->ota_timeout_wait4_image_transfer = OTA_TIMEOUT_WAIT4_IMAGE_TRANS;
+;;;436        OTP->ota_timeout_ctittv = OTA_TIMEOUT_CTITTV;
+;;;437    
+;;;438        /*config bt stack parameters in rom*/
+;;;439    #ifdef BT_STACK_CONFIG_ENABLE
+;;;440        bt_stack_config_init();
+;;;441    #endif
+;;;442    
+;;;443    //add more otp config here
+;;;444    }
+;;;445    
+;;;446    APP_FLASH_TEXT_SECTION
+;;;447    void pre_main(void)
+;;;448    {
+        0x0080e4c6:    b538        8.      PUSH     {r3-r5,lr}
+;;;449        __disable_irq();
+        0x0080e4c8:    b672        r.      CPSID    i
+;;;450    
+;;;451        ram_init();
+        0x0080e4ca:    f7ffffe6    ....    BL       ram_init ; 0x80e49a
+;;;452    
+;;;453        load_overlay(OVERLAY_SCENARIO_BOOT_ONCE);
+        0x0080e4ce:    2000        .       MOVS     r0,#0
+        0x0080e4d0:    f5f9f5dc    ....    BL       load_overlay ; 0x20808c
+;;;454    
+;;;455        setlocale(LC_ALL, "C");
+        0x0080e4d4:    a13e        >.      ADR      r1,{pc}+0xfc ; 0x80e5d0
+        0x0080e4d6:    201f        .       MOVS     r0,#0x1f
+        0x0080e4d8:    f44bf48c    K...    BL       setlocale ; 0x59df4
+;;;456    
+;;;457        BOOT_PRINT_ERROR2("SDK Ver: %s, Build Time: %s",
+        0x0080e4dc:    f04f5505    O..U    MOV      r5,#0x21400000
+        0x0080e4e0:    a13c        <.      ADR      r1,{pc}+0xf4 ; 0x80e5d4
+        0x0080e4e2:    4628        (F      MOV      r0,r5
+        0x0080e4e4:    f7f9dcc1    ....    BL       trace_string ; 0x7e6a
+        0x0080e4e8:    4604        .F      MOV      r4,r0
+        0x0080e4ea:    a141        A.      ADR      r1,{pc}+0x106 ; 0x80e5f0
+        0x0080e4ec:    4628        (F      MOV      r0,r5
+        0x0080e4ee:    f7f9dcbc    ....    BL       trace_string ; 0x7e6a
+        0x0080e4f2:    4603        .F      MOV      r3,r0
+        0x0080e4f4:    2202        ."      MOVS     r2,#2
+        0x0080e4f6:    4940        @I      LDR      r1,[pc,#256] ; [0x80e5f8] = 0x8800000
+        0x0080e4f8:    4840        @H      LDR      r0,[pc,#256] ; [0x80e5fc] = 0x21100300
+        0x0080e4fa:    9400        ..      STR      r4,[sp,#0]
+        0x0080e4fc:    f7f9daaf    ....    BL       log_buffer ; 0x7a5e
+;;;458                          TRACE_STRING(VERSION_BUILD_STR),
+;;;459                          TRACE_STRING(BUILDING_TIME));
+;;;460    
+;;;461        AppUpdateVectorTable();
+        0x0080e500:    f5faf092    ....    BL       AppUpdateVectorTable ; 0x208628
+;;;462    
+;;;463        debug_monitor_enable();
+        0x0080e504:    e8bd4038    ..8@    POP      {r3-r5,lr}
+        0x0080e508:    e7b8        ..      B        debug_monitor_enable ; 0x80e47c
+    SystemInit
+;;; .\..\..\..\src\mcu\rtl876x\system_rtl8762c.c (356)
+        0x0080e50a:    f2af0045    ..E.    ADR      r0,{pc}-0x43 ; 0x80e4c7
+        0x0080e50e:    493c        <I      LDR      r1,[pc,#240] ; [0x80e600] = 0x200c38
+;;;357        app_main = (APP_MAIN_FUNC)common_main;
+        0x0080e510:    6008        .`      STR      r0,[r1,#0]
+        0x0080e512:    493d        =I      LDR      r1,[pc,#244] ; [0x80e608] = 0x200c3c
+        0x0080e514:    483b        ;H      LDR      r0,[pc,#236] ; [0x80e604] = 0x207d91
+;;;358    
+;;;359        /******** update otp here**********/
+;;;360        //ram config
+;;;361        OTP->appDataSize = APP_GLOBAL_SIZE;
+        0x0080e516:    6008        .`      STR      r0,[r1,#0]
+        0x0080e518:    f44f1000    O...    MOV      r0,#0x200000
+        0x0080e51c:    f44f410c    O..A    MOV      r1,#0x8c00
+;;;362        OTP->heapDataONSize = HEAP_DATA_ON_SIZE;
+        0x0080e520:    f8c01384    ....    STR      r1,[r0,#0x384]
+        0x0080e524:    f44f41f0    O..A    MOV      r1,#0x7800
+;;;363        /* not share: SHARE_CACHE_RAM_0K; 8K: SHARE_CACHE_RAM_8K; 16K: SHARE_CACHE_RAM_16K */
+;;;364    #if ((16 * 1024) == SHARE_CACHE_RAM_SIZE)
+;;;365        OTP->share_cache_ram_reg = SHARE_CACHE_RAM_16K;
+        0x0080e528:    f8c01388    ....    STR      r1,[r0,#0x388]
+        0x0080e52c:    4937        7I      LDR      r1,[pc,#220] ; [0x80e60c] = 0xa2aa0003
+;;;366    #elif ((8 * 1024) == SHARE_CACHE_RAM_SIZE)
+;;;367        OTP->share_cache_ram_reg = SHARE_CACHE_RAM_8K;
+;;;368    #else
+;;;369        OTP->share_cache_ram_reg = SHARE_CACHE_RAM_0K;
+;;;370    #endif
+;;;371    
+;;;372    
+;;;373        //flash config
+;;;374        /*config enable flash block proect depending on flash layout and flash id*/
+;;;375    #if (FLASH_BLOCK_PROTECT_ENABLE == 1)
+;;;376        OTP->bp_enable = 1;
+;;;377    #else
+;;;378        OTP->bp_enable = 0;
+        0x0080e52e:    f8c013cc    ....    STR      r1,[r0,#0x3cc]
+        0x0080e532:    f890134d    ..M.    LDRB     r1,[r0,#0x34d]
+        0x0080e536:    f0210108    !...    BIC      r1,r1,#8
+        0x0080e53a:    f880134d    ..M.    STRB     r1,[r0,#0x34d]
+;;;379    #endif
+;;;380        OTP->delay_10us_after_toggle_cs = AFTER_TOGGLE_CS_DELAY;
+        0x0080e53e:    2106        .!      MOVS     r1,#6
+        0x0080e540:    f880134f    ..O.    STRB     r1,[r0,#0x34f]
+;;;381    
+;;;382    
+;;;383        //os config
+;;;384        /*config enable check task stack overflow*/
+;;;385    #if (CHECK_STACK_OVERFLOW_ENABLE == 1)
+;;;386        OTP->checkForStackOverflow = 1;
+        0x0080e544:    f8901378    ..x.    LDRB     r1,[r0,#0x378]
+;;;387    #else
+;;;388        OTP->checkForStackOverflow = 0;
+;;;389    #endif
+;;;390    
+;;;391    
+;;;392        //platform config
+;;;393        /*config enable platform assert*/
+;;;394    #if (PLATFORM_ASSERT_ENABLE == 1)
+;;;395        OTP->enableASSERT = 1;
+;;;396    #else
+;;;397        OTP->enableASSERT = 0;
+;;;398    #endif
+;;;399    
+;;;400        /*Print all log in log buffer before entering DLPS */
+;;;401    #if (CHECK_LOG_BUFFER_BEFORE_DLPS_ENABLE == 1)
+;;;402        OTP->printAllLogBeforeEnterDLPS = 1;
+        0x0080e548:    f0410126    A.&.    ORR      r1,r1,#0x26
+        0x0080e54c:    f8801378    ..x.    STRB     r1,[r0,#0x378]
+;;;403    #else
+;;;404        OTP->printAllLogBeforeEnterDLPS = 0;
+;;;405    #endif
+;;;406    
+;;;407        /*config enable log or not*/
+;;;408    #if (CONFIG_LOG_FUNCTION_ENABLE == 1)
+;;;409        OTP->logDisable = 0;
+        0x0080e550:    f890139a    ....    LDRB     r1,[r0,#0x39a]
+        0x0080e554:    f0210101    !...    BIC      r1,r1,#1
+        0x0080e558:    f880139a    ....    STRB     r1,[r0,#0x39a]
+;;;410    #else
+;;;411        OTP->logDisable = 1;
+;;;412    #endif
+;;;413    
+;;;414        /*config enable swd pinmux*/
+;;;415    #if (SWD_PINMUX_ENABLE == 1)
+;;;416        OTP->SWD_ENABLE = 1;
+        0x0080e55c:    f8901334    ..4.    LDRB     r1,[r0,#0x334]
+        0x0080e560:    f0410101    A...    ORR      r1,r1,#1
+        0x0080e564:    f8801334    ..4.    STRB     r1,[r0,#0x334]
+;;;417    #else
+;;;418        OTP->SWD_ENABLE = 0;
+;;;419    #endif
+;;;420    
+;;;421        /*config enable watch dog in rom*/
+;;;422    #if (ROM_WATCH_DOG_ENABLE == 1)
+;;;423        OTP->wdgEnableInRom = 1;
+;;;424    #else
+;;;425        OTP->wdgEnableInRom = 0;
+        0x0080e568:    f890137a    ..z.    LDRB     r1,[r0,#0x37a]
+        0x0080e56c:    f0210110    !...    BIC      r1,r1,#0x10
+;;;426    #endif
+;;;427    
+;;;428        /*config watch dog mode in rom, defualt reset all*/
+;;;429        OTP->wdgMode = ROM_WATCH_DOG_MODE;
+        0x0080e570:    f04101c0    A...    ORR      r1,r1,#0xc0
+        0x0080e574:    f880137a    ..z.    STRB     r1,[r0,#0x37a]
+;;;430    
+;;;431    
+;;;432        //app config
+;;;433        OTP->ota_timeout_total = OTA_TIMEOUT_TOTAL;
+        0x0080e578:    21b4        .!      MOVS     r1,#0xb4
+        0x0080e57a:    f8801320    .. .    STRB     r1,[r0,#0x320]
+;;;434        OTP->ota_timeout_wait4_conn = OTA_TIMEOUT_WAIT4_CONN;
+        0x0080e57e:    213c        <!      MOVS     r1,#0x3c
+        0x0080e580:    f8801321    ..!.    STRB     r1,[r0,#0x321]
+;;;435        OTP->ota_timeout_wait4_image_transfer = OTA_TIMEOUT_WAIT4_IMAGE_TRANS;
+        0x0080e584:    2164        d!      MOVS     r1,#0x64
+        0x0080e586:    f8801322    ..".    STRB     r1,[r0,#0x322]
+;;;436        OTP->ota_timeout_ctittv = OTA_TIMEOUT_CTITTV;
+        0x0080e58a:    21ff        .!      MOVS     r1,#0xff
+        0x0080e58c:    f8801323    ..#.    STRB     r1,[r0,#0x323]
+;;;437    
+;;;438        /*config bt stack parameters in rom*/
+;;;439    #ifdef BT_STACK_CONFIG_ENABLE
+;;;440        bt_stack_config_init();
+;;;441    #endif
+;;;442    
+;;;443    //add more otp config here
+;;;444    }
+        0x0080e590:    4770        pG      BX       lr
+    $d
+        0x0080e592:    0000        ..      DCW    0
+        0x0080e594:    e000e00c    ....    DCD    3758153740
+        0x0080e598:    e000edfc    ....    DCD    3758157308
+        0x0080e59c:    01010000    ....    DCD    16842752
+        0x0080e5a0:    e0001000    ....    DCD    3758100480
+        0x0080e5a4:    000009a0    ....    DCD    2464
+        0x0080e5a8:    0080e744    D...    DCD    8447812
+        0x0080e5ac:    00207c00    .| .    DCD    2128896
+        0x0080e5b0:    0000006c    l...    DCD    108
+        0x0080e5b4:    0080f0e4    ....    DCD    8450276
+        0x0080e5b8:    002085a0    .. .    DCD    2131360
+        0x0080e5bc:    0000001c    ....    DCD    28
+        0x0080e5c0:    0020860c    .. .    DCD    2131468
+        0x0080e5c4:    00000000    ....    DCD    0
+        0x0080e5c8:    0080f210    ....    DCD    8450576
+        0x0080e5cc:    0021c000    ..!.    DCD    2211840
+        0x0080e5d0:    00000043    C...    DCD    67
+        0x0080e5d4:    20697246    Fri     DCD    543781446
+        0x0080e5d8:    20706553    Sep     DCD    544236883
+        0x0080e5dc:    31203132    21 1    DCD    824193330
+        0x0080e5e0:    31303a33    3:01    DCD    825244211
+        0x0080e5e4:    2037313a    :17     DCD    540487994
+        0x0080e5e8:    38313032    2018    DCD    942747698
+        0x0080e5ec:    00000000    ....    DCD    0
+        0x0080e5f0:    2e302e31    1.0.    DCD    774909489
+        0x0080e5f4:    00302e32    2.0.    DCD    3157554
+        0x0080e5f8:    08800000    ....    DCD    142606336
+        0x0080e5fc:    21100300    ...!    DCD    554697472
+        0x0080e600:    00200c38    8. .    DCD    2100280
+        0x0080e604:    00207d91    .} .    DCD    2129297
+        0x0080e608:    00200c3c    <. .    DCD    2100284
+        0x0080e60c:    a2aa0003    ....    DCD    2729050115
+    $d.realdata
+    Region$$Table$$Base
+        0x0080e610:    0080e650    P...    DCD    8447568
+        0x0080e614:    00200000    .. .    DCD    2097152
+        0x0080e618:    000000f4    ....    DCD    244
+        0x0080e61c:    0080e444    D...    DCD    8447044
+        0x0080e620:    0080e744    D...    DCD    8447812
+        0x0080e624:    00207c00    .| .    DCD    2128896
+        0x0080e628:    000009a0    ....    DCD    2464
+        0x0080e62c:    0080e444    D...    DCD    8447044
+        0x0080e630:    0080f0e4    ....    DCD    8450276
+        0x0080e634:    002085a0    .. .    DCD    2131360
+        0x0080e638:    0000006c    l...    DCD    108
+        0x0080e63c:    0080e444    D...    DCD    8447044
+        0x0080e640:    0080f150    P...    DCD    8450384
+        0x0080e644:    0020860c    .. .    DCD    2131468
+        0x0080e648:    0000001c    ....    DCD    28
+        0x0080e64c:    0080e460    `...    DCD    8447072
+    Region$$Table$$Limit
+
+** Section #4 'RAM_VECTOR_TABLE' (SHT_PROGBITS) [SHF_ALLOC]
+    Size   : 244 bytes (alignment 4)
+    Address: 0x00200000
+
+    0x200000:   00 38 20 00 01 e4 80 00 41 7d 20 00 41 7d 20 00    .8 .....A} .A} .
+    0x200010:   41 7d 20 00 41 7d 20 00 41 7d 20 00 00 00 00 00    A} .A} .A} .....
+    0x200020:   00 00 00 00 00 00 00 00 00 00 00 00 41 7d 20 00    ............A} .
+    0x200030:   41 7d 20 00 00 00 00 00 41 7d 20 00 41 7d 20 00    A} .....A} .A} .
+    0x200040:   41 7d 20 00 41 7d 20 00 41 7d 20 00 41 7d 20 00    A} .A} .A} .A} .
+    0x200050:   41 7d 20 00 41 7d 20 00 41 7d 20 00 41 7d 20 00    A} .A} .A} .A} .
+    0x200060:   41 7d 20 00 41 7d 20 00 41 7d 20 00 41 7d 20 00    A} .A} .A} .A} .
+    0x200070:   41 7d 20 00 41 7d 20 00 41 7d 20 00 41 7d 20 00    A} .A} .A} .A} .
+    0x200080:   41 7d 20 00 41 7d 20 00 41 7d 20 00 41 7d 20 00    A} .A} .A} .A} .
+    0x200090:   41 7d 20 00 41 7d 20 00 41 7d 20 00 41 7d 20 00    A} .A} .A} .A} .
+    0x2000a0:   41 7d 20 00 41 7d 20 00 1d 7c 20 00 69 7c 20 00    A} .A} ..| .i| .
+    0x2000b0:   41 7d 20 00 b5 7c 20 00 f9 7c 20 00 41 7d 20 00    A} ..| ..| .A} .
+    0x2000c0:   41 7d 20 00 41 7d 20 00 41 7d 20 00 41 7d 20 00    A} .A} .A} .A} .
+    0x2000d0:   41 7d 20 00 41 7d 20 00 41 7d 20 00 41 7d 20 00    A} .A} .A} .A} .
+    0x2000e0:   41 7d 20 00 41 7d 20 00 41 7d 20 00 41 7d 20 00    A} .A} .A} .A} .
+    0x2000f0:   41 7d 20 00                                        A} .
+
+    __Vectors_End
+
+** Section #5 'RAM_DATA_ON' (SHT_PROGBITS) [SHF_ALLOC + SHF_EXECINSTR]
+    Size   : 2464 bytes (alignment 4)
+    Address: 0x00207c00
+
+    $t
+    .ARM.Collect$$libinit$$00000000
+    __rt_lib_init
+        0x00207c00:    b51f        ..      PUSH     {r0-r4,lr}
+    .ARM.Collect$$libinit$$00000001
+    __rt_lib_init_fp_1
+        0x00207c02:    f000fb15    ....    BL       _fp_init ; 0x208230
+    .ARM.Collect$$libinit$$00000004
+    .ARM.Collect$$libinit$$0000000A
+    .ARM.Collect$$libinit$$0000000C
+    .ARM.Collect$$libinit$$0000000E
+    .ARM.Collect$$libinit$$00000011
+    .ARM.Collect$$libinit$$00000013
+    .ARM.Collect$$libinit$$00000015
+    .ARM.Collect$$libinit$$00000017
+    .ARM.Collect$$libinit$$00000019
+    .ARM.Collect$$libinit$$0000001B
+    .ARM.Collect$$libinit$$0000001D
+    .ARM.Collect$$libinit$$0000001F
+    .ARM.Collect$$libinit$$00000021
+    .ARM.Collect$$libinit$$00000023
+    .ARM.Collect$$libinit$$00000025
+    .ARM.Collect$$libinit$$0000002C
+    .ARM.Collect$$libinit$$0000002E
+    .ARM.Collect$$libinit$$00000030
+    .ARM.Collect$$libinit$$00000032
+    .ARM.Collect$$libinit$$00000033
+    __rt_lib_init_alloca_1
+    __rt_lib_init_argv_1
+    __rt_lib_init_atexit_1
+    __rt_lib_init_clock_1
+    __rt_lib_init_cpp_1
+    __rt_lib_init_exceptions_1
+    __rt_lib_init_fp_trap_1
+    __rt_lib_init_getenv_1
+    __rt_lib_init_heap_1
+    __rt_lib_init_lc_collate_1
+    __rt_lib_init_lc_ctype_1
+    __rt_lib_init_lc_monetary_1
+    __rt_lib_init_lc_numeric_1
+    __rt_lib_init_lc_time_1
+    __rt_lib_init_preinit_1
+    __rt_lib_init_rand_1
+    __rt_lib_init_return
+    __rt_lib_init_signal_1
+    __rt_lib_init_stdio_1
+    __rt_lib_init_user_alloc_1
+        0x00207c06:    bd1f        ..      POP      {r0-r4,pc}
+    .ARM.Collect$$rtentry$$00000000
+    .ARM.Collect$$rtentry$$00000002
+    .ARM.Collect$$rtentry$$00000004
+    __rt_entry
+    __rt_entry_presh_1
+    __rt_entry_sh
+        0x00207c08:    f000f8a2    ....    BL       __user_setup_stackheap ; 0x207d50
+        0x00207c0c:    4611        .F      MOV      r1,r2
+    .ARM.Collect$$rtentry$$00000009
+    .ARM.Collect$$rtentry$$0000000A
+    __rt_entry_li
+    __rt_entry_postsh_1
+        0x00207c0e:    f7fffff7    ....    BL       __rt_lib_init ; 0x207c00
+    .ARM.Collect$$rtentry$$0000000C
+    .ARM.Collect$$rtentry$$0000000D
+    __rt_entry_main
+    __rt_entry_postli_1
+        0x00207c12:    f000fa28    ..(.    BL       main ; 0x208066
+        0x00207c16:    f653f905    S...    BL       exit ; 0x5ae24
+        0x00207c1a:    0000        ..      MOVS     r0,r0
+    .ram.dataon.data
+    GPIO_Group3_Handler
+;;;537        uint32_t GPIOIrqStatus = GPIO->INTSTATUS;
+        0x00207c1c:    4847        GH      LDR      r0,[pc,#284] ; [0x207d3c] = 0x40001000
+;;; .\..\..\..\src\mcu\rtl876x\system_rtl8762c.c (536)
+        0x00207c1e:    b510        ..      PUSH     {r4,lr}
+        0x00207c20:    6c04        .l      LDR      r4,[r0,#0x40]
+        0x00207c22:    0720         .      LSLS     r0,r4,#28
+        0x00207c24:    d501        ..      BPL      0x207c2a ; GPIO_Group3_Handler + 14
+;;;537        uint32_t GPIOIrqStatus = GPIO->INTSTATUS;
+;;;538    
+;;;539        //Check exact IRQ function
+;;;540        if (GPIOIrqStatus & BIT3)
+;;;541        {
+;;;542            GPIO3_Handler();
+        0x00207c26:    f000f88b    ....    BL       ADC_Handler ; 0x207d40
+;;;543        }
+;;;544        if (GPIOIrqStatus & BIT7)
+        0x00207c2a:    0620         .      LSLS     r0,r4,#24
+        0x00207c2c:    d501        ..      BPL      0x207c32 ; GPIO_Group3_Handler + 22
+;;;545        {
+;;;546            GPIO7_Handler();
+        0x00207c2e:    f000f887    ....    BL       ADC_Handler ; 0x207d40
+;;;547        }
+;;;548        if (GPIOIrqStatus & BIT11)
+        0x00207c32:    0520         .      LSLS     r0,r4,#20
+        0x00207c34:    d501        ..      BPL      0x207c3a ; GPIO_Group3_Handler + 30
+;;;549        {
+;;;550            GPIO11_Handler();
+        0x00207c36:    f000f883    ....    BL       ADC_Handler ; 0x207d40
+;;;551        }
+;;;552        if (GPIOIrqStatus & BIT15)
+        0x00207c3a:    0420         .      LSLS     r0,r4,#16
+        0x00207c3c:    d501        ..      BPL      0x207c42 ; GPIO_Group3_Handler + 38
+;;;553        {
+;;;554            GPIO15_Handler();
+        0x00207c3e:    f000f87f    ....    BL       ADC_Handler ; 0x207d40
+;;;555        }
+;;;556        if (GPIOIrqStatus & BIT19)
+        0x00207c42:    0320         .      LSLS     r0,r4,#12
+        0x00207c44:    d501        ..      BPL      0x207c4a ; GPIO_Group3_Handler + 46
+;;;557        {
+;;;558            GPIO19_Handler();
+        0x00207c46:    f000f87b    ..{.    BL       ADC_Handler ; 0x207d40
+;;;559        }
+;;;560        if (GPIOIrqStatus & BIT23)
+        0x00207c4a:    0220         .      LSLS     r0,r4,#8
+        0x00207c4c:    d501        ..      BPL      0x207c52 ; GPIO_Group3_Handler + 54
+;;;561        {
+;;;562            GPIO23_Handler();
+        0x00207c4e:    f000f877    ..w.    BL       ADC_Handler ; 0x207d40
+;;;563        }
+;;;564        if (GPIOIrqStatus & BIT27)
+        0x00207c52:    0120         .      LSLS     r0,r4,#4
+        0x00207c54:    d501        ..      BPL      0x207c5a ; GPIO_Group3_Handler + 62
+;;;565        {
+;;;566            GPIO27_Handler();
+        0x00207c56:    f000f873    ..s.    BL       ADC_Handler ; 0x207d40
+;;;567        }
+;;;568        if (GPIOIrqStatus & BIT31)
+        0x00207c5a:    2c00        .,      CMP      r4,#0
+        0x00207c5c:    da03        ..      BGE      0x207c66 ; GPIO_Group3_Handler + 74
+;;;569        {
+;;;570            GPIO31_Handler();
+        0x00207c5e:    e8bd4010    ...@    POP      {r4,lr}
+        0x00207c62:    f000b86d    ..m.    B.W      ADC_Handler ; 0x207d40
+;;;571        }
+;;;572    }
+        0x00207c66:    bd10        ..      POP      {r4,pc}
+    GPIO_Group2_Handler
+;;;573    /**
+;;;574     * @brief  GPIO Group2 Handler
+;;;575     * @param  none
+;;;576     * @return none
+;;;577      */
+;;;578    DATA_RAM_FUNCTION void GPIO_Group2_Handler(void)
+;;;579    {
+;;;580        uint32_t GPIOIrqStatus = GPIO->INTSTATUS;
+        0x00207c68:    4834        4H      LDR      r0,[pc,#208] ; [0x207d3c] = 0x40001000
+;;; .\..\..\..\src\mcu\rtl876x\system_rtl8762c.c (579)
+        0x00207c6a:    b510        ..      PUSH     {r4,lr}
+        0x00207c6c:    6c04        .l      LDR      r4,[r0,#0x40]
+        0x00207c6e:    0760        `.      LSLS     r0,r4,#29
+        0x00207c70:    d501        ..      BPL      0x207c76 ; GPIO_Group2_Handler + 14
+;;;580        uint32_t GPIOIrqStatus = GPIO->INTSTATUS;
+;;;581    
+;;;582        //Check exact IRQ function
+;;;583        if (GPIOIrqStatus & BIT2)
+;;;584        {
+;;;585            GPIO2_Handler();
+        0x00207c72:    f000f865    ..e.    BL       ADC_Handler ; 0x207d40
+;;;586        }
+;;;587        if (GPIOIrqStatus & BIT6)
+        0x00207c76:    0660        `.      LSLS     r0,r4,#25
+        0x00207c78:    d501        ..      BPL      0x207c7e ; GPIO_Group2_Handler + 22
+;;;588        {
+;;;589            GPIO6_Handler();
+        0x00207c7a:    f000f861    ..a.    BL       ADC_Handler ; 0x207d40
+;;;590        }
+;;;591        if (GPIOIrqStatus & BIT10)
+        0x00207c7e:    0560        `.      LSLS     r0,r4,#21
+        0x00207c80:    d501        ..      BPL      0x207c86 ; GPIO_Group2_Handler + 30
+;;;592        {
+;;;593            GPIO10_Handler();
+        0x00207c82:    f000f85d    ..].    BL       ADC_Handler ; 0x207d40
+;;;594        }
+;;;595        if (GPIOIrqStatus & BIT14)
+        0x00207c86:    0460        `.      LSLS     r0,r4,#17
+        0x00207c88:    d501        ..      BPL      0x207c8e ; GPIO_Group2_Handler + 38
+;;;596        {
+;;;597            GPIO14_Handler();
+        0x00207c8a:    f000f859    ..Y.    BL       ADC_Handler ; 0x207d40
+;;;598        }
+;;;599        if (GPIOIrqStatus & BIT18)
+        0x00207c8e:    0360        `.      LSLS     r0,r4,#13
+        0x00207c90:    d501        ..      BPL      0x207c96 ; GPIO_Group2_Handler + 46
+;;;600        {
+;;;601            GPIO18_Handler();
+        0x00207c92:    f000f855    ..U.    BL       ADC_Handler ; 0x207d40
+;;;602        }
+;;;603        if (GPIOIrqStatus & BIT22)
+        0x00207c96:    0260        `.      LSLS     r0,r4,#9
+        0x00207c98:    d501        ..      BPL      0x207c9e ; GPIO_Group2_Handler + 54
+;;;604        {
+;;;605            GPIO22_Handler();
+        0x00207c9a:    f000f851    ..Q.    BL       ADC_Handler ; 0x207d40
+;;;606        }
+;;;607        if (GPIOIrqStatus & BIT26)
+        0x00207c9e:    0160        `.      LSLS     r0,r4,#5
+        0x00207ca0:    d501        ..      BPL      0x207ca6 ; GPIO_Group2_Handler + 62
+;;;608        {
+;;;609            GPIO26_Handler();
+        0x00207ca2:    f000f84d    ..M.    BL       ADC_Handler ; 0x207d40
+;;;610        }
+;;;611        if (GPIOIrqStatus & BIT30)
+        0x00207ca6:    0060        `.      LSLS     r0,r4,#1
+        0x00207ca8:    d503        ..      BPL      0x207cb2 ; GPIO_Group2_Handler + 74
+;;;612        {
+;;;613            GPIO30_Handler();
+        0x00207caa:    e8bd4010    ...@    POP      {r4,lr}
+        0x00207cae:    f000b847    ..G.    B.W      ADC_Handler ; 0x207d40
+;;;614        }
+;;;615    }
+        0x00207cb2:    bd10        ..      POP      {r4,pc}
+    GPIO_Group1_Handler
+;;;616    /**
+;;;617     * @brief  GPIO Group1 Handler
+;;;618     * @param  none
+;;;619     * @return none
+;;;620      */
+;;;621    DATA_RAM_FUNCTION void GPIO_Group1_Handler(void)
+;;;622    {
+;;;623        uint32_t GPIOIrqStatus = GPIO->INTSTATUS;
+        0x00207cb4:    4821        !H      LDR      r0,[pc,#132] ; [0x207d3c] = 0x40001000
+;;; .\..\..\..\src\mcu\rtl876x\system_rtl8762c.c (622)
+        0x00207cb6:    b510        ..      PUSH     {r4,lr}
+        0x00207cb8:    6c04        .l      LDR      r4,[r0,#0x40]
+        0x00207cba:    07a0        ..      LSLS     r0,r4,#30
+        0x00207cbc:    d501        ..      BPL      0x207cc2 ; GPIO_Group1_Handler + 14
+;;;623        uint32_t GPIOIrqStatus = GPIO->INTSTATUS;
+;;;624    
+;;;625        //Check exact IRQ function
+;;;626        if (GPIOIrqStatus & BIT1)
+;;;627        {
+;;;628            GPIO1_Handler();
+        0x00207cbe:    f000f83f    ..?.    BL       ADC_Handler ; 0x207d40
+;;;629        }
+;;;630        if (GPIOIrqStatus & BIT9)
+        0x00207cc2:    05a0        ..      LSLS     r0,r4,#22
+        0x00207cc4:    d501        ..      BPL      0x207cca ; GPIO_Group1_Handler + 22
+;;;631        {
+;;;632            GPIO9_Handler();
+        0x00207cc6:    f000f83b    ..;.    BL       ADC_Handler ; 0x207d40
+;;;633        }
+;;;634        if (GPIOIrqStatus & BIT13)
+        0x00207cca:    04a0        ..      LSLS     r0,r4,#18
+        0x00207ccc:    d501        ..      BPL      0x207cd2 ; GPIO_Group1_Handler + 30
+;;;635        {
+;;;636            GPIO13_Handler();
+        0x00207cce:    f000f837    ..7.    BL       ADC_Handler ; 0x207d40
+;;;637        }
+;;;638        if (GPIOIrqStatus & BIT17)
+        0x00207cd2:    03a0        ..      LSLS     r0,r4,#14
+        0x00207cd4:    d501        ..      BPL      0x207cda ; GPIO_Group1_Handler + 38
+;;;639        {
+;;;640            GPIO17_Handler();
+        0x00207cd6:    f000f833    ..3.    BL       ADC_Handler ; 0x207d40
+;;;641        }
+;;;642        if (GPIOIrqStatus & BIT21)
+        0x00207cda:    02a0        ..      LSLS     r0,r4,#10
+        0x00207cdc:    d501        ..      BPL      0x207ce2 ; GPIO_Group1_Handler + 46
+;;;643        {
+;;;644            GPIO21_Handler();
+        0x00207cde:    f000f82f    ../.    BL       ADC_Handler ; 0x207d40
+;;;645        }
+;;;646        if (GPIOIrqStatus & BIT25)
+        0x00207ce2:    01a0        ..      LSLS     r0,r4,#6
+        0x00207ce4:    d501        ..      BPL      0x207cea ; GPIO_Group1_Handler + 54
+;;;647        {
+;;;648            GPIO25_Handler();
+        0x00207ce6:    f000f82b    ..+.    BL       ADC_Handler ; 0x207d40
+;;;649        }
+;;;650        if (GPIOIrqStatus & BIT29)
+        0x00207cea:    00a0        ..      LSLS     r0,r4,#2
+        0x00207cec:    d503        ..      BPL      0x207cf6 ; GPIO_Group1_Handler + 66
+;;;651        {
+;;;652            GPIO29_Handler();
+        0x00207cee:    e8bd4010    ...@    POP      {r4,lr}
+        0x00207cf2:    f000b825    ..%.    B.W      ADC_Handler ; 0x207d40
+;;;653        }
+;;;654    }
+        0x00207cf6:    bd10        ..      POP      {r4,pc}
+    GPIO_Group0_Handler
+;;;655    /**
+;;;656     * @brief  GPIO Group0 Handler
+;;;657     * @param  none
+;;;658     * @return none
+;;;659      */
+;;;660    DATA_RAM_FUNCTION void GPIO_Group0_Handler(void)
+;;;661    {
+;;;662        uint32_t GPIOIrqStatus = GPIO->INTSTATUS;
+        0x00207cf8:    4810        .H      LDR      r0,[pc,#64] ; [0x207d3c] = 0x40001000
+;;; .\..\..\..\src\mcu\rtl876x\system_rtl8762c.c (661)
+        0x00207cfa:    b510        ..      PUSH     {r4,lr}
+        0x00207cfc:    6c04        .l      LDR      r4,[r0,#0x40]
+        0x00207cfe:    07e0        ..      LSLS     r0,r4,#31
+        0x00207d00:    d001        ..      BEQ      0x207d06 ; GPIO_Group0_Handler + 14
+;;;662        uint32_t GPIOIrqStatus = GPIO->INTSTATUS;
+;;;663    
+;;;664        //Check exact IRQ function
+;;;665        if (GPIOIrqStatus & BIT0)
+;;;666        {
+;;;667            GPIO0_Handler();
+        0x00207d02:    f000f81d    ....    BL       ADC_Handler ; 0x207d40
+;;;668        }
+;;;669        if (GPIOIrqStatus & BIT8)
+        0x00207d06:    05e0        ..      LSLS     r0,r4,#23
+        0x00207d08:    d501        ..      BPL      0x207d0e ; GPIO_Group0_Handler + 22
+;;;670        {
+;;;671            GPIO8_Handler();
+        0x00207d0a:    f000f819    ....    BL       ADC_Handler ; 0x207d40
+;;;672        }
+;;;673        if (GPIOIrqStatus & BIT12)
+        0x00207d0e:    04e0        ..      LSLS     r0,r4,#19
+        0x00207d10:    d501        ..      BPL      0x207d16 ; GPIO_Group0_Handler + 30
+;;;674        {
+;;;675            GPIO12_Handler();
+        0x00207d12:    f000f815    ....    BL       ADC_Handler ; 0x207d40
+;;;676        }
+;;;677        if (GPIOIrqStatus & BIT16)
+        0x00207d16:    03e0        ..      LSLS     r0,r4,#15
+        0x00207d18:    d501        ..      BPL      0x207d1e ; GPIO_Group0_Handler + 38
+;;;678        {
+;;;679            GPIO16_Handler();
+        0x00207d1a:    f000f811    ....    BL       ADC_Handler ; 0x207d40
+;;;680        }
+;;;681        if (GPIOIrqStatus & BIT20)
+        0x00207d1e:    02e0        ..      LSLS     r0,r4,#11
+        0x00207d20:    d501        ..      BPL      0x207d26 ; GPIO_Group0_Handler + 46
+;;;682        {
+;;;683            GPIO20_Handler();
+        0x00207d22:    f000f80d    ....    BL       ADC_Handler ; 0x207d40
+;;;684        }
+;;;685        if (GPIOIrqStatus & BIT24)
+        0x00207d26:    01e0        ..      LSLS     r0,r4,#7
+        0x00207d28:    d501        ..      BPL      0x207d2e ; GPIO_Group0_Handler + 54
+;;;686        {
+;;;687            GPIO24_Handler();
+        0x00207d2a:    f000f809    ....    BL       ADC_Handler ; 0x207d40
+;;;688        }
+;;;689        if (GPIOIrqStatus & BIT28)
+        0x00207d2e:    00e0        ..      LSLS     r0,r4,#3
+        0x00207d30:    d503        ..      BPL      0x207d3a ; GPIO_Group0_Handler + 66
+;;;690        {
+;;;691            GPIO28_Handler();
+        0x00207d32:    e8bd4010    ...@    POP      {r4,lr}
+        0x00207d36:    f000b803    ....    B.W      ADC_Handler ; 0x207d40
+;;;692        }
+;;;693    }
+        0x00207d3a:    bd10        ..      POP      {r4,pc}
+    $d
+        0x00207d3c:    40001000    ...@    DCD    1073745920
+    $t
+    .text
+    $v0
+    ADC_Handler
+    BTMAC_Handler
+    BusFault_Handler
+    DebugMon_Handler
+    Default_Handler
+    GDMA0_Channel0_Handler
+    GDMA0_Channel1_Handler
+    GDMA0_Channel2_Handler
+    GDMA0_Channel3_Handler
+    GDMA0_Channel4_Handler
+    GDMA0_Channel5_Handler
+    GPIO0_Handler
+    GPIO10_Handler
+    GPIO11_Handler
+    GPIO12_Handler
+    GPIO13_Handler
+    GPIO14_Handler
+    GPIO15_Handler
+    GPIO16_Handler
+    GPIO17_Handler
+    GPIO18_Handler
+    GPIO19_Handler
+    GPIO1_Handler
+    GPIO20_Handler
+    GPIO21_Handler
+    GPIO22_Handler
+    GPIO23_Handler
+    GPIO24_Handler
+    GPIO25_Handler
+    GPIO26_Handler
+    GPIO27_Handler
+    GPIO28_Handler
+    GPIO29_Handler
+    GPIO2_Handler
+    GPIO30_Handler
+    GPIO31_Handler
+    GPIO3_Handler
+    GPIO4_Handler
+    GPIO5_Handler
+    GPIO6_Handler
+    GPIO7_Handler
+    GPIO8_Handler
+    GPIO9_Handler
+    HardFault_Handler
+    I2C0_Handler
+    I2C1_Handler
+    I2S0_RX_Handler
+    I2S0_TX_Handler
+    I2S1_RX_Handler
+    I2S1_TX_Handler
+    IR_Handler
+    Keyscan_Handler
+    LCD_Handler
+    LPCOMP_Handler
+    MemManage_Handler
+    NMI_Handler
+    PTA_Mailbox_Handler
+    PendSV_Handler
+    Peripheral_Handler
+    Qdecode_Handler
+    RTC_Handler
+    SPI0_Handler
+    SPI1_Handler
+    SPI2W_Handler
+    SPI_Flash_Handler
+    SVC_Handler
+    SysTick_Handler
+    System_Handler
+    Timer2_Handler
+    Timer3_Handler
+    Timer4_7_Handler
+    Timer4_Handler
+    Timer5_Handler
+    Timer6_Handler
+    Timer7_Handler
+    UART0_Handler
+    UART1_Handler
+    UART2_Handler
+    UsageFault_Handler
+    WDG_Handler
+;;; ..\\..\\..\\src\\mcu\\rtl876x\\arm\\startup_rtl8762c.s
+;;;276                    LDR    R0, =0x20000000
+        0x00207d40:    f04f5000    O..P    MOV      r0,#0x20000000
+;;;277                    LDR    R1, =DEFAULT_HANDLER_TXT
+        0x00207d44:    4910        .I      LDR      r1,[pc,#64] ; [0x207d88] = 0x207d52
+;;;278                    MRS    R2, IPSR
+        0x00207d46:    f3ef8205    ....    MRS      r2,IPSR
+;;;279                    LDR    R3, =log_direct
+        0x00207d4a:    4b10        .K      LDR      r3,[pc,#64] ; [0x207d8c] = 0x79b1
+;;;280                    BLX    R3
+        0x00207d4c:    4798        .G      BLX      r3
+;;;281                    B      .
+        0x00207d4e:    e7fe        ..      B        0x207d4e ; ADC_Handler + 14
+    __user_setup_stackheap
+;;;282    
+;;;283                    ENDP
+;;;284    
+;;;285    
+;;;286    ; User Initial Stack
+;;;287                    EXPORT  __user_setup_stackheap
+;;;288    __user_setup_stackheap PROC
+;;;289                    BX      LR
+        0x00207d50:    4770        pG      BX       lr
+    $d
+    DEFAULT_HANDLER_TXT
+        0x00207d52:    7245        Er      DCW    29253
+        0x00207d54:    21726f72    ror!    DCD    561147762
+        0x00207d58:    656c5020     Ple    DCD    1701597216
+        0x00207d5c:    20657361    ase     DCD    543519585
+        0x00207d60:    6c706d69    impl    DCD    1819307369
+        0x00207d64:    6e656d65    emen    DCD    1852140901
+        0x00207d68:    6f792074    t yo    DCD    1870209140
+        0x00207d6c:    49207275    ur I    DCD    1226863221
+        0x00207d70:    48205253    SR H    DCD    1210077779
+        0x00207d74:    6c646e61    andl    DCD    1818521185
+        0x00207d78:    66207265    er f    DCD    1713402469
+        0x00207d7c:    4920726f    or I    DCD    1226863215
+        0x00207d80:    25205152    RQ %    DCD    622874962
+        0x00207d84:    000a2164    d!..    DCD    663908
+        0x00207d88:    00207d52    R} .    DCD    2129234
+        0x00207d8c:    000079b1    .y..    DCD    31153
+    $t
+    .text
+    common_main
+;;; .\..\..\..\src\mcu\rtl876x\system_rtl8762c.c
+;;;253    {
+        0x00207d90:    b510        ..      PUSH     {r4,lr}
+;;;254    //add common system code here before enter user defined main function
+;;;255        OTP->run_in_app = 1;
+        0x00207d92:    f44f1000    O...    MOV      r0,#0x200000
+        0x00207d96:    f890139b    ....    LDRB     r1,[r0,#0x39b]
+        0x00207d9a:    f0410180    A...    ORR      r1,r1,#0x80
+        0x00207d9e:    f880139b    ....    STRB     r1,[r0,#0x39b]
+;;;256    
+;;;257    #if (RUN_APP_IN_HCIMODE_ENABLE == 0)
+;;;258        if (OTP->stack_en)
+        0x00207da2:    f89002dc    ....    LDRB     r0,[r0,#0x2dc]
+        0x00207da6:    07c1        ..      LSLS     r1,r0,#31
+;;;259        {
+;;;260            DBG_DIRECT("In SoC Mode");
+        0x00207da8:    f04f5004    O..P    MOV      r0,#0x21000000
+        0x00207dac:    d003        ..      BEQ      0x207db6 ; common_main + 38
+        0x00207dae:    a119        ..      ADR      r1,{pc}+0x66 ; 0x207e14
+        0x00207db0:    f5fffdfe    ....    BL       log_direct ; 0x79b0
+        0x00207db4:    e006        ..      B        0x207dc4 ; common_main + 52
+;;;261        }
+;;;262        else
+;;;263        {
+;;;264            DBG_DIRECT("WARNING: In HCI Mode, will not run APP Task");
+        0x00207db6:    a11a        ..      ADR      r1,{pc}+0x6a ; 0x207e20
+        0x00207db8:    f5fffdfa    ....    BL       log_direct ; 0x79b0
+;;;265    		WDG_Disable();
+        0x00207dbc:    f609fdc1    ....    BL       WDG_Disable ; 0x11942
+;;;266            os_sched_start();
+        0x00207dc0:    f61efcff    ....    BL       os_sched_start ; 0x267c2
+;;;267        }
+;;;268    #endif
+;;;269    
+;;;270    #if (DEBUG_TASK_HANG_ENABLE == 1)
+;;;271        extern void DebugTaskHang(void);  //defined in debug_platform.c
+;;;272        DebugTaskHang();
+;;;273    #endif
+;;;274    
+;;;275    #if (DEBUG_DLPS_ERROR_IN_APP_ENABLE == 1)
+;;;276        void dlps_debug_swtimer_init(void);  //defined in debug_platform.c
+;;;277        dlps_debug_swtimer_init();
+;;;278    #endif
+;;;279    
+;;;280        extern int main(void);
+;;;281        main();
+        0x00207dc4:    e8bd4010    ...@    POP      {r4,lr}
+        0x00207dc8:    f000b94d    ..M.    B.W      main ; 0x208066
+    WDG_SystemReset
+;;;282    }
+;;;283    /**
+;;;284     * @brief  Enable Debug Monitor Function (include NVIC Enable and DWT configuration)
+;;;285     * @param  none
+;;;286     * @return none
+;;;287     */
+;;;288    
+;;;289    APP_FLASH_TEXT_SECTION
+;;;290    void debug_monitor_enable(void)
+;;;291    {
+;;;292        //DBG_DIRECT("debug_monitor_enable");
+;;;293    
+;;;294        //set debug monitor priority
+;;;295        NVIC_SetPriority(DebugMonitor_IRQn, 3);
+;;;296    
+;;;297        //enable exception and monitor control register
+;;;298        CoreDebug->DEMCR |= CoreDebug_DEMCR_MON_EN_Msk | CoreDebug_DEMCR_TRCENA_Msk;
+;;;299    
+;;;300        //set DWT compare registers (max 4 comparators)
+;;;301        //watch_point_0_setting(0x1000180C, DWT_DATAVSIZE_WORD, DWT_FUNCTION_WRITE);
+;;;302        //watch_point_1_setting(0x10000004, DWT_DATAVSIZE_WORD, DWT_FUNCTION_READ_OR_WRITE);
+;;;303        //watch_point_2_setting(0x10000008, DWT_DATAVSIZE_WORD, DWT_FUNCTION_READ_OR_WRITE);
+;;;304        //watch_point_3_setting(0x1000000C, DWT_DATAVSIZE_WORD, DWT_FUNCTION_READ_OR_WRITE);
+;;;305    
+;;;306        //enable DWT control register
+;;;307        DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;
+;;;308    
+;;;309        return;
+;;;310    }
+;;;311    
+;;;312    APP_FLASH_TEXT_SECTION
+;;;313    void ram_init(void)
+;;;314    {
+;;;315        //copy data on ro
+;;;316        extern char Image$$RAM_DATA_ON$$RO$$Base[];
+;;;317        extern char Load$$RAM_DATA_ON$$RO$$Base[];
+;;;318        extern unsigned int Image$$RAM_DATA_ON$$RO$$Length;
+;;;319    
+;;;320        memcpy(Image$$RAM_DATA_ON$$RO$$Base,
+;;;321               Load$$RAM_DATA_ON$$RO$$Base,
+;;;322               (unsigned int)&Image$$RAM_DATA_ON$$RO$$Length);
+;;;323    
+;;;324        //copy data on rw
+;;;325        extern char Image$$RAM_DATA_ON$$RW$$Base[];
+;;;326        extern char Load$$RAM_DATA_ON$$RW$$Base[];
+;;;327        extern unsigned int Image$$RAM_DATA_ON$$RW$$Length;
+;;;328    
+;;;329        memcpy(Image$$RAM_DATA_ON$$RW$$Base,
+;;;330               Load$$RAM_DATA_ON$$RW$$Base,
+;;;331               (unsigned int)&Image$$RAM_DATA_ON$$RW$$Length);
+;;;332    
+;;;333        //clear data on zi
+;;;334        extern char Image$$RAM_DATA_ON$$ZI$$Base[];
+;;;335        extern unsigned int Image$$RAM_DATA_ON$$ZI$$Length;
+;;;336    
+;;;337        memset(Image$$RAM_DATA_ON$$ZI$$Base,
+;;;338               0,
+;;;339               (unsigned int)&Image$$RAM_DATA_ON$$ZI$$Length);
+;;;340    
+;;;341        //copy cache ro
+;;;342        extern char Image$$CACHE_DATA_ON$$RO$$Base[];
+;;;343        extern char Load$$CACHE_DATA_ON$$RO$$Base[];
+;;;344        extern unsigned int Image$$CACHE_DATA_ON$$RO$$Length;
+;;;345    
+;;;346        memcpy(Image$$CACHE_DATA_ON$$RO$$Base,
+;;;347               Load$$CACHE_DATA_ON$$RO$$Base,
+;;;348               (unsigned int)&Image$$CACHE_DATA_ON$$RO$$Length);
+;;;349    }
+;;;350    
+;;;351    APP_FLASH_TEXT_SECTION
+;;;352    void SystemInit(void)
+;;;353    {
+;;;354        //init pre_main and main functions
+;;;355        extern void pre_main(void);
+;;;356        app_pre_main = (APP_MAIN_FUNC)pre_main;
+;;;357        app_main = (APP_MAIN_FUNC)common_main;
+;;;358    
+;;;359        /******** update otp here**********/
+;;;360        //ram config
+;;;361        OTP->appDataSize = APP_GLOBAL_SIZE;
+;;;362        OTP->heapDataONSize = HEAP_DATA_ON_SIZE;
+;;;363        /* not share: SHARE_CACHE_RAM_0K; 8K: SHARE_CACHE_RAM_8K; 16K: SHARE_CACHE_RAM_16K */
+;;;364    #if ((16 * 1024) == SHARE_CACHE_RAM_SIZE)
+;;;365        OTP->share_cache_ram_reg = SHARE_CACHE_RAM_16K;
+;;;366    #elif ((8 * 1024) == SHARE_CACHE_RAM_SIZE)
+;;;367        OTP->share_cache_ram_reg = SHARE_CACHE_RAM_8K;
+;;;368    #else
+;;;369        OTP->share_cache_ram_reg = SHARE_CACHE_RAM_0K;
+;;;370    #endif
+;;;371    
+;;;372    
+;;;373        //flash config
+;;;374        /*config enable flash block proect depending on flash layout and flash id*/
+;;;375    #if (FLASH_BLOCK_PROTECT_ENABLE == 1)
+;;;376        OTP->bp_enable = 1;
+;;;377    #else
+;;;378        OTP->bp_enable = 0;
+;;;379    #endif
+;;;380        OTP->delay_10us_after_toggle_cs = AFTER_TOGGLE_CS_DELAY;
+;;;381    
+;;;382    
+;;;383        //os config
+;;;384        /*config enable check task stack overflow*/
+;;;385    #if (CHECK_STACK_OVERFLOW_ENABLE == 1)
+;;;386        OTP->checkForStackOverflow = 1;
+;;;387    #else
+;;;388        OTP->checkForStackOverflow = 0;
+;;;389    #endif
+;;;390    
+;;;391    
+;;;392        //platform config
+;;;393        /*config enable platform assert*/
+;;;394    #if (PLATFORM_ASSERT_ENABLE == 1)
+;;;395        OTP->enableASSERT = 1;
+;;;396    #else
+;;;397        OTP->enableASSERT = 0;
+;;;398    #endif
+;;;399    
+;;;400        /*Print all log in log buffer before entering DLPS */
+;;;401    #if (CHECK_LOG_BUFFER_BEFORE_DLPS_ENABLE == 1)
+;;;402        OTP->printAllLogBeforeEnterDLPS = 1;
+;;;403    #else
+;;;404        OTP->printAllLogBeforeEnterDLPS = 0;
+;;;405    #endif
+;;;406    
+;;;407        /*config enable log or not*/
+;;;408    #if (CONFIG_LOG_FUNCTION_ENABLE == 1)
+;;;409        OTP->logDisable = 0;
+;;;410    #else
+;;;411        OTP->logDisable = 1;
+;;;412    #endif
+;;;413    
+;;;414        /*config enable swd pinmux*/
+;;;415    #if (SWD_PINMUX_ENABLE == 1)
+;;;416        OTP->SWD_ENABLE = 1;
+;;;417    #else
+;;;418        OTP->SWD_ENABLE = 0;
+;;;419    #endif
+;;;420    
+;;;421        /*config enable watch dog in rom*/
+;;;422    #if (ROM_WATCH_DOG_ENABLE == 1)
+;;;423        OTP->wdgEnableInRom = 1;
+;;;424    #else
+;;;425        OTP->wdgEnableInRom = 0;
+;;;426    #endif
+;;;427    
+;;;428        /*config watch dog mode in rom, defualt reset all*/
+;;;429        OTP->wdgMode = ROM_WATCH_DOG_MODE;
+;;;430    
+;;;431    
+;;;432        //app config
+;;;433        OTP->ota_timeout_total = OTA_TIMEOUT_TOTAL;
+;;;434        OTP->ota_timeout_wait4_conn = OTA_TIMEOUT_WAIT4_CONN;
+;;;435        OTP->ota_timeout_wait4_image_transfer = OTA_TIMEOUT_WAIT4_IMAGE_TRANS;
+;;;436        OTP->ota_timeout_ctittv = OTA_TIMEOUT_CTITTV;
+;;;437    
+;;;438        /*config bt stack parameters in rom*/
+;;;439    #ifdef BT_STACK_CONFIG_ENABLE
+;;;440        bt_stack_config_init();
+;;;441    #endif
+;;;442    
+;;;443    //add more otp config here
+;;;444    }
+;;;445    
+;;;446    APP_FLASH_TEXT_SECTION
+;;;447    void pre_main(void)
+;;;448    {
+;;;449        __disable_irq();
+;;;450    
+;;;451        ram_init();
+;;;452    
+;;;453        load_overlay(OVERLAY_SCENARIO_BOOT_ONCE);
+;;;454    
+;;;455        setlocale(LC_ALL, "C");
+;;;456    
+;;;457        BOOT_PRINT_ERROR2("SDK Ver: %s, Build Time: %s",
+;;;458                          TRACE_STRING(VERSION_BUILD_STR),
+;;;459                          TRACE_STRING(BUILDING_TIME));
+;;;460    
+;;;461        AppUpdateVectorTable();
+;;;462    
+;;;463        debug_monitor_enable();
+;;;464    
+;;;465        return;
+;;;466    }
+;;;467    /**
+;;;468     * @brief  update vector table in app
+;;;469     * @param  none
+;;;470     * @return none
+;;;471      */
+;;;472    OVERLAY_SECTION_BOOT_ONCE
+;;;473    static void AppUpdateVectorTable(void)
+;;;474    {
+;;;475        extern uint32_t Load$$RAM_VECTOR_TABLE$$RO$$Base;
+;;;476        extern uint32_t Image$$RAM_VECTOR_TABLE$$RO$$Length;
+;;;477        extern void Default_Handler(void);
+;;;478        const char *SysException[] =
+;;;479        {
+;;;480            "InitialSP", "Reset", "NMI", "HardFault", "MemManage", "BusFault", "UsageFault", "Rsvd",
+;;;481            "Rsvd", "Rsvd", "Rsvd", "SVC", "DebugMon", "Rsvd", "PendSV", "SysTick"
+;;;482        };
+;;;483        const char *ExtIrq[] =
+;;;484        {
+;;;485            "System", "WDG", "BTMAC", "TIM3", "TIM2", "Platform", "I2S0_TX", "I2S0_RX", "Timer4-7",
+;;;486            "GPIO4", "GPIO5", "UART1", "UART0", "RTC", "SPI0", "SPI1", "I2C0", "I2C1", "ADC",
+;;;487            "Peripheral", "GDMA0 Channel0", "GDMA0 Channel1", "GDMA0 Channel2", "GDMA0 Channel3",
+;;;488            "GDMA0 Channel4", "GDMA0 Channel5", "GPIO_Group3", "GPIO_Group2", "IR", "GPIO_Group1",
+;;;489            "GPIO_Group0", "UART2", "TIM4", "TIM5", "TIM6", "TIM7", "SPI_Flash", "Qdecode",
+;;;490            "Keyscan", "SPI2W", "LPCOMP", "PTA_Mailbox", "SPORT1 TX", "SPORT1 RX", "LCD"
+;;;491        };
+;;;492    
+;;;493        IRQ_Fun *pRamVector    = (IRQ_Fun *)VTOR_RAM_ADDR;
+;;;494        IRQ_Fun *pAppVector    = (IRQ_Fun *)&Load$$RAM_VECTOR_TABLE$$RO$$Base;
+;;;495        uint32_t AppVectorSize = (uint32_t)&Image$$RAM_VECTOR_TABLE$$RO$$Length;
+;;;496        uint32_t i             = 0;
+;;;497    
+;;;498        if (SCB->VTOR != VTOR_RAM_ADDR)
+;;;499        {
+;;;500            RamVectorTableInit(VTOR_RAM_ADDR);
+;;;501        }
+;;;502    
+;;;503        /* Update APP defined handlers */
+;;;504        for (i = 0; i < AppVectorSize / 4; ++i)
+;;;505        {
+;;;506            if (i == 1) //skip reset_handler remap
+;;;507            {
+;;;508                continue;
+;;;509            }
+;;;510    
+;;;511            if ((pAppVector[i] != Default_Handler) && (pAppVector[i] != 0))
+;;;512            {
+;;;513                if (i < System_VECTORn)
+;;;514                {
+;;;515                    OS_PRINT_WARN1("Warning! %s is updated by APP!", TRACE_STRING(SysException[i]));
+;;;516                }
+;;;517                else
+;;;518                {
+;;;519                    OS_PRINT_WARN1("Warning! ISR %s is updated by APP!",
+;;;520                                   TRACE_STRING(ExtIrq[i - System_VECTORn]));
+;;;521                }
+;;;522    
+;;;523                pRamVector[i] = pAppVector[i];
+;;;524            }
+;;;525        }
+;;;526    
+;;;527        __DMB();
+;;;528        __DSB();
+;;;529    }
+;;;530    /**
+;;;531     * @brief  GPIO Group3 Handler
+;;;532     * @param  none
+;;;533     * @return none
+;;;534      */
+;;;535    DATA_RAM_FUNCTION void GPIO_Group3_Handler(void)
+;;;536    {
+;;;537        uint32_t GPIOIrqStatus = GPIO->INTSTATUS;
+;;;538    
+;;;539        //Check exact IRQ function
+;;;540        if (GPIOIrqStatus & BIT3)
+;;;541        {
+;;;542            GPIO3_Handler();
+;;;543        }
+;;;544        if (GPIOIrqStatus & BIT7)
+;;;545        {
+;;;546            GPIO7_Handler();
+;;;547        }
+;;;548        if (GPIOIrqStatus & BIT11)
+;;;549        {
+;;;550            GPIO11_Handler();
+;;;551        }
+;;;552        if (GPIOIrqStatus & BIT15)
+;;;553        {
+;;;554            GPIO15_Handler();
+;;;555        }
+;;;556        if (GPIOIrqStatus & BIT19)
+;;;557        {
+;;;558            GPIO19_Handler();
+;;;559        }
+;;;560        if (GPIOIrqStatus & BIT23)
+;;;561        {
+;;;562            GPIO23_Handler();
+;;;563        }
+;;;564        if (GPIOIrqStatus & BIT27)
+;;;565        {
+;;;566            GPIO27_Handler();
+;;;567        }
+;;;568        if (GPIOIrqStatus & BIT31)
+;;;569        {
+;;;570            GPIO31_Handler();
+;;;571        }
+;;;572    }
+;;;573    /**
+;;;574     * @brief  GPIO Group2 Handler
+;;;575     * @param  none
+;;;576     * @return none
+;;;577      */
+;;;578    DATA_RAM_FUNCTION void GPIO_Group2_Handler(void)
+;;;579    {
+;;;580        uint32_t GPIOIrqStatus = GPIO->INTSTATUS;
+;;;581    
+;;;582        //Check exact IRQ function
+;;;583        if (GPIOIrqStatus & BIT2)
+;;;584        {
+;;;585            GPIO2_Handler();
+;;;586        }
+;;;587        if (GPIOIrqStatus & BIT6)
+;;;588        {
+;;;589            GPIO6_Handler();
+;;;590        }
+;;;591        if (GPIOIrqStatus & BIT10)
+;;;592        {
+;;;593            GPIO10_Handler();
+;;;594        }
+;;;595        if (GPIOIrqStatus & BIT14)
+;;;596        {
+;;;597            GPIO14_Handler();
+;;;598        }
+;;;599        if (GPIOIrqStatus & BIT18)
+;;;600        {
+;;;601            GPIO18_Handler();
+;;;602        }
+;;;603        if (GPIOIrqStatus & BIT22)
+;;;604        {
+;;;605            GPIO22_Handler();
+;;;606        }
+;;;607        if (GPIOIrqStatus & BIT26)
+;;;608        {
+;;;609            GPIO26_Handler();
+;;;610        }
+;;;611        if (GPIOIrqStatus & BIT30)
+;;;612        {
+;;;613            GPIO30_Handler();
+;;;614        }
+;;;615    }
+;;;616    /**
+;;;617     * @brief  GPIO Group1 Handler
+;;;618     * @param  none
+;;;619     * @return none
+;;;620      */
+;;;621    DATA_RAM_FUNCTION void GPIO_Group1_Handler(void)
+;;;622    {
+;;;623        uint32_t GPIOIrqStatus = GPIO->INTSTATUS;
+;;;624    
+;;;625        //Check exact IRQ function
+;;;626        if (GPIOIrqStatus & BIT1)
+;;;627        {
+;;;628            GPIO1_Handler();
+;;;629        }
+;;;630        if (GPIOIrqStatus & BIT9)
+;;;631        {
+;;;632            GPIO9_Handler();
+;;;633        }
+;;;634        if (GPIOIrqStatus & BIT13)
+;;;635        {
+;;;636            GPIO13_Handler();
+;;;637        }
+;;;638        if (GPIOIrqStatus & BIT17)
+;;;639        {
+;;;640            GPIO17_Handler();
+;;;641        }
+;;;642        if (GPIOIrqStatus & BIT21)
+;;;643        {
+;;;644            GPIO21_Handler();
+;;;645        }
+;;;646        if (GPIOIrqStatus & BIT25)
+;;;647        {
+;;;648            GPIO25_Handler();
+;;;649        }
+;;;650        if (GPIOIrqStatus & BIT29)
+;;;651        {
+;;;652            GPIO29_Handler();
+;;;653        }
+;;;654    }
+;;;655    /**
+;;;656     * @brief  GPIO Group0 Handler
+;;;657     * @param  none
+;;;658     * @return none
+;;;659      */
+;;;660    DATA_RAM_FUNCTION void GPIO_Group0_Handler(void)
+;;;661    {
+;;;662        uint32_t GPIOIrqStatus = GPIO->INTSTATUS;
+;;;663    
+;;;664        //Check exact IRQ function
+;;;665        if (GPIOIrqStatus & BIT0)
+;;;666        {
+;;;667            GPIO0_Handler();
+;;;668        }
+;;;669        if (GPIOIrqStatus & BIT8)
+;;;670        {
+;;;671            GPIO8_Handler();
+;;;672        }
+;;;673        if (GPIOIrqStatus & BIT12)
+;;;674        {
+;;;675            GPIO12_Handler();
+;;;676        }
+;;;677        if (GPIOIrqStatus & BIT16)
+;;;678        {
+;;;679            GPIO16_Handler();
+;;;680        }
+;;;681        if (GPIOIrqStatus & BIT20)
+;;;682        {
+;;;683            GPIO20_Handler();
+;;;684        }
+;;;685        if (GPIOIrqStatus & BIT24)
+;;;686        {
+;;;687            GPIO24_Handler();
+;;;688        }
+;;;689        if (GPIOIrqStatus & BIT28)
+;;;690        {
+;;;691            GPIO28_Handler();
+;;;692        }
+;;;693    }
+;;;694    
+;;;695    void WDG_SystemReset(T_WDG_MODE wdg_mode, T_SW_RESET_REASON reset_reason)
+;;;696    {
+;;;697        uint32_t parm = wdg_mode | (reset_reason << 8);
+        0x00207dcc:    ea402101    @..!    ORR      r1,r0,r1,LSL #8
+;;;698        SystemCall(SYSTEM_CALL_WDG_RESET, parm);
+        0x00207dd0:    2001        .       MOVS     r0,#1
+        0x00207dd2:    f5ffba65    ..e.    B        SystemCall ; 0x72a0
+    flash_try_high_speed
+;;;699    }
+;;;700    
+;;;701    /**
+;;;702     * @brief  flash try to switch to high speed bit mode
+;;;703     * @note  switch back to 1 bit mode, if flash switch to high speed bit mode fail
+;;;704     * @param  bit_mode config bit mode @ref T_FLASH_MODE
+;;;705     * @retval 0 fail
+;;;706     * @retval 1 success
+;;;707      */
+;;;708    uint32_t flash_try_high_speed(T_FLASH_MODE bit_mode)
+;;;709    {
+        0x00207dd6:    b510        ..      PUSH     {r4,lr}
+;;;710        uint32_t result = 0;
+;;;711        OTP->bit_mode = bit_mode;
+        0x00207dd8:    f44f1400    O...    MOV      r4,#0x200000
+        0x00207ddc:    2200        ."      MOVS     r2,#0
+        0x00207dde:    f894134c    ..L.    LDRB     r1,[r4,#0x34c]
+        0x00207de2:    f3600101    `...    BFI      r1,r0,#0,#2
+        0x00207de6:    f884134c    ..L.    STRB     r1,[r4,#0x34c]
+;;;712        result = flash_ioctl(flash_ioctrl_try_high_speed, 0, 0);
+        0x00207dea:    4611        .F      MOV      r1,r2
+        0x00207dec:    f2450002    E...    MOV      r0,#0x5002
+        0x00207df0:    f604f93f    ..?.    BL       flash_ioctl ; 0xc072
+;;;713        //if try fail, set back OTP->bit_mode to one bit mode
+;;;714        if (!result)
+        0x00207df4:    2800        .(      CMP      r0,#0
+        0x00207df6:    d105        ..      BNE      0x207e04 ; flash_try_high_speed + 46
+;;;715        {
+;;;716            OTP->bit_mode = FLASH_MODE_1BIT;
+        0x00207df8:    f894134c    ..L.    LDRB     r1,[r4,#0x34c]
+        0x00207dfc:    f0210103    !...    BIC      r1,r1,#3
+        0x00207e00:    f884134c    ..L.    STRB     r1,[r4,#0x34c]
+;;;717        }
+;;;718        return result;
+;;;719    }
+        0x00207e04:    bd10        ..      POP      {r4,pc}
+    app_cb0_wdg_reset
+        0x00207e06:    4a11        .J      LDR      r2,[pc,#68] ; [0x207e4c] = 0x20860c
+        0x00207e08:    6812        .h      LDR      r2,[r2,#0]
+;;;720    
+;;;721    void app_cb0_wdg_reset(T_WDG_MODE wdg_mode, T_SW_RESET_REASON reset_reason)
+;;;722    {
+        0x00207e0a:    2a00        .*      CMP      r2,#0
+        0x00207e0c:    d000        ..      BEQ      0x207e10 ; app_cb0_wdg_reset + 10
+;;;723        if (user_wdg_cb)
+;;;724        {
+;;;725            if (user_wdg_cb(wdg_mode, reset_reason))
+        0x00207e0e:    4710        .G      BX       r2
+;;;726            {
+;;;727                return;
+;;;728            }
+;;;729        }
+;;;730    
+;;;731        //do something necessary before watch dog reset
+;;;732    }
+        0x00207e10:    4770        pG      BX       lr
+    $d
+        0x00207e12:    0000        ..      DCW    0
+        0x00207e14:    53206e49    In S    DCD    1394634313
+        0x00207e18:    4d20436f    oC M    DCD    1293960047
+        0x00207e1c:    0065646f    ode.    DCD    6644847
+        0x00207e20:    4e524157    WARN    DCD    1314013527
+        0x00207e24:    3a474e49    ING:    DCD    977751625
+        0x00207e28:    206e4920     In     DCD    544098592
+        0x00207e2c:    20494348    HCI     DCD    541672264
+        0x00207e30:    65646f4d    Mode    DCD    1701080909
+        0x00207e34:    6977202c    , wi    DCD    1769414700
+        0x00207e38:    6e206c6c    ll n    DCD    1847618668
+        0x00207e3c:    7220746f    ot r    DCD    1914729583
+        0x00207e40:    41206e75    un A    DCD    1092644469
+        0x00207e44:    54205050    PP T    DCD    1411403856
+        0x00207e48:    006b7361    ask.    DCD    7041889
+        0x00207e4c:    0020860c    .. .    DCD    2131468
+    $t
+    .text
+    app_main_task
+;;; ..\..\..\src\sample\ble_broadcaster\app_task.c
+;;;73     {
+        0x00207e50:    b51f        ..      PUSH     {r0-r4,lr}
+;;;74         uint8_t event;
+;;;75         os_msg_queue_create(&io_queue_handle, MAX_NUMBER_OF_IO_MESSAGE, sizeof(T_IO_MSG));
+        0x00207e52:    204b        K       MOVS     r0,#0x4b
+        0x00207e54:    9000        ..      STR      r0,[sp,#0]
+        0x00207e56:    4b24        $K      LDR      r3,[pc,#144] ; [0x207ee8] = 0x20833c
+        0x00207e58:    2208        ."      MOVS     r2,#8
+        0x00207e5a:    2120         !      MOVS     r1,#0x20
+        0x00207e5c:    4823        #H      LDR      r0,[pc,#140] ; [0x207eec] = 0x208618
+        0x00207e5e:    f61ef849    ..I.    BL       os_msg_queue_create_intern ; 0x25ef4
+;;;76         os_msg_queue_create(&evt_queue_handle, MAX_NUMBER_OF_EVENT_MESSAGE, sizeof(uint8_t));
+        0x00207e62:    204c        L       MOVS     r0,#0x4c
+        0x00207e64:    9000        ..      STR      r0,[sp,#0]
+        0x00207e66:    4821        !H      LDR      r0,[pc,#132] ; [0x207eec] = 0x208618
+        0x00207e68:    4b1f        .K      LDR      r3,[pc,#124] ; [0x207ee8] = 0x20833c
+        0x00207e6a:    2201        ."      MOVS     r2,#1
+        0x00207e6c:    2140        @!      MOVS     r1,#0x40
+        0x00207e6e:    1f00        ..      SUBS     r0,r0,#4
+        0x00207e70:    f61ef840    ..@.    BL       os_msg_queue_create_intern ; 0x25ef4
+;;;77     
+;;;78         gap_start_bt_stack(evt_queue_handle, io_queue_handle, MAX_NUMBER_OF_GAP_MESSAGE);
+        0x00207e74:    4c1d        .L      LDR      r4,[pc,#116] ; [0x207eec] = 0x208618
+        0x00207e76:    2220         "      MOVS     r2,#0x20
+        0x00207e78:    3c08        .<      SUBS     r4,r4,#8
+        0x00207e7a:    e9d40101    ....    LDRD     r0,r1,[r4,#4]
+        0x00207e7e:    f643fff4    C...    BL       gap_start_bt_stack ; 0x4be6a
+;;;79     
+;;;80         driver_init();
+        0x00207e82:    f000f8ea    ....    BL       driver_init ; 0x20805a
+;;;81         while (true)
+;;;82         {
+;;;83             if (os_msg_recv(evt_queue_handle, &event, 0xFFFFFFFF) == true)
+        0x00207e86:    2553        S%      MOVS     r5,#0x53
+        0x00207e88:    f04f37ff    O..7    MOV      r7,#0xffffffff
+        0x00207e8c:    2658        X&      MOVS     r6,#0x58
+        0x00207e8e:    9500        ..      STR      r5,[sp,#0]
+        0x00207e90:    4b15        .K      LDR      r3,[pc,#84] ; [0x207ee8] = 0x20833c
+        0x00207e92:    463a        :F      MOV      r2,r7
+        0x00207e94:    a903        ..      ADD      r1,sp,#0xc
+        0x00207e96:    6860        `h      LDR      r0,[r4,#4]
+        0x00207e98:    f61ef8d4    ....    BL       os_msg_recv_intern ; 0x26044
+        0x00207e9c:    2800        .(      CMP      r0,#0
+        0x00207e9e:    d0f6        ..      BEQ      0x207e8e ; app_main_task + 62
+;;;84             {
+;;;85                 if (event == EVENT_IO_TO_APP)
+        0x00207ea0:    f89d000c    ....    LDRB     r0,[sp,#0xc]
+        0x00207ea4:    2802        .(      CMP      r0,#2
+        0x00207ea6:    d002        ..      BEQ      0x207eae ; app_main_task + 94
+        0x00207ea8:    f644f84c    D.L.    BL       gap_handle_msg ; 0x4bf44
+        0x00207eac:    e7ef        ..      B        0x207e8e ; app_main_task + 62
+;;;86                 {
+;;;87                     T_IO_MSG io_msg;
+;;;88                     if (os_msg_recv(io_queue_handle, &io_msg, 0) == true)
+        0x00207eae:    9600        ..      STR      r6,[sp,#0]
+        0x00207eb0:    4b0d        .K      LDR      r3,[pc,#52] ; [0x207ee8] = 0x20833c
+        0x00207eb2:    2200        ."      MOVS     r2,#0
+        0x00207eb4:    a901        ..      ADD      r1,sp,#4
+        0x00207eb6:    68a0        .h      LDR      r0,[r4,#8]
+        0x00207eb8:    f61ef8c4    ....    BL       os_msg_recv_intern ; 0x26044
+        0x00207ebc:    2800        .(      CMP      r0,#0
+        0x00207ebe:    d0e6        ..      BEQ      0x207e8e ; app_main_task + 62
+        0x00207ec0:    e9dd0101    ....    LDRD     r0,r1,[sp,#4]
+;;;89                     {
+;;;90                         app_handle_io_msg(io_msg);
+        0x00207ec4:    f000f86b    ..k.    BL       app_handle_io_msg ; 0x207f9e
+        0x00207ec8:    e7e1        ..      B        0x207e8e ; app_main_task + 62
+    app_task_init
+        0x00207eca:    b51c        ..      PUSH     {r2-r4,lr}
+;;; ..\..\..\src\sample\ble_broadcaster\app_task.c (63)
+        0x00207ecc:    2101        .!      MOVS     r1,#1
+        0x00207ece:    0288        ..      LSLS     r0,r1,#10
+        0x00207ed0:    2300        .#      MOVS     r3,#0
+        0x00207ed2:    f2af0283    ....    ADR      r2,{pc}-0x81 ; 0x207e51
+        0x00207ed6:    e9cd0100    ....    STRD     r0,r1,[sp,#0]
+        0x00207eda:    4804        .H      LDR      r0,[pc,#16] ; [0x207eec] = 0x208618
+        0x00207edc:    a104        ..      ADR      r1,{pc}+0x14 ; 0x207ef0
+        0x00207ede:    3808        .8      SUBS     r0,r0,#8
+        0x00207ee0:    f61efd76    ..v.    BL       os_task_create ; 0x269d0
+;;;64                        APP_TASK_PRIORITY);
+;;;65     }
+        0x00207ee4:    bd1c        ..      POP      {r2-r4,pc}
+    $d
+        0x00207ee6:    0000        ..      DCW    0
+        0x00207ee8:    0020833c    <. .    DCD    2130748
+        0x00207eec:    00208618    .. .    DCD    2131480
+        0x00207ef0:    00707061    app.    DCD    7368801
+    $t
+    .text
+    app_handle_dev_state_evt
+;;; ..\..\..\src\sample\ble_broadcaster\broadcaster_app.c
+;;;80     {
+        0x00207ef4:    e92d41fc    -..A    PUSH     {r2-r8,lr}
+        0x00207ef8:    b2c4        ..      UXTB     r4,r0
+;;;81         APP_PRINT_INFO3("app_handle_dev_state_evt: init state %d, adv state %d, cause 0x%x",
+        0x00207efa:    f3c40581    ....    UBFX     r5,r4,#2,#2
+        0x00207efe:    e9cd5100    ...Q    STRD     r5,r1,[sp,#0]
+        0x00207f02:    f8df80b0    ....    LDR      r8,[pc,#176] ; [0x207fb4] = 0x21103002
+        0x00207f06:    f0040601    ....    AND      r6,r4,#1
+        0x00207f0a:    4633        3F      MOV      r3,r6
+        0x00207f0c:    2203        ."      MOVS     r2,#3
+        0x00207f0e:    4928        (I      LDR      r1,[pc,#160] ; [0x207fb0] = 0x880006c
+        0x00207f10:    4640        @F      MOV      r0,r8
+        0x00207f12:    f5fffda4    ....    BL       log_buffer ; 0x7a5e
+;;;82                         new_state.gap_init_state, new_state.gap_adv_state, cause);
+;;;83         if (gap_dev_state.gap_init_state != new_state.gap_init_state)
+        0x00207f16:    4f28        (O      LDR      r7,[pc,#160] ; [0x207fb8] = 0x20861c
+        0x00207f18:    7838        8x      LDRB     r0,[r7,#0]
+        0x00207f1a:    f0000001    ....    AND      r0,r0,#1
+        0x00207f1e:    42b0        .B      CMP      r0,r6
+        0x00207f20:    d009        ..      BEQ      0x207f36 ; app_handle_dev_state_evt + 66
+;;;84         {
+;;;85             if (new_state.gap_init_state == GAP_INIT_STATE_STACK_READY)
+        0x00207f22:    07e0        ..      LSLS     r0,r4,#31
+        0x00207f24:    d007        ..      BEQ      0x207f36 ; app_handle_dev_state_evt + 66
+;;;86             {
+;;;87                 APP_PRINT_INFO0("GAP stack ready");
+        0x00207f26:    4922        "I      LDR      r1,[pc,#136] ; [0x207fb0] = 0x880006c
+        0x00207f28:    2200        ."      MOVS     r2,#0
+        0x00207f2a:    3148        H1      ADDS     r1,r1,#0x48
+        0x00207f2c:    4640        @F      MOV      r0,r8
+        0x00207f2e:    f5fffd96    ....    BL       log_buffer ; 0x7a5e
+;;;88                 /*stack ready*/
+;;;89                 le_adv_start();
+        0x00207f32:    f64af8c8    J...    BL       le_adv_start ; 0x520c6
+;;;90             }
+;;;91         }
+;;;92     
+;;;93         if (gap_dev_state.gap_adv_state != new_state.gap_adv_state)
+        0x00207f36:    7838        8x      LDRB     r0,[r7,#0]
+        0x00207f38:    f3c00081    ....    UBFX     r0,r0,#2,#2
+        0x00207f3c:    42a8        .B      CMP      r0,r5
+        0x00207f3e:    d00f        ..      BEQ      0x207f60 ; app_handle_dev_state_evt + 108
+;;;94         {
+;;;95             if (new_state.gap_adv_state == GAP_ADV_STATE_IDLE)
+        0x00207f40:    f0140f0c    ....    TST      r4,#0xc
+        0x00207f44:    d002        ..      BEQ      0x207f4c ; app_handle_dev_state_evt + 88
+        0x00207f46:    2d02        .-      CMP      r5,#2
+        0x00207f48:    d004        ..      BEQ      0x207f54 ; app_handle_dev_state_evt + 96
+        0x00207f4a:    e009        ..      B        0x207f60 ; app_handle_dev_state_evt + 108
+;;;96             {
+;;;97                 APP_PRINT_INFO0("GAP adv stoped");
+        0x00207f4c:    4918        .I      LDR      r1,[pc,#96] ; [0x207fb0] = 0x880006c
+        0x00207f4e:    2200        ."      MOVS     r2,#0
+        0x00207f50:    315c        \1      ADDS     r1,r1,#0x5c
+        0x00207f52:    e002        ..      B        0x207f5a ; app_handle_dev_state_evt + 102
+;;;98             }
+;;;99             else if (new_state.gap_adv_state == GAP_ADV_STATE_ADVERTISING)
+;;;100            {
+;;;101                APP_PRINT_INFO0("GAP adv start");
+        0x00207f54:    4916        .I      LDR      r1,[pc,#88] ; [0x207fb0] = 0x880006c
+        0x00207f56:    2200        ."      MOVS     r2,#0
+        0x00207f58:    3170        p1      ADDS     r1,r1,#0x70
+        0x00207f5a:    4640        @F      MOV      r0,r8
+        0x00207f5c:    f5fffd7f    ....    BL       log_buffer ; 0x7a5e
+;;;102            }
+;;;103        }
+;;;104    
+;;;105        gap_dev_state = new_state;
+        0x00207f60:    703c        <p      STRB     r4,[r7,#0]
+;;;106    }
+        0x00207f62:    e8bd81fc    ....    POP      {r2-r8,pc}
+    app_handle_gap_msg
+;;;107    
+;;;108    /**
+;;;109     * @brief    All the BT GAP MSG are pre-handled in this function.
+;;;110     * @note     Then the event handling function shall be called according to the
+;;;111     *           subtype of T_IO_MSG
+;;;112     * @param[in] p_gap_msg Pointer to GAP msg
+;;;113     * @return   void
+;;;114     */
+;;;115    void app_handle_gap_msg(T_IO_MSG *p_gap_msg)
+;;;116    {
+        0x00207f66:    b570        p.      PUSH     {r4-r6,lr}
+        0x00207f68:    4604        .F      MOV      r4,r0
+;;;117        T_LE_GAP_MSG gap_msg;
+;;;118        memcpy(&gap_msg, &p_gap_msg->u.param, sizeof(p_gap_msg->u.param));
+;;;119    
+;;;120        APP_PRINT_TRACE1("app_handle_gap_msg: subtype %d", p_gap_msg->subtype);
+        0x00207f6a:    8843        C.      LDRH     r3,[r0,#2]
+        0x00207f6c:    6845        Eh      LDR      r5,[r0,#4]
+        0x00207f6e:    4910        .I      LDR      r1,[pc,#64] ; [0x207fb0] = 0x880006c
+        0x00207f70:    4810        .H      LDR      r0,[pc,#64] ; [0x207fb4] = 0x21103002
+        0x00207f72:    2201        ."      MOVS     r2,#1
+        0x00207f74:    3184        .1      ADDS     r1,r1,#0x84
+        0x00207f76:    1c40        @.      ADDS     r0,r0,#1
+        0x00207f78:    f5fffd71    ..q.    BL       log_buffer ; 0x7a5e
+;;;121        switch (p_gap_msg->subtype)
+        0x00207f7c:    8863        c.      LDRH     r3,[r4,#2]
+        0x00207f7e:    2b01        .+      CMP      r3,#1
+        0x00207f80:    d008        ..      BEQ      0x207f94 ; app_handle_gap_msg + 46
+        0x00207f82:    490b        .I      LDR      r1,[pc,#44] ; [0x207fb0] = 0x880006c
+        0x00207f84:    e8bd4070    ..p@    POP      {r4-r6,lr}
+        0x00207f88:    480a        .H      LDR      r0,[pc,#40] ; [0x207fb4] = 0x21103002
+        0x00207f8a:    2201        ."      MOVS     r2,#1
+        0x00207f8c:    31a4        .1      ADDS     r1,r1,#0xa4
+        0x00207f8e:    1e80        ..      SUBS     r0,r0,#2
+        0x00207f90:    f5ffbd65    ..e.    B        log_buffer ; 0x7a5e
+;;;122        {
+;;;123        case GAP_MSG_LE_DEV_STATE_CHANGE:
+;;;124            {
+;;;125                app_handle_dev_state_evt(gap_msg.msg_data.gap_dev_state_change.new_state,
+        0x00207f94:    4628        (F      MOV      r0,r5
+        0x00207f96:    0c29        ).      LSRS     r1,r5,#16
+        0x00207f98:    e8bd4070    ..p@    POP      {r4-r6,lr}
+        0x00207f9c:    e7aa        ..      B        app_handle_dev_state_evt ; 0x207ef4
+    app_handle_io_msg
+;;; ..\..\..\src\sample\ble_broadcaster\broadcaster_app.c (56)
+        0x00207f9e:    b513        ..      PUSH     {r0,r1,r4,lr}
+        0x00207fa0:    f8bd0000    ....    LDRH     r0,[sp,#0]
+        0x00207fa4:    2800        .(      CMP      r0,#0
+        0x00207fa6:    d102        ..      BNE      0x207fae ; app_handle_io_msg + 16
+;;;57         uint16_t msg_type = io_msg.type;
+;;;58     
+;;;59         switch (msg_type)
+;;;60         {
+;;;61         case IO_MSG_TYPE_BT_STATUS:
+;;;62             {
+;;;63                 app_handle_gap_msg(&io_msg);
+        0x00207fa8:    4668        hF      MOV      r0,sp
+        0x00207faa:    f7ffffdc    ....    BL       app_handle_gap_msg ; 0x207f66
+;;;64             }
+;;;65             break;
+;;;66         default:
+;;;67             break;
+;;;68         }
+;;;69     }
+        0x00207fae:    bd1c        ..      POP      {r2-r4,pc}
+    $d
+        0x00207fb0:    0880006c    l...    DCD    142606444
+        0x00207fb4:    21103002    .0.!    DCD    554708994
+        0x00207fb8:    0020861c    .. .    DCD    2131484
+    $t
+    .text
+    app_le_gap_init
+;;; ..\..\..\src\sample\ble_broadcaster\main.c
+;;;81     {
+        0x00207fbc:    b500        ..      PUSH     {lr}
+        0x00207fbe:    b089        ..      SUB      sp,sp,#0x24
+;;;82         /* Advertising parameters */
+;;;83         uint8_t  adv_evt_type = GAP_ADTYPE_ADV_NONCONN_IND;
+        0x00207fc0:    2003        .       MOVS     r0,#3
+        0x00207fc2:    f88d001c    ....    STRB     r0,[sp,#0x1c]
+;;;84         uint8_t  adv_direct_type = GAP_REMOTE_ADDR_LE_PUBLIC;
+        0x00207fc6:    2000        .       MOVS     r0,#0
+        0x00207fc8:    f88d0000    ....    STRB     r0,[sp,#0]
+;;;85         uint8_t  adv_direct_addr[GAP_BD_ADDR_LEN] = {0};
+        0x00207fcc:    9001        ..      STR      r0,[sp,#4]
+;;;86         uint8_t  adv_chann_map = GAP_ADVCHAN_ALL;
+        0x00207fce:    9002        ..      STR      r0,[sp,#8]
+        0x00207fd0:    f88d0010    ....    STRB     r0,[sp,#0x10]
+        0x00207fd4:    f44f70a0    O..p    MOV      r0,#0x140
+        0x00207fd8:    2107        .!      MOVS     r1,#7
+        0x00207fda:    f88d100c    ....    STRB     r1,[sp,#0xc]
+;;;87         uint8_t  adv_filter_policy = GAP_ADV_FILTER_ANY;
+;;;88         uint16_t adv_int_min = DEFAULT_ADVERTISING_INTERVAL_MIN;
+        0x00207fde:    f8ad0014    ....    STRH     r0,[sp,#0x14]
+;;;89         uint16_t adv_int_max = DEFAULT_ADVERTISING_INTERVAL_MIN;
+        0x00207fe2:    f8ad0018    ....    STRH     r0,[sp,#0x18]
+;;;90     
+;;;91         /* Set advertising parameters */
+;;;92         le_adv_set_param(GAP_PARAM_ADV_EVENT_TYPE, sizeof(adv_evt_type), &adv_evt_type);
+        0x00207fe6:    aa07        ..      ADD      r2,sp,#0x1c
+        0x00207fe8:    2101        .!      MOVS     r1,#1
+        0x00207fea:    f2402063    @.c     MOV      r0,#0x263
+        0x00207fee:    f649ff4f    I.O.    BL       le_adv_set_param ; 0x51e90
+;;;93         le_adv_set_param(GAP_PARAM_ADV_DIRECT_ADDR_TYPE, sizeof(adv_direct_type), &adv_direct_type);
+        0x00207ff2:    466a        jF      MOV      r2,sp
+        0x00207ff4:    2101        .!      MOVS     r1,#1
+        0x00207ff6:    f44f7019    O..p    MOV      r0,#0x264
+        0x00207ffa:    f649ff49    I.I.    BL       le_adv_set_param ; 0x51e90
+;;;94         le_adv_set_param(GAP_PARAM_ADV_DIRECT_ADDR, sizeof(adv_direct_addr), adv_direct_addr);
+        0x00207ffe:    aa01        ..      ADD      r2,sp,#4
+        0x00208000:    2106        .!      MOVS     r1,#6
+        0x00208002:    f2402065    @.e     MOV      r0,#0x265
+        0x00208006:    f649ff43    I.C.    BL       le_adv_set_param ; 0x51e90
+;;;95         le_adv_set_param(GAP_PARAM_ADV_CHANNEL_MAP, sizeof(adv_chann_map), &adv_chann_map);
+        0x0020800a:    aa03        ..      ADD      r2,sp,#0xc
+        0x0020800c:    2101        .!      MOVS     r1,#1
+        0x0020800e:    f2402066    @.f     MOV      r0,#0x266
+        0x00208012:    f649ff3d    I.=.    BL       le_adv_set_param ; 0x51e90
+;;;96         le_adv_set_param(GAP_PARAM_ADV_FILTER_POLICY, sizeof(adv_filter_policy), &adv_filter_policy);
+        0x00208016:    aa04        ..      ADD      r2,sp,#0x10
+        0x00208018:    2101        .!      MOVS     r1,#1
+        0x0020801a:    f2402067    @.g     MOV      r0,#0x267
+        0x0020801e:    f649ff37    I.7.    BL       le_adv_set_param ; 0x51e90
+;;;97         le_adv_set_param(GAP_PARAM_ADV_INTERVAL_MIN, sizeof(adv_int_min), &adv_int_min);
+        0x00208022:    aa05        ..      ADD      r2,sp,#0x14
+        0x00208024:    2102        .!      MOVS     r1,#2
+        0x00208026:    f44f701a    O..p    MOV      r0,#0x268
+        0x0020802a:    f649ff31    I.1.    BL       le_adv_set_param ; 0x51e90
+;;;98         le_adv_set_param(GAP_PARAM_ADV_INTERVAL_MAX, sizeof(adv_int_max), &adv_int_max);
+        0x0020802e:    aa06        ..      ADD      r2,sp,#0x18
+        0x00208030:    2102        .!      MOVS     r1,#2
+        0x00208032:    f2402069    @.i     MOV      r0,#0x269
+        0x00208036:    f649ff2b    I.+.    BL       le_adv_set_param ; 0x51e90
+;;;99         le_adv_set_param(GAP_PARAM_ADV_DATA, sizeof(adv_data), (void *)adv_data);
+        0x0020803a:    4a13        .J      LDR      r2,[pc,#76] ; [0x208088] = 0x20834e
+        0x0020803c:    2114        .!      MOVS     r1,#0x14
+        0x0020803e:    f2402061    @.a     MOV      r0,#0x261
+        0x00208042:    f649ff25    I.%.    BL       le_adv_set_param ; 0x51e90
+;;;100        le_adv_set_param(GAP_PARAM_SCAN_RSP_DATA, sizeof(scan_rsp_data), (void *)scan_rsp_data);
+        0x00208046:    4a10        .J      LDR      r2,[pc,#64] ; [0x208088] = 0x20834e
+        0x00208048:    2104        .!      MOVS     r1,#4
+        0x0020804a:    1f12        ..      SUBS     r2,r2,#4
+        0x0020804c:    f2402062    @.b     MOV      r0,#0x262
+        0x00208050:    f649ff1e    I...    BL       le_adv_set_param ; 0x51e90
+;;;101    }
+        0x00208054:    b009        ..      ADD      sp,sp,#0x24
+        0x00208056:    bd00        ..      POP      {pc}
+    board_init
+;;;102    
+;;;103    /**
+;;;104     * @brief    Contains the initialization of pinmux settings and pad settings
+;;;105     * @note     All the pinmux settings and pad settings shall be initiated in this function,
+;;;106     *           but if legacy driver is used, the initialization of pinmux setting and pad setting
+;;;107     *           should be peformed with the IO initializing.
+;;;108     * @return   void
+;;;109     */
+;;;110    void board_init(void)
+;;;111    {
+;;;112    
+;;;113    }
+        0x00208058:    4770        pG      BX       lr
+    driver_init
+;;;114    
+;;;115    /**
+;;;116     * @brief    Contains the initialization of peripherals
+;;;117     * @note     Both new architecture driver and legacy driver initialization method can be used
+;;;118     * @return   void
+;;;119     */
+;;;120    void driver_init(void)
+;;;121    {
+;;;122    
+;;;123    }
+        0x0020805a:    4770        pG      BX       lr
+    pwr_mgr_init
+;;;124    
+;;;125    /**
+;;;126     * @brief    Contains the power mode settings
+;;;127     * @return   void
+;;;128     */
+;;;129    void pwr_mgr_init(void)
+;;;130    {
+;;;131    #if F_BT_DLPS_EN
+;;;132        lps_mode_set(LPM_DLPS_MODE);
+        0x0020805c:    2002        .       MOVS     r0,#2
+        0x0020805e:    f600bbfe    ....    B        lps_mode_set ; 0x885e
+    task_init
+;;;133    #endif
+;;;134    }
+;;;135    
+;;;136    /**
+;;;137     * @brief    Contains the initialization of all tasks
+;;;138     * @note     There is only one task in BLE Broadcaster APP, thus only one APP task is init here
+;;;139     * @return   void
+;;;140     */
+;;;141    void task_init(void)
+;;;142    {
+;;;143        app_task_init();
+        0x00208062:    f7ffbf32    ..2.    B.W      app_task_init ; 0x207eca
+    main
+;;;144    }
+;;;145    
+;;;146    /**
+;;;147     * @brief    Entry of APP code
+;;;148     * @return   int (To avoid compile warning)
+;;;149     */
+;;;150    int main(void)
+;;;151    {
+        0x00208066:    b510        ..      PUSH     {r4,lr}
+;;;152        board_init();
+;;;153        le_gap_init(0);
+        0x00208068:    2000        .       MOVS     r0,#0
+        0x0020806a:    f644fda7    D...    BL       le_gap_init ; 0x4cbbc
+;;;154        gap_lib_init();
+        0x0020806e:    f000f857    ..W.    BL       gap_lib_init ; 0x208120
+;;;155        app_le_gap_init();
+        0x00208072:    f7ffffa3    ....    BL       app_le_gap_init ; 0x207fbc
+        0x00208076:    2002        .       MOVS     r0,#2
+        0x00208078:    f600fbf1    ....    BL       lps_mode_set ; 0x885e
+        0x0020807c:    f7ffff25    ..%.    BL       app_task_init ; 0x207eca
+;;;156        pwr_mgr_init();
+;;;157        task_init();
+;;;158        os_sched_start();
+        0x00208080:    f61efb9f    ....    BL       os_sched_start ; 0x267c2
+;;;159    
+;;;160        return 0;
+        0x00208084:    2000        .       MOVS     r0,#0
+;;;161    }
+        0x00208086:    bd10        ..      POP      {r4,pc}
+    $d
+        0x00208088:    0020834e    N. .    DCD    2130766
+    $t
+    .text
+    load_overlay
+;;; .\..\..\..\src\mcu\rtl876x\overlay_mgr.c
+;;;116    {
+        0x0020808c:    b510        ..      PUSH     {r4,lr}
+        0x0020808e:    2803        .(      CMP      r0,#3
+;;; .\..\..\..\src\mcu\rtl876x\overlay_mgr.c (116)
+        0x00208090:    d301        ..      BCC      0x208096 ; load_overlay + 10
+;;;117        const T_OVERLAY_SECTION *selected_scenario;
+;;;118    
+;;;119        if (scenario_idx >= OVERLAY_SCENARIO_NUM)
+;;;120        {
+;;;121            return false;
+        0x00208092:    2000        .       MOVS     r0,#0
+        0x00208094:    bd10        ..      POP      {r4,pc}
+;;;122        }
+;;;123    
+;;;124        selected_scenario = &overlay_sections[scenario_idx];
+        0x00208096:    491a        .I      LDR      r1,[pc,#104] ; [0x208100] = 0x2085a0
+        0x00208098:    eb0000c0    ....    ADD      r0,r0,r0,LSL #3
+        0x0020809c:    eb010480    ....    ADD      r4,r1,r0,LSL #2
+;;;125    
+;;;126        if (memcmp(selected_scenario->signature, scenario_name, 8) == 0)
+        0x002080a0:    2208        ."      MOVS     r2,#8
+        0x002080a2:    4918        .I      LDR      r1,[pc,#96] ; [0x208104] = 0x20861d
+        0x002080a4:    6820         h      LDR      r0,[r4,#0]
+        0x002080a6:    f651fead    Q...    BL       memcmp ; 0x59e04
+        0x002080aa:    b198        ..      CBZ      r0,0x2080d4 ; load_overlay + 72
+;;;127        {
+;;;128            return true;
+;;;129        }
+;;;130    
+;;;131        /* load code */
+;;;132        memcpy(selected_scenario->image_ro_base, selected_scenario->load_ro_base,
+        0x002080ac:    69a2        .i      LDR      r2,[r4,#0x18]
+        0x002080ae:    6861        ah      LDR      r1,[r4,#4]
+        0x002080b0:    68e0        .h      LDR      r0,[r4,#0xc]
+        0x002080b2:    f651fef2    Q...    BL       __aeabi_memcpy ; 0x59e9a
+;;;133               selected_scenario->ro_length);
+;;;134        /* load rw data */
+;;;135        memcpy(selected_scenario->image_rw_base, selected_scenario->load_rw_base,
+        0x002080b6:    69e2        .i      LDR      r2,[r4,#0x1c]
+        0x002080b8:    68a1        .h      LDR      r1,[r4,#8]
+        0x002080ba:    6920         i      LDR      r0,[r4,#0x10]
+        0x002080bc:    f651feed    Q...    BL       __aeabi_memcpy ; 0x59e9a
+;;;136               selected_scenario->rw_length);
+;;;137        /* clear zi data */
+;;;138        memset(selected_scenario->image_zi_base, 0x0, selected_scenario->zi_length);
+        0x002080c0:    6a21        !j      LDR      r1,[r4,#0x20]
+        0x002080c2:    6960        `i      LDR      r0,[r4,#0x14]
+        0x002080c4:    f651ffaa    Q...    BL       __aeabi_memclr ; 0x5a01c
+;;;139    
+;;;140        memcpy(scenario_name, selected_scenario->signature, 8);
+        0x002080c8:    6820         h      LDR      r0,[r4,#0]
+        0x002080ca:    490e        .I      LDR      r1,[pc,#56] ; [0x208104] = 0x20861d
+        0x002080cc:    6802        .h      LDR      r2,[r0,#0]
+        0x002080ce:    600a        .`      STR      r2,[r1,#0]
+        0x002080d0:    6840        @h      LDR      r0,[r0,#4]
+        0x002080d2:    6048        H`      STR      r0,[r1,#4]
+        0x002080d4:    2001        .       MOVS     r0,#1
+;;;141    
+;;;142        return true;
+;;;143    }
+        0x002080d6:    bd10        ..      POP      {r4,pc}
+    get_current_scenario_index
+;;;144    
+;;;145    T_OVERLAY_SCENARIO_IDX get_current_scenario_index(void)
+;;;146    {
+        0x002080d8:    b570        p.      PUSH     {r4-r6,lr}
+        0x002080da:    4d09        .M      LDR      r5,[pc,#36] ; [0x208100] = 0x2085a0
+;;;147        const T_OVERLAY_SECTION *selected_scenario;
+;;;148    
+;;;149        for (int i = 0; i < (int)OVERLAY_SCENARIO_NUM; ++i)
+        0x002080dc:    2400        .$      MOVS     r4,#0
+        0x002080de:    eb0400c4    ....    ADD      r0,r4,r4,LSL #3
+        0x002080e2:    2208        ."      MOVS     r2,#8
+        0x002080e4:    f8550020    U. .    LDR      r0,[r5,r0,LSL #2]
+        0x002080e8:    4906        .I      LDR      r1,[pc,#24] ; [0x208104] = 0x20861d
+        0x002080ea:    f651fe8b    Q...    BL       memcmp ; 0x59e04
+        0x002080ee:    b120         .      CBZ      r0,0x2080fa ; get_current_scenario_index + 34
+        0x002080f0:    1c64        d.      ADDS     r4,r4,#1
+        0x002080f2:    2c03        .,      CMP      r4,#3
+        0x002080f4:    dbf3        ..      BLT      0x2080de ; get_current_scenario_index + 6
+        0x002080f6:    2003        .       MOVS     r0,#3
+        0x002080f8:    bd70        p.      POP      {r4-r6,pc}
+;;;150        {
+;;;151            selected_scenario = &overlay_sections[i];
+;;;152            if (memcmp(selected_scenario->signature, scenario_name, 8) == 0)
+;;;153            {
+;;;154                return (T_OVERLAY_SCENARIO_IDX)i;
+        0x002080fa:    b2e0        ..      UXTB     r0,r4
+;;;155            }
+;;;156        }
+;;;157    
+;;;158        return OVERLAY_SCENARIO_NUM; //not found valid scenario
+;;;159    }
+        0x002080fc:    bd70        p.      POP      {r4-r6,pc}
+    $d
+        0x002080fe:    0000        ..      DCW    0
+        0x00208100:    002085a0    .. .    DCD    2131360
+        0x00208104:    0020861d    .. .    DCD    2131485
+    $t
+    .text
+    gap_lib_handle_btif_msg
+;;; ..\..\..\src\app\gap_lib\gap_lib\gap_lib.c (31)
+        0x00208108:    b510        ..      PUSH     {r4,lr}
+        0x0020810a:    2201        ."      MOVS     r2,#1
+        0x0020810c:    700a        .p      STRB     r2,[r1,#0]
+        0x0020810e:    8841        A.      LDRH     r1,[r0,#2]
+        0x00208110:    2400        .$      MOVS     r4,#0
+        0x00208112:    290e        .)      CMP      r1,#0xe
+;;; ..\..\..\src\app\gap_lib\gap_lib\gap_lib.c (31)
+        0x00208114:    d102        ..      BNE      0x20811c ; gap_lib_handle_btif_msg + 20
+        0x00208116:    1d00        ..      ADDS     r0,r0,#4
+;;; ..\..\..\src\app\gap_lib\gap_lib\gap_lib.c (39)
+        0x00208118:    f000f84f    ..O.    BL       le_handle_vendor_cmd_rsp ; 0x2081ba
+;;; ..\..\..\src\app\gap_lib\gap_lib\gap_lib.c (112)
+        0x0020811c:    4620         F      MOV      r0,r4
+;;; ..\..\..\src\app\gap_lib\gap_lib\gap_lib.c (113)
+        0x0020811e:    bd10        ..      POP      {r4,pc}
+    gap_lib_init
+;;; ..\..\..\src\app\gap_lib\gap_lib\gap_lib.c (116)
+        0x00208120:    b570        p.      PUSH     {r4-r6,lr}
+        0x00208122:    b088        ..      SUB      sp,sp,#0x20
+;;; ..\..\..\src\app\gap_lib\gap_lib\gap_lib.c (117)
+        0x00208124:    2400        .$      MOVS     r4,#0
+        0x00208126:    9405        ..      STR      r4,[sp,#0x14]
+        0x00208128:    2501        .%      MOVS     r5,#1
+        0x0020812a:    9406        ..      STR      r4,[sp,#0x18]
+        0x0020812c:    e9cd5400    ...T    STRD     r5,r4,[sp,#0]
+        0x00208130:    4e0e        .N      LDR      r6,[pc,#56] ; [0x20816c] = 0x21103500
+        0x00208132:    2308        .#      MOVS     r3,#8
+        0x00208134:    9403        ..      STR      r4,[sp,#0xc]
+        0x00208136:    9404        ..      STR      r4,[sp,#0x10]
+        0x00208138:    461a        .F      MOV      r2,r3
+        0x0020813a:    490b        .I      LDR      r1,[pc,#44] ; [0x208168] = 0x880013c
+        0x0020813c:    4630        0F      MOV      r0,r6
+        0x0020813e:    9402        ..      STR      r4,[sp,#8]
+        0x00208140:    f5fffc8d    ....    BL       log_buffer ; 0x7a5e
+        0x00208144:    4908        .I      LDR      r1,[pc,#32] ; [0x208168] = 0x880013c
+        0x00208146:    e9cd4500    ...E    STRD     r4,r5,[sp,#0]
+;;; ..\..\..\src\app\gap_lib\gap_lib\gap_lib.c (121)
+        0x0020814a:    2300        .#      MOVS     r3,#0
+        0x0020814c:    2204        ."      MOVS     r2,#4
+        0x0020814e:    31ec        .1      ADDS     r1,r1,#0xec
+        0x00208150:    4630        0F      MOV      r0,r6
+        0x00208152:    9502        ..      STR      r5,[sp,#8]
+        0x00208154:    f5fffc83    ....    BL       log_buffer ; 0x7a5e
+;;; ..\..\..\src\app\gap_lib\gap_lib\gap_lib.c (123)
+        0x00208158:    f2af0053    ..S.    ADR      r0,{pc}-0x4f ; 0x208109
+        0x0020815c:    b008        ..      ADD      sp,sp,#0x20
+        0x0020815e:    e8bd4070    ..p@    POP      {r4-r6,lr}
+        0x00208162:    f643be55    C.U.    B        gap_register_extend_cb ; 0x4be10
+    $d
+        0x00208166:    0000        ..      DCW    0
+        0x00208168:    0880013c    <...    DCD    142606652
+        0x0020816c:    21103500    .5.!    DCD    554710272
+    $t
+    .text
+    gap_set_lps_bootup_active_time
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (43)
+        0x00208170:    b508        ..      PUSH     {r3,lr}
+        0x00208172:    1ec1        ..      SUBS     r1,r0,#3
+        0x00208174:    f24072fe    @..r    MOV      r2,#0x7fe
+        0x00208178:    4291        .B      CMP      r1,r2
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (43)
+        0x0020817a:    d301        ..      BCC      0x208180 ; gap_set_lps_bootup_active_time + 16
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (48)
+        0x0020817c:    2000        .       MOVS     r0,#0
+        0x0020817e:    bd08        ..      POP      {r3,pc}
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (50)
+        0x00208180:    2105        .!      MOVS     r1,#5
+        0x00208182:    f88d1000    ....    STRB     r1,[sp,#0]
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (51)
+        0x00208186:    f88d0001    ....    STRB     r0,[sp,#1]
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (52)
+        0x0020818a:    0a00        ..      LSRS     r0,r0,#8
+        0x0020818c:    f88d0002    ....    STRB     r0,[sp,#2]
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (54)
+        0x00208190:    466a        jF      MOV      r2,sp
+        0x00208192:    2103        .!      MOVS     r1,#3
+        0x00208194:    f64f406e    O.n@    MOV      r0,#0xfc6e
+        0x00208198:    f619f9a8    ....    BL       btif_vendor_cmd_req ; 0x214ec
+        0x0020819c:    2800        .(      CMP      r0,#0
+        0x0020819e:    d0ee        ..      BEQ      0x20817e ; gap_set_lps_bootup_active_time + 14
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (56)
+        0x002081a0:    2001        .       MOVS     r0,#1
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (59)
+        0x002081a2:    bd08        ..      POP      {r3,pc}
+    lps_get_wakeup_time
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (62)
+        0x002081a4:    b530        0.      PUSH     {r4,r5,lr}
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (63)
+        0x002081a6:    4b20         K      LDR      r3,[pc,#128] ; [0x208228] = 0x201b1c
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (64)
+        0x002081a8:    681d        .h      LDR      r5,[r3,#0]
+        0x002081aa:    1d1b        ..      ADDS     r3,r3,#4
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (65)
+        0x002081ac:    681c        .h      LDR      r4,[r3,#0]
+        0x002081ae:    1d1b        ..      ADDS     r3,r3,#4
+        0x002081b0:    681b        .h      LDR      r3,[r3,#0]
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (67)
+        0x002081b2:    6005        .`      STR      r5,[r0,#0]
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (68)
+        0x002081b4:    600c        .`      STR      r4,[r1,#0]
+        0x002081b6:    6013        .`      STR      r3,[r2,#0]
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (69)
+        0x002081b8:    bd30        0.      POP      {r4,r5,pc}
+    le_handle_vendor_cmd_rsp
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (169)
+        0x002081ba:    b508        ..      PUSH     {r3,lr}
+        0x002081bc:    8801        ..      LDRH     r1,[r0,#0]
+        0x002081be:    f5a1427c    ..|B    SUB      r2,r1,#0xfc00
+        0x002081c2:    3a6e        n:      SUBS     r2,r2,#0x6e
+        0x002081c4:    d109        ..      BNE      0x2081da ; le_handle_vendor_cmd_rsp + 32
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (250)
+        0x002081c6:    8840        @.      LDRH     r0,[r0,#2]
+        0x002081c8:    f8ad0000    ....    STRH     r0,[sp,#0]
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (251)
+        0x002081cc:    4817        .H      LDR      r0,[pc,#92] ; [0x20822c] = 0x202e48
+        0x002081ce:    6802        .h      LDR      r2,[r0,#0]
+        0x002081d0:    2a00        .*      CMP      r2,#0
+        0x002081d2:    d002        ..      BEQ      0x2081da ; le_handle_vendor_cmd_rsp + 32
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (253)
+        0x002081d4:    4669        iF      MOV      r1,sp
+        0x002081d6:    20a6        .       MOVS     r0,#0xa6
+        0x002081d8:    4790        .G      BLX      r2
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (258)
+        0x002081da:    bd08        ..      POP      {r3,pc}
+    le_vendor_modify_bt_le_fw_policy
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (262)
+        0x002081dc:    b50e        ..      PUSH     {r1-r3,lr}
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (265)
+        0x002081de:    2210        ."      MOVS     r2,#0x10
+        0x002081e0:    f88d2000    ...     STRB     r2,[sp,#0]
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (266)
+        0x002081e4:    f88d0001    ....    STRB     r0,[sp,#1]
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (267)
+        0x002081e8:    0a02        ..      LSRS     r2,r0,#8
+        0x002081ea:    f88d2002    ...     STRB     r2,[sp,#2]
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (268)
+        0x002081ee:    0c02        ..      LSRS     r2,r0,#16
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (269)
+        0x002081f0:    0e00        ..      LSRS     r0,r0,#24
+        0x002081f2:    f88d0004    ....    STRB     r0,[sp,#4]
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (270)
+        0x002081f6:    f88d1005    ....    STRB     r1,[sp,#5]
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (271)
+        0x002081fa:    0a08        ..      LSRS     r0,r1,#8
+        0x002081fc:    f88d0006    ....    STRB     r0,[sp,#6]
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (272)
+        0x00208200:    0c08        ..      LSRS     r0,r1,#16
+        0x00208202:    f88d0007    ....    STRB     r0,[sp,#7]
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (273)
+        0x00208206:    0e08        ..      LSRS     r0,r1,#24
+        0x00208208:    f88d2003    ...     STRB     r2,[sp,#3]
+        0x0020820c:    f88d0008    ....    STRB     r0,[sp,#8]
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (275)
+        0x00208210:    466a        jF      MOV      r2,sp
+        0x00208212:    2109        .!      MOVS     r1,#9
+        0x00208214:    f64f5080    O..P    MOV      r0,#0xfd80
+        0x00208218:    f619f968    ..h.    BL       btif_vendor_cmd_req ; 0x214ec
+        0x0020821c:    b108        ..      CBZ      r0,0x208222 ; le_vendor_modify_bt_le_fw_policy + 70
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (277)
+        0x0020821e:    2000        .       MOVS     r0,#0
+        0x00208220:    bd0e        ..      POP      {r1-r3,pc}
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (279)
+        0x00208222:    2007        .       MOVS     r0,#7
+;;; ..\..\..\src\app\gap_lib\extension\gap_vendor_cmd.c (286)
+        0x00208224:    bd0e        ..      POP      {r1-r3,pc}
+    $d
+        0x00208226:    0000        ..      DCW    0
+        0x00208228:    00201b1c    .. .    DCD    2104092
+        0x0020822c:    00202e48    H. .    DCD    2109000
+    $t
+    x$fpl$fpinit
+    $v0
+    _fp_init
+        0x00208230:    f04f7040    O.@p    MOV      r0,#0x3000000
+        0x00208234:    eee10a10    ....    VMSR     FPSCR,r0
+    __fplib_config_fpu_vfp
+    __fplib_config_pureend_doubles
+        0x00208238:    4770        pG      BX       lr
+        0x0020823a:    0000        ..      MOVS     r0,r0
+    $d.realdata
+    .constdata
+    app_cb_table
+        0x0020823c:    0e85d101    ....    DCD    243650817
+        0x00208240:    00000001    ....    DCD    1
+        0x00208244:    00207e07    .~ .    DCD    2129415
+    .constdata
+        0x00208248:    002084a0    .. .    DCD    2131104
+        0x0020824c:    0020854c    L. .    DCD    2131276
+        0x00208250:    00208494    .. .    DCD    2131092
+        0x00208254:    00208554    T. .    DCD    2131284
+        0x00208258:    002084f8    .. .    DCD    2131192
+        0x0020825c:    0020856c    l. .    DCD    2131308
+        0x00208260:    00208560    `. .    DCD    2131296
+        0x00208264:    002084e8    .. .    DCD    2131176
+        0x00208268:    002084e8    .. .    DCD    2131176
+        0x0020826c:    002084e8    .. .    DCD    2131176
+        0x00208270:    002084e8    .. .    DCD    2131176
+        0x00208274:    00208488    .. .    DCD    2131080
+        0x00208278:    00208540    @. .    DCD    2131264
+        0x0020827c:    002084e8    .. .    DCD    2131176
+        0x00208280:    002084b0    .. .    DCD    2131120
+        0x00208284:    00208510    .. .    DCD    2131216
+        0x00208288:    00208524    $. .    DCD    2131236
+        0x0020828c:    00208490    .. .    DCD    2131088
+        0x00208290:    00208478    x. .    DCD    2131064
+        0x00208294:    002083f8    .. .    DCD    2130936
+        0x00208298:    002083cc    .. .    DCD    2130892
+        0x0020829c:    0020852c    ,. .    DCD    2131244
+        0x002082a0:    002084e0    .. .    DCD    2131168
+        0x002082a4:    002084cc    .. .    DCD    2131148
+        0x002082a8:    00208464    d. .    DCD    2131044
+        0x002082ac:    00208424    $. .    DCD    2130980
+        0x002082b0:    00208444    D. .    DCD    2131012
+        0x002082b4:    002083a8    .. .    DCD    2130856
+        0x002082b8:    00208374    t. .    DCD    2130804
+        0x002082bc:    00208484    .. .    DCD    2131076
+        0x002082c0:    0020836c    l. .    DCD    2130796
+        0x002082c4:    002083a0    .. .    DCD    2130848
+        0x002082c8:    00208364    d. .    DCD    2130788
+        0x002082cc:    00208398    .. .    DCD    2130840
+        0x002082d0:    00208480    .. .    DCD    2131072
+        0x002082d4:    00208518    .. .    DCD    2131224
+        0x002082d8:    0020837c    |. .    DCD    2130812
+        0x002082dc:    002083b0    .. .    DCD    2130864
+        0x002082e0:    002083dc    .. .    DCD    2130908
+        0x002082e4:    00208400    .. .    DCD    2130944
+        0x002082e8:    0020842c    ,. .    DCD    2130988
+        0x002082ec:    0020844c    L. .    DCD    2131020
+        0x002082f0:    00208410    .. .    DCD    2130960
+        0x002082f4:    002083ec    .. .    DCD    2130924
+        0x002082f8:    002084ac    .. .    DCD    2131116
+        0x002082fc:    002083c0    .. .    DCD    2130880
+        0x00208300:    0020838c    .. .    DCD    2130828
+        0x00208304:    002083d4    .. .    DCD    2130900
+        0x00208308:    0020841c    .. .    DCD    2130972
+        0x0020830c:    0020843c    <. .    DCD    2131004
+        0x00208310:    0020845c    \. .    DCD    2131036
+        0x00208314:    00208470    p. .    DCD    2131056
+        0x00208318:    00208504    .. .    DCD    2131204
+        0x0020831c:    002084f0    .. .    DCD    2131184
+        0x00208320:    00208538    8. .    DCD    2131256
+        0x00208324:    002084b8    .. .    DCD    2131128
+        0x00208328:    00208498    .. .    DCD    2131096
+        0x0020832c:    00208578    x. .    DCD    2131320
+        0x00208330:    002084d4    .. .    DCD    2131156
+        0x00208334:    002084c0    .. .    DCD    2131136
+        0x00208338:    0020848c    .. .    DCD    2131084
+    .constdata
+    __func__
+        0x0020833c:    5f707061    app_    DCD    1601204321
+        0x00208340:    6e69616d    main    DCD    1852399981
+        0x00208344:    7361745f    _tas    DCD    1935766623
+        0x00208348:    006b        k.      DCW    107
+    .constdata
+    scan_rsp_data
+        0x0020834a:    1903        ..      DCW    6403
+        0x0020834c:    0000        ..      DCW    0
+    adv_data
+        0x0020834e:    0102        ..      DCW    258
+        0x00208350:    42091004    ...B    DCD    1107890180
+        0x00208354:    425f454c    LE_B    DCD    1113539916
+        0x00208358:    44414f52    ROAD    DCD    1145130834
+        0x0020835c:    54534143    CAST    DCD    1414742339
+        0x00208360:    00005245    ER..    DCD    21061
+    .conststring
+        0x00208364:    30433249    I2C0    DCD    809710153
+        0x00208368:    00000000    ....    DCD    0
+        0x0020836c:    30495053    SPI0    DCD    810111059
+        0x00208370:    00000000    ....    DCD    0
+        0x00208374:    54524155    UART    DCD    1414676821
+        0x00208378:    00000030    0...    DCD    48
+        0x0020837c:    414d4447    GDMA    DCD    1095582791
+        0x00208380:    68432030    0 Ch    DCD    1749229616
+        0x00208384:    656e6e61    anne    DCD    1701736033
+        0x00208388:    0000306c    l0..    DCD    12396
+        0x0020838c:    4f495047    GPIO    DCD    1330204743
+        0x00208390:    6f72475f    _Gro    DCD    1869760351
+        0x00208394:    00307075    up0.    DCD    3174517
+        0x00208398:    31433249    I2C1    DCD    826487369
+        0x0020839c:    00000000    ....    DCD    0
+        0x002083a0:    31495053    SPI1    DCD    826888275
+        0x002083a4:    00000000    ....    DCD    0
+        0x002083a8:    54524155    UART    DCD    1414676821
+        0x002083ac:    00000031    1...    DCD    49
+        0x002083b0:    414d4447    GDMA    DCD    1095582791
+        0x002083b4:    68432030    0 Ch    DCD    1749229616
+        0x002083b8:    656e6e61    anne    DCD    1701736033
+        0x002083bc:    0000316c    l1..    DCD    12652
+        0x002083c0:    4f495047    GPIO    DCD    1330204743
+        0x002083c4:    6f72475f    _Gro    DCD    1869760351
+        0x002083c8:    00317075    up1.    DCD    3240053
+        0x002083cc:    324d4954    TIM2    DCD    843925844
+        0x002083d0:    00000000    ....    DCD    0
+        0x002083d4:    54524155    UART    DCD    1414676821
+        0x002083d8:    00000032    2...    DCD    50
+        0x002083dc:    414d4447    GDMA    DCD    1095582791
+        0x002083e0:    68432030    0 Ch    DCD    1749229616
+        0x002083e4:    656e6e61    anne    DCD    1701736033
+        0x002083e8:    0000326c    l2..    DCD    12908
+        0x002083ec:    4f495047    GPIO    DCD    1330204743
+        0x002083f0:    6f72475f    _Gro    DCD    1869760351
+        0x002083f4:    00327075    up2.    DCD    3305589
+        0x002083f8:    334d4954    TIM3    DCD    860703060
+        0x002083fc:    00000000    ....    DCD    0
+        0x00208400:    414d4447    GDMA    DCD    1095582791
+        0x00208404:    68432030    0 Ch    DCD    1749229616
+        0x00208408:    656e6e61    anne    DCD    1701736033
+        0x0020840c:    0000336c    l3..    DCD    13164
+        0x00208410:    4f495047    GPIO    DCD    1330204743
+        0x00208414:    6f72475f    _Gro    DCD    1869760351
+        0x00208418:    00337075    up3.    DCD    3371125
+        0x0020841c:    344d4954    TIM4    DCD    877480276
+        0x00208420:    00000000    ....    DCD    0
+        0x00208424:    4f495047    GPIO    DCD    1330204743
+        0x00208428:    00000034    4...    DCD    52
+        0x0020842c:    414d4447    GDMA    DCD    1095582791
+        0x00208430:    68432030    0 Ch    DCD    1749229616
+        0x00208434:    656e6e61    anne    DCD    1701736033
+        0x00208438:    0000346c    l4..    DCD    13420
+        0x0020843c:    354d4954    TIM5    DCD    894257492
+        0x00208440:    00000000    ....    DCD    0
+        0x00208444:    4f495047    GPIO    DCD    1330204743
+        0x00208448:    00000035    5...    DCD    53
+        0x0020844c:    414d4447    GDMA    DCD    1095582791
+        0x00208450:    68432030    0 Ch    DCD    1749229616
+        0x00208454:    656e6e61    anne    DCD    1701736033
+        0x00208458:    0000356c    l5..    DCD    13676
+        0x0020845c:    364d4954    TIM6    DCD    911034708
+        0x00208460:    00000000    ....    DCD    0
+        0x00208464:    656d6954    Time    DCD    1701669204
+        0x00208468:    372d3472    r4-7    DCD    925709426
+        0x0020846c:    00000000    ....    DCD    0
+        0x00208470:    374d4954    TIM7    DCD    927811924
+        0x00208474:    00000000    ....    DCD    0
+        0x00208478:    414d5442    BTMA    DCD    1095586882
+        0x0020847c:    00000043    C...    DCD    67
+        0x00208480:    00434441    ADC.    DCD    4408385
+        0x00208484:    00435452    RTC.    DCD    4412498
+        0x00208488:    00435653    SVC.    DCD    4413011
+        0x0020848c:    0044434c    LCD.    DCD    4473676
+        0x00208490:    00474457    WDG.    DCD    4670551
+        0x00208494:    00494d4e    NMI.    DCD    4803918
+        0x00208498:    4f43504c    LPCO    DCD    1329811532
+        0x0020849c:    0000504d    MP..    DCD    20557
+        0x002084a0:    74696e49    Init    DCD    1953066569
+        0x002084a4:    536c6169    ialS    DCD    1399611753
+        0x002084a8:    00000050    P...    DCD    80
+        0x002084ac:    00005249    IR..    DCD    21065
+        0x002084b0:    646e6550    Pend    DCD    1684956496
+        0x002084b4:    00005653    SV..    DCD    22099
+        0x002084b8:    32495053    SPI2    DCD    843665491
+        0x002084bc:    00000057    W...    DCD    87
+        0x002084c0:    524f5053    SPOR    DCD    1380929619
+        0x002084c4:    52203154    T1 R    DCD    1377841492
+        0x002084c8:    00000058    X...    DCD    88
+        0x002084cc:    30533249    I2S0    DCD    810758729
+        0x002084d0:    0058525f    _RX.    DCD    5788255
+        0x002084d4:    524f5053    SPOR    DCD    1380929619
+        0x002084d8:    54203154    T1 T    DCD    1411395924
+        0x002084dc:    00000058    X...    DCD    88
+        0x002084e0:    30533249    I2S0    DCD    810758729
+        0x002084e4:    0058545f    _TX.    DCD    5788767
+        0x002084e8:    64767352    Rsvd    DCD    1685484370
+        0x002084ec:    00000000    ....    DCD    0
+        0x002084f0:    63656451    Qdec    DCD    1667589201
+        0x002084f4:    0065646f    ode.    DCD    6644847
+        0x002084f8:    4d6d654d    MemM    DCD    1299014989
+        0x002084fc:    67616e61    anag    DCD    1734438497
+        0x00208500:    00000065    e...    DCD    101
+        0x00208504:    5f495053    SPI_    DCD    1598640211
+        0x00208508:    73616c46    Flas    DCD    1935764550
+        0x0020850c:    00000068    h...    DCD    104
+        0x00208510:    54737953    SysT    DCD    1416853843
+        0x00208514:    006b6369    ick.    DCD    7037801
+        0x00208518:    69726550    Peri    DCD    1769104720
+        0x0020851c:    72656870    pher    DCD    1919248496
+        0x00208520:    00006c61    al..    DCD    27745
+        0x00208524:    74737953    Syst    DCD    1953724755
+        0x00208528:    00006d65    em..    DCD    28005
+        0x0020852c:    74616c50    Plat    DCD    1952541776
+        0x00208530:    6d726f66    form    DCD    1836216166
+        0x00208534:    00000000    ....    DCD    0
+        0x00208538:    7379654b    Keys    DCD    1937335627
+        0x0020853c:    006e6163    can.    DCD    7233891
+        0x00208540:    75626544    Debu    DCD    1969382724
+        0x00208544:    6e6f4d67    gMon    DCD    1852788071
+        0x00208548:    00000000    ....    DCD    0
+        0x0020854c:    65736552    Rese    DCD    1702061394
+        0x00208550:    00000074    t...    DCD    116
+        0x00208554:    64726148    Hard    DCD    1685217608
+        0x00208558:    6c756146    Faul    DCD    1819631942
+        0x0020855c:    00000074    t...    DCD    116
+        0x00208560:    67617355    Usag    DCD    1734439765
+        0x00208564:    75614665    eFau    DCD    1969309285
+        0x00208568:    0000746c    lt..    DCD    29804
+        0x0020856c:    46737542    BusF    DCD    1181971778
+        0x00208570:    746c7561    ault    DCD    1953264993
+        0x00208574:    00000000    ....    DCD    0
+        0x00208578:    5f415450    PTA_    DCD    1598116944
+        0x0020857c:    6c69614d    Mail    DCD    1818845517
+        0x00208580:    00786f62    box.    DCD    7892834
+    .conststring
+        0x00208584:    6e656353    Scen    DCD    1852138323
+        0x00208588:    00425f65    e_B.    DCD    4349797
+        0x0020858c:    6e656353    Scen    DCD    1852138323
+        0x00208590:    00435f65    e_C.    DCD    4415333
+        0x00208594:    746f6f42    Boot    DCD    1953460034
+        0x00208598:    65636e4f    Once    DCD    1701015119
+        0x0020859c:    00000000    ....    DCD    0
+
+** Section #6 'RAM_DATA_ON' (SHT_PROGBITS) [SHF_ALLOC + SHF_WRITE]
+    Size   : 108 bytes (alignment 4)
+    Address: 0x002085a0
+
+    0x2085a0:   94 85 20 00 50 f1 80 00 10 f2 80 00 28 86 20 00    .. .P.......(. .
+    0x2085b0:   e8 86 20 00 e8 86 20 00 c0 00 00 00 00 00 00 00    .. ... .........
+    0x2085c0:   00 00 00 00 84 85 20 00 10 f2 80 00 10 f2 80 00    ...... .........
+    0x2085d0:   28 86 20 00 28 86 20 00 28 86 20 00 00 00 00 00    (. .(. .(. .....
+    0x2085e0:   00 00 00 00 00 00 00 00 8c 85 20 00 10 f2 80 00    .......... .....
+    0x2085f0:   10 f2 80 00 28 86 20 00 28 86 20 00 28 86 20 00    ....(. .(. .(. .
+    0x208600:   00 00 00 00 00 00 00 00 00 00 00 00                ............
+
+
+** Section #7 'RAM_DATA_ON' (SHT_NOBITS) [SHF_ALLOC + SHF_WRITE]
+    Size   : 28 bytes (alignment 4)
+    Address: 0x0020860c
+
+
+** Section #8 'OVERLAY_A' (SHT_PROGBITS) [SHF_ALLOC + SHF_EXECINSTR]
+    Size   : 192 bytes (alignment 4)
+    Address: 0x00208628
+
+    $t
+    .app.overlay_a
+    AppUpdateVectorTable
+;;; .\..\..\..\src\mcu\rtl876x\system_rtl8762c.c
+;;;474    static void AppUpdateVectorTable(void)
+;;;474    {
+        0x00208628:    e92d43f0    -..C    PUSH     {r4-r9,lr}
+        0x0020862c:    b0bd        ..      SUB      sp,sp,#0xf4
+;;;475        extern uint32_t Load$$RAM_VECTOR_TABLE$$RO$$Base;
+;;;476        extern uint32_t Image$$RAM_VECTOR_TABLE$$RO$$Length;
+;;;477        extern void Default_Handler(void);
+;;;478        const char *SysException[] =
+        0x0020862e:    2240        @"      MOVS     r2,#0x40
+        0x00208630:    4926        &I      LDR      r1,[pc,#152] ; [0x2086cc] = 0x208248
+        0x00208632:    a82d        -.      ADD      r0,sp,#0xb4
+        0x00208634:    f651fcb8    Q...    BL       __aeabi_memcpy4 ; 0x59fa8
+;;;479        {
+;;;480            "InitialSP", "Reset", "NMI", "HardFault", "MemManage", "BusFault", "UsageFault", "Rsvd",
+;;;481            "Rsvd", "Rsvd", "Rsvd", "SVC", "DebugMon", "Rsvd", "PendSV", "SysTick"
+;;;482        };
+;;;483        const char *ExtIrq[] =
+        0x00208638:    4924        $I      LDR      r1,[pc,#144] ; [0x2086cc] = 0x208248
+        0x0020863a:    22b4        ."      MOVS     r2,#0xb4
+        0x0020863c:    3140        @1      ADDS     r1,r1,#0x40
+        0x0020863e:    4668        hF      MOV      r0,sp
+        0x00208640:    f651fcb2    Q...    BL       __aeabi_memcpy4 ; 0x59fa8
+        0x00208644:    4924        $I      LDR      r1,[pc,#144] ; [0x2086d8] = 0xe000ed08
+;;;484        {
+;;;485            "System", "WDG", "BTMAC", "TIM3", "TIM2", "Platform", "I2S0_TX", "I2S0_RX", "Timer4-7",
+;;;486            "GPIO4", "GPIO5", "UART1", "UART0", "RTC", "SPI0", "SPI1", "I2C0", "I2C1", "ADC",
+;;;487            "Peripheral", "GDMA0 Channel0", "GDMA0 Channel1", "GDMA0 Channel2", "GDMA0 Channel3",
+;;;488            "GDMA0 Channel4", "GDMA0 Channel5", "GPIO_Group3", "GPIO_Group2", "IR", "GPIO_Group1",
+;;;489            "GPIO_Group0", "UART2", "TIM4", "TIM5", "TIM6", "TIM7", "SPI_Flash", "Qdecode",
+;;;490            "Keyscan", "SPI2W", "LPCOMP", "PTA_Mailbox", "SPORT1 TX", "SPORT1 RX", "LCD"
+;;;491        };
+;;;492    
+;;;493        IRQ_Fun *pRamVector    = (IRQ_Fun *)VTOR_RAM_ADDR;
+        0x00208646:    f44f1000    O...    MOV      r0,#0x200000
+        0x0020864a:    4d21        !M      LDR      r5,[pc,#132] ; [0x2086d0] = 0x80e650
+        0x0020864c:    4f21        !O      LDR      r7,[pc,#132] ; [0x2086d4] = 0xf4
+        0x0020864e:    6809        .h      LDR      r1,[r1,#0]
+        0x00208650:    4606        .F      MOV      r6,r0
+;;;494        IRQ_Fun *pAppVector    = (IRQ_Fun *)&Load$$RAM_VECTOR_TABLE$$RO$$Base;
+;;;495        uint32_t AppVectorSize = (uint32_t)&Image$$RAM_VECTOR_TABLE$$RO$$Length;
+;;;496        uint32_t i             = 0;
+        0x00208652:    2400        .$      MOVS     r4,#0
+;;;497    
+;;;498        if (SCB->VTOR != VTOR_RAM_ADDR)
+        0x00208654:    42b1        .B      CMP      r1,r6
+        0x00208656:    d001        ..      BEQ      0x20865c ; AppUpdateVectorTable + 52
+;;;499        {
+;;;500            RamVectorTableInit(VTOR_RAM_ADDR);
+        0x00208658:    f5fcfb26    ..&.    BL       RamVectorTableInit ; 0x4ca8
+        0x0020865c:    f04f5805    O..X    MOV      r8,#0x21400000
+        0x00208660:    f8df9078    ..x.    LDR      r9,[pc,#120] ; [0x2086dc] = 0x21100101
+;;;501        }
+;;;502    
+;;;503        /* Update APP defined handlers */
+;;;504        for (i = 0; i < AppVectorSize / 4; ++i)
+        0x00208664:    e027        '.      B        0x2086b6 ; AppUpdateVectorTable + 142
+;;;505        {
+;;;506            if (i == 1) //skip reset_handler remap
+        0x00208666:    2c01        .,      CMP      r4,#1
+        0x00208668:    d024        $.      BEQ      0x2086b4 ; AppUpdateVectorTable + 140
+;;;507            {
+;;;508                continue;
+;;;509            }
+;;;510    
+;;;511            if ((pAppVector[i] != Default_Handler) && (pAppVector[i] != 0))
+        0x0020866a:    f8550024    U.$.    LDR      r0,[r5,r4,LSL #2]
+        0x0020866e:    491c        .I      LDR      r1,[pc,#112] ; [0x2086e0] = 0x207d41
+        0x00208670:    4288        .B      CMP      r0,r1
+        0x00208672:    d01f        ..      BEQ      0x2086b4 ; AppUpdateVectorTable + 140
+        0x00208674:    b1f0        ..      CBZ      r0,0x2086b4 ; AppUpdateVectorTable + 140
+;;;512            {
+;;;513                if (i < System_VECTORn)
+        0x00208676:    2c10        .,      CMP      r4,#0x10
+        0x00208678:    d209        ..      BCS      0x20868e ; AppUpdateVectorTable + 102
+;;;514                {
+;;;515                    OS_PRINT_WARN1("Warning! %s is updated by APP!", TRACE_STRING(SysException[i]));
+        0x0020867a:    a82d        -.      ADD      r0,sp,#0xb4
+        0x0020867c:    f8501024    P.$.    LDR      r1,[r0,r4,LSL #2]
+        0x00208680:    4640        @F      MOV      r0,r8
+        0x00208682:    f5fffbf2    ....    BL       trace_string ; 0x7e6a
+        0x00208686:    4603        .F      MOV      r3,r0
+        0x00208688:    2201        ."      MOVS     r2,#1
+        0x0020868a:    4916        .I      LDR      r1,[pc,#88] ; [0x2086e4] = 0x8800020
+        0x0020868c:    e00b        ..      B        0x2086a6 ; AppUpdateVectorTable + 126
+;;;516                }
+;;;517                else
+;;;518                {
+;;;519                    OS_PRINT_WARN1("Warning! ISR %s is updated by APP!",
+        0x0020868e:    4668        hF      MOV      r0,sp
+        0x00208690:    eb000084    ....    ADD      r0,r0,r4,LSL #2
+        0x00208694:    f8501c40    P.@.    LDR      r1,[r0,#-0x40]
+        0x00208698:    4640        @F      MOV      r0,r8
+        0x0020869a:    f5fffbe6    ....    BL       trace_string ; 0x7e6a
+        0x0020869e:    4911        .I      LDR      r1,[pc,#68] ; [0x2086e4] = 0x8800020
+        0x002086a0:    2201        ."      MOVS     r2,#1
+        0x002086a2:    4603        .F      MOV      r3,r0
+        0x002086a4:    3124        $1      ADDS     r1,r1,#0x24
+        0x002086a6:    4648        HF      MOV      r0,r9
+        0x002086a8:    f5fff9d9    ....    BL       log_buffer ; 0x7a5e
+;;;520                                   TRACE_STRING(ExtIrq[i - System_VECTORn]));
+;;;521                }
+;;;522    
+;;;523                pRamVector[i] = pAppVector[i];
+        0x002086ac:    f8550024    U.$.    LDR      r0,[r5,r4,LSL #2]
+        0x002086b0:    f8460024    F.$.    STR      r0,[r6,r4,LSL #2]
+        0x002086b4:    1c64        d.      ADDS     r4,r4,#1
+        0x002086b6:    ebb40f97    ....    CMP      r4,r7,LSR #2
+        0x002086ba:    d3d4        ..      BCC      0x208666 ; AppUpdateVectorTable + 62
+;;;524            }
+;;;525        }
+;;;526    
+;;;527        __DMB();
+        0x002086bc:    f3bf8f5f    .._.    DMB      
+;;;528        __DSB();
+        0x002086c0:    f3bf8f4f    ..O.    DSB      
+;;;529    }
+        0x002086c4:    b03d        =.      ADD      sp,sp,#0xf4
+        0x002086c6:    e8bd83f0    ....    POP      {r4-r9,pc}
+    $d
+        0x002086ca:    0000        ..      DCW    0
+        0x002086cc:    00208248    H. .    DCD    2130504
+        0x002086d0:    0080e650    P...    DCD    8447568
+        0x002086d4:    000000f4    ....    DCD    244
+        0x002086d8:    e000ed08    ....    DCD    3758157064
+        0x002086dc:    21100101    ...!    DCD    554696961
+        0x002086e0:    00207d41    A} .    DCD    2129217
+        0x002086e4:    08800020     ...    DCD    142606368
+
+** Section #9 'App.trace' (SHT_PROGBITS) [SHF_ALLOC]
+    Size   : 676 bytes (alignment 4)
+    Address: 0x08800000
+
+    0x8800000:   21 21 21 53 44 4b 20 56 65 72 3a 20 25 73 2c 20    !!!SDK Ver: %s, 
+    0x8800010:   42 75 69 6c 64 20 54 69 6d 65 3a 20 25 73 00 00    Build Time: %s..
+    0x8800020:   21 21 2a 57 61 72 6e 69 6e 67 21 20 25 73 20 69    !!*Warning! %s i
+    0x8800030:   73 20 75 70 64 61 74 65 64 20 62 79 20 41 50 50    s updated by APP
+    0x8800040:   21 00 00 00 21 21 2a 57 61 72 6e 69 6e 67 21 20    !...!!*Warning! 
+    0x8800050:   49 53 52 20 25 73 20 69 73 20 75 70 64 61 74 65    ISR %s is update
+    0x8800060:   64 20 62 79 20 41 50 50 21 00 00 00 21 2a 2a 61    d by APP!...!**a
+    0x8800070:   70 70 5f 68 61 6e 64 6c 65 5f 64 65 76 5f 73 74    pp_handle_dev_st
+    0x8800080:   61 74 65 5f 65 76 74 3a 20 69 6e 69 74 20 73 74    ate_evt: init st
+    0x8800090:   61 74 65 20 25 64 2c 20 61 64 76 20 73 74 61 74    ate %d, adv stat
+    0x88000a0:   65 20 25 64 2c 20 63 61 75 73 65 20 30 78 25 78    e %d, cause 0x%x
+    0x88000b0:   00 00 00 00 21 2a 2a 47 41 50 20 73 74 61 63 6b    ....!**GAP stack
+    0x88000c0:   20 72 65 61 64 79 00 00 21 2a 2a 47 41 50 20 61     ready..!**GAP a
+    0x88000d0:   64 76 20 73 74 6f 70 65 64 00 00 00 21 2a 2a 47    dv stoped...!**G
+    0x88000e0:   41 50 20 61 64 76 20 73 74 61 72 74 00 00 00 00    AP adv start....
+    0x88000f0:   61 70 70 5f 68 61 6e 64 6c 65 5f 67 61 70 5f 6d    app_handle_gap_m
+    0x8800100:   73 67 3a 20 73 75 62 74 79 70 65 20 25 64 00 00    sg: subtype %d..
+    0x8800110:   21 21 21 61 70 70 5f 68 61 6e 64 6c 65 5f 67 61    !!!app_handle_ga
+    0x8800120:   70 5f 6d 73 67 3a 20 75 6e 6b 6e 6f 77 6e 20 73    p_msg: unknown s
+    0x8800130:   75 62 74 79 70 65 20 25 64 00 00 00 21 21 21 67    ubtype %d...!!!g
+    0x8800140:   61 70 5f 6c 69 62 5f 69 6e 69 74 3a 20 76 65 72    ap_lib_init: ver
+    0x8800150:   20 25 64 2c 20 46 5f 42 54 5f 4c 45 5f 35 5f 30     %d, F_BT_LE_5_0
+    0x8800160:   5f 53 55 50 50 4f 52 54 20 25 64 2c 20 46 5f 42    _SUPPORT %d, F_B
+    0x8800170:   54 5f 4c 45 5f 35 5f 30 5f 41 45 5f 41 44 56 5f    T_LE_5_0_AE_ADV_
+    0x8800180:   53 55 50 50 4f 52 54 20 25 64 2c 20 46 5f 42 54    SUPPORT %d, F_BT
+    0x8800190:   5f 4c 45 5f 35 5f 30 5f 41 45 5f 53 43 41 4e 5f    _LE_5_0_AE_SCAN_
+    0x88001a0:   53 55 50 50 4f 52 54 20 25 64 2c 20 46 5f 42 54    SUPPORT %d, F_BT
+    0x88001b0:   5f 4c 45 5f 34 5f 31 5f 53 55 50 50 4f 52 54 20    _LE_4_1_SUPPORT 
+    0x88001c0:   25 64 2c 20 46 5f 42 54 5f 56 45 4e 44 4f 52 5f    %d, F_BT_VENDOR_
+    0x88001d0:   46 45 41 54 55 52 45 5f 53 55 50 50 4f 52 54 20    FEATURE_SUPPORT 
+    0x88001e0:   25 64 2c 20 46 5f 42 54 5f 4c 45 5f 36 5f 30 5f    %d, F_BT_LE_6_0_
+    0x88001f0:   41 4f 41 5f 41 4f 44 5f 53 55 50 50 4f 52 54 20    AOA_AOD_SUPPORT 
+    0x8800200:   25 64 2c 20 46 5f 42 54 5f 4c 45 5f 36 5f 30 5f    %d, F_BT_LE_6_0_
+    0x8800210:   41 4f 58 5f 43 4f 4e 4e 4c 45 53 53 5f 53 55 50    AOX_CONNLESS_SUP
+    0x8800220:   50 4f 52 54 20 25 64 00 21 21 21 67 61 70 5f 6c    PORT %d.!!!gap_l
+    0x8800230:   69 62 5f 69 6e 69 74 3a 20 46 5f 42 54 5f 4c 45    ib_init: F_BT_LE
+    0x8800240:   5f 53 4d 50 5f 53 43 5f 4f 4f 42 5f 53 55 50 50    _SMP_SC_OOB_SUPP
+    0x8800250:   4f 52 54 20 25 64 2c 20 46 5f 42 54 5f 53 57 5f    ORT %d, F_BT_SW_
+    0x8800260:   52 45 53 45 54 5f 53 55 50 50 4f 52 54 20 25 64    RESET_SUPPORT %d
+    0x8800270:   2c 20 46 5f 42 54 5f 50 41 54 43 48 5f 46 4f 52    , F_BT_PATCH_FOR
+    0x8800280:   5f 43 48 41 4e 47 45 5f 41 50 49 20 25 64 2c 20    _CHANGE_API %d, 
+    0x8800290:   46 5f 42 54 5f 44 4c 50 53 5f 41 50 49 20 25 64    F_BT_DLPS_API %d
+    0x88002a0:   00 00 00 00                                        ....
+
+
+** Section #10 '.debug_abbrev' (SHT_PROGBITS)
+    Size   : 1476 bytes
+
+
+** Section #11 '.debug_frame' (SHT_PROGBITS)
+    Size   : 1764 bytes
+
+
+** Section #12 '.debug_info' (SHT_PROGBITS)
+    Size   : 97392 bytes
+
+
+** Section #13 '.debug_line' (SHT_PROGBITS)
+    Size   : 7052 bytes
+
+
+** Section #14 '.debug_loc' (SHT_PROGBITS)
+    Size   : 1820 bytes
+
+
+** Section #15 '.debug_macinfo' (SHT_PROGBITS)
+    Size   : 49420 bytes
+
+
+** Section #16 '.debug_pubnames' (SHT_PROGBITS)
+    Size   : 2732 bytes
+
+
+** Section #17 '.symtab' (SHT_SYMTAB)
+    Size   : 13536 bytes (alignment 4)
+    String table #18 '.strtab'
+    Last local symbol no. 175
+
+
+** Section #18 '.strtab' (SHT_STRTAB)
+    Size   : 15204 bytes
+
+
+** Section #19 '.note' (SHT_NOTE)
+    Size   : 52 bytes (alignment 4)
+
+
+** Section #20 '.comment' (SHT_PROGBITS)
+    Size   : 7516 bytes
+
+
+** Section #21 '.shstrtab' (SHT_STRTAB)
+    Size   : 276 bytes
+
+
+address     size       variable name                            type
+0x002085a0  0x6c       overlay_sections                         array[3] of T_OVERLAY_SECTION
+
+address     size       variable name                            type
+0x0020861d  0x8        scenario_name                            array[8] of char
+
+address     size       variable name                            type
+0x0020834e  0x14       adv_data                                 array[20] of const uint8_t
+
+address     size       variable name                            type
+0x0020834a  0x4        scan_rsp_data                            array[4] of const uint8_t
+
+address     size       variable name                            type
+0x0020861c  0x1        gap_dev_state                            T_GAP_DEV_STATE
+0x0020861c  0x1(7:1)   gap_dev_state.gap_init_state             uint8_t
+0x0020861c  0x1(6:1)   gap_dev_state.gap_adv_sub_state          uint8_t
+0x0020861c  0x1(4:2)   gap_dev_state.gap_adv_state              uint8_t
+0x0020861c  0x1(2:2)   gap_dev_state.gap_scan_state             uint8_t
+0x0020861c  0x1(0:2)   gap_dev_state.gap_conn_state             uint8_t
+
+address     size       variable name                            type
+0x00208610  0x4        app_task_handle                          pointer to unknown Type 
+
+address     size       variable name                            type
+0x00208614  0x4        evt_queue_handle                         pointer to unknown Type 
+
+address     size       variable name                            type
+0x00208618  0x4        io_queue_handle                          pointer to unknown Type 
+
+address     size       variable name                            type
+0x0020823c  0xc        app_cb_table                             const T_APP_CB_TABLE
+0x0020823c  0x4        app_cb_table.app_cb_signature            uint32_t
+0x00208240  0x4        app_cb_table.app_cb_numbers              uint32_t
+0x00208244  0x4        app_cb_table.app_cb_addr                 array[1] of uint32_t
+
+address     size       variable name                            type
+0x0080e1e0  0x220      auth_header                              const T_AUTH_HEADER_FORMAT
+0x0080e1e0  0x100      auth_header.payload_signature            array[256] of uint8_t
+0x0080e2e0  0x10       auth_header.payload_mac                  array[16] of uint8_t
+0x0080e2f0  0x100      auth_header.header_signature             array[256] of uint8_t
+0x0080e3f0  0x10       auth_header.header_mac                   array[16] of uint8_t
+
+address     size       variable name                            type
+0x0080e000  0x1e0      img_header                               const T_IMG_HEADER_FORMAT
+0x0080e000  0xc        img_header.ctrl_header                   T_IMG_CTRL_HEADER_FORMAT
+0x0080e000  0x1        img_header.ctrl_header.ic_type           uint8_t
+0x0080e001  0x1        img_header.ctrl_header.secure_version    uint8_t
+0x0080e002  0x2        img_header.ctrl_header.ctrl_flag         anonymous
+0x0080e002  0x2        img_header.ctrl_header.ctrl_flag.value   uint16_t
+0x0080e002  0x2        img_header.ctrl_header.ctrl_flag.flag_value anonymous
+0x0080e002  0x2(15:1)  img_header.ctrl_header.ctrl_flag.flag_value.xip uint16_t
+0x0080e002  0x2(14:1)  img_header.ctrl_header.ctrl_flag.flag_value.enc uint16_t
+0x0080e002  0x2(13:1)  img_header.ctrl_header.ctrl_flag.flag_value.load_when_boot uint16_t
+0x0080e002  0x2(12:1)  img_header.ctrl_header.ctrl_flag.flag_value.enc_load uint16_t
+0x0080e002  0x2(9:3)   img_header.ctrl_header.ctrl_flag.flag_value.enc_key_select uint16_t
+0x0080e002  0x2(8:1)   img_header.ctrl_header.ctrl_flag.flag_value.not_ready uint16_t
+0x0080e002  0x2(7:1)   img_header.ctrl_header.ctrl_flag.flag_value.not_obsolete uint16_t
+0x0080e002  0x2(6:1)   img_header.ctrl_header.ctrl_flag.flag_value.integrity_check_en_in_boot uint16_t
+0x0080e002  0x2(0:6)   img_header.ctrl_header.ctrl_flag.flag_value.rsvd uint16_t
+0x0080e004  0x2        img_header.ctrl_header.image_id          uint16_t
+0x0080e006  0x2        img_header.ctrl_header.crc16             uint16_t
+0x0080e008  0x4        img_header.ctrl_header.payload_len       uint32_t
+0x0080e00c  0x10       img_header.uuid                          array[16] of uint8_t
+0x0080e01c  0x4        img_header.exe_base                      uint32_t
+0x0080e020  0x4        img_header.load_base                     uint32_t
+0x0080e024  0x4        img_header.load_len                      uint32_t
+0x0080e028  0x4        img_header.img_base                      uint32_t
+0x0080e02c  0x4        img_header.rsvd0                         array[4] of uint8_t
+0x0080e030  0x4        img_header.magic_pattern                 uint32_t
+0x0080e034  0x10       img_header.dec_key                       array[16] of uint8_t
+0x0080e044  0x1c       img_header.rsvd1                         array[28] of uint8_t
+0x0080e060  0x10       img_header.git_ver                       T_VERSION_FORMAT
+0x0080e060  0x4        img_header.git_ver.ver_info              anonymous
+0x0080e060  0x4        img_header.git_ver.ver_info.version      uint32_t
+0x0080e060  0x4        img_header.git_ver.ver_info.sub_version  anonymous
+0x0080e060  0x4(28:4)  img_header.git_ver.ver_info.sub_version._version_major uint32_t
+0x0080e060  0x4(20:8)  img_header.git_ver.ver_info.sub_version._version_minor uint32_t
+0x0080e060  0x4(5:15)  img_header.git_ver.ver_info.sub_version._version_revision uint32_t
+0x0080e060  0x4(0:5)   img_header.git_ver.ver_info.sub_version._version_reserve uint32_t
+0x0080e064  0x4        img_header.git_ver._version_commitid     uint32_t
+0x0080e068  0x8        img_header.git_ver._customer_name        array[8] of uint8_t
+0x0080e070  0x104      img_header.rsaPubKey                     T_RSA_PUBLIC_KEY
+0x0080e070  0x100      img_header.rsaPubKey.N                   array[256] of uint8_t
+0x0080e170  0x4        img_header.rsaPubKey.E                   array[4] of uint8_t
+0x0080e174  0x20       img_header.sha256                        array[32] of uint8_t
+0x0080e194  0x44       img_header.rsvd2                         array[68] of uint8_t
+0x0080e1d8  0x4        img_header.app_cb_signature              uint32_t
+0x0080e1dc  0x4        img_header.app_cb_table_base_address     uint32_t
+
+address     size       variable name                            type
+0x0020860c  0x4        user_wdg_cb                              BOOL_WDG_CB
+

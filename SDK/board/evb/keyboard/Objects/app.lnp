@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"..\..\..\bin\ROM.lib"
+"..\..\..\bin\gap_utils.lib"
+".\objects\startup_rtl8762c.o"
+".\objects\system_rtl8762c.o"
+".\objects\hids_kb.o"
+".\objects\bas.o"
+".\objects\dis.o"
+".\objects\ota_service.o"
+".\objects\rtl876x_io_dlps.o"
+".\objects\rtl876x_rcc.o"
+".\objects\rtl876x_gpio.o"
+".\objects\rtl876x_keyscan.o"
+".\objects\main.o"
+".\objects\app_task.o"
+".\objects\keyboard_app.o"
+".\objects\keyscan.o"
+".\objects\key_handler.o"
+".\objects\keyboard_button.o"
+".\objects\keyboard_led.o"
+".\objects\profile_init.o"
+".\objects\privacy_mgnt.o"
+".\objects\overlay_mgr.o"
+--strict --scatter ".\app.sct"
+--diag_suppress=L6314,L6312 --datacompressor off --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\app.map" -o .\Objects\app.axf

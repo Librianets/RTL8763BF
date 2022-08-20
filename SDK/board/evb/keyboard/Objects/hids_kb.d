@@ -1,0 +1,15 @@
+.\objects\hids_kb.o: ..\..\..\src\ble\profile\server\hids_kb.c
+.\objects\hids_kb.o: ..\..\..\inc\platform\app_define.h
+.\objects\hids_kb.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\hids_kb.o: ..\..\..\inc\platform\trace.h
+.\objects\hids_kb.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hids_kb.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\hids_kb.o: ..\..\..\inc\bluetooth\profile\profile_server.h
+.\objects\hids_kb.o: ..\..\..\inc\bluetooth\gap\bt_types.h
+.\objects\hids_kb.o: ..\..\..\inc\bluetooth\profile\gatt.h
+.\objects\hids_kb.o: ..\..\..\inc\bluetooth\gap\gap_le.h
+.\objects\hids_kb.o: ..\..\..\inc\bluetooth\gap\gap.h
+.\objects\hids_kb.o: ..\..\..\inc\bluetooth\gap\gap_callback_le.h
+.\objects\hids_kb.o: ..\..\..\inc\bluetooth\gap\gap_storage_le.h
+.\objects\hids_kb.o: ..\..\..\inc\bluetooth\gap\gap_le_types.h
+.\objects\hids_kb.o: ..\..\..\inc\bluetooth\profile\server\hids_kb.h

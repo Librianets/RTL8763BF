@@ -1,0 +1,435 @@
+Dependencies for Project 'keyboard', Target 'keyboard': (DO NOT MODIFY !)
+F (..\..\..\inc\platform\rom_uuid.h)(0x5B1F6154)()
+F (..\..\..\inc\platform\app_define.h)(0x5B1F6154)()
+F (..\..\..\bin\ROM.lib)(0x5B90C5A8)()
+F (..\..\..\bin\gap_utils.lib)(0x5B986FBA)()
+F (..\..\..\src\mcu\rtl876x\arm\startup_rtl8762c.s)(0x5B1F6154)(--cpu Cortex-M4.fp --li -g --16 --apcs=interwork -I ..\..\..\inc\platform --cpreproc-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0--pd "__UVISION_VERSION SETA 525" --pd "ARMCM4_FP SETA 1"--list .\listings\startup_rtl8762c.lst --xref -o .\objects\startup_rtl8762c.o --depend .\objects\startup_rtl8762c.d)
+F (..\..\..\src\mcu\rtl876x\system_rtl8762c.c)(0x5BA333F2)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\bluetooth\profile\client -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\keyboard -I ..\..\..\src\app\keyboard --gnu --preinclude app_define.h --bss_threshold=0-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\system_rtl8762c.o --omf_browse .\objects\system_rtl8762c.crf --depend .\objects\system_rtl8762c.d)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\locale.h)(0x599ECD2A)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\inc\platform\version.h)(0x5BA47B1D)
+I (..\..\..\inc\platform\rtl876x.h)(0x5B986FBA)
+I (..\..\..\inc\platform\cmsis\core_cm4.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\inc\platform\cmsis\core_cmInstr.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmFunc.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmSimd.h)(0x5B1F6154)
+I (..\..\..\inc\platform\system_rtl876x.h)(0x5B7A98F6)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\inc\platform\patch_header_check.h)(0x5B7FA8D8)
+I (..\..\..\inc\platform\app_section.h)(0x5B7A98F6)
+I (..\..\..\inc\platform\rom_uuid.h)(0x5B1F6154)
+I (..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (..\keyboard\mem_config.h)(0x5B90C5A8)
+I (..\keyboard\flash_map.h)(0x5C74FC70)
+I (..\..\..\inc\platform\otp.h)(0x5B7FA8D8)
+I (..\..\..\inc\platform\platform_autoconf.h)(0x5B7A98F6)
+I (..\..\..\inc\peripheral\rtl876x_wdg.h)(0x5B7A98F6)
+I (..\..\..\inc\peripheral\rtl876x_bitfields.h)(0x5B1F6154)
+I (..\..\..\inc\platform\overlay_mgr.h)(0x5B1F6154)
+I (..\..\..\inc\platform\flash_device.h)(0x5B1F6154)
+I (..\..\..\inc\os\os_sched.h)(0x5B1F6154)
+I (..\keyboard\otp_config.h)(0x5B9A178C)
+F (..\..\..\src\ble\profile\server\hids_kb.c)(0x5B1F6154)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\bluetooth\profile\client -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\keyboard -I ..\..\..\src\app\keyboard --gnu --preinclude app_define.h --bss_threshold=0-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\hids_kb.o --omf_browse .\objects\hids_kb.crf --depend .\objects\hids_kb.d)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\inc\bluetooth\profile\profile_server.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\bt_types.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\profile\gatt.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_callback_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_storage_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le_types.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\profile\server\hids_kb.h)(0x5B1F6154)
+F (..\..\..\src\ble\profile\server\bas.c)(0x5B1F6154)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\bluetooth\profile\client -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\keyboard -I ..\..\..\src\app\keyboard --gnu --preinclude app_define.h --bss_threshold=0-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\bas.o --omf_browse .\objects\bas.crf --depend .\objects\bas.d)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\inc\bluetooth\profile\profile_server.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\bt_types.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\profile\gatt.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_callback_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_storage_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le_types.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\profile\server\bas.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\profile\server\bas_config.h)(0x5B1F6154)
+F (..\..\..\src\ble\profile\server\dis.c)(0x5B1F6154)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\bluetooth\profile\client -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\keyboard -I ..\..\..\src\app\keyboard --gnu --preinclude app_define.h --bss_threshold=0-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\dis.o --omf_browse .\objects\dis.crf --depend .\objects\dis.d)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\inc\bluetooth\profile\profile_server.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\bt_types.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\profile\gatt.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_callback_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_storage_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le_types.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\profile\server\dis.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\profile\server\dis_config.h)(0x5B1F6154)
+F (..\..\..\src\app\keyboard\ota_service.c)(0x5B1F6154)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\bluetooth\profile\client -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\keyboard -I ..\..\..\src\app\keyboard --gnu --preinclude app_define.h --bss_threshold=0-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\ota_service.o --omf_browse .\objects\ota_service.crf --depend .\objects\ota_service.d)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\inc\bluetooth\profile\gatt.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\inc\bluetooth\gap\bt_types.h)(0x5B1F6154)
+I (..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\inc\bluetooth\gap\gap_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_callback_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_storage_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le_types.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_conn_le.h)(0x5B90C5A8)
+I (..\..\..\inc\bluetooth\gap\gap_msg.h)(0x5B7A98F6)
+I (..\..\..\inc\app\app_msg.h)(0x5B90C5A8)
+I (..\..\..\inc\platform\flash_device.h)(0x5B1F6154)
+I (..\..\..\inc\platform\patch_header_check.h)(0x5B7FA8D8)
+I (..\keyboard\mem_config.h)(0x5B90C5A8)
+I (..\keyboard\flash_map.h)(0x5C74FC70)
+I (..\..\..\src\app\keyboard\ota_service.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\profile\profile_server.h)(0x5B1F6154)
+I (..\..\..\inc\platform\flash_adv_cfg.h)(0x5B1F6154)
+F (..\..\..\src\mcu\peripheral\rtl876x_io_dlps.c)(0x5BA4BB16)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\bluetooth\profile\client -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\keyboard -I ..\..\..\src\app\keyboard --gnu --preinclude app_define.h --bss_threshold=0-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\rtl876x_io_dlps.o --omf_browse .\objects\rtl876x_io_dlps.crf --depend .\objects\rtl876x_io_dlps.d)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (..\..\..\inc\peripheral\rtl876x_pinmux.h)(0x5B986FBA)
+I (..\..\..\inc\platform\rtl876x.h)(0x5B986FBA)
+I (..\..\..\inc\platform\cmsis\core_cm4.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\inc\platform\cmsis\core_cmInstr.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmFunc.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmSimd.h)(0x5B1F6154)
+I (..\..\..\inc\platform\system_rtl876x.h)(0x5B7A98F6)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\inc\peripheral\rtl876x_bitfields.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_rcc.h)(0x5B1F6154)
+I (..\..\..\inc\platform\dlps.h)(0x5B7A98F6)
+I (..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_io_dlps.h)(0x5B1F6154)
+I (..\keyboard\board.h)(0x5B1F6152)
+I (..\..\..\inc\peripheral\rtl876x_nvic.h)(0x5B1F6154)
+I (..\..\..\inc\platform\otp.h)(0x5B7FA8D8)
+I (..\..\..\inc\platform\app_section.h)(0x5B7A98F6)
+F (..\..\..\src\mcu\peripheral\rtl876x_rcc.c)(0x5B7A98FA)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\bluetooth\profile\client -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\keyboard -I ..\..\..\src\app\keyboard --gnu --preinclude app_define.h --bss_threshold=0-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\rtl876x_rcc.o --omf_browse .\objects\rtl876x_rcc.crf --depend .\objects\rtl876x_rcc.d)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (..\..\..\inc\platform\rtl876x.h)(0x5B986FBA)
+I (..\..\..\inc\platform\cmsis\core_cm4.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\inc\platform\cmsis\core_cmInstr.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmFunc.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmSimd.h)(0x5B1F6154)
+I (..\..\..\inc\platform\system_rtl876x.h)(0x5B7A98F6)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\inc\peripheral\rtl876x_bitfields.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_rcc.h)(0x5B1F6154)
+F (..\..\..\src\mcu\peripheral\rtl876x_gpio.c)(0x5B1F6154)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\bluetooth\profile\client -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\keyboard -I ..\..\..\src\app\keyboard --gnu --preinclude app_define.h --bss_threshold=0-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\rtl876x_gpio.o --omf_browse .\objects\rtl876x_gpio.crf --depend .\objects\rtl876x_gpio.d)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_gpio.h)(0x5B986FBA)
+I (..\..\..\inc\platform\rtl876x.h)(0x5B986FBA)
+I (..\..\..\inc\platform\cmsis\core_cm4.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\inc\platform\cmsis\core_cmInstr.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmFunc.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmSimd.h)(0x5B1F6154)
+I (..\..\..\inc\platform\system_rtl876x.h)(0x5B7A98F6)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\inc\peripheral\rtl876x_bitfields.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_rcc.h)(0x5B1F6154)
+F (..\..\..\src\mcu\peripheral\rtl876x_keyscan.c)(0x5B1F6154)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\bluetooth\profile\client -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\keyboard -I ..\..\..\src\app\keyboard --gnu --preinclude app_define.h --bss_threshold=0-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\rtl876x_keyscan.o --omf_browse .\objects\rtl876x_keyscan.crf --depend .\objects\rtl876x_keyscan.d)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (..\..\..\inc\platform\rtl876x.h)(0x5B986FBA)
+I (..\..\..\inc\platform\cmsis\core_cm4.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\inc\platform\cmsis\core_cmInstr.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmFunc.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmSimd.h)(0x5B1F6154)
+I (..\..\..\inc\platform\system_rtl876x.h)(0x5B7A98F6)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\inc\peripheral\rtl876x_bitfields.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_rcc.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_keyscan.h)(0x5B1F6154)
+F (..\..\..\src\app\keyboard\main.c)(0x5B7FA8D8)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\bluetooth\profile\client -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\keyboard -I ..\..\..\src\app\keyboard --gnu --preinclude app_define.h --bss_threshold=0-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (..\..\..\inc\os\os_sched.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\inc\os\os_timer.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\bt_types.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_adv.h)(0x5B90C5A8)
+I (..\..\..\inc\bluetooth\gap\gap_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_callback_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_storage_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le_types.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_bond_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\profile\profile_server.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\profile\gatt.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_msg.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\profile\server\bas.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\profile\server\dis.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\app_task.h)(0x5B1F6154)
+I (..\..\..\inc\app\app_msg.h)(0x5B90C5A8)
+I (..\..\..\inc\bluetooth\profile\server\hids_kb.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\keyboard_app.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\keyscan.h)(0x5B1F6154)
+I (..\..\..\inc\platform\rtl876x.h)(0x5B986FBA)
+I (..\..\..\inc\platform\cmsis\core_cm4.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmInstr.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmFunc.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmSimd.h)(0x5B1F6154)
+I (..\..\..\inc\platform\system_rtl876x.h)(0x5B7A98F6)
+I (..\..\..\inc\peripheral\rtl876x_keyscan.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_bitfields.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_io_dlps.h)(0x5B1F6154)
+I (..\keyboard\board.h)(0x5B1F6152)
+I (..\..\..\inc\platform\dlps.h)(0x5B7A98F6)
+I (..\..\..\src\app\keyboard\keyboard_button.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\keyboard_led.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\privacy_mgnt.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_privacy.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_conn_le.h)(0x5B90C5A8)
+I (..\..\..\inc\bluetooth\profile\server\ota_service.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\profile_init.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\profile\gatt_builtin_services.h)(0x5B1F6154)
+F (..\..\..\src\app\keyboard\app_task.c)(0x5B1F6154)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\bluetooth\profile\client -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\keyboard -I ..\..\..\src\app\keyboard --gnu --preinclude app_define.h --bss_threshold=0-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\app_task.o --omf_browse .\objects\app_task.crf --depend .\objects\app_task.d)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (..\..\..\inc\os\os_msg.h)(0x5B90C5A8)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\inc\os\os_task.h)(0x5B1F6154)
+I (..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\bt_types.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_callback_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_storage_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le_types.h)(0x5B7A98F6)
+I (..\..\..\src\app\keyboard\app_task.h)(0x5B1F6154)
+I (..\..\..\inc\app\app_msg.h)(0x5B90C5A8)
+I (..\..\..\src\app\keyboard\keyboard_app.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_msg.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\profile\profile_server.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\profile\gatt.h)(0x5B1F6154)
+F (..\..\..\src\app\keyboard\keyboard_app.c)(0x5B7FA8D8)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\bluetooth\profile\client -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\keyboard -I ..\..\..\src\app\keyboard --gnu --preinclude app_define.h --bss_threshold=0-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\keyboard_app.o --omf_browse .\objects\keyboard_app.crf --depend .\objects\keyboard_app.d)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\inc\bluetooth\gap\gap.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\bt_types.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_adv.h)(0x5B90C5A8)
+I (..\..\..\inc\bluetooth\gap\gap_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_callback_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_storage_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le_types.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_bond_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\profile\profile_server.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\profile\gatt.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\profile\server\bas.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_conn_le.h)(0x5B90C5A8)
+I (..\..\..\inc\bluetooth\gap\gap_msg.h)(0x5B7A98F6)
+I (..\..\..\src\app\keyboard\keyboard_app.h)(0x5B1F6154)
+I (..\..\..\inc\app\app_msg.h)(0x5B90C5A8)
+I (..\..\..\inc\bluetooth\profile\server\hids_kb.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\keyscan.h)(0x5B1F6154)
+I (..\..\..\inc\platform\rtl876x.h)(0x5B986FBA)
+I (..\..\..\inc\platform\cmsis\core_cm4.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmInstr.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmFunc.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmSimd.h)(0x5B1F6154)
+I (..\..\..\inc\platform\system_rtl876x.h)(0x5B7A98F6)
+I (..\..\..\src\app\keyboard\key_handler.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\keyboard_button.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\app_task.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\keyboard_led.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_privacy.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\privacy_mgnt.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\profile_init.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\ota_service.h)(0x5B1F6154)
+I (..\..\..\inc\app\dfu_api.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_wdg.h)(0x5B7A98F6)
+I (..\..\..\inc\peripheral\rtl876x_bitfields.h)(0x5B1F6154)
+F (..\..\..\src\app\keyboard\keyscan.c)(0x5B1F6154)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\bluetooth\profile\client -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\keyboard -I ..\..\..\src\app\keyboard --gnu --preinclude app_define.h --bss_threshold=0-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\keyscan.o --omf_browse .\objects\keyscan.crf --depend .\objects\keyscan.d)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (..\keyboard\board.h)(0x5B1F6152)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\src\app\keyboard\app_task.h)(0x5B1F6154)
+I (..\..\..\inc\app\app_msg.h)(0x5B90C5A8)
+I (..\..\..\src\app\keyboard\keyscan.h)(0x5B1F6154)
+I (..\..\..\inc\platform\rtl876x.h)(0x5B986FBA)
+I (..\..\..\inc\platform\cmsis\core_cm4.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmInstr.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmFunc.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmSimd.h)(0x5B1F6154)
+I (..\..\..\inc\platform\system_rtl876x.h)(0x5B7A98F6)
+I (..\..\..\inc\os\os_timer.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_rcc.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_bitfields.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_keyscan.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_pinmux.h)(0x5B986FBA)
+I (..\..\..\inc\peripheral\rtl876x_nvic.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_gpio.h)(0x5B986FBA)
+F (..\..\..\src\app\keyboard\key_handler.c)(0x5B1F6154)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\bluetooth\profile\client -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\keyboard -I ..\..\..\src\app\keyboard --gnu --preinclude app_define.h --bss_threshold=0-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\key_handler.o --omf_browse .\objects\key_handler.crf --depend .\objects\key_handler.d)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (..\..\..\inc\platform\rtl876x.h)(0x5B986FBA)
+I (..\..\..\inc\platform\cmsis\core_cm4.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\inc\platform\cmsis\core_cmInstr.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmFunc.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmSimd.h)(0x5B1F6154)
+I (..\..\..\inc\platform\system_rtl876x.h)(0x5B7A98F6)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (..\keyboard\board.h)(0x5B1F6152)
+I (..\..\..\src\app\keyboard\key_handler.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\keyscan.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\profile\profile_server.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\bt_types.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\profile\gatt.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_callback_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_storage_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le_types.h)(0x5B7A98F6)
+I (..\..\..\src\app\keyboard\keyboard_app.h)(0x5B1F6154)
+I (..\..\..\inc\app\app_msg.h)(0x5B90C5A8)
+I (..\..\..\inc\bluetooth\gap\gap_msg.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\profile\server\hids_kb.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_bond_le.h)(0x5B7A98F6)
+F (..\..\..\src\app\keyboard\keyboard_button.c)(0x5B1F6154)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\bluetooth\profile\client -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\keyboard -I ..\..\..\src\app\keyboard --gnu --preinclude app_define.h --bss_threshold=0-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\keyboard_button.o --omf_browse .\objects\keyboard_button.crf --depend .\objects\keyboard_button.d)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x599ECD2C)
+I (..\keyboard\board.h)(0x5B1F6152)
+I (..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\inc\bluetooth\gap\gap_adv.h)(0x5B90C5A8)
+I (..\..\..\inc\bluetooth\gap\gap_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\bt_types.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_callback_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_storage_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le_types.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_bond_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_conn_le.h)(0x5B90C5A8)
+I (..\..\..\inc\bluetooth\gap\gap_msg.h)(0x5B7A98F6)
+I (..\..\..\inc\os\os_timer.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\keyboard_led.h)(0x5B1F6154)
+I (..\..\..\inc\platform\rtl876x.h)(0x5B986FBA)
+I (..\..\..\inc\platform\cmsis\core_cm4.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmInstr.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmFunc.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmSimd.h)(0x5B1F6154)
+I (..\..\..\inc\platform\system_rtl876x.h)(0x5B7A98F6)
+I (..\..\..\src\app\keyboard\keyboard_button.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\app_task.h)(0x5B1F6154)
+I (..\..\..\inc\app\app_msg.h)(0x5B90C5A8)
+I (..\..\..\src\app\keyboard\keyboard_app.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\profile\profile_server.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\profile\gatt.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_pinmux.h)(0x5B986FBA)
+I (..\..\..\inc\peripheral\rtl876x_bitfields.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_rcc.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_gpio.h)(0x5B986FBA)
+I (..\..\..\inc\peripheral\rtl876x_nvic.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_privacy.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\privacy_mgnt.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\profile_init.h)(0x5B1F6154)
+F (..\..\..\src\app\keyboard\keyboard_led.c)(0x5B1F6154)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\bluetooth\profile\client -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\keyboard -I ..\..\..\src\app\keyboard --gnu --preinclude app_define.h --bss_threshold=0-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\keyboard_led.o --omf_browse .\objects\keyboard_led.crf --depend .\objects\keyboard_led.d)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (..\keyboard\board.h)(0x5B1F6152)
+I (..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\inc\os\os_timer.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_adv.h)(0x5B90C5A8)
+I (..\..\..\inc\bluetooth\gap\gap_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\bt_types.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_callback_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_storage_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le_types.h)(0x5B7A98F6)
+I (..\..\..\src\app\keyboard\keyboard_led.h)(0x5B1F6154)
+I (..\..\..\inc\platform\rtl876x.h)(0x5B986FBA)
+I (..\..\..\inc\platform\cmsis\core_cm4.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmInstr.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmFunc.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmSimd.h)(0x5B1F6154)
+I (..\..\..\inc\platform\system_rtl876x.h)(0x5B7A98F6)
+I (..\..\..\inc\peripheral\rtl876x_pinmux.h)(0x5B986FBA)
+I (..\..\..\inc\peripheral\rtl876x_bitfields.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_rcc.h)(0x5B1F6154)
+I (..\..\..\inc\peripheral\rtl876x_gpio.h)(0x5B986FBA)
+F (..\..\..\src\app\keyboard\profile_init.c)(0x5B7FA8D8)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\bluetooth\profile\client -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\keyboard -I ..\..\..\src\app\keyboard --gnu --preinclude app_define.h --bss_threshold=0-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\profile_init.o --omf_browse .\objects\profile_init.crf --depend .\objects\profile_init.d)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (..\..\..\inc\platform\rtl876x.h)(0x5B986FBA)
+I (..\..\..\inc\platform\cmsis\core_cm4.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (..\..\..\inc\platform\cmsis\core_cmInstr.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmFunc.h)(0x5B1F6154)
+I (..\..\..\inc\platform\cmsis\core_cmSimd.h)(0x5B1F6154)
+I (..\..\..\inc\platform\system_rtl876x.h)(0x5B7A98F6)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\inc\bluetooth\gap\gap_adv.h)(0x5B90C5A8)
+I (..\..\..\inc\bluetooth\gap\gap_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\bt_types.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_callback_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_storage_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le_types.h)(0x5B7A98F6)
+I (..\..\..\src\app\keyboard\profile_init.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\privacy_mgnt.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_bond_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_privacy.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_conn_le.h)(0x5B90C5A8)
+I (..\..\..\inc\bluetooth\gap\gap_msg.h)(0x5B7A98F6)
+I (..\..\..\src\app\keyboard\keyboard_app.h)(0x5B1F6154)
+I (..\..\..\inc\app\app_msg.h)(0x5B90C5A8)
+I (..\..\..\inc\bluetooth\profile\profile_server.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\profile\gatt.h)(0x5B1F6154)
+I (..\..\..\inc\os\os_timer.h)(0x5B1F6154)
+F (..\..\..\src\app\keyboard\privacy_mgnt.c)(0x5B1F6154)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\bluetooth\profile\client -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\keyboard -I ..\..\..\src\app\keyboard --gnu --preinclude app_define.h --bss_threshold=0-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\privacy_mgnt.o --omf_browse .\objects\privacy_mgnt.crf --depend .\objects\privacy_mgnt.d)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (..\..\..\inc\platform\trace.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\inc\bluetooth\gap\gap.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\bt_types.h)(0x5B1F6154)
+I (..\..\..\src\app\keyboard\privacy_mgnt.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_bond_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_callback_le.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_storage_le.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_le_types.h)(0x5B7A98F6)
+I (..\..\..\inc\bluetooth\gap\gap_privacy.h)(0x5B1F6154)
+I (..\..\..\inc\bluetooth\gap\gap_conn_le.h)(0x5B90C5A8)
+I (..\..\..\inc\bluetooth\gap\gap_msg.h)(0x5B7A98F6)
+F (..\..\..\src\mcu\rtl876x\overlay_mgr.c)(0x5B1F6154)(--c99 -c --cpu Cortex-M4.fp --li -g -O2 --apcs=interwork -I ..\..\..\inc\app -I ..\..\..\inc\bluetooth\gap -I ..\..\..\inc\bluetooth\gap\gap_lib -I ..\..\..\inc\bluetooth\profile -I ..\..\..\inc\bluetooth\profile\server -I ..\..\..\inc\bluetooth\profile\client -I ..\..\..\inc\os -I ..\..\..\inc\peripheral -I ..\..\..\inc\platform -I ..\..\..\inc\platform\cmsis -I ..\keyboard -I ..\..\..\src\app\keyboard --gnu --preinclude app_define.h --bss_threshold=0-I.\RTE\_keyboard-ID:\Keil_v5\ARM\CMSIS\5.3.0\Device\ARM\ARMCM4\Include-ID:\Keil_v5\ARM\CMSIS\Include-ID:\Keil_v5\ARM\CMSIS\5.3.0-D__UVISION_VERSION="525" -DARMCM4_FP-o .\objects\overlay_mgr.o --omf_browse .\objects\overlay_mgr.crf --depend .\objects\overlay_mgr.d)
+I (..\..\..\inc\platform\app_define.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
+I (..\..\..\inc\platform\overlay_mgr.h)(0x5B1F6154)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
+I (D:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)

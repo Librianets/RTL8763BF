@@ -1,0 +1,17 @@
+.\objects\main.o: ..\..\..\src\sample\ble_broadcaster\main.c
+.\objects\main.o: ..\..\..\src\sample\ble_broadcaster\app_flags.h
+.\objects\main.o: ..\..\..\inc\os\os_sched.h
+.\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\main.o: ..\..\..\inc\platform\trace.h
+.\objects\main.o: ..\..\..\inc\bluetooth\gap\gap.h
+.\objects\main.o: ..\..\..\inc\bluetooth\gap\bt_types.h
+.\objects\main.o: ..\..\..\inc\bluetooth\gap\gap_adv.h
+.\objects\main.o: ..\..\..\inc\bluetooth\gap\gap_le.h
+.\objects\main.o: ..\..\..\inc\bluetooth\gap\gap_callback_le.h
+.\objects\main.o: ..\..\..\inc\bluetooth\gap\gap_storage_le.h
+.\objects\main.o: ..\..\..\inc\bluetooth\gap\gap_le_types.h
+.\objects\main.o: ..\..\..\src\sample\ble_broadcaster\app_task.h
+.\objects\main.o: ..\..\..\inc\bluetooth\profile\gatt.h
+.\objects\main.o: ..\..\..\inc\platform\dlps.h

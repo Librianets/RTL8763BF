@@ -1,0 +1,40 @@
+﻿V1.0.2 Date: 20180921
+1. Platform:
+   - NEW: Add appdata tool;
+   - NEW: Support app image encryption;
+   - CHG: Rename otp_cfg.h with otp.h;
+   - CHG: Rename flash download algorithm RRTL8763Bx_FLASH_8MB.FLM with RTL876x_SPI_FLASH.FLM;
+   - CHG: Update prepend_header and md5 tool;
+   - CHG: Move watch dog enable and SWD control setting from config file to app project;
+   - CHG: Support user defined app callback before calling WDG_SystemReset;
+   - CHG: Change app default download address because of adding secure boot image when not support bank switch;
+   - CHG: Devide mem_config.h into two files consist of mem_config.h and flash_map.h; 
+2. IO Driver:
+  1) ADC
+   - NEW: Add ADC lib：bee2_adc_lib.lib;
+   - CHG: Rename function ADC_HighBypassCmd to ADC_BypassCmd;
+  2) IR
+   - NEW: Added the RC6 infrared protocol;
+   - NEW: Add some infrared protocols to IOSample project;
+3. Upper Stack
+   - NEW: Add three new sample projects:
+		  ble_bt5_central
+		  ble_bt5_peripheral
+		  ble_peripheral_privacy;
+   - NEW: Add gap_bt5.lib used for extend advertising feature;
+   - NEW: Add some APIs to gap_utils.lib：
+		  BT stack features configuration APIs；
+		  API le_bond_get_sec_level to get security level；
+4. APP
+   1) OTA
+   - CHG: Add ota header version report when support bank switch;
+   2) Slient OTA
+   - New:  Add ota header version report when support bank switch;
+   - CHG:  Rename dfu project to silent_ota project;
+   - CHG:  Call API is_ota_support_bank_switch() function to judge whether bank switch is supported;
+   - BUG:  Unlock flash block protect before wdg reset to fix ota copy fail bug when not support bank switch;
+   - BUG:  Replace flash_lock with os_lock to fix ota fail error 261;
+
+   
+V1.0.0 Date: 20180611
+1. Beta common sdk. 
