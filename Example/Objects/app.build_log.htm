@@ -1,0 +1,94 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: TestTest TestTest, Test, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.23.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+W:\git\RTL8763BF\project\pxp.uvprojx
+Project File Date:  08/19/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'scatternet'
+Before Build - User command #1: ..\..\..\tool\before_build_common.bat C:\Keil_v5\
+*** Error: CreateProcess failed, Command: '..\..\..\tool\before_build_common.bat C:\Keil_v5\'
+Before Build - User command #2: before_build_special.bat
+build_before_special bat
+compiling ias.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\src\ble\profile\server\ias.c": No such file or directory
+..\..\..\src\ble\profile\server\ias.c: 0 warnings, 1 error
+compiling rtl876x_io_dlps.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\src\mcu\peripheral\rtl876x_io_dlps.c": No such file or directory
+..\..\..\src\mcu\peripheral\rtl876x_io_dlps.c: 0 warnings, 1 error
+compiling rtl876x_gpio.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\src\mcu\peripheral\rtl876x_gpio.c": No such file or directory
+..\..\..\src\mcu\peripheral\rtl876x_gpio.c: 0 warnings, 1 error
+compiling system_rtl8762c.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\src\mcu\rtl876x\system_rtl8762c.c": No such file or directory
+..\..\..\src\mcu\rtl876x\system_rtl8762c.c: 0 warnings, 1 error
+compiling lls.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\src\ble\profile\server\lls.c": No such file or directory
+..\..\..\src\ble\profile\server\lls.c: 0 warnings, 1 error
+compiling rtl876x_rcc.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\src\mcu\peripheral\rtl876x_rcc.c": No such file or directory
+..\..\..\src\mcu\peripheral\rtl876x_rcc.c: 0 warnings, 1 error
+assembling startup_rtl8762c.s...
+startup_rtl8762c.s: Error:  #5: cannot open source input file "..\..\..\src\mcu\rtl876x\arm\startup_rtl8762c.s": No such file or directory
+startup_rtl8762c.s: ..\..\..\src\mcu\rtl876x\arm\startup_rtl8762c.s: 0 warnings, 1 error
+startup_rtl8762c.s: error: A1905U: Pre-processor step failed for '..\..\..\src\mcu\rtl876x\arm\startup_rtl8762c.s'
+compiling bas.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\src\ble\profile\server\bas.c": No such file or directory
+..\..\..\src\ble\profile\server\bas.c: 0 warnings, 1 error
+compiling tps.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\src\ble\profile\server\tps.c": No such file or directory
+..\..\..\src\ble\profile\server\tps.c: 0 warnings, 1 error
+compiling app_task.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\src\app\pxp\app_task.c": No such file or directory
+..\..\..\src\app\pxp\app_task.c: 0 warnings, 1 error
+compiling main.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\src\app\pxp\main.c": No such file or directory
+..\..\..\src\app\pxp\main.c: 0 warnings, 1 error
+compiling iohandle.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\src\app\pxp\iohandle.c": No such file or directory
+..\..\..\src\app\pxp\iohandle.c: 0 warnings, 1 error
+compiling kns.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\src\app\pxp\kns.c": No such file or directory
+..\..\..\src\app\pxp\kns.c: 0 warnings, 1 error
+compiling dis.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\src\ble\profile\server\dis.c": No such file or directory
+..\..\..\src\ble\profile\server\dis.c: 0 warnings, 1 error
+compiling pxp_app.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\src\app\pxp\pxp_app.c": No such file or directory
+..\..\..\src\app\pxp\pxp_app.c: 0 warnings, 1 error
+compiling overlay_mgr.c...
+"no source": Error:  #5: cannot open source input file "..\..\..\src\mcu\rtl876x\overlay_mgr.c": No such file or directory
+..\..\..\src\mcu\rtl876x\overlay_mgr.c: 0 warnings, 1 error
+".\Objects\app.axf" - 3 Error(s), 0 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_scatternet
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
