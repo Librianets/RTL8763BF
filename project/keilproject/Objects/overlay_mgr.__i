@@ -1,0 +1,7 @@
+--c99 -c --cpu Cortex-M4.fp -D__EVAL --li -g -O2 --apcs=interwork -I ..\include\SDK\inc\app -I ..\include\SDK\inc\platform -I ..\include\SDK\inc\platform\cmsis -I ..\include\SDK\inc\os -I ..\include\SDK\src\app\pxp -I ..\include\SDK\src\ble\profile\server -I ..\include\SDK\inc\bluetooth\profile\server -I ..\include\SDK\inc\app -I ..\include\SDK\inc\peripheral -I ..\include\SDK\inc\os -I ..\include\SDK\inc\bluetooth\profile -I ..\include\SDK\inc\bluetooth\gap -I ..\keilproject -I ..\include\SDK\inc\bluetooth\gap\gap_lib -I ..\include\SDK\inc\bluetooth\profile\server -I ..\source -I ..\lib -I ..\include --gnu --preinclude app_flags.h --bss_threshold=0
+-I.\RTE\_RTL8786BF
+-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include
+-IC:\Keil_v5\ARM\CMSIS\Include
+-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1
+-D__UVISION_VERSION="523" -DARMCM4_FP
+-o .\objects\overlay_mgr.o --omf_browse .\objects\overlay_mgr.crf --depend .\objects\overlay_mgr.d "..\include\SDK\src\mcu\rtl876x\overlay_mgr.c"
