@@ -1,0 +1,350 @@
+Dependencies for Project 'rtl8763bf', Target 'RTL8786BF': (DO NOT MODIFY !)
+F (..\include\rom_uuid.h)(0x630656C9)()
+F (..\include\app_define.h)(0x630656C8)()
+F (..\lib\ROM.lib)(0x630656E0)()
+F (..\lib\gap_utils.lib)(0x630656DF)()
+F (..\source\cmsis\system_rtl8762c.c)(0x630656CF)(--c99 -c --cpu Cortex-M4.fp -D__EVAL --li -g -O2 --apcs=interwork -I ..\ -I .\ -I ..\include -I ..\include\SDK -I ..\include\SDK\app -I ..\include\SDK\bluetooth -I ..\include\SDK\os -I ..\include\SDK\peripheral -I ..\include\SDK\platform -I ..\include\SDK\bluetooth\gap -I ..\include\SDK\bluetooth\profile -I ..\include\SDK\bluetooth\gap\gap_lib -I ..\include\SDK\bluetooth\profile\client -I ..\include\SDK\bluetooth\profile\server -I ..\include\SDK\os\system_trace -I ..\include\SDK\platform\cmsis -I ..\keil --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_RTL8786BF-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM4_FP-o .\objects\system_rtl8762c.o --omf_browse .\objects\system_rtl8762c.crf --depend .\objects\system_rtl8762c.d)
+I (..\include\SDK\app_flags.h)(0x630656CA)
+I (C:\Keil_v5\ARM\ARMCC\include\locale.h)(0x57F614C6)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x57F614C8)
+I (..\include\SDK\platform\version.h)(0x630656C9)
+I (..\include\SDK\platform\rtl876x.h)(0x630656C9)
+I (..\include\SDK\platform\cmsis\core_cm4.h)(0x630656C9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
+I (..\include\SDK\platform\cmsis\core_cmInstr.h)(0x630656C9)
+I (..\include\SDK\platform\cmsis\core_cmFunc.h)(0x630656C9)
+I (..\include\SDK\platform\cmsis\core_cmSimd.h)(0x630656C9)
+I (..\include\SDK\platform\system_rtl876x.h)(0x630656C9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F614C8)
+I (..\include\SDK\platform\patch_header_check.h)(0x630656C9)
+I (..\include\SDK\platform\flash_device.h)(0x630656C8)
+I (..\include\SDK\platform\app_section.h)(0x630656C8)
+I (..\include\rom_uuid.h)(0x630656C9)
+I (..\include\app_define.h)(0x630656C8)
+I (..\include\SDK\platform\trace.h)(0x630656C9)
+I (..\include\mem_config.h)(0x630E6AD8)
+I (..\include\flash_map.h)(0x630E6AD8)
+I (..\include\SDK\platform\otp.h)(0x630656C8)
+I (..\include\SDK\platform\platform_autoconf.h)(0x630656C9)
+I (..\include\SDK\peripheral\rtl876x_wdg.h)(0x630656C8)
+I (..\include\SDK\peripheral\rtl876x_bitfields.h)(0x630656C8)
+I (..\include\SDK\platform\overlay_mgr.h)(0x630656C8)
+I (..\include\SDK\os\os_sched.h)(0x630656C7)
+I (..\include\otp_config.h)(0x630E6AD8)
+I (..\include\SDK\platform\test_mode.h)(0x630656C9)
+I (..\include\SDK\platform\platform_utils.h)(0x630656C9)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F614C8)
+I (..\include\SDK\os\os_mem.h)(0x630656C7)
+I (..\include\SDK\platform\mem_types.h)(0x630656C8)
+I (..\include\SDK\platform\crc16btx.h)(0x630656C8)
+F (..\source\cmsis\app_task.c)(0x630656CA)(--c99 -c --cpu Cortex-M4.fp -D__EVAL --li -g -O2 --apcs=interwork -I ..\ -I .\ -I ..\include -I ..\include\SDK -I ..\include\SDK\app -I ..\include\SDK\bluetooth -I ..\include\SDK\os -I ..\include\SDK\peripheral -I ..\include\SDK\platform -I ..\include\SDK\bluetooth\gap -I ..\include\SDK\bluetooth\profile -I ..\include\SDK\bluetooth\gap\gap_lib -I ..\include\SDK\bluetooth\profile\client -I ..\include\SDK\bluetooth\profile\server -I ..\include\SDK\os\system_trace -I ..\include\SDK\platform\cmsis -I ..\keil --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_RTL8786BF-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM4_FP-o .\objects\app_task.o --omf_browse .\objects\app_task.crf --depend .\objects\app_task.d)
+I (..\include\SDK\app_flags.h)(0x630656CA)
+I (..\include\SDK\os\os_msg.h)(0x630656C7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F614C8)
+I (..\include\SDK\os\os_task.h)(0x630656C7)
+I (..\include\SDK\bluetooth\gap\gap.h)(0x630656C5)
+I (..\include\SDK\bluetooth\gap\bt_types.h)(0x630656C5)
+I (..\include\SDK\bluetooth\gap\gap_le.h)(0x630656C5)
+I (..\include\SDK\bluetooth\gap\gap_callback_le.h)(0x630656C5)
+I (..\include\SDK\bluetooth\gap\gap_storage_le.h)(0x630656C6)
+I (..\include\SDK\bluetooth\gap\gap_le_types.h)(0x630656C5)
+I (..\include\SDK\bluetooth\gap\gap_msg.h)(0x630656C5)
+I (..\include\SDK\platform\trace.h)(0x630656C9)
+I (..\include\SDK\app_task.h)(0x630656CA)
+I (..\include\SDK\app\app_msg.h)(0x630656C5)
+I (..\include\SDK\pxp_app.h)(0x630656CA)
+I (..\include\SDK\bluetooth\profile\profile_client.h)(0x630656C6)
+I (..\include\SDK\bluetooth\profile\gatt.h)(0x630656C6)
+I (..\include\SDK\bluetooth\profile\profile_server.h)(0x630656C6)
+I (..\include\otp_config.h)(0x630E6AD8)
+I (..\include\SDK\peripheral\rtl876x_wdg.h)(0x630656C8)
+I (..\include\SDK\platform\rtl876x.h)(0x630656C9)
+I (..\include\SDK\platform\cmsis\core_cm4.h)(0x630656C9)
+I (..\include\SDK\platform\cmsis\core_cmInstr.h)(0x630656C9)
+I (..\include\SDK\platform\cmsis\core_cmFunc.h)(0x630656C9)
+I (..\include\SDK\platform\cmsis\core_cmSimd.h)(0x630656C9)
+I (..\include\SDK\platform\system_rtl876x.h)(0x630656C9)
+I (..\include\SDK\peripheral\rtl876x_bitfields.h)(0x630656C8)
+I (..\include\SDK\platform\flash_device.h)(0x630656C8)
+F (..\source\cmsis\iohandle.c)(0x630656CA)(--c99 -c --cpu Cortex-M4.fp -D__EVAL --li -g -O2 --apcs=interwork -I ..\ -I .\ -I ..\include -I ..\include\SDK -I ..\include\SDK\app -I ..\include\SDK\bluetooth -I ..\include\SDK\os -I ..\include\SDK\peripheral -I ..\include\SDK\platform -I ..\include\SDK\bluetooth\gap -I ..\include\SDK\bluetooth\profile -I ..\include\SDK\bluetooth\gap\gap_lib -I ..\include\SDK\bluetooth\profile\client -I ..\include\SDK\bluetooth\profile\server -I ..\include\SDK\os\system_trace -I ..\include\SDK\platform\cmsis -I ..\keil --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_RTL8786BF-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM4_FP-o .\objects\iohandle.o --omf_browse .\objects\iohandle.crf --depend .\objects\iohandle.d)
+I (..\include\SDK\app_flags.h)(0x630656CA)
+I (..\include\SDK\iohandle.h)(0x630656CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F614C8)
+I (..\include\SDK\app\app_msg.h)(0x630656C5)
+I (..\include\SDK\os\os_timer.h)(0x630656C7)
+I (..\include\SDK\os\os_msg.h)(0x630656C7)
+I (..\include\SDK\platform\trace.h)(0x630656C9)
+I (..\include\SDK\app_task.h)(0x630656CA)
+I (..\include\SDK\peripheral\rtl876x_pinmux.h)(0x630656C8)
+I (..\include\SDK\platform\rtl876x.h)(0x630656C9)
+I (..\include\SDK\platform\cmsis\core_cm4.h)(0x630656C9)
+I (..\include\SDK\platform\cmsis\core_cmInstr.h)(0x630656C9)
+I (..\include\SDK\platform\cmsis\core_cmFunc.h)(0x630656C9)
+I (..\include\SDK\platform\cmsis\core_cmSimd.h)(0x630656C9)
+I (..\include\SDK\platform\system_rtl876x.h)(0x630656C9)
+I (..\include\SDK\peripheral\rtl876x_bitfields.h)(0x630656C8)
+I (..\include\SDK\peripheral\rtl876x_io_dlps.h)(0x630656C8)
+I (..\include\board.h)(0x630E6AD8)
+I (..\include\otp_config.h)(0x630E6AD8)
+I (..\include\SDK\peripheral\rtl876x_wdg.h)(0x630656C8)
+I (..\include\SDK\platform\flash_device.h)(0x630656C8)
+I (..\include\SDK\platform\dlps.h)(0x630656C8)
+I (..\include\SDK\peripheral\rtl876x_rcc.h)(0x630656C8)
+I (..\include\SDK\peripheral\rtl876x_gpio.h)(0x630656C8)
+I (..\include\SDK\peripheral\rtl876x_nvic.h)(0x630656C8)
+I (..\include\SDK\kns.h)(0x630656CA)
+I (..\include\SDK\bluetooth\profile\profile_server.h)(0x630656C6)
+I (..\include\SDK\bluetooth\gap\bt_types.h)(0x630656C5)
+I (..\include\SDK\bluetooth\profile\gatt.h)(0x630656C6)
+I (..\include\SDK\bluetooth\gap\gap_le.h)(0x630656C5)
+I (..\include\SDK\bluetooth\gap\gap.h)(0x630656C5)
+I (..\include\SDK\bluetooth\gap\gap_callback_le.h)(0x630656C5)
+I (..\include\SDK\bluetooth\gap\gap_storage_le.h)(0x630656C6)
+I (..\include\SDK\bluetooth\gap\gap_le_types.h)(0x630656C5)
+I (..\include\SDK\pxp_app.h)(0x630656CA)
+I (..\include\SDK\bluetooth\profile\profile_client.h)(0x630656C6)
+I (..\include\SDK\bluetooth\gap\gap_adv.h)(0x630656C5)
+I (..\include\SDK\bluetooth\gap\gap_conn_le.h)(0x630656C5)
+I (..\include\SDK\bluetooth\gap\gap_msg.h)(0x630656C5)
+F (..\source\cmsis\main.c)(0x630656CA)(--c99 -c --cpu Cortex-M4.fp -D__EVAL --li -g -O2 --apcs=interwork -I ..\ -I .\ -I ..\include -I ..\include\SDK -I ..\include\SDK\app -I ..\include\SDK\bluetooth -I ..\include\SDK\os -I ..\include\SDK\peripheral -I ..\include\SDK\platform -I ..\include\SDK\bluetooth\gap -I ..\include\SDK\bluetooth\profile -I ..\include\SDK\bluetooth\gap\gap_lib -I ..\include\SDK\bluetooth\profile\client -I ..\include\SDK\bluetooth\profile\server -I ..\include\SDK\os\system_trace -I ..\include\SDK\platform\cmsis -I ..\keil --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_RTL8786BF-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM4_FP-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\include\SDK\app_flags.h)(0x630656CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x57F614C8)
+I (..\include\SDK\os\os_sched.h)(0x630656C7)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F614C8)
+I (..\include\SDK\platform\trace.h)(0x630656C9)
+I (..\include\SDK\bluetooth\gap\gap.h)(0x630656C5)
+I (..\include\SDK\bluetooth\gap\bt_types.h)(0x630656C5)
+I (..\include\SDK\bluetooth\gap\gap_adv.h)(0x630656C5)
+I (..\include\SDK\bluetooth\gap\gap_le.h)(0x630656C5)
+I (..\include\SDK\bluetooth\gap\gap_callback_le.h)(0x630656C5)
+I (..\include\SDK\bluetooth\gap\gap_storage_le.h)(0x630656C6)
+I (..\include\SDK\bluetooth\gap\gap_le_types.h)(0x630656C5)
+I (..\include\SDK\bluetooth\gap\gap_bond_le.h)(0x630656C5)
+I (..\include\SDK\bluetooth\profile\profile_server.h)(0x630656C6)
+I (..\include\SDK\bluetooth\profile\gatt.h)(0x630656C6)
+I (..\include\SDK\bluetooth\gap\gap_msg.h)(0x630656C5)
+I (..\include\SDK\bluetooth\profile\server\bas.h)(0x630656C6)
+I (..\include\SDK\app_task.h)(0x630656CA)
+I (..\include\SDK\app\app_msg.h)(0x630656C5)
+I (..\include\SDK\pxp_app.h)(0x630656CA)
+I (..\include\SDK\bluetooth\profile\profile_client.h)(0x630656C6)
+I (..\include\SDK\bluetooth\profile\server\ias.h)(0x630656C7)
+I (..\include\SDK\bluetooth\profile\server\lls.h)(0x630656C7)
+I (..\include\SDK\bluetooth\profile\server\tps.h)(0x630656C7)
+I (..\include\SDK\kns.h)(0x630656CA)
+I (..\include\SDK\bluetooth\profile\server\dis.h)(0x630656C6)
+I (..\include\board.h)(0x630E6AD8)
+I (..\include\otp_config.h)(0x630E6AD8)
+I (..\include\SDK\peripheral\rtl876x_wdg.h)(0x630656C8)
+I (..\include\SDK\platform\rtl876x.h)(0x630656C9)
+I (..\include\SDK\platform\cmsis\core_cm4.h)(0x630656C9)
+I (..\include\SDK\platform\cmsis\core_cmInstr.h)(0x630656C9)
+I (..\include\SDK\platform\cmsis\core_cmFunc.h)(0x630656C9)
+I (..\include\SDK\platform\cmsis\core_cmSimd.h)(0x630656C9)
+I (..\include\SDK\platform\system_rtl876x.h)(0x630656C9)
+I (..\include\SDK\peripheral\rtl876x_bitfields.h)(0x630656C8)
+I (..\include\SDK\platform\flash_device.h)(0x630656C8)
+I (..\include\SDK\peripheral\rtl876x_pinmux.h)(0x630656C8)
+I (..\include\SDK\peripheral\rtl876x_gpio.h)(0x630656C8)
+I (..\include\SDK\peripheral\rtl876x_io_dlps.h)(0x630656C8)
+I (..\include\SDK\platform\dlps.h)(0x630656C8)
+I (..\include\SDK\peripheral\rtl876x_rcc.h)(0x630656C8)
+I (..\include\SDK\iohandle.h)(0x630656CA)
+F (..\source\peripheral\rtl876x_io_dlps.c)(0x630656CC)(--c99 -c --cpu Cortex-M4.fp -D__EVAL --li -g -O2 --apcs=interwork -I ..\ -I .\ -I ..\include -I ..\include\SDK -I ..\include\SDK\app -I ..\include\SDK\bluetooth -I ..\include\SDK\os -I ..\include\SDK\peripheral -I ..\include\SDK\platform -I ..\include\SDK\bluetooth\gap -I ..\include\SDK\bluetooth\profile -I ..\include\SDK\bluetooth\gap\gap_lib -I ..\include\SDK\bluetooth\profile\client -I ..\include\SDK\bluetooth\profile\server -I ..\include\SDK\os\system_trace -I ..\include\SDK\platform\cmsis -I ..\keil --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_RTL8786BF-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM4_FP-o .\objects\rtl876x_io_dlps.o --omf_browse .\objects\rtl876x_io_dlps.crf --depend .\objects\rtl876x_io_dlps.d)
+I (..\include\SDK\app_flags.h)(0x630656CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F614C8)
+I (..\include\SDK\peripheral\rtl876x_pinmux.h)(0x630656C8)
+I (..\include\SDK\platform\rtl876x.h)(0x630656C9)
+I (..\include\SDK\platform\cmsis\core_cm4.h)(0x630656C9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
+I (..\include\SDK\platform\cmsis\core_cmInstr.h)(0x630656C9)
+I (..\include\SDK\platform\cmsis\core_cmFunc.h)(0x630656C9)
+I (..\include\SDK\platform\cmsis\core_cmSimd.h)(0x630656C9)
+I (..\include\SDK\platform\system_rtl876x.h)(0x630656C9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F614C8)
+I (..\include\SDK\peripheral\rtl876x_bitfields.h)(0x630656C8)
+I (..\include\SDK\peripheral\rtl876x_rcc.h)(0x630656C8)
+I (..\include\SDK\platform\dlps.h)(0x630656C8)
+I (..\include\SDK\platform\trace.h)(0x630656C9)
+I (..\include\SDK\peripheral\rtl876x_io_dlps.h)(0x630656C8)
+I (..\include\board.h)(0x630E6AD8)
+I (..\include\otp_config.h)(0x630E6AD8)
+I (..\include\SDK\peripheral\rtl876x_wdg.h)(0x630656C8)
+I (..\include\SDK\platform\flash_device.h)(0x630656C8)
+I (..\include\SDK\peripheral\rtl876x_nvic.h)(0x630656C8)
+I (..\include\SDK\platform\otp.h)(0x630656C8)
+I (..\include\SDK\platform\app_section.h)(0x630656C8)
+F (..\source\peripheral\rtl876x_gpio.c)(0x630656CC)(--c99 -c --cpu Cortex-M4.fp -D__EVAL --li -g -O2 --apcs=interwork -I ..\ -I .\ -I ..\include -I ..\include\SDK -I ..\include\SDK\app -I ..\include\SDK\bluetooth -I ..\include\SDK\os -I ..\include\SDK\peripheral -I ..\include\SDK\platform -I ..\include\SDK\bluetooth\gap -I ..\include\SDK\bluetooth\profile -I ..\include\SDK\bluetooth\gap\gap_lib -I ..\include\SDK\bluetooth\profile\client -I ..\include\SDK\bluetooth\profile\server -I ..\include\SDK\os\system_trace -I ..\include\SDK\platform\cmsis -I ..\keil --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_RTL8786BF-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM4_FP-o .\objects\rtl876x_gpio.o --omf_browse .\objects\rtl876x_gpio.crf --depend .\objects\rtl876x_gpio.d)
+I (../include/SDK/app_flags.h)(0x630656CA)
+I (../include/SDK/peripheral/rtl876x_gpio.h)(0x630656C8)
+I (../include/SDK/platform/rtl876x.h)(0x630656C9)
+I (../include/SDK/platform/cmsis/core_cm4.h)(0x630656C9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
+I (../include/SDK/platform/cmsis/core_cmInstr.h)(0x630656C9)
+I (../include/SDK/platform/cmsis/core_cmFunc.h)(0x630656C9)
+I (../include/SDK/platform/cmsis/core_cmSimd.h)(0x630656C9)
+I (../include/SDK/platform/system_rtl876x.h)(0x630656C9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F614C8)
+I (../include/SDK/peripheral/rtl876x_bitfields.h)(0x630656C8)
+I (../include/SDK/peripheral/rtl876x_rcc.h)(0x630656C8)
+F (..\source\peripheral\rtl876x_rcc.c)(0x630656CC)(--c99 -c --cpu Cortex-M4.fp -D__EVAL --li -g -O2 --apcs=interwork -I ..\ -I .\ -I ..\include -I ..\include\SDK -I ..\include\SDK\app -I ..\include\SDK\bluetooth -I ..\include\SDK\os -I ..\include\SDK\peripheral -I ..\include\SDK\platform -I ..\include\SDK\bluetooth\gap -I ..\include\SDK\bluetooth\profile -I ..\include\SDK\bluetooth\gap\gap_lib -I ..\include\SDK\bluetooth\profile\client -I ..\include\SDK\bluetooth\profile\server -I ..\include\SDK\os\system_trace -I ..\include\SDK\platform\cmsis -I ..\keil --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_RTL8786BF-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM4_FP-o .\objects\rtl876x_rcc.o --omf_browse .\objects\rtl876x_rcc.crf --depend .\objects\rtl876x_rcc.d)
+I (../include/SDK/app_flags.h)(0x630656CA)
+I (../include/SDK/platform/rtl876x.h)(0x630656C9)
+I (../include/SDK/platform/cmsis/core_cm4.h)(0x630656C9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
+I (../include/SDK/platform/cmsis/core_cmInstr.h)(0x630656C9)
+I (../include/SDK/platform/cmsis/core_cmFunc.h)(0x630656C9)
+I (../include/SDK/platform/cmsis/core_cmSimd.h)(0x630656C9)
+I (../include/SDK/platform/system_rtl876x.h)(0x630656C9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F614C8)
+I (../include/SDK/peripheral/rtl876x_bitfields.h)(0x630656C8)
+I (../include/SDK/peripheral/rtl876x_rcc.h)(0x630656C8)
+F (..\source\profile\ias.c)(0x630656CB)(--c99 -c --cpu Cortex-M4.fp -D__EVAL --li -g -O2 --apcs=interwork -I ..\ -I .\ -I ..\include -I ..\include\SDK -I ..\include\SDK\app -I ..\include\SDK\bluetooth -I ..\include\SDK\os -I ..\include\SDK\peripheral -I ..\include\SDK\platform -I ..\include\SDK\bluetooth\gap -I ..\include\SDK\bluetooth\profile -I ..\include\SDK\bluetooth\gap\gap_lib -I ..\include\SDK\bluetooth\profile\client -I ..\include\SDK\bluetooth\profile\server -I ..\include\SDK\os\system_trace -I ..\include\SDK\platform\cmsis -I ..\keil --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_RTL8786BF-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM4_FP-o .\objects\ias.o --omf_browse .\objects\ias.crf --depend .\objects\ias.d)
+I (../include/SDK/app_flags.h)(0x630656CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F614C8)
+I (../include/SDK/platform/trace.h)(0x630656C9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F614C8)
+I (../include/SDK/bluetooth/profile/profile_server.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/bt_types.h)(0x630656C5)
+I (../include/SDK/bluetooth/profile/gatt.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/gap_le.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap_callback_le.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap_storage_le.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/gap_le_types.h)(0x630656C5)
+I (../include/SDK/bluetooth/profile/server/ias.h)(0x630656C7)
+F (..\source\profile\lls.c)(0x630656CB)(--c99 -c --cpu Cortex-M4.fp -D__EVAL --li -g -O2 --apcs=interwork -I ..\ -I .\ -I ..\include -I ..\include\SDK -I ..\include\SDK\app -I ..\include\SDK\bluetooth -I ..\include\SDK\os -I ..\include\SDK\peripheral -I ..\include\SDK\platform -I ..\include\SDK\bluetooth\gap -I ..\include\SDK\bluetooth\profile -I ..\include\SDK\bluetooth\gap\gap_lib -I ..\include\SDK\bluetooth\profile\client -I ..\include\SDK\bluetooth\profile\server -I ..\include\SDK\os\system_trace -I ..\include\SDK\platform\cmsis -I ..\keil --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_RTL8786BF-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM4_FP-o .\objects\lls.o --omf_browse .\objects\lls.crf --depend .\objects\lls.d)
+I (../include/SDK/app_flags.h)(0x630656CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F614C8)
+I (../include/SDK/platform/trace.h)(0x630656C9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F614C8)
+I (../include/SDK/bluetooth/profile/profile_server.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/bt_types.h)(0x630656C5)
+I (../include/SDK/bluetooth/profile/gatt.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/gap_le.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap_callback_le.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap_storage_le.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/gap_le_types.h)(0x630656C5)
+I (../include/SDK/bluetooth/profile/server/lls.h)(0x630656C7)
+F (..\source\profile\tps.c)(0x630656CC)(--c99 -c --cpu Cortex-M4.fp -D__EVAL --li -g -O2 --apcs=interwork -I ..\ -I .\ -I ..\include -I ..\include\SDK -I ..\include\SDK\app -I ..\include\SDK\bluetooth -I ..\include\SDK\os -I ..\include\SDK\peripheral -I ..\include\SDK\platform -I ..\include\SDK\bluetooth\gap -I ..\include\SDK\bluetooth\profile -I ..\include\SDK\bluetooth\gap\gap_lib -I ..\include\SDK\bluetooth\profile\client -I ..\include\SDK\bluetooth\profile\server -I ..\include\SDK\os\system_trace -I ..\include\SDK\platform\cmsis -I ..\keil --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_RTL8786BF-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM4_FP-o .\objects\tps.o --omf_browse .\objects\tps.crf --depend .\objects\tps.d)
+I (../include/SDK/app_flags.h)(0x630656CA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F614C8)
+I (../include/SDK/platform/trace.h)(0x630656C9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F614C8)
+I (../include/SDK/bluetooth/profile/profile_server.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/bt_types.h)(0x630656C5)
+I (../include/SDK/bluetooth/profile/gatt.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/gap_le.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap_callback_le.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap_storage_le.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/gap_le_types.h)(0x630656C5)
+I (../include/SDK/bluetooth/profile/server/tps.h)(0x630656C7)
+F (..\source\profile\bas.c)(0x630656CB)(--c99 -c --cpu Cortex-M4.fp -D__EVAL --li -g -O2 --apcs=interwork -I ..\ -I .\ -I ..\include -I ..\include\SDK -I ..\include\SDK\app -I ..\include\SDK\bluetooth -I ..\include\SDK\os -I ..\include\SDK\peripheral -I ..\include\SDK\platform -I ..\include\SDK\bluetooth\gap -I ..\include\SDK\bluetooth\profile -I ..\include\SDK\bluetooth\gap\gap_lib -I ..\include\SDK\bluetooth\profile\client -I ..\include\SDK\bluetooth\profile\server -I ..\include\SDK\os\system_trace -I ..\include\SDK\platform\cmsis -I ..\keil --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_RTL8786BF-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM4_FP-o .\objects\bas.o --omf_browse .\objects\bas.crf --depend .\objects\bas.d)
+I (../include/SDK/app_flags.h)(0x630656CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F614C8)
+I (../include/SDK/platform/trace.h)(0x630656C9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F614C8)
+I (../include/SDK/bluetooth/profile/profile_server.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/bt_types.h)(0x630656C5)
+I (../include/SDK/bluetooth/profile/gatt.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/gap_le.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap_callback_le.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap_storage_le.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/gap_le_types.h)(0x630656C5)
+I (../include/SDK/bluetooth/profile/server/bas.h)(0x630656C6)
+I (../include/SDK/bluetooth/profile/server/bas_config.h)(0x630656C6)
+F (..\source\profile\kns.c)(0x630656CA)(--c99 -c --cpu Cortex-M4.fp -D__EVAL --li -g -O2 --apcs=interwork -I ..\ -I .\ -I ..\include -I ..\include\SDK -I ..\include\SDK\app -I ..\include\SDK\bluetooth -I ..\include\SDK\os -I ..\include\SDK\peripheral -I ..\include\SDK\platform -I ..\include\SDK\bluetooth\gap -I ..\include\SDK\bluetooth\profile -I ..\include\SDK\bluetooth\gap\gap_lib -I ..\include\SDK\bluetooth\profile\client -I ..\include\SDK\bluetooth\profile\server -I ..\include\SDK\os\system_trace -I ..\include\SDK\platform\cmsis -I ..\keil --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_RTL8786BF-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM4_FP-o .\objects\kns.o --omf_browse .\objects\kns.crf --depend .\objects\kns.d)
+I (../include/SDK/app_flags.h)(0x630656CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F614C8)
+I (../include/SDK/platform/trace.h)(0x630656C9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F614C8)
+I (../include/SDK/bluetooth/profile/profile_server.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/bt_types.h)(0x630656C5)
+I (../include/SDK/bluetooth/profile/gatt.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/gap_le.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap_callback_le.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap_storage_le.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/gap_le_types.h)(0x630656C5)
+I (../include/SDK/kns.h)(0x630656CA)
+F (..\source\profile\dis.c)(0x630656CB)(--c99 -c --cpu Cortex-M4.fp -D__EVAL --li -g -O2 --apcs=interwork -I ..\ -I .\ -I ..\include -I ..\include\SDK -I ..\include\SDK\app -I ..\include\SDK\bluetooth -I ..\include\SDK\os -I ..\include\SDK\peripheral -I ..\include\SDK\platform -I ..\include\SDK\bluetooth\gap -I ..\include\SDK\bluetooth\profile -I ..\include\SDK\bluetooth\gap\gap_lib -I ..\include\SDK\bluetooth\profile\client -I ..\include\SDK\bluetooth\profile\server -I ..\include\SDK\os\system_trace -I ..\include\SDK\platform\cmsis -I ..\keil --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_RTL8786BF-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM4_FP-o .\objects\dis.o --omf_browse .\objects\dis.crf --depend .\objects\dis.d)
+I (../include/SDK/app_flags.h)(0x630656CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F614C8)
+I (../include/SDK/platform/trace.h)(0x630656C9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F614C8)
+I (../include/SDK/bluetooth/profile/profile_server.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/bt_types.h)(0x630656C5)
+I (../include/SDK/bluetooth/profile/gatt.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/gap_le.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap_callback_le.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap_storage_le.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/gap_le_types.h)(0x630656C5)
+I (../include/SDK/bluetooth/profile/server/dis.h)(0x630656C6)
+I (../include/SDK/bluetooth/profile/server/dis_config.h)(0x630656C6)
+F (..\source\app\pxp_app.c)(0x630656CA)(--c99 -c --cpu Cortex-M4.fp -D__EVAL --li -g -O2 --apcs=interwork -I ..\ -I .\ -I ..\include -I ..\include\SDK -I ..\include\SDK\app -I ..\include\SDK\bluetooth -I ..\include\SDK\os -I ..\include\SDK\peripheral -I ..\include\SDK\platform -I ..\include\SDK\bluetooth\gap -I ..\include\SDK\bluetooth\profile -I ..\include\SDK\bluetooth\gap\gap_lib -I ..\include\SDK\bluetooth\profile\client -I ..\include\SDK\bluetooth\profile\server -I ..\include\SDK\os\system_trace -I ..\include\SDK\platform\cmsis -I ..\keil --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_RTL8786BF-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM4_FP-o .\objects\pxp_app.o --omf_browse .\objects\pxp_app.crf --depend .\objects\pxp_app.d)
+I (../include/SDK/app_flags.h)(0x630656CA)
+I (../include/SDK/platform/trace.h)(0x630656C9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F614C8)
+I (../include/SDK/bluetooth/gap/gap.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/bt_types.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap_adv.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap_le.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap_callback_le.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap_storage_le.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/gap_le_types.h)(0x630656C5)
+I (../include/SDK/bluetooth/gap/gap_bond_le.h)(0x630656C5)
+I (../include/SDK/bluetooth/profile/profile_server.h)(0x630656C6)
+I (../include/SDK/bluetooth/profile/gatt.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/gap_msg.h)(0x630656C5)
+I (../include/SDK/bluetooth/profile/server/bas.h)(0x630656C6)
+I (../include/SDK/app/app_msg.h)(0x630656C5)
+I (../include/SDK/pxp_app.h)(0x630656CA)
+I (../include/SDK/bluetooth/profile/profile_client.h)(0x630656C6)
+I (../include/SDK/bluetooth/gap/gap_conn_le.h)(0x630656C5)
+I (../include/SDK/os/os_timer.h)(0x630656C7)
+I (../include/SDK/bluetooth/profile/server/ias.h)(0x630656C7)
+I (../include/SDK/bluetooth/profile/server/lls.h)(0x630656C7)
+I (../include/SDK/bluetooth/profile/server/tps.h)(0x630656C7)
+I (../include/SDK/kns.h)(0x630656CA)
+I (../include/SDK/bluetooth/profile/server/dis.h)(0x630656C6)
+I (../include/SDK/iohandle.h)(0x630656CA)
+I (../include/SDK/peripheral/rtl876x_wdg.h)(0x630656C8)
+I (../include/SDK/platform/rtl876x.h)(0x630656C9)
+I (../include/SDK/platform/cmsis/core_cm4.h)(0x630656C9)
+I (../include/SDK/platform/cmsis/core_cmInstr.h)(0x630656C9)
+I (../include/SDK/platform/cmsis/core_cmFunc.h)(0x630656C9)
+I (../include/SDK/platform/cmsis/core_cmSimd.h)(0x630656C9)
+I (../include/SDK/platform/system_rtl876x.h)(0x630656C9)
+I (../include/SDK/peripheral/rtl876x_bitfields.h)(0x630656C8)
+I (../include/SDK/platform/flash_device.h)(0x630656C8)
+F (..\source\app\overlay_mgr.c)(0x630656CF)(--c99 -c --cpu Cortex-M4.fp -D__EVAL --li -g -O2 --apcs=interwork -I ..\ -I .\ -I ..\include -I ..\include\SDK -I ..\include\SDK\app -I ..\include\SDK\bluetooth -I ..\include\SDK\os -I ..\include\SDK\peripheral -I ..\include\SDK\platform -I ..\include\SDK\bluetooth\gap -I ..\include\SDK\bluetooth\profile -I ..\include\SDK\bluetooth\gap\gap_lib -I ..\include\SDK\bluetooth\profile\client -I ..\include\SDK\bluetooth\profile\server -I ..\include\SDK\os\system_trace -I ..\include\SDK\platform\cmsis -I ..\keil --gnu --preinclude app_flags.h --bss_threshold=0-I.\RTE\_RTL8786BF-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1-D__UVISION_VERSION="523" -DARMCM4_FP-o .\objects\overlay_mgr.o --omf_browse .\objects\overlay_mgr.crf --depend .\objects\overlay_mgr.d)
+I (../include/SDK/app_flags.h)(0x630656CA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x57F614C8)
+I (../include/SDK/platform/overlay_mgr.h)(0x630656C8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x57F614C8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x57F614C8)
+F (..\source\app\startup_rtl8762c.s)(0x630656CF)(--cpu Cortex-M4.fp --li --pd "__EVAL SETA 1" -g --16 --apcs=interwork --cpreproc-I.\RTE\_RTL8786BF-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1--pd "__UVISION_VERSION SETA 523" --pd "ARMCM4_FP SETA 1"--list .\listings\startup_rtl8762c.lst --xref -o .\objects\startup_rtl8762c.o --depend .\objects\startup_rtl8762c.d)

@@ -410,52 +410,24 @@
           <GroupName>cmsis</GroupName>
           <Files>
             <File>
-              <FileName>startup_rtl8762c.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>..\include\SDK\src\mcu\rtl876x\arm\startup_rtl8762c.s</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>2</IncludeInBuild>
-                  <AlwaysBuild>1</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Aads>
-                    <interw>2</interw>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <thumb>2</thumb>
-                    <SplitLS>2</SplitLS>
-                    <SwStkChk>2</SwStkChk>
-                    <NoWarn>2</NoWarn>
-                    <uSurpInc>2</uSurpInc>
-                    <useXO>2</useXO>
-                    <uClangAs>2</uClangAs>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath>..\..\..\inc\platform</IncludePath>
-                    </VariousControls>
-                  </Aads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
               <FileName>system_rtl8762c.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\include\SDK\src\mcu\rtl876x\system_rtl8762c.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\include\SDK\src\app\pxp\app_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>iohandle.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\include\SDK\src\app\pxp\iohandle.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\include\SDK\src\app\pxp\main.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -518,21 +490,6 @@
           <GroupName>app</GroupName>
           <Files>
             <File>
-              <FileName>app_task.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\include\SDK\src\app\pxp\app_task.c</FilePath>
-            </File>
-            <File>
-              <FileName>iohandle.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\include\SDK\src\app\pxp\iohandle.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\include\SDK\src\app\pxp\main.c</FilePath>
-            </File>
-            <File>
               <FileName>pxp_app.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\include\SDK\src\app\pxp\pxp_app.c</FilePath>
@@ -541,6 +498,11 @@
               <FileName>overlay_mgr.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\include\SDK\src\mcu\rtl876x\overlay_mgr.c</FilePath>
+            </File>
+            <File>
+              <FileName>startup_rtl8762c.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\include\SDK\src\mcu\rtl876x\arm\startup_rtl8762c.s</FilePath>
             </File>
           </Files>
         </Group>
@@ -906,7 +868,7 @@
             <TextAddressRange>0x00000000</TextAddressRange>
             <DataAddressRange>0x20000000</DataAddressRange>
             <pXoBase></pXoBase>
-            <ScatterFile>.\app.sct</ScatterFile>
+            <ScatterFile>.\rtl8763bf.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
             <Misc>--diag_suppress=L6314,L6312 --datacompressor off</Misc>
@@ -950,52 +912,24 @@
           <GroupName>cmsis</GroupName>
           <Files>
             <File>
-              <FileName>startup_rtl8762c.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>..\include\SDK\src\mcu\rtl876x\arm\startup_rtl8762c.s</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>2</IncludeInBuild>
-                  <AlwaysBuild>1</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Aads>
-                    <interw>2</interw>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <thumb>2</thumb>
-                    <SplitLS>2</SplitLS>
-                    <SwStkChk>2</SwStkChk>
-                    <NoWarn>2</NoWarn>
-                    <uSurpInc>2</uSurpInc>
-                    <useXO>2</useXO>
-                    <uClangAs>2</uClangAs>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath>..\..\..\inc\platform</IncludePath>
-                    </VariousControls>
-                  </Aads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
               <FileName>system_rtl8762c.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\include\SDK\src\mcu\rtl876x\system_rtl8762c.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\include\SDK\src\app\pxp\app_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>iohandle.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\include\SDK\src\app\pxp\iohandle.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\include\SDK\src\app\pxp\main.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1058,21 +992,6 @@
           <GroupName>app</GroupName>
           <Files>
             <File>
-              <FileName>app_task.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\include\SDK\src\app\pxp\app_task.c</FilePath>
-            </File>
-            <File>
-              <FileName>iohandle.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\include\SDK\src\app\pxp\iohandle.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\include\SDK\src\app\pxp\main.c</FilePath>
-            </File>
-            <File>
               <FileName>pxp_app.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\include\SDK\src\app\pxp\pxp_app.c</FilePath>
@@ -1081,6 +1000,11 @@
               <FileName>overlay_mgr.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\include\SDK\src\mcu\rtl876x\overlay_mgr.c</FilePath>
+            </File>
+            <File>
+              <FileName>startup_rtl8762c.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\include\SDK\src\mcu\rtl876x\arm\startup_rtl8762c.s</FilePath>
             </File>
           </Files>
         </Group>

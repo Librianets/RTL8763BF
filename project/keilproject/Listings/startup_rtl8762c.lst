@@ -528,11 +528,11 @@ ARM Macro Assembler    Page 9
               00000000 
 Command Line: --16 --debug --xref --cpreproc --diag_suppress=9931 --cpu=Cortex-
 M4.fp --apcs=interwork --depend=.\objects\startup_rtl8762c.d -o.\objects\startu
-p_rtl8762c.o -I..\..\..\inc\platform -I.\RTE\_RTL8786BF -IC:\Keil_v5\ARM\PACK\A
-RM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include -IC:\Keil_v5\ARM\CMSIS\Include -IC:\Ke
-il_v5\ARM\PACK\ARM\CMSIS\5.0.1 --predefine="__EVAL SETA 1" --predefine="__UVISI
-ON_VERSION SETA 523" --predefine="ARMCM4_FP SETA 1" --list=.\listings\startup_r
-tl8762c.lst ..\include\SDK\src\mcu\rtl876x\arm\startup_rtl8762c.s
+p_rtl8762c.o -I.\RTE\_RTL8786BF -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\AR
+M\ARMCM4\Include -IC:\Keil_v5\ARM\CMSIS\Include -IC:\Keil_v5\ARM\PACK\ARM\CMSIS
+\5.0.1 --predefine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 523" --p
+redefine="ARMCM4_FP SETA 1" --list=.\listings\startup_rtl8762c.lst ..\include\S
+DK\src\mcu\rtl876x\arm\startup_rtl8762c.s
 
 
 

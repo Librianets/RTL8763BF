@@ -1,0 +1,7 @@
+--c99 -c --cpu Cortex-M4.fp -D__EVAL --li -g -O2 --apcs=interwork -I ..\ -I .\ -I ..\include -I ..\include\SDK -I ..\include\SDK\app -I ..\include\SDK\bluetooth -I ..\include\SDK\os -I ..\include\SDK\peripheral -I ..\include\SDK\platform -I ..\include\SDK\bluetooth\gap -I ..\include\SDK\bluetooth\profile -I ..\include\SDK\bluetooth\gap\gap_lib -I ..\include\SDK\bluetooth\profile\client -I ..\include\SDK\bluetooth\profile\server -I ..\include\SDK\os\system_trace -I ..\include\SDK\platform\cmsis -I ..\keil --gnu --preinclude app_flags.h --bss_threshold=0
+-I.\RTE\_RTL8786BF
+-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include
+-IC:\Keil_v5\ARM\CMSIS\Include
+-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1
+-D__UVISION_VERSION="523" -DARMCM4_FP
+-o .\objects\rtl876x_gpio.o --omf_browse .\objects\rtl876x_gpio.crf --depend .\objects\rtl876x_gpio.d "..\source\peripheral\rtl876x_gpio.c"

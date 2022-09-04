@@ -1,0 +1,19 @@
+--create .\Objects\rtp8763_demo.lib
+..\lib\ROM.lib
+..\lib\gap_utils.lib
+.\objects\system_rtl8762c.o
+.\objects\app_task.o
+.\objects\iohandle.o
+.\objects\main.o
+.\objects\rtl876x_io_dlps.o
+.\objects\rtl876x_gpio.o
+.\objects\rtl876x_rcc.o
+.\objects\ias.o
+.\objects\lls.o
+.\objects\tps.o
+.\objects\bas.o
+.\objects\kns.o
+.\objects\dis.o
+.\objects\pxp_app.o
+.\objects\overlay_mgr.o
+.\objects\startup_rtl8762c.o

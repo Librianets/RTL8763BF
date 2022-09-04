@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\rtp8763_demo.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\rtp8763_demo.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Thu Aug 25 03:16:02 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Sun Sep 04 12:19:02 2022
 <BR><P>
 <H3>Maximum Stack Usage =        288 bytes + Unknown(Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -15,9 +15,9 @@ Function Pointers
  <LI><a href="#[2d]">ADC_Handler</a> from startup_rtl8762c.o(.text) referenced from startup_rtl8762c.o(VECTOR)
  <LI><a href="#[1e]">BTMAC_Handler</a> from startup_rtl8762c.o(.text) referenced from startup_rtl8762c.o(VECTOR)
  <LI><a href="#[16]">BusFault_Handler</a> from startup_rtl8762c.o(.text) referenced from startup_rtl8762c.o(VECTOR)
- <LI><a href="#[67]">DLPS_IO_EnterDlpsCb</a> from rtl876x_io_dlps.o(.text) referenced from rtl876x_io_dlps.o(.text)
- <LI><a href="#[4]">DLPS_IO_ExitDlpsCb</a> from rtl876x_io_dlps.o(.ram.dataon.data) referenced from rtl876x_io_dlps.o(.text)
- <LI><a href="#[b8]">DLPS_PxpCheck</a> from main.o(.text) referenced from main.o(.text)
+ <LI><a href="#[b3]">DLPS_IO_EnterDlpsCb</a> from rtl876x_io_dlps.o(.text) referenced from rtl876x_io_dlps.o(.text)
+ <LI><a href="#[5]">DLPS_IO_ExitDlpsCb</a> from rtl876x_io_dlps.o(.ram.dataon.data) referenced from rtl876x_io_dlps.o(.text)
+ <LI><a href="#[ab]">DLPS_PxpCheck</a> from main.o(.text) referenced from main.o(.text)
  <LI><a href="#[19]">DebugMon_Handler</a> from startup_rtl8762c.o(.text) referenced from startup_rtl8762c.o(VECTOR)
  <LI><a href="#[48]">Default_Handler</a> from startup_rtl8762c.o(.text) referenced from system_rtl8762c.o(.app.overlay_a)
  <LI><a href="#[2f]">GDMA0_Channel0_Handler</a> from startup_rtl8762c.o(.text) referenced from startup_rtl8762c.o(VECTOR)
@@ -48,8 +48,8 @@ Function Pointers
  <LI><a href="#[44]">PTA_Mailbox_Handler</a> from startup_rtl8762c.o(.text) referenced from startup_rtl8762c.o(VECTOR)
  <LI><a href="#[1a]">PendSV_Handler</a> from startup_rtl8762c.o(.text) referenced from startup_rtl8762c.o(VECTOR)
  <LI><a href="#[2e]">Peripheral_Handler</a> from startup_rtl8762c.o(.text) referenced from startup_rtl8762c.o(VECTOR)
- <LI><a href="#[b4]">PxpEnterDlpsSet</a> from main.o(.text) referenced from main.o(.text)
- <LI><a href="#[b7]">PxpExitDlpsInit</a> from main.o(.text) referenced from main.o(.text)
+ <LI><a href="#[a7]">PxpEnterDlpsSet</a> from main.o(.text) referenced from main.o(.text)
+ <LI><a href="#[aa]">PxpExitDlpsInit</a> from main.o(.text) referenced from main.o(.text)
  <LI><a href="#[40]">Qdecode_Handler</a> from startup_rtl8762c.o(.text) referenced from startup_rtl8762c.o(VECTOR)
  <LI><a href="#[28]">RTC_Handler</a> from startup_rtl8762c.o(.text) referenced from startup_rtl8762c.o(VECTOR)
  <LI><a href="#[12]">Reset_Handler</a> from startup_rtl8762c.o(RESET) referenced from startup_rtl8762c.o(VECTOR)
@@ -74,9 +74,9 @@ Function Pointers
  <LI><a href="#[17]">UsageFault_Handler</a> from startup_rtl8762c.o(.text) referenced from startup_rtl8762c.o(VECTOR)
  <LI><a href="#[1d]">WDG_Handler</a> from startup_rtl8762c.o(.text) referenced from startup_rtl8762c.o(VECTOR)
  <LI><a href="#[7]">app_cb0_wdg_reset</a> from system_rtl8762c.o(.text) referenced from system_rtl8762c.o(.constdata)
- <LI><a href="#[5]">app_gap_callback</a> from pxp_app.o(.text) referenced from main.o(.text)
- <LI><a href="#[7f]">app_main_task</a> from app_task.o(.text) referenced from app_task.o(.text)
- <LI><a href="#[6]">app_profile_callback</a> from pxp_app.o(.text) referenced from main.o(.text)
+ <LI><a href="#[3]">app_gap_callback</a> from pxp_app.o(.text) referenced from main.o(.text)
+ <LI><a href="#[69]">app_main_task</a> from app_task.o(.text) referenced from app_task.o(.text)
+ <LI><a href="#[4]">app_profile_callback</a> from pxp_app.o(.text) referenced from main.o(.text)
  <LI><a href="#[c]">bas_attr_read_cb</a> from bas.o(.text) referenced from bas.o(.constdata)
  <LI><a href="#[d]">bas_cccd_update_cb</a> from bas.o(.text) referenced from bas.o(.constdata)
  <LI><a href="#[2]">common_main</a> from system_rtl8762c.o(.text) referenced from system_rtl8762c.o(.app.flash.text)
@@ -88,11 +88,11 @@ Function Pointers
  <LI><a href="#[10]">kns_cccd_update_cb</a> from kns.o(.text) referenced from kns.o(.constdata)
  <LI><a href="#[9]">lls_attr_read_cb</a> from lls.o(.text) referenced from lls.o(.constdata)
  <LI><a href="#[a]">lls_attr_write_cb</a> from lls.o(.text) referenced from lls.o(.constdata)
- <LI><a href="#[3]">log_direct</a> from ROM.lib(ABSOLUTE) referenced from startup_rtl8762c.o(.text)
+ <LI><a href="#[6]">log_direct</a> from ROM.lib(ABSOLUTE) referenced from startup_rtl8762c.o(.text)
  <LI><a href="#[5a]">pre_main</a> from system_rtl8762c.o(.app.flash.text) referenced from system_rtl8762c.o(.app.flash.text)
  <LI><a href="#[b]">tps_attr_read_cb</a> from tps.o(.text) referenced from tps.o(.constdata)
- <LI><a href="#[a2]">vTimerLongPressCallback</a> from iohandle.o(.text) referenced from iohandle.o(.text)
- <LI><a href="#[a0]">vTimerPxpIOCallback</a> from iohandle.o(.text) referenced from iohandle.o(.text)
+ <LI><a href="#[8f]">vTimerLongPressCallback</a> from iohandle.o(.text) referenced from iohandle.o(.text)
+ <LI><a href="#[8d]">vTimerPxpIOCallback</a> from iohandle.o(.text) referenced from iohandle.o(.text)
 </UL>
 <P>
 <H3>
@@ -106,14 +106,19 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WDG_SystemReset
 </UL>
 
-<P><STRONG><a name="[3]"></a>log_direct</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<P><STRONG><a name="[6]"></a>log_direct</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;common_main
-<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pwr_mgr_init
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pwr_mgr_init
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_rtl8762c.o(.text)
 </UL>
 <P><STRONG><a name="[5e]"></a>log_buffer</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DLPS_IO_ExitDlpsCb
+<BR><BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;swTimerInit
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTimerPxpIOCallback
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pxp_HandleButtonEvent
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_io_msg
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_send_msg_to_apptask
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
 <LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pre_main
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppUpdateVectorTable
 <LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_bond_get_sec_level
@@ -124,37 +129,32 @@ Global Symbols
 <LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_conn_mtu_info_evt
 <LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_conn_param_update_evt
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_authen_state_evt
-<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gap_lib_init
-<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_profile_callback
-<LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_gap_callback
-<LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_Handler
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;swTimerInit
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTimerPxpIOCallback
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pxp_HandleButtonEvent
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_io_msg
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_send_msg_to_apptask
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_add_service
 <LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_attr_read_cb
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_set_parameter
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kns_add_service
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_set_parameter
 <LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kns_cccd_update_cb
 <LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kns_attr_read_cb
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kns_set_parameter
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kns_set_parameter
 <LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kns_attr_write_cb
-<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bas_add_service
 <LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bas_cccd_update_cb
 <LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bas_attr_read_cb
-<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bas_set_parameter
-<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tps_add_service
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bas_set_parameter
 <LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tps_attr_read_cb
-<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tps_set_parameter
-<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lls_add_service
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tps_set_parameter
 <LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lls_attr_write_cb
 <LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lls_attr_read_cb
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lls_set_parameter
-<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ias_add_service
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lls_set_parameter
 <LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ias_attr_write_cb
+<LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DLPS_IO_ExitDlpsCb
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tps_add_service
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lls_add_service
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kns_add_service
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ias_add_service
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gap_lib_init
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_add_service
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bas_add_service
+<LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_profile_callback
+<LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_gap_callback
+<LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_Handler
 </UL>
 
 <P><STRONG><a name="[c5]"></a>trace_bdaddr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
@@ -166,45 +166,45 @@ Global Symbols
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppUpdateVectorTable
 </UL>
 
-<P><STRONG><a name="[ba]"></a>dlps_check_cb_reg</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pwr_mgr_init
+<P><STRONG><a name="[ad]"></a>dlps_check_cb_reg</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pwr_mgr_init
 </UL>
 
-<P><STRONG><a name="[6a]"></a>dlps_hw_control_cb_reg</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DLPS_IORegister
+<P><STRONG><a name="[b4]"></a>dlps_hw_control_cb_reg</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DLPS_IORegister
 </UL>
 
-<P><STRONG><a name="[bb]"></a>lps_mode_set</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pwr_mgr_init
+<P><STRONG><a name="[af]"></a>lps_mode_set</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pwr_mgr_init
 </UL>
 
 <P><STRONG><a name="[66]"></a>flash_ioctl</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE), UNUSED)
 <BR><BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_try_high_speed
 </UL>
 
-<P><STRONG><a name="[93]"></a>NVIC_Init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DLPS_IO_ExitDlpsCb
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;driver_init
+<P><STRONG><a name="[7f]"></a>NVIC_Init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;driver_init
+<LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DLPS_IO_ExitDlpsCb
 </UL>
 
-<P><STRONG><a name="[89]"></a>Pinmux_Config</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINMUX_Configuration
+<P><STRONG><a name="[73]"></a>Pinmux_Config</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINMUX_Configuration
 </UL>
 
-<P><STRONG><a name="[68]"></a>Pad_Config</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DLPS_IO_EnterDlpsCb
-<LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DLPS_IO_ExitDlpsCb
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PxpExitDlpsInit
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PxpEnterDlpsSet
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAD_Configuration
+<P><STRONG><a name="[75]"></a>Pad_Config</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAD_Configuration
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DLPS_IO_EnterDlpsCb
+<LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DLPS_IO_ExitDlpsCb
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PxpExitDlpsInit
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PxpEnterDlpsSet
 </UL>
 
-<P><STRONG><a name="[b5]"></a>System_WakeUpDebounceTime</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PxpEnterDlpsSet
+<P><STRONG><a name="[a8]"></a>System_WakeUpDebounceTime</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PxpEnterDlpsSet
 </UL>
 
-<P><STRONG><a name="[b6]"></a>System_WakeUpPinEnable</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PxpEnterDlpsSet
+<P><STRONG><a name="[a9]"></a>System_WakeUpPinEnable</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PxpEnterDlpsSet
 </UL>
 
 <P><STRONG><a name="[61]"></a>WDG_Disable</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
@@ -212,7 +212,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[ce]"></a>WDG_Restart</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_io_msg
+<BR><BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_io_msg
 </UL>
 
 <P><STRONG><a name="[da]"></a>btif_vendor_cmd_req</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE), UNUSED)
@@ -224,16 +224,16 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_bond_just_work_confirm
 </UL>
 
-<P><STRONG><a name="[80]"></a>os_msg_queue_create_intern</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_main_task
+<P><STRONG><a name="[6a]"></a>os_msg_queue_create_intern</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_main_task
 </UL>
 
-<P><STRONG><a name="[7e]"></a>os_msg_send_intern</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_send_msg_to_apptask
+<P><STRONG><a name="[68]"></a>os_msg_send_intern</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_send_msg_to_apptask
 </UL>
 
-<P><STRONG><a name="[83]"></a>os_msg_recv_intern</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_main_task
+<P><STRONG><a name="[6d]"></a>os_msg_recv_intern</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_main_task
 </UL>
 
 <P><STRONG><a name="[62]"></a>os_sched_start</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
@@ -241,56 +241,56 @@ Global Symbols
 <LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;common_main
 </UL>
 
-<P><STRONG><a name="[87]"></a>os_task_create</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_task_init
+<P><STRONG><a name="[71]"></a>os_task_create</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_task_init
 </UL>
 
-<P><STRONG><a name="[a4]"></a>os_timer_create</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;swTimerInit
+<P><STRONG><a name="[91]"></a>os_timer_create</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;swTimerInit
 </UL>
 
-<P><STRONG><a name="[95]"></a>os_timer_start</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
+<P><STRONG><a name="[81]"></a>os_timer_start</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
 </UL>
 
-<P><STRONG><a name="[9b]"></a>os_timer_restart</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTimerPxpIOCallback
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPxpIO
+<P><STRONG><a name="[87]"></a>os_timer_restart</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTimerPxpIOCallback
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPxpIO
 </UL>
 
-<P><STRONG><a name="[96]"></a>os_timer_stop</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pxp_HandleButtonEvent
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StopPxpIO
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
+<P><STRONG><a name="[82]"></a>os_timer_stop</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pxp_HandleButtonEvent
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StopPxpIO
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
 </UL>
 
-<P><STRONG><a name="[b2]"></a>btaon_fast_read_safe</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<P><STRONG><a name="[a5]"></a>btaon_fast_read_safe</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_Handler
 </UL>
 
-<P><STRONG><a name="[b3]"></a>btaon_fast_write_safe</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<P><STRONG><a name="[a6]"></a>btaon_fast_write_safe</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_Handler
 </UL>
 
 <P><STRONG><a name="[d3]"></a>gap_register_extend_cb</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gap_lib_init
+<BR><BR>[Called By]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gap_lib_init
 </UL>
 
-<P><STRONG><a name="[81]"></a>gap_start_bt_stack</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_main_task
+<P><STRONG><a name="[6b]"></a>gap_start_bt_stack</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_main_task
 </UL>
 
-<P><STRONG><a name="[84]"></a>gap_handle_msg</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_main_task
+<P><STRONG><a name="[6e]"></a>gap_handle_msg</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_main_task
 </UL>
 
-<P><STRONG><a name="[ab]"></a>gap_set_param</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_gap_init
+<P><STRONG><a name="[98]"></a>gap_set_param</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_gap_init
 </UL>
 
-<P><STRONG><a name="[ac]"></a>le_bond_set_param</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<P><STRONG><a name="[99]"></a>le_bond_set_param</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_gap_msg
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_gap_init
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_gap_init
 </UL>
 
 <P><STRONG><a name="[cc]"></a>le_bond_passkey_input_confirm</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
@@ -313,16 +313,16 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_gap_msg
 </UL>
 
-<P><STRONG><a name="[bd]"></a>le_gap_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<P><STRONG><a name="[b1]"></a>le_gap_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[ad]"></a>le_register_app_cb</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_gap_init
+<P><STRONG><a name="[9a]"></a>le_register_app_cb</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_gap_init
 </UL>
 
-<P><STRONG><a name="[a9]"></a>le_set_gap_param</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_gap_init
+<P><STRONG><a name="[96]"></a>le_set_gap_param</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_gap_init
 </UL>
 
 <P><STRONG><a name="[c1]"></a>le_get_conn_param</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
@@ -335,38 +335,38 @@ Global Symbols
 <LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_conn_state_evt
 </UL>
 
-<P><STRONG><a name="[9d]"></a>le_disconnect</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pxp_HandleButtonEvent
+<P><STRONG><a name="[89]"></a>le_disconnect</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pxp_HandleButtonEvent
 </UL>
 
-<P><STRONG><a name="[a6]"></a>le_update_conn_param</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChangeConnectionParameter
+<P><STRONG><a name="[93]"></a>le_update_conn_param</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChangeConnectionParameter
 </UL>
 
-<P><STRONG><a name="[af]"></a>server_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_profile_init
+<P><STRONG><a name="[9c]"></a>server_init</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_profile_init
 </UL>
 
-<P><STRONG><a name="[b0]"></a>server_register_app_cb</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_profile_init
+<P><STRONG><a name="[a3]"></a>server_register_app_cb</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_profile_init
 </UL>
 
-<P><STRONG><a name="[6e]"></a>server_add_service</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_add_service
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kns_add_service
-<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bas_add_service
-<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tps_add_service
-<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lls_add_service
-<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ias_add_service
+<P><STRONG><a name="[b6]"></a>server_add_service</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tps_add_service
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lls_add_service
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kns_add_service
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ias_add_service
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_add_service
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bas_add_service
 </UL>
 
-<P><STRONG><a name="[77]"></a>server_attr_read_confirm</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bas_battery_level_value_read_confirm
+<P><STRONG><a name="[bc]"></a>server_attr_read_confirm</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bas_battery_level_value_read_confirm
 </UL>
 
-<P><STRONG><a name="[75]"></a>server_send_data</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pxp_HandleButtonEvent
-<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bas_battery_level_value_notify
+<P><STRONG><a name="[8a]"></a>server_send_data</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pxp_HandleButtonEvent
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bas_battery_level_value_notify
 </UL>
 
 <P><STRONG><a name="[d8]"></a>le_find_key_entry</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE), UNUSED)
@@ -378,17 +378,17 @@ Global Symbols
 <LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_check_privacy_bond
 </UL>
 
-<P><STRONG><a name="[aa]"></a>le_adv_set_param</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_gap_init
+<P><STRONG><a name="[97]"></a>le_adv_set_param</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_gap_init
 </UL>
 
-<P><STRONG><a name="[9e]"></a>le_adv_start</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_conn_state_evt
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pxp_HandleButtonEvent
+<P><STRONG><a name="[8b]"></a>le_adv_start</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pxp_HandleButtonEvent
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_conn_state_evt
 </UL>
 
-<P><STRONG><a name="[9f]"></a>le_adv_stop</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
-<BR><BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pxp_HandleButtonEvent
+<P><STRONG><a name="[8c]"></a>le_adv_stop</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pxp_HandleButtonEvent
 </UL>
 
 <P><STRONG><a name="[5c]"></a>setlocale</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
@@ -404,13 +404,13 @@ Global Symbols
 <P><STRONG><a name="[58]"></a>__aeabi_memcpy</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;load_overlay
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ram_init
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_set_parameter
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_set_parameter
 </UL>
 
-<P><STRONG><a name="[a8]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
+<P><STRONG><a name="[95]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
 <BR><BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AppUpdateVectorTable
-<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_profile_callback
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_gap_init
+<LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_profile_callback
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_gap_init
 </UL>
 
 <P><STRONG><a name="[59]"></a>__aeabi_memclr</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, ROM.lib(ABSOLUTE))
@@ -469,21 +469,21 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO8_Handler
 <LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO28_Handler
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO24_Handler
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
 <LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO16_Handler
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO12_Handler
 <LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO0_Handler
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_rtl8762c.o(VECTOR)
 </UL>
-<P><STRONG><a name="[4]"></a>DLPS_IO_ExitDlpsCb</STRONG> (Thumb, 206 bytes, Stack size 32 bytes, rtl876x_io_dlps.o(.ram.dataon.data))
+<P><STRONG><a name="[5]"></a>DLPS_IO_ExitDlpsCb</STRONG> (Thumb, 206 bytes, Stack size 32 bytes, rtl876x_io_dlps.o(.ram.dataon.data))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = DLPS_IO_ExitDlpsCb &rArr; GPIO_DLPS_Exit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_DLPS_Exit
-<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_monitor_enable
-<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pad_Config
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
+<BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_monitor_enable
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pad_Config
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_DLPS_Exit
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> rtl876x_io_dlps.o(.text)
 </UL>
@@ -591,8 +591,8 @@ Global Symbols
 <P><STRONG><a name="[114]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
 
 <P><STRONG><a name="[60]"></a>debug_monitor_enable</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, system_rtl8762c.o(.app.flash.text))
-<BR><BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DLPS_IO_ExitDlpsCb
-<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pre_main
+<BR><BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pre_main
+<LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DLPS_IO_ExitDlpsCb
 </UL>
 
 <P><STRONG><a name="[57]"></a>ram_init</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, system_rtl8762c.o(.app.flash.text))
@@ -620,6 +620,642 @@ Global Symbols
 <P><STRONG><a name="[1]"></a>SystemInit</STRONG> (Thumb, 136 bytes, Stack size 0 bytes, system_rtl8762c.o(.app.flash.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_rtl8762c.o(RESET)
 </UL>
+<P><STRONG><a name="[2]"></a>common_main</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, system_rtl8762c.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = common_main &rArr; main &rArr; app_le_gap_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sched_start
+<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WDG_Disable
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_direct
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> system_rtl8762c.o(.app.flash.text)
+</UL>
+<P><STRONG><a name="[63]"></a>WDG_SystemReset</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, system_rtl8762c.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCall
+</UL>
+
+<P><STRONG><a name="[65]"></a>flash_try_high_speed</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, system_rtl8762c.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_ioctl
+</UL>
+
+<P><STRONG><a name="[7]"></a>app_cb0_wdg_reset</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, system_rtl8762c.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> system_rtl8762c.o(.constdata)
+</UL>
+<P><STRONG><a name="[67]"></a>app_send_msg_to_apptask</STRONG> (Thumb, 74 bytes, Stack size 24 bytes, app_task.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = app_send_msg_to_apptask
+</UL>
+<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_msg_send_intern
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTimerLongPressCallback
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
+</UL>
+
+<P><STRONG><a name="[69]"></a>app_main_task</STRONG> (Thumb, 130 bytes, Stack size 24 bytes, app_task.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = app_main_task &rArr; app_handle_io_msg &rArr; app_handle_gap_msg &rArr; app_handle_conn_state_evt &rArr; StartPxpIO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;driver_init
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_io_msg
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gap_handle_msg
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gap_start_bt_stack
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_msg_recv_intern
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_msg_queue_create_intern
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> app_task.o(.text)
+</UL>
+<P><STRONG><a name="[70]"></a>app_task_init</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, app_task.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = app_task_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_task_create
+</UL>
+<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_init
+</UL>
+
+<P><STRONG><a name="[72]"></a>PINMUX_Configuration</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, iohandle.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = PINMUX_Configuration
+</UL>
+<BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pinmux_Config
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_init
+</UL>
+
+<P><STRONG><a name="[74]"></a>PAD_Configuration</STRONG> (Thumb, 56 bytes, Stack size 24 bytes, iohandle.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = PAD_Configuration
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pad_Config
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_init
+</UL>
+
+<P><STRONG><a name="[76]"></a>RCC_Configuration</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, iohandle.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = RCC_Configuration &rArr; RCC_PeriphClockCmd
+</UL>
+<BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_PeriphClockCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_init
+</UL>
+
+<P><STRONG><a name="[6c]"></a>driver_init</STRONG> (Thumb, 162 bytes, Stack size 40 bytes, iohandle.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = driver_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_StructInit
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_MaskINTConfig
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_INTConfig
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPin
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_main_task
+</UL>
+
+<P><STRONG><a name="[80]"></a>GPIO20_Handler</STRONG> (Thumb, 140 bytes, Stack size 24 bytes, iohandle.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = GPIO20_Handler &rArr; app_send_msg_to_apptask
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_MaskINTConfig
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPin
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ClearINTPendingBit
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_send_msg_to_apptask
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_timer_stop
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_timer_start
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Group0_Handler
+<LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_Handler
+</UL>
+
+<P><STRONG><a name="[84]"></a>StopPxpIO</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, iohandle.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = StopPxpIO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPin
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_timer_stop
+</UL>
+<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pxp_HandleButtonEvent
+<LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_profile_callback
+</UL>
+
+<P><STRONG><a name="[85]"></a>StartPxpIO</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, iohandle.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = StartPxpIO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPin
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_timer_restart
+</UL>
+<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pxp_HandleButtonEvent
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_dev_state_evt
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_conn_state_evt
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_authen_state_evt
+<LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_profile_callback
+</UL>
+
+<P><STRONG><a name="[88]"></a>Pxp_HandleButtonEvent</STRONG> (Thumb, 262 bytes, Stack size 40 bytes, iohandle.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = Pxp_HandleButtonEvent &rArr; StartPxpIO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPxpIO
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StopPxpIO
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_adv_stop
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_adv_start
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_send_data
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_disconnect
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_timer_stop
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_io_msg
+</UL>
+
+<P><STRONG><a name="[8d]"></a>vTimerPxpIOCallback</STRONG> (Thumb, 168 bytes, Stack size 24 bytes, iohandle.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = vTimerPxpIOCallback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPin
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadOutputDataBit
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_timer_restart
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> iohandle.o(.text)
+</UL>
+<P><STRONG><a name="[8f]"></a>vTimerLongPressCallback</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, iohandle.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = vTimerLongPressCallback &rArr; app_send_msg_to_apptask
+</UL>
+<BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPin
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_send_msg_to_apptask
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> iohandle.o(.text)
+</UL>
+<P><STRONG><a name="[90]"></a>swTimerInit</STRONG> (Thumb, 166 bytes, Stack size 24 bytes, iohandle.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = swTimerInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_timer_create
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[92]"></a>ChangeConnectionParameter</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, iohandle.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ChangeConnectionParameter
+</UL>
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_update_conn_param
+</UL>
+<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_authen_state_evt
+</UL>
+
+<P><STRONG><a name="[94]"></a>app_le_gap_init</STRONG> (Thumb, 348 bytes, Stack size 120 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = app_le_gap_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_adv_set_param
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_set_gap_param
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_register_app_cb
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_bond_set_param
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gap_set_param
+</UL>
+<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[9b]"></a>app_le_profile_init</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = app_le_profile_init &rArr; tps_add_service
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_register_app_cb
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_init
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tps_add_service
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lls_add_service
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kns_add_service
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ias_add_service
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_add_service
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bas_add_service
+</UL>
+<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[a4]"></a>board_init</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = board_init &rArr; PAD_Configuration
+</UL>
+<BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_Configuration
+<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAD_Configuration
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINMUX_Configuration
+</UL>
+<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1c]"></a>System_Handler</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = System_Handler &rArr; GPIO20_Handler &rArr; app_send_msg_to_apptask
+</UL>
+<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;btaon_fast_write_safe
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;btaon_fast_read_safe
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> startup_rtl8762c.o(VECTOR)
+</UL>
+<P><STRONG><a name="[a7]"></a>PxpEnterDlpsSet</STRONG> (Thumb, 88 bytes, Stack size 24 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = PxpEnterDlpsSet
+</UL>
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_WakeUpPinEnable
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_WakeUpDebounceTime
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pad_Config
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
+</UL>
+<P><STRONG><a name="[aa]"></a>PxpExitDlpsInit</STRONG> (Thumb, 56 bytes, Stack size 24 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = PxpExitDlpsInit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pad_Config
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
+</UL>
+<P><STRONG><a name="[ab]"></a>DLPS_PxpCheck</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, main.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
+</UL>
+<P><STRONG><a name="[ac]"></a>pwr_mgr_init</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = pwr_mgr_init &rArr; DLPS_IORegister
+</UL>
+<BR>[Calls]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lps_mode_set
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dlps_check_cb_reg
+<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_direct
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DLPS_IORegister
+</UL>
+<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[b0]"></a>task_init</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, main.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_task_init
+</UL>
+
+<P><STRONG><a name="[55]"></a>main</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, main.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = main &rArr; app_le_gap_init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;swTimerInit
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_task_init
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_gap_init
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sched_start
+<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gap_lib_init
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pwr_mgr_init
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_init
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_profile_init
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_gap_init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;common_main
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
+<P><STRONG><a name="[b3]"></a>DLPS_IO_EnterDlpsCb</STRONG> (Thumb, 244 bytes, Stack size 24 bytes, rtl876x_io_dlps.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = DLPS_IO_EnterDlpsCb
+</UL>
+<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pad_Config
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> rtl876x_io_dlps.o(.text)
+</UL>
+<P><STRONG><a name="[ae]"></a>DLPS_IORegister</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, rtl876x_io_dlps.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DLPS_IORegister
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dlps_hw_control_cb_reg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pwr_mgr_init
+</UL>
+
+<P><STRONG><a name="[b5]"></a>GPIO_DeInit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, rtl876x_gpio.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_PeriphClockCmd
+</UL>
+
+<P><STRONG><a name="[7a]"></a>GPIO_Init</STRONG> (Thumb, 190 bytes, Stack size 0 bytes, rtl876x_gpio.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;driver_init
+</UL>
+
+<P><STRONG><a name="[78]"></a>GPIO_StructInit</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, rtl876x_gpio.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;driver_init
+</UL>
+
+<P><STRONG><a name="[7e]"></a>GPIO_INTConfig</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, rtl876x_gpio.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;driver_init
+</UL>
+
+<P><STRONG><a name="[83]"></a>GPIO_ClearINTPendingBit</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, rtl876x_gpio.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
+</UL>
+
+<P><STRONG><a name="[7d]"></a>GPIO_MaskINTConfig</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, rtl876x_gpio.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;driver_init
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
+</UL>
+
+<P><STRONG><a name="[79]"></a>GPIO_GetPin</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, rtl876x_gpio.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTimerLongPressCallback
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTimerPxpIOCallback
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPxpIO
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StopPxpIO
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;driver_init
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
+</UL>
+
+<P><STRONG><a name="[115]"></a>GPIO_GetNum</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, rtl876x_gpio.o(.text), UNUSED)
+
+<P><STRONG><a name="[116]"></a>GPIO_DBClkCmd</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, rtl876x_gpio.o(.text), UNUSED)
+
+<P><STRONG><a name="[77]"></a>RCC_PeriphClockCmd</STRONG> (Thumb, 292 bytes, Stack size 20 bytes, rtl876x_rcc.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = RCC_PeriphClockCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_Configuration
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_DeInit
+</UL>
+
+<P><STRONG><a name="[117]"></a>RCC_SPIClkDivConfig</STRONG> (Thumb, 112 bytes, Stack size 0 bytes, rtl876x_rcc.o(.text), UNUSED)
+
+<P><STRONG><a name="[118]"></a>RCC_I2CClkDivConfig</STRONG> (Thumb, 110 bytes, Stack size 0 bytes, rtl876x_rcc.o(.text), UNUSED)
+
+<P><STRONG><a name="[119]"></a>RCC_UARTClkDivConfig</STRONG> (Thumb, 114 bytes, Stack size 0 bytes, rtl876x_rcc.o(.text), UNUSED)
+
+<P><STRONG><a name="[11a]"></a>RCC_PeriClockConfig</STRONG> (Thumb, 106 bytes, Stack size 12 bytes, rtl876x_rcc.o(.text), UNUSED)
+
+<P><STRONG><a name="[11b]"></a>RCC_PeriFunctionConfig</STRONG> (Thumb, 90 bytes, Stack size 0 bytes, rtl876x_rcc.o(.text), UNUSED)
+
+<P><STRONG><a name="[8]"></a>ias_attr_write_cb</STRONG> (Thumb, 86 bytes, Stack size 24 bytes, ias.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ias_attr_write_cb
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> ias.o(.constdata)
+</UL>
+<P><STRONG><a name="[9d]"></a>ias_add_service</STRONG> (Thumb, 60 bytes, Stack size 24 bytes, ias.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ias_add_service
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_add_service
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_profile_init
+</UL>
+
+<P><STRONG><a name="[b7]"></a>lls_set_parameter</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, lls.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = lls_set_parameter
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_profile_callback
+</UL>
+
+<P><STRONG><a name="[9]"></a>lls_attr_read_cb</STRONG> (Thumb, 98 bytes, Stack size 40 bytes, lls.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = lls_attr_read_cb
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> lls.o(.constdata)
+</UL>
+<P><STRONG><a name="[a]"></a>lls_attr_write_cb</STRONG> (Thumb, 88 bytes, Stack size 24 bytes, lls.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = lls_attr_write_cb
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> lls.o(.constdata)
+</UL>
+<P><STRONG><a name="[9e]"></a>lls_add_service</STRONG> (Thumb, 60 bytes, Stack size 24 bytes, lls.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = lls_add_service
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_add_service
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_profile_init
+</UL>
+
+<P><STRONG><a name="[b8]"></a>tps_set_parameter</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, tps.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = tps_set_parameter
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_profile_callback
+</UL>
+
+<P><STRONG><a name="[b]"></a>tps_attr_read_cb</STRONG> (Thumb, 98 bytes, Stack size 40 bytes, tps.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = tps_attr_read_cb
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> tps.o(.constdata)
+</UL>
+<P><STRONG><a name="[9f]"></a>tps_add_service</STRONG> (Thumb, 60 bytes, Stack size 24 bytes, tps.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = tps_add_service
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_add_service
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_profile_init
+</UL>
+
+<P><STRONG><a name="[b9]"></a>bas_set_parameter</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, bas.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = bas_set_parameter
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_profile_callback
+</UL>
+
+<P><STRONG><a name="[ba]"></a>bas_battery_level_value_notify</STRONG> (Thumb, 24 bytes, Stack size 24 bytes, bas.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_send_data
+</UL>
+
+<P><STRONG><a name="[bb]"></a>bas_battery_level_value_read_confirm</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, bas.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_attr_read_confirm
+</UL>
+
+<P><STRONG><a name="[c]"></a>bas_attr_read_cb</STRONG> (Thumb, 104 bytes, Stack size 32 bytes, bas.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = bas_attr_read_cb
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bas.o(.constdata)
+</UL>
+<P><STRONG><a name="[d]"></a>bas_cccd_update_cb</STRONG> (Thumb, 86 bytes, Stack size 32 bytes, bas.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = bas_cccd_update_cb
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> bas.o(.constdata)
+</UL>
+<P><STRONG><a name="[a1]"></a>bas_add_service</STRONG> (Thumb, 60 bytes, Stack size 24 bytes, bas.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = bas_add_service
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_add_service
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_profile_init
+</UL>
+
+<P><STRONG><a name="[bd]"></a>kns_set_parameter</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, kns.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = kns_set_parameter
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_profile_callback
+</UL>
+
+<P><STRONG><a name="[e]"></a>kns_attr_read_cb</STRONG> (Thumb, 96 bytes, Stack size 32 bytes, kns.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = kns_attr_read_cb
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> kns.o(.constdata)
+</UL>
+<P><STRONG><a name="[10]"></a>kns_cccd_update_cb</STRONG> (Thumb, 82 bytes, Stack size 40 bytes, kns.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = kns_cccd_update_cb
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> kns.o(.constdata)
+</UL>
+<P><STRONG><a name="[a0]"></a>kns_add_service</STRONG> (Thumb, 62 bytes, Stack size 24 bytes, kns.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = kns_add_service
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_add_service
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_profile_init
+</UL>
+
+<P><STRONG><a name="[be]"></a>dis_set_parameter</STRONG> (Thumb, 204 bytes, Stack size 16 bytes, dis.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = dis_set_parameter
+</UL>
+<BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_profile_callback
+</UL>
+
+<P><STRONG><a name="[11]"></a>dis_attr_read_cb</STRONG> (Thumb, 354 bytes, Stack size 40 bytes, dis.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = dis_attr_read_cb
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> dis.o(.constdata)
+</UL>
+<P><STRONG><a name="[a2]"></a>dis_add_service</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, dis.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = dis_add_service
+</UL>
+<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_add_service
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_profile_init
+</UL>
+
+<P><STRONG><a name="[bf]"></a>app_handle_authen_state_evt</STRONG> (Thumb, 108 bytes, Stack size 24 bytes, pxp_app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = app_handle_authen_state_evt &rArr; ChangeConnectionParameter
+</UL>
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChangeConnectionParameter
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPxpIO
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_gap_msg
+</UL>
+
+<P><STRONG><a name="[c0]"></a>app_handle_conn_param_update_evt</STRONG> (Thumb, 124 bytes, Stack size 32 bytes, pxp_app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = app_handle_conn_param_update_evt
+</UL>
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_get_conn_param
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_gap_msg
+</UL>
+
+<P><STRONG><a name="[c2]"></a>app_handle_conn_mtu_info_evt</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, pxp_app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = app_handle_conn_mtu_info_evt
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_gap_msg
+</UL>
+
+<P><STRONG><a name="[c3]"></a>app_handle_conn_state_evt</STRONG> (Thumb, 248 bytes, Stack size 64 bytes, pxp_app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = app_handle_conn_state_evt &rArr; StartPxpIO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPxpIO
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_adv_start
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_get_conn_addr
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_get_conn_param
+<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;trace_bdaddr
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_gap_msg
+</UL>
+
+<P><STRONG><a name="[c6]"></a>app_handle_dev_state_evt</STRONG> (Thumb, 180 bytes, Stack size 40 bytes, pxp_app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = app_handle_dev_state_evt &rArr; StartPxpIO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPxpIO
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_gap_msg
+</UL>
+
+<P><STRONG><a name="[c7]"></a>app_handle_gap_msg</STRONG> (Thumb, 360 bytes, Stack size 32 bytes, pxp_app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = app_handle_gap_msg &rArr; app_handle_conn_state_evt &rArr; StartPxpIO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_bond_passkey_display_confirm
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_bond_user_confirm
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_bond_get_display_key
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_bond_oob_input_confirm
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_bond_passkey_input_confirm
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_bond_set_param
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_bond_just_work_confirm
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_dev_state_evt
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_conn_state_evt
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_conn_mtu_info_evt
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_conn_param_update_evt
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_authen_state_evt
+</UL>
+<BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_io_msg
+</UL>
+
+<P><STRONG><a name="[6f]"></a>app_handle_io_msg</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, pxp_app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = app_handle_io_msg &rArr; app_handle_gap_msg &rArr; app_handle_conn_state_evt &rArr; StartPxpIO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pxp_HandleButtonEvent
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WDG_Restart
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_gap_msg
+</UL>
+<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_main_task
+</UL>
+
+<P><STRONG><a name="[3]"></a>app_gap_callback</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, pxp_app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = app_gap_callback
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
+</UL>
+<P><STRONG><a name="[4]"></a>app_profile_callback</STRONG> (Thumb, 648 bytes, Stack size 48 bytes, pxp_app.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = app_profile_callback &rArr; StartPxpIO
+</UL>
+<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPxpIO
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StopPxpIO
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_set_parameter
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kns_set_parameter
+<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bas_set_parameter
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tps_set_parameter
+<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lls_set_parameter
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
+</UL>
+<P><STRONG><a name="[5b]"></a>load_overlay</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, overlay_mgr.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = load_overlay
+</UL>
+<BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pre_main
+</UL>
+
+<P><STRONG><a name="[d0]"></a>get_current_scenario_index</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, overlay_mgr.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
+</UL>
+
 <P><STRONG><a name="[2d]"></a>ADC_Handler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_rtl8762c.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_rtl8762c.o(VECTOR)
 </UL>
@@ -887,642 +1523,6 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_sh
 </UL>
 
-<P><STRONG><a name="[2]"></a>common_main</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, system_rtl8762c.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = common_main &rArr; main &rArr; app_le_gap_init
-</UL>
-<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sched_start
-<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WDG_Disable
-<LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_direct
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> system_rtl8762c.o(.app.flash.text)
-</UL>
-<P><STRONG><a name="[63]"></a>WDG_SystemReset</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, system_rtl8762c.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemCall
-</UL>
-
-<P><STRONG><a name="[65]"></a>flash_try_high_speed</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, system_rtl8762c.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;flash_ioctl
-</UL>
-
-<P><STRONG><a name="[7]"></a>app_cb0_wdg_reset</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, system_rtl8762c.o(.text))
-<BR>[Address Reference Count : 1]<UL><LI> system_rtl8762c.o(.constdata)
-</UL>
-<P><STRONG><a name="[67]"></a>DLPS_IO_EnterDlpsCb</STRONG> (Thumb, 244 bytes, Stack size 24 bytes, rtl876x_io_dlps.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = DLPS_IO_EnterDlpsCb
-</UL>
-<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pad_Config
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> rtl876x_io_dlps.o(.text)
-</UL>
-<P><STRONG><a name="[69]"></a>DLPS_IORegister</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, rtl876x_io_dlps.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DLPS_IORegister
-</UL>
-<BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dlps_hw_control_cb_reg
-</UL>
-<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pwr_mgr_init
-</UL>
-
-<P><STRONG><a name="[6b]"></a>GPIO_DeInit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, rtl876x_gpio.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_PeriphClockCmd
-</UL>
-
-<P><STRONG><a name="[8e]"></a>GPIO_Init</STRONG> (Thumb, 190 bytes, Stack size 0 bytes, rtl876x_gpio.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;driver_init
-</UL>
-
-<P><STRONG><a name="[8c]"></a>GPIO_StructInit</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, rtl876x_gpio.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;driver_init
-</UL>
-
-<P><STRONG><a name="[92]"></a>GPIO_INTConfig</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, rtl876x_gpio.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;driver_init
-</UL>
-
-<P><STRONG><a name="[97]"></a>GPIO_ClearINTPendingBit</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, rtl876x_gpio.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
-</UL>
-
-<P><STRONG><a name="[91]"></a>GPIO_MaskINTConfig</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, rtl876x_gpio.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;driver_init
-</UL>
-
-<P><STRONG><a name="[8d]"></a>GPIO_GetPin</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, rtl876x_gpio.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTimerLongPressCallback
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTimerPxpIOCallback
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPxpIO
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StopPxpIO
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;driver_init
-</UL>
-
-<P><STRONG><a name="[115]"></a>GPIO_GetNum</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, rtl876x_gpio.o(.text), UNUSED)
-
-<P><STRONG><a name="[116]"></a>GPIO_DBClkCmd</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, rtl876x_gpio.o(.text), UNUSED)
-
-<P><STRONG><a name="[6c]"></a>RCC_PeriphClockCmd</STRONG> (Thumb, 292 bytes, Stack size 20 bytes, rtl876x_rcc.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = RCC_PeriphClockCmd
-</UL>
-<BR>[Called By]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_DeInit
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_Configuration
-</UL>
-
-<P><STRONG><a name="[117]"></a>RCC_SPIClkDivConfig</STRONG> (Thumb, 112 bytes, Stack size 0 bytes, rtl876x_rcc.o(.text), UNUSED)
-
-<P><STRONG><a name="[118]"></a>RCC_I2CClkDivConfig</STRONG> (Thumb, 110 bytes, Stack size 0 bytes, rtl876x_rcc.o(.text), UNUSED)
-
-<P><STRONG><a name="[119]"></a>RCC_UARTClkDivConfig</STRONG> (Thumb, 114 bytes, Stack size 0 bytes, rtl876x_rcc.o(.text), UNUSED)
-
-<P><STRONG><a name="[11a]"></a>RCC_PeriClockConfig</STRONG> (Thumb, 106 bytes, Stack size 12 bytes, rtl876x_rcc.o(.text), UNUSED)
-
-<P><STRONG><a name="[11b]"></a>RCC_PeriFunctionConfig</STRONG> (Thumb, 90 bytes, Stack size 0 bytes, rtl876x_rcc.o(.text), UNUSED)
-
-<P><STRONG><a name="[8]"></a>ias_attr_write_cb</STRONG> (Thumb, 86 bytes, Stack size 24 bytes, ias.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ias_attr_write_cb
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> ias.o(.constdata)
-</UL>
-<P><STRONG><a name="[6d]"></a>ias_add_service</STRONG> (Thumb, 60 bytes, Stack size 24 bytes, ias.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ias_add_service
-</UL>
-<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_add_service
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_profile_init
-</UL>
-
-<P><STRONG><a name="[6f]"></a>lls_set_parameter</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, lls.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = lls_set_parameter
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_profile_callback
-</UL>
-
-<P><STRONG><a name="[9]"></a>lls_attr_read_cb</STRONG> (Thumb, 98 bytes, Stack size 40 bytes, lls.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = lls_attr_read_cb
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> lls.o(.constdata)
-</UL>
-<P><STRONG><a name="[a]"></a>lls_attr_write_cb</STRONG> (Thumb, 88 bytes, Stack size 24 bytes, lls.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = lls_attr_write_cb
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> lls.o(.constdata)
-</UL>
-<P><STRONG><a name="[70]"></a>lls_add_service</STRONG> (Thumb, 60 bytes, Stack size 24 bytes, lls.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = lls_add_service
-</UL>
-<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_add_service
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_profile_init
-</UL>
-
-<P><STRONG><a name="[71]"></a>tps_set_parameter</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, tps.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = tps_set_parameter
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_profile_callback
-</UL>
-
-<P><STRONG><a name="[b]"></a>tps_attr_read_cb</STRONG> (Thumb, 98 bytes, Stack size 40 bytes, tps.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = tps_attr_read_cb
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> tps.o(.constdata)
-</UL>
-<P><STRONG><a name="[72]"></a>tps_add_service</STRONG> (Thumb, 60 bytes, Stack size 24 bytes, tps.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = tps_add_service
-</UL>
-<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_add_service
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_profile_init
-</UL>
-
-<P><STRONG><a name="[73]"></a>bas_set_parameter</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, bas.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = bas_set_parameter
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_profile_callback
-</UL>
-
-<P><STRONG><a name="[74]"></a>bas_battery_level_value_notify</STRONG> (Thumb, 24 bytes, Stack size 24 bytes, bas.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_send_data
-</UL>
-
-<P><STRONG><a name="[76]"></a>bas_battery_level_value_read_confirm</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, bas.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_attr_read_confirm
-</UL>
-
-<P><STRONG><a name="[c]"></a>bas_attr_read_cb</STRONG> (Thumb, 104 bytes, Stack size 32 bytes, bas.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = bas_attr_read_cb
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> bas.o(.constdata)
-</UL>
-<P><STRONG><a name="[d]"></a>bas_cccd_update_cb</STRONG> (Thumb, 86 bytes, Stack size 32 bytes, bas.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = bas_cccd_update_cb
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> bas.o(.constdata)
-</UL>
-<P><STRONG><a name="[78]"></a>bas_add_service</STRONG> (Thumb, 60 bytes, Stack size 24 bytes, bas.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = bas_add_service
-</UL>
-<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_add_service
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_profile_init
-</UL>
-
-<P><STRONG><a name="[79]"></a>kns_set_parameter</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, kns.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = kns_set_parameter
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_profile_callback
-</UL>
-
-<P><STRONG><a name="[e]"></a>kns_attr_read_cb</STRONG> (Thumb, 96 bytes, Stack size 32 bytes, kns.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = kns_attr_read_cb
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> kns.o(.constdata)
-</UL>
-<P><STRONG><a name="[10]"></a>kns_cccd_update_cb</STRONG> (Thumb, 82 bytes, Stack size 40 bytes, kns.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = kns_cccd_update_cb
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> kns.o(.constdata)
-</UL>
-<P><STRONG><a name="[7a]"></a>kns_add_service</STRONG> (Thumb, 62 bytes, Stack size 24 bytes, kns.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = kns_add_service
-</UL>
-<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_add_service
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_profile_init
-</UL>
-
-<P><STRONG><a name="[7b]"></a>dis_set_parameter</STRONG> (Thumb, 204 bytes, Stack size 16 bytes, dis.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = dis_set_parameter
-</UL>
-<BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_profile_callback
-</UL>
-
-<P><STRONG><a name="[11]"></a>dis_attr_read_cb</STRONG> (Thumb, 354 bytes, Stack size 40 bytes, dis.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = dis_attr_read_cb
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> dis.o(.constdata)
-</UL>
-<P><STRONG><a name="[7c]"></a>dis_add_service</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, dis.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = dis_add_service
-</UL>
-<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_add_service
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_profile_init
-</UL>
-
-<P><STRONG><a name="[7d]"></a>app_send_msg_to_apptask</STRONG> (Thumb, 74 bytes, Stack size 24 bytes, app_task.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = app_send_msg_to_apptask
-</UL>
-<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_msg_send_intern
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTimerLongPressCallback
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
-</UL>
-
-<P><STRONG><a name="[7f]"></a>app_main_task</STRONG> (Thumb, 130 bytes, Stack size 24 bytes, app_task.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = app_main_task &rArr; app_handle_io_msg &rArr; app_handle_gap_msg &rArr; app_handle_conn_state_evt &rArr; StartPxpIO
-</UL>
-<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gap_handle_msg
-<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gap_start_bt_stack
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_msg_recv_intern
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_msg_queue_create_intern
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;driver_init
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_io_msg
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> app_task.o(.text)
-</UL>
-<P><STRONG><a name="[86]"></a>app_task_init</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, app_task.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = app_task_init
-</UL>
-<BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_task_create
-</UL>
-<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task_init
-</UL>
-
-<P><STRONG><a name="[88]"></a>PINMUX_Configuration</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, iohandle.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = PINMUX_Configuration
-</UL>
-<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pinmux_Config
-</UL>
-<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_init
-</UL>
-
-<P><STRONG><a name="[8a]"></a>PAD_Configuration</STRONG> (Thumb, 56 bytes, Stack size 24 bytes, iohandle.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = PAD_Configuration
-</UL>
-<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pad_Config
-</UL>
-<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_init
-</UL>
-
-<P><STRONG><a name="[8b]"></a>RCC_Configuration</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, iohandle.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = RCC_Configuration &rArr; RCC_PeriphClockCmd
-</UL>
-<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_PeriphClockCmd
-</UL>
-<BR>[Called By]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_init
-</UL>
-
-<P><STRONG><a name="[82]"></a>driver_init</STRONG> (Thumb, 162 bytes, Stack size 40 bytes, iohandle.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = driver_init
-</UL>
-<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPin
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_MaskINTConfig
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_INTConfig
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_StructInit
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
-</UL>
-<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_main_task
-</UL>
-
-<P><STRONG><a name="[94]"></a>GPIO20_Handler</STRONG> (Thumb, 140 bytes, Stack size 24 bytes, iohandle.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = GPIO20_Handler &rArr; app_send_msg_to_apptask
-</UL>
-<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPin
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_MaskINTConfig
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ClearINTPendingBit
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_timer_stop
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_timer_start
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_send_msg_to_apptask
-</UL>
-<BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Group0_Handler
-<LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_Handler
-</UL>
-
-<P><STRONG><a name="[98]"></a>StopPxpIO</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, iohandle.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = StopPxpIO
-</UL>
-<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPin
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_timer_stop
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
-</UL>
-<BR>[Called By]<UL><LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_profile_callback
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pxp_HandleButtonEvent
-</UL>
-
-<P><STRONG><a name="[99]"></a>StartPxpIO</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, iohandle.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = StartPxpIO
-</UL>
-<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPin
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_timer_restart
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-</UL>
-<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_dev_state_evt
-<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_conn_state_evt
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_authen_state_evt
-<LI><a href="#[6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_profile_callback
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pxp_HandleButtonEvent
-</UL>
-
-<P><STRONG><a name="[9c]"></a>Pxp_HandleButtonEvent</STRONG> (Thumb, 262 bytes, Stack size 40 bytes, iohandle.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = Pxp_HandleButtonEvent &rArr; StartPxpIO
-</UL>
-<BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_adv_stop
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_adv_start
-<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_send_data
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_disconnect
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_timer_stop
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPxpIO
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StopPxpIO
-</UL>
-<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_io_msg
-</UL>
-
-<P><STRONG><a name="[a0]"></a>vTimerPxpIOCallback</STRONG> (Thumb, 168 bytes, Stack size 24 bytes, iohandle.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = vTimerPxpIOCallback
-</UL>
-<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPin
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_timer_restart
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadOutputDataBit
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> iohandle.o(.text)
-</UL>
-<P><STRONG><a name="[a2]"></a>vTimerLongPressCallback</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, iohandle.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = vTimerLongPressCallback &rArr; app_send_msg_to_apptask
-</UL>
-<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPin
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
-<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_send_msg_to_apptask
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> iohandle.o(.text)
-</UL>
-<P><STRONG><a name="[a3]"></a>swTimerInit</STRONG> (Thumb, 166 bytes, Stack size 24 bytes, iohandle.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = swTimerInit
-</UL>
-<BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_timer_create
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[a5]"></a>ChangeConnectionParameter</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, iohandle.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = ChangeConnectionParameter
-</UL>
-<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_update_conn_param
-</UL>
-<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_authen_state_evt
-</UL>
-
-<P><STRONG><a name="[a7]"></a>app_le_gap_init</STRONG> (Thumb, 348 bytes, Stack size 120 bytes, main.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = app_le_gap_init
-</UL>
-<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_adv_set_param
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_set_gap_param
-<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_register_app_cb
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_bond_set_param
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gap_set_param
-</UL>
-<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[ae]"></a>app_le_profile_init</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, main.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = app_le_profile_init &rArr; dis_add_service
-</UL>
-<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_register_app_cb
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;server_init
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_add_service
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kns_add_service
-<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bas_add_service
-<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tps_add_service
-<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lls_add_service
-<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ias_add_service
-</UL>
-<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[b1]"></a>board_init</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, main.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = board_init &rArr; PAD_Configuration
-</UL>
-<BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_Configuration
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PAD_Configuration
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINMUX_Configuration
-</UL>
-<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[1c]"></a>System_Handler</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, main.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = System_Handler &rArr; GPIO20_Handler &rArr; app_send_msg_to_apptask
-</UL>
-<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;btaon_fast_write_safe
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;btaon_fast_read_safe
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> startup_rtl8762c.o(VECTOR)
-</UL>
-<P><STRONG><a name="[b4]"></a>PxpEnterDlpsSet</STRONG> (Thumb, 88 bytes, Stack size 24 bytes, main.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = PxpEnterDlpsSet
-</UL>
-<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_WakeUpPinEnable
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;System_WakeUpDebounceTime
-<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pad_Config
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
-</UL>
-<P><STRONG><a name="[b7]"></a>PxpExitDlpsInit</STRONG> (Thumb, 56 bytes, Stack size 24 bytes, main.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = PxpExitDlpsInit
-</UL>
-<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pad_Config
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
-</UL>
-<P><STRONG><a name="[b8]"></a>DLPS_PxpCheck</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, main.o(.text))
-<BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
-</UL>
-<P><STRONG><a name="[b9]"></a>pwr_mgr_init</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, main.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = pwr_mgr_init &rArr; DLPS_IORegister
-</UL>
-<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DLPS_IORegister
-<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lps_mode_set
-<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dlps_check_cb_reg
-<LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_direct
-</UL>
-<BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[bc]"></a>task_init</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, main.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_task_init
-</UL>
-
-<P><STRONG><a name="[55]"></a>main</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, main.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = main &rArr; app_le_gap_init
-</UL>
-<BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_gap_init
-<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_sched_start
-<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gap_lib_init
-<LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pwr_mgr_init
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;board_init
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_profile_init
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_le_gap_init
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;swTimerInit
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_task_init
-</UL>
-<BR>[Called By]<UL><LI><a href="#[2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;common_main
-<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
-</UL>
-
-<P><STRONG><a name="[bf]"></a>app_handle_authen_state_evt</STRONG> (Thumb, 108 bytes, Stack size 24 bytes, pxp_app.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = app_handle_authen_state_evt &rArr; ChangeConnectionParameter
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ChangeConnectionParameter
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPxpIO
-</UL>
-<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_gap_msg
-</UL>
-
-<P><STRONG><a name="[c0]"></a>app_handle_conn_param_update_evt</STRONG> (Thumb, 124 bytes, Stack size 32 bytes, pxp_app.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = app_handle_conn_param_update_evt
-</UL>
-<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_get_conn_param
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_gap_msg
-</UL>
-
-<P><STRONG><a name="[c2]"></a>app_handle_conn_mtu_info_evt</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, pxp_app.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = app_handle_conn_mtu_info_evt
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_gap_msg
-</UL>
-
-<P><STRONG><a name="[c3]"></a>app_handle_conn_state_evt</STRONG> (Thumb, 248 bytes, Stack size 64 bytes, pxp_app.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = app_handle_conn_state_evt &rArr; StartPxpIO
-</UL>
-<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_adv_start
-<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_get_conn_addr
-<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_get_conn_param
-<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;trace_bdaddr
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPxpIO
-</UL>
-<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_gap_msg
-</UL>
-
-<P><STRONG><a name="[c6]"></a>app_handle_dev_state_evt</STRONG> (Thumb, 180 bytes, Stack size 40 bytes, pxp_app.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = app_handle_dev_state_evt &rArr; StartPxpIO
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPxpIO
-</UL>
-<BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_gap_msg
-</UL>
-
-<P><STRONG><a name="[c7]"></a>app_handle_gap_msg</STRONG> (Thumb, 360 bytes, Stack size 32 bytes, pxp_app.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = app_handle_gap_msg &rArr; app_handle_conn_state_evt &rArr; StartPxpIO
-</UL>
-<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_bond_passkey_display_confirm
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_bond_user_confirm
-<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_bond_get_display_key
-<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_bond_oob_input_confirm
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_bond_passkey_input_confirm
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_bond_set_param
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;le_bond_just_work_confirm
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_dev_state_evt
-<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_conn_state_evt
-<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_conn_mtu_info_evt
-<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_conn_param_update_evt
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_authen_state_evt
-</UL>
-<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_io_msg
-</UL>
-
-<P><STRONG><a name="[85]"></a>app_handle_io_msg</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, pxp_app.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = app_handle_io_msg &rArr; app_handle_gap_msg &rArr; app_handle_conn_state_evt &rArr; StartPxpIO
-</UL>
-<BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WDG_Restart
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_handle_gap_msg
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pxp_HandleButtonEvent
-</UL>
-<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_main_task
-</UL>
-
-<P><STRONG><a name="[5]"></a>app_gap_callback</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, pxp_app.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = app_gap_callback
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
-</UL>
-<P><STRONG><a name="[6]"></a>app_profile_callback</STRONG> (Thumb, 648 bytes, Stack size 48 bytes, pxp_app.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = app_profile_callback &rArr; StartPxpIO
-</UL>
-<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPxpIO
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StopPxpIO
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dis_set_parameter
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;kns_set_parameter
-<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;bas_set_parameter
-<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tps_set_parameter
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lls_set_parameter
-</UL>
-<BR>[Address Reference Count : 1]<UL><LI> main.o(.text)
-</UL>
-<P><STRONG><a name="[5b]"></a>load_overlay</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, overlay_mgr.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = load_overlay
-</UL>
-<BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
-<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
-</UL>
-<BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pre_main
-</UL>
-
-<P><STRONG><a name="[d0]"></a>get_current_scenario_index</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, overlay_mgr.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
-</UL>
-
 <P><STRONG><a name="[d1]"></a>gap_lib_handle_btif_msg</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, gap_lib.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = gap_lib_handle_btif_msg &rArr; le_handle_vendor_cmd_rsp
 </UL>
@@ -1530,7 +1530,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> gap_lib.o(.text)
 </UL>
-<P><STRONG><a name="[be]"></a>gap_lib_init</STRONG> (Thumb, 70 bytes, Stack size 48 bytes, gap_lib.o(.text))
+<P><STRONG><a name="[b2]"></a>gap_lib_init</STRONG> (Thumb, 70 bytes, Stack size 48 bytes, gap_lib.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = gap_lib_init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;gap_register_extend_cb
@@ -1590,7 +1590,7 @@ Local Symbols
 <P><STRONG><a name="[5f]"></a>AppUpdateVectorTable</STRONG> (Thumb, 162 bytes, Stack size 272 bytes, system_rtl8762c.o(.app.overlay_a))
 <BR><BR>[Stack]<UL><LI>Max Depth = 272<LI>Call Chain = AppUpdateVectorTable
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 <LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;trace_string
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RamVectorTableInit
@@ -1598,10 +1598,31 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pre_main
 </UL>
 
+<P><STRONG><a name="[7c]"></a>GPIO_ReadInputDataBit</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, iohandle.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTimerLongPressCallback
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;driver_init
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
+</UL>
+
+<P><STRONG><a name="[8e]"></a>GPIO_ReadOutputDataBit</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, iohandle.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTimerPxpIOCallback
+</UL>
+
+<P><STRONG><a name="[86]"></a>GPIO_SetBits</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, iohandle.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTimerPxpIOCallback
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPxpIO
+</UL>
+
+<P><STRONG><a name="[7b]"></a>GPIO_ResetBits</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, iohandle.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTimerPxpIOCallback
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StopPxpIO
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;driver_init
+</UL>
+
 <P><STRONG><a name="[fa]"></a>GPIO_DLPS_Exit</STRONG> (Thumb, 80 bytes, Stack size 8 bytes, rtl876x_io_dlps.o(.ram.dataon.data))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GPIO_DLPS_Exit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DLPS_IO_ExitDlpsCb
+<BR>[Called By]<UL><LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DLPS_IO_ExitDlpsCb
 </UL>
 
 <P><STRONG><a name="[f]"></a>kns_attr_write_cb</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, kns.o(.text))
@@ -1610,28 +1631,7 @@ Local Symbols
 <BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;log_buffer
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> kns.o(.constdata)
-</UL>
-<P><STRONG><a name="[90]"></a>GPIO_ReadInputDataBit</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, iohandle.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTimerLongPressCallback
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO20_Handler
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;driver_init
-</UL>
-
-<P><STRONG><a name="[a1]"></a>GPIO_ReadOutputDataBit</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, iohandle.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTimerPxpIOCallback
-</UL>
-
-<P><STRONG><a name="[9a]"></a>GPIO_SetBits</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, iohandle.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTimerPxpIOCallback
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartPxpIO
-</UL>
-
-<P><STRONG><a name="[8f]"></a>GPIO_ResetBits</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, iohandle.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTimerPxpIOCallback
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StopPxpIO
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;driver_init
-</UL>
-<P>
+</UL><P>
 <H3>
 Undefined Global Symbols
 </H3><HR></body></html>

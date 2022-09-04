@@ -8,8 +8,10 @@ SET UV2_TARGET=RTL8786BF
 SET CPU_CLOCK=0x00B71B00
 ..\include\SDK\tool\before_build_common.bat C:\Keil_v5\
 before_build_special.bat
-"C:\Keil_v5\ARM\ARMCC\Bin\ArmAsm" --Via ".\objects\startup_rtl8762c._ia"
 "C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\system_rtl8762c.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\app_task.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\iohandle.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\main.__i"
 "C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\rtl876x_io_dlps.__i"
 "C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\rtl876x_gpio.__i"
 "C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\rtl876x_rcc.__i"
@@ -19,11 +21,9 @@ before_build_special.bat
 "C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\bas.__i"
 "C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\kns.__i"
 "C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\dis.__i"
-"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\app_task.__i"
-"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\iohandle.__i"
-"C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\main.__i"
 "C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\pxp_app.__i"
 "C:\Keil_v5\ARM\ARMCC\Bin\ArmCC" --Via ".\objects\overlay_mgr.__i"
+"C:\Keil_v5\ARM\ARMCC\Bin\ArmAsm" --Via ".\objects\startup_rtl8762c._ia"
 "C:\Keil_v5\ARM\ARMCC\Bin\ArmLink" --Via ".\Objects\rtp8763_demo.lnp"
 "C:\Keil_v5\ARM\ARMCC\Bin\fromelf.exe" ".\Objects\rtp8763_demo.axf" --i32combined --output ".\Objects\rtp8763_demo.hex"
 ..\include\SDK\tool\after_build_common.bat C:\Keil_v5\ARM\ARMCC\include W:\git\RTL8763BF\project\keilproject\Objects\rtp8763_demo.axf rtp8763_demo

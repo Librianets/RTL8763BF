@@ -1,0 +1,7 @@
+--cpu Cortex-M4.fp --li --pd "__EVAL SETA 1" -g --16 --apcs=interwork --cpreproc
+-I.\RTE\_RTL8786BF
+-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include
+-IC:\Keil_v5\ARM\CMSIS\Include
+-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1
+--pd "__UVISION_VERSION SETA 523" --pd "ARMCM4_FP SETA 1"
+--list .\listings\startup_rtl8762c.lst --xref -o .\objects\startup_rtl8762c.o --depend .\objects\startup_rtl8762c.d "..\source\app\startup_rtl8762c.s"
