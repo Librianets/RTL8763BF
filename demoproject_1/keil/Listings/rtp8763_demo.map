@@ -36,25 +36,6 @@ Section Cross References
     iohandle.o(.text) refers to iohandle.o(.TRACE) for .TRACE
     iohandle.o(.text) refers to main.o(.data) for allowedPxpEnterDlps
     iohandle.o(.text) refers to pxp_app.o(.bss) for gPxpState
-    main.o(.text) refers to ias.o(.text) for ias_add_service
-    main.o(.text) refers to lls.o(.text) for lls_add_service
-    main.o(.text) refers to tps.o(.text) for tps_add_service
-    main.o(.text) refers to kns.o(.text) for kns_add_service
-    main.o(.text) refers to bas.o(.text) for bas_add_service
-    main.o(.text) refers to dis.o(.text) for dis_add_service
-    main.o(.text) refers to iohandle.o(.text) for RCC_Configuration
-    main.o(.text) refers to rtl876x_io_dlps.o(.text) for DLPS_IORegister
-    main.o(.text) refers to app_task.o(.text) for app_task_init
-    main.o(.text) refers to rand.o(.text) for srand
-    main.o(.text) refers to gap_lib.o(.text) for gap_lib_init
-    main.o(.text) refers to main.o(.constdata) for .constdata
-    main.o(.text) refers to main.o(.data) for .data
-    main.o(.text) refers to pxp_app.o(.text) for app_gap_callback
-    main.o(.text) refers to pxp_app.o(.bss) for ias_srv_id
-    main.o(.text) refers to main.o(.TRACE) for .TRACE
-    main.o(.text) refers to iohandle.o(.bss) for keystatus
-    main.o(.text) refers to rtl876x_io_dlps.o(.bss) for User_IO_EnterDlpsCB
-    main.o(.text) refers to system_rtl8762c.o(.bss) for random_seed_value
     rtl876x_io_dlps.o(.ram.dataon.data) refers to rtl876x_io_dlps.o(.bss) for .bss
     rtl876x_io_dlps.o(.ram.dataon.data) refers to rtl876x_io_dlps.o(.TRACE) for .TRACE
     rtl876x_io_dlps.o(.text) refers to rtl876x_io_dlps.o(.ram.dataon.data) for DLPS_IO_EnterDlpsCb
@@ -86,6 +67,25 @@ Section Cross References
     dis.o(.text) refers to dis.o(.data) for .data
     dis.o(.text) refers to dis.o(.constdata) for .constdata
     dis.o(.constdata) refers to dis.o(.text) for dis_attr_read_cb
+    main.o(.text) refers to ias.o(.text) for ias_add_service
+    main.o(.text) refers to lls.o(.text) for lls_add_service
+    main.o(.text) refers to tps.o(.text) for tps_add_service
+    main.o(.text) refers to kns.o(.text) for kns_add_service
+    main.o(.text) refers to bas.o(.text) for bas_add_service
+    main.o(.text) refers to dis.o(.text) for dis_add_service
+    main.o(.text) refers to iohandle.o(.text) for RCC_Configuration
+    main.o(.text) refers to rtl876x_io_dlps.o(.text) for DLPS_IORegister
+    main.o(.text) refers to app_task.o(.text) for app_task_init
+    main.o(.text) refers to rand.o(.text) for srand
+    main.o(.text) refers to gap_lib.o(.text) for gap_lib_init
+    main.o(.text) refers to main.o(.constdata) for .constdata
+    main.o(.text) refers to main.o(.data) for .data
+    main.o(.text) refers to pxp_app.o(.text) for app_gap_callback
+    main.o(.text) refers to pxp_app.o(.bss) for ias_srv_id
+    main.o(.text) refers to main.o(.TRACE) for .TRACE
+    main.o(.text) refers to iohandle.o(.bss) for keystatus
+    main.o(.text) refers to rtl876x_io_dlps.o(.bss) for User_IO_EnterDlpsCB
+    main.o(.text) refers to system_rtl8762c.o(.bss) for random_seed_value
     pxp_app.o(.text) refers to iohandle.o(.text) for StartPxpIO
     pxp_app.o(.text) refers to gap_lib_patch.o(.text) for le_bond_just_work_confirm
     pxp_app.o(.text) refers to pxp_app.o(.TRACE) for .TRACE
@@ -206,9 +206,6 @@ Removing Unused input sections from the image.
     Removing iohandle.o(.rev16_text), (4 bytes).
     Removing iohandle.o(.revsh_text), (4 bytes).
     Removing iohandle.o(.rrx_text), (6 bytes).
-    Removing main.o(.rev16_text), (4 bytes).
-    Removing main.o(.revsh_text), (4 bytes).
-    Removing main.o(.rrx_text), (6 bytes).
     Removing rtl876x_io_dlps.o(.rev16_text), (4 bytes).
     Removing rtl876x_io_dlps.o(.revsh_text), (4 bytes).
     Removing rtl876x_io_dlps.o(.rrx_text), (6 bytes).
@@ -222,6 +219,9 @@ Removing Unused input sections from the image.
     Removing lls.o(.constdata), (4 bytes).
     Removing kns.o(.constdata), (2 bytes).
     Removing dis.o(.constdata), (2 bytes).
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing main.o(.rrx_text), (6 bytes).
     Removing pxp_app.o(.rev16_text), (4 bytes).
     Removing pxp_app.o(.revsh_text), (4 bytes).
     Removing pxp_app.o(.rrx_text), (6 bytes).
@@ -236,11 +236,11 @@ Image Symbol Table
 
     Symbol Name                              Value     Ov Type        Size  Object(Section)
 
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit3.o ABSOLUTE
     ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
     ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit2.o ABSOLUTE
-    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit3.o ABSOLUTE
-    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_copy.o ABSOLUTE
     ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_zi.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_copy.o ABSOLUTE
     ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry2.o ABSOLUTE
     ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry.o ABSOLUTE
     ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry4.o ABSOLUTE
@@ -250,28 +250,28 @@ Image Symbol Table
     ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi.o ABSOLUTE
     ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
     ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command.o ABSOLUTE
-    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_wrch.o ABSOLUTE
     ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_wrch.o ABSOLUTE
     ../clib/armsys.c                         0x00000000   Number         0  _get_argv_nomalloc.o ABSOLUTE
     ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
     ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
     ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
     ../clib/heapalloc.c                      0x00000000   Number         0  hrguard.o ABSOLUTE
-    ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
     ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
     ../clib/signal.s                         0x00000000   Number         0  defsig.o ABSOLUTE
     ../clib/stdlib.c                         0x00000000   Number         0  rand.o ABSOLUTE
@@ -310,14 +310,14 @@ Image Symbol Table
     GPIO_DLPS_Exit                           0x00207ee5   Thumb Code    80  rtl876x_io_dlps.o(.ram.dataon.data)
     .data                                    0x00207f4c   Section        4  system_rtl8762c.o(.data)
     check_reset_ram                          0x00207f4c   Data           4  system_rtl8762c.o(.data)
-    .data                                    0x00207f50   Section       36  main.o(.data)
-    scan_rsp_data                            0x00207f51   Data          14  main.o(.data)
-    adv_data                                 0x00207f5f   Data          21  main.o(.data)
-    .data                                    0x00207f74   Section        4  kns.o(.data)
-    .data                                    0x00207f78   Section       46  dis.o(.data)
-    dis_pnp_id                               0x00207f79   Data           7  dis.o(.data)
-    dis_system_id                            0x00207f80   Data           8  dis.o(.data)
-    dis_ieee_data_list                       0x00207f88   Data          30  dis.o(.data)
+    .data                                    0x00207f50   Section        4  kns.o(.data)
+    .data                                    0x00207f54   Section       46  dis.o(.data)
+    dis_pnp_id                               0x00207f55   Data           7  dis.o(.data)
+    dis_system_id                            0x00207f5c   Data           8  dis.o(.data)
+    dis_ieee_data_list                       0x00207f64   Data          30  dis.o(.data)
+    .data                                    0x00207f82   Section       36  main.o(.data)
+    scan_rsp_data                            0x00207f83   Data          14  main.o(.data)
+    adv_data                                 0x00207f91   Data          21  main.o(.data)
     .data                                    0x00207fa8   Section        8  pxp_app.o(.data)
     .data                                    0x00207fb0   Section      108  overlay_mgr.o(.data)
     overlay_sections                         0x00207fb0   Data         108  overlay_mgr.o(.data)
@@ -401,17 +401,17 @@ Image Symbol Table
     GPIO_ReadOutputDataBit                   0x0080ee47   Thumb Code    16  iohandle.o(.text)
     GPIO_SetBits                             0x0080ee57   Thumb Code    10  iohandle.o(.text)
     GPIO_ResetBits                           0x0080ee61   Thumb Code    10  iohandle.o(.text)
-    .text                                    0x0080ee70   Section        0  main.o(.text)
-    .text                                    0x0080f1d8   Section        0  rtl876x_io_dlps.o(.text)
-    .text                                    0x0080f1f8   Section        0  rtl876x_gpio.o(.text)
-    .text                                    0x0080f37c   Section        0  rtl876x_rcc.o(.text)
-    .text                                    0x0080f6d4   Section        0  ias.o(.text)
-    .text                                    0x0080f778   Section        0  lls.o(.text)
-    .text                                    0x0080f89c   Section        0  tps.o(.text)
-    .text                                    0x0080f968   Section        0  bas.o(.text)
-    .text                                    0x0080fad4   Section        0  kns.o(.text)
-    kns_attr_write_cb                        0x0080fb5b   Thumb Code    80  kns.o(.text)
-    .text                                    0x0080fc50   Section        0  dis.o(.text)
+    .text                                    0x0080ee70   Section        0  rtl876x_io_dlps.o(.text)
+    .text                                    0x0080ee90   Section        0  rtl876x_gpio.o(.text)
+    .text                                    0x0080f014   Section        0  rtl876x_rcc.o(.text)
+    .text                                    0x0080f36c   Section        0  ias.o(.text)
+    .text                                    0x0080f410   Section        0  lls.o(.text)
+    .text                                    0x0080f534   Section        0  tps.o(.text)
+    .text                                    0x0080f600   Section        0  bas.o(.text)
+    .text                                    0x0080f76c   Section        0  kns.o(.text)
+    kns_attr_write_cb                        0x0080f7f3   Thumb Code    80  kns.o(.text)
+    .text                                    0x0080f8e8   Section        0  dis.o(.text)
+    .text                                    0x0080fb6c   Section        0  main.o(.text)
     .text                                    0x0080fed4   Section        0  pxp_app.o(.text)
     .text                                    0x00810688   Section        0  overlay_mgr.o(.text)
     .text                                    0x00810704   Section       80  startup_rtl8762c.o(.text)
@@ -431,17 +431,17 @@ Image Symbol Table
     .constdata                               0x00810c70   Section       38  app_task.o(.constdata)
     __func__                                 0x00810c70   Data          24  app_task.o(.constdata)
     __func__                                 0x00810c88   Data          14  app_task.o(.constdata)
-    .constdata                               0x00810c98   Section       40  main.o(.constdata)
-    .constdata                               0x00810cc0   Section       96  ias.o(.constdata)
-    .constdata                               0x00810d20   Section       96  lls.o(.constdata)
-    .constdata                               0x00810d80   Section       96  tps.o(.constdata)
-    .constdata                               0x00810de0   Section      124  bas.o(.constdata)
-    bas_attr_tbl                             0x00810de0   Data         112  bas.o(.constdata)
-    .constdata                               0x00810e5c   Section       16  kns.o(.constdata)
-    .constdata                               0x00810e6c   Section      180  kns.o(.constdata)
-    kns_attr_tbl                             0x00810e6c   Data         168  kns.o(.constdata)
-    .constdata                               0x00810f20   Section      544  dis.o(.constdata)
-    dis_attr_tbl                             0x00810f20   Data         532  dis.o(.constdata)
+    .constdata                               0x00810c98   Section       96  ias.o(.constdata)
+    .constdata                               0x00810cf8   Section       96  lls.o(.constdata)
+    .constdata                               0x00810d58   Section       96  tps.o(.constdata)
+    .constdata                               0x00810db8   Section      124  bas.o(.constdata)
+    bas_attr_tbl                             0x00810db8   Data         112  bas.o(.constdata)
+    .constdata                               0x00810e34   Section       16  kns.o(.constdata)
+    .constdata                               0x00810e44   Section      180  kns.o(.constdata)
+    kns_attr_tbl                             0x00810e44   Data         168  kns.o(.constdata)
+    .constdata                               0x00810ef8   Section      544  dis.o(.constdata)
+    dis_attr_tbl                             0x00810ef8   Data         532  dis.o(.constdata)
+    .constdata                               0x00811118   Section       40  main.o(.constdata)
     .conststring                             0x00811140   Section      544  system_rtl8762c.o(.conststring)
     .conststring                             0x00811360   Section       25  overlay_mgr.o(.conststring)
     .TRACE                                   0x08800000   Section      230  system_rtl8762c.o(.TRACE)
@@ -485,70 +485,70 @@ Image Symbol Table
     format                                   0x088001f4   Data          28  iohandle.o(.TRACE)
     __tagsym$$used                           0x08800210   Number         0  iohandle.o(.TRACE)
     format                                   0x08800210   Data          32  iohandle.o(.TRACE)
-    .TRACE                                   0x08800230   Section       18  main.o(.TRACE)
-    __tagsym$$used                           0x08800230   Number         0  main.o(.TRACE)
-    format                                   0x08800230   Data          18  main.o(.TRACE)
-    .TRACE                                   0x08800244   Section       42  rtl876x_io_dlps.o(.TRACE)
-    __tagsym$$used                           0x08800244   Number         0  rtl876x_io_dlps.o(.TRACE)
-    format                                   0x08800244   Data          42  rtl876x_io_dlps.o(.TRACE)
-    .TRACE                                   0x08800270   Section       82  ias.o(.TRACE)
-    __tagsym$$used                           0x08800270   Number         0  ias.o(.TRACE)
-    format                                   0x08800270   Data          46  ias.o(.TRACE)
-    __tagsym$$used                           0x088002a0   Number         0  ias.o(.TRACE)
-    format                                   0x088002a0   Data          34  ias.o(.TRACE)
-    .TRACE                                   0x088002c4   Section      234  lls.o(.TRACE)
-    __tagsym$$used                           0x088002c4   Number         0  lls.o(.TRACE)
-    format                                   0x088002c4   Data          59  lls.o(.TRACE)
-    __tagsym$$used                           0x08800300   Number         0  lls.o(.TRACE)
-    format                                   0x08800300   Data          44  lls.o(.TRACE)
-    __tagsym$$used                           0x0880032c   Number         0  lls.o(.TRACE)
-    format                                   0x0880032c   Data          48  lls.o(.TRACE)
-    __tagsym$$used                           0x0880035c   Number         0  lls.o(.TRACE)
-    format                                   0x0880035c   Data          46  lls.o(.TRACE)
-    __tagsym$$used                           0x0880038c   Number         0  lls.o(.TRACE)
-    format                                   0x0880038c   Data          34  lls.o(.TRACE)
-    .TRACE                                   0x088003b0   Section      178  tps.o(.TRACE)
-    __tagsym$$used                           0x088003b0   Number         0  tps.o(.TRACE)
-    format                                   0x088003b0   Data          47  tps.o(.TRACE)
-    __tagsym$$used                           0x088003e0   Number         0  tps.o(.TRACE)
-    format                                   0x088003e0   Data          37  tps.o(.TRACE)
-    __tagsym$$used                           0x08800408   Number         0  tps.o(.TRACE)
-    format                                   0x08800408   Data          53  tps.o(.TRACE)
-    __tagsym$$used                           0x08800440   Number         0  tps.o(.TRACE)
-    format                                   0x08800440   Data          34  tps.o(.TRACE)
-    .TRACE                                   0x08800464   Section      206  bas.o(.TRACE)
-    __tagsym$$used                           0x08800464   Number         0  bas.o(.TRACE)
-    format                                   0x08800464   Data          28  bas.o(.TRACE)
-    __tagsym$$used                           0x08800480   Number         0  bas.o(.TRACE)
-    format                                   0x08800480   Data          48  bas.o(.TRACE)
-    __tagsym$$used                           0x088004b0   Number         0  bas.o(.TRACE)
-    format                                   0x088004b0   Data          48  bas.o(.TRACE)
-    __tagsym$$used                           0x088004e0   Number         0  bas.o(.TRACE)
-    format                                   0x088004e0   Data          45  bas.o(.TRACE)
-    __tagsym$$used                           0x08800510   Number         0  bas.o(.TRACE)
-    format                                   0x08800510   Data          34  bas.o(.TRACE)
-    .TRACE                                   0x08800534   Section      282  kns.o(.TRACE)
-    __tagsym$$used                           0x08800534   Number         0  kns.o(.TRACE)
-    format                                   0x08800534   Data          28  kns.o(.TRACE)
-    __tagsym$$used                           0x08800550   Number         0  kns.o(.TRACE)
-    format                                   0x08800550   Data          48  kns.o(.TRACE)
-    __tagsym$$used                           0x08800580   Number         0  kns.o(.TRACE)
-    format                                   0x08800580   Data          73  kns.o(.TRACE)
-    __tagsym$$used                           0x088005cc   Number         0  kns.o(.TRACE)
-    format                                   0x088005cc   Data          46  kns.o(.TRACE)
-    __tagsym$$used                           0x088005fc   Number         0  kns.o(.TRACE)
-    format                                   0x088005fc   Data          45  kns.o(.TRACE)
-    __tagsym$$used                           0x0880062c   Number         0  kns.o(.TRACE)
-    format                                   0x0880062c   Data          34  kns.o(.TRACE)
-    .TRACE                                   0x08800650   Section      158  dis.o(.TRACE)
-    __tagsym$$used                           0x08800650   Number         0  dis.o(.TRACE)
-    format                                   0x08800650   Data          28  dis.o(.TRACE)
-    __tagsym$$used                           0x0880066c   Number         0  dis.o(.TRACE)
-    format                                   0x0880066c   Data          37  dis.o(.TRACE)
-    __tagsym$$used                           0x08800694   Number         0  dis.o(.TRACE)
-    format                                   0x08800694   Data          53  dis.o(.TRACE)
-    __tagsym$$used                           0x088006cc   Number         0  dis.o(.TRACE)
-    format                                   0x088006cc   Data          34  dis.o(.TRACE)
+    .TRACE                                   0x08800230   Section       42  rtl876x_io_dlps.o(.TRACE)
+    __tagsym$$used                           0x08800230   Number         0  rtl876x_io_dlps.o(.TRACE)
+    format                                   0x08800230   Data          42  rtl876x_io_dlps.o(.TRACE)
+    .TRACE                                   0x0880025c   Section       82  ias.o(.TRACE)
+    __tagsym$$used                           0x0880025c   Number         0  ias.o(.TRACE)
+    format                                   0x0880025c   Data          46  ias.o(.TRACE)
+    __tagsym$$used                           0x0880028c   Number         0  ias.o(.TRACE)
+    format                                   0x0880028c   Data          34  ias.o(.TRACE)
+    .TRACE                                   0x088002b0   Section      234  lls.o(.TRACE)
+    __tagsym$$used                           0x088002b0   Number         0  lls.o(.TRACE)
+    format                                   0x088002b0   Data          59  lls.o(.TRACE)
+    __tagsym$$used                           0x088002ec   Number         0  lls.o(.TRACE)
+    format                                   0x088002ec   Data          44  lls.o(.TRACE)
+    __tagsym$$used                           0x08800318   Number         0  lls.o(.TRACE)
+    format                                   0x08800318   Data          48  lls.o(.TRACE)
+    __tagsym$$used                           0x08800348   Number         0  lls.o(.TRACE)
+    format                                   0x08800348   Data          46  lls.o(.TRACE)
+    __tagsym$$used                           0x08800378   Number         0  lls.o(.TRACE)
+    format                                   0x08800378   Data          34  lls.o(.TRACE)
+    .TRACE                                   0x0880039c   Section      178  tps.o(.TRACE)
+    __tagsym$$used                           0x0880039c   Number         0  tps.o(.TRACE)
+    format                                   0x0880039c   Data          47  tps.o(.TRACE)
+    __tagsym$$used                           0x088003cc   Number         0  tps.o(.TRACE)
+    format                                   0x088003cc   Data          37  tps.o(.TRACE)
+    __tagsym$$used                           0x088003f4   Number         0  tps.o(.TRACE)
+    format                                   0x088003f4   Data          53  tps.o(.TRACE)
+    __tagsym$$used                           0x0880042c   Number         0  tps.o(.TRACE)
+    format                                   0x0880042c   Data          34  tps.o(.TRACE)
+    .TRACE                                   0x08800450   Section      206  bas.o(.TRACE)
+    __tagsym$$used                           0x08800450   Number         0  bas.o(.TRACE)
+    format                                   0x08800450   Data          28  bas.o(.TRACE)
+    __tagsym$$used                           0x0880046c   Number         0  bas.o(.TRACE)
+    format                                   0x0880046c   Data          48  bas.o(.TRACE)
+    __tagsym$$used                           0x0880049c   Number         0  bas.o(.TRACE)
+    format                                   0x0880049c   Data          48  bas.o(.TRACE)
+    __tagsym$$used                           0x088004cc   Number         0  bas.o(.TRACE)
+    format                                   0x088004cc   Data          45  bas.o(.TRACE)
+    __tagsym$$used                           0x088004fc   Number         0  bas.o(.TRACE)
+    format                                   0x088004fc   Data          34  bas.o(.TRACE)
+    .TRACE                                   0x08800520   Section      282  kns.o(.TRACE)
+    __tagsym$$used                           0x08800520   Number         0  kns.o(.TRACE)
+    format                                   0x08800520   Data          28  kns.o(.TRACE)
+    __tagsym$$used                           0x0880053c   Number         0  kns.o(.TRACE)
+    format                                   0x0880053c   Data          48  kns.o(.TRACE)
+    __tagsym$$used                           0x0880056c   Number         0  kns.o(.TRACE)
+    format                                   0x0880056c   Data          73  kns.o(.TRACE)
+    __tagsym$$used                           0x088005b8   Number         0  kns.o(.TRACE)
+    format                                   0x088005b8   Data          46  kns.o(.TRACE)
+    __tagsym$$used                           0x088005e8   Number         0  kns.o(.TRACE)
+    format                                   0x088005e8   Data          45  kns.o(.TRACE)
+    __tagsym$$used                           0x08800618   Number         0  kns.o(.TRACE)
+    format                                   0x08800618   Data          34  kns.o(.TRACE)
+    .TRACE                                   0x0880063c   Section      158  dis.o(.TRACE)
+    __tagsym$$used                           0x0880063c   Number         0  dis.o(.TRACE)
+    format                                   0x0880063c   Data          28  dis.o(.TRACE)
+    __tagsym$$used                           0x08800658   Number         0  dis.o(.TRACE)
+    format                                   0x08800658   Data          37  dis.o(.TRACE)
+    __tagsym$$used                           0x08800680   Number         0  dis.o(.TRACE)
+    format                                   0x08800680   Data          53  dis.o(.TRACE)
+    __tagsym$$used                           0x088006b8   Number         0  dis.o(.TRACE)
+    format                                   0x088006b8   Data          34  dis.o(.TRACE)
+    .TRACE                                   0x088006dc   Section       18  main.o(.TRACE)
+    __tagsym$$used                           0x088006dc   Number         0  main.o(.TRACE)
+    format                                   0x088006dc   Data          18  main.o(.TRACE)
     .TRACE                                   0x088006f0   Section     2080  pxp_app.o(.TRACE)
     __tagsym$$used                           0x088006f0   Number         0  pxp_app.o(.TRACE)
     format                                   0x088006f0   Data          30  pxp_app.o(.TRACE)
@@ -1193,9 +1193,9 @@ Image Symbol Table
     DLPS_IO_EnterDlpsCb                      0x00207d25   Thumb Code   244  rtl876x_io_dlps.o(.ram.dataon.data)
     DLPS_IO_ExitDlpsCb                       0x00207e19   Thumb Code   204  rtl876x_io_dlps.o(.ram.dataon.data)
     Image$$RAM_DATA_ON$$RW$$Base             0x00207f4c   Number         0  anon$$obj.o ABSOLUTE
-    allowedPxpEnterDlps                      0x00207f50   Data           1  main.o(.data)
-    gParaValue                               0x00207f74   Data           4  kns.o(.data)
-    dis_ieee_data_list_len                   0x00207f78   Data           1  dis.o(.data)
+    gParaValue                               0x00207f50   Data           4  kns.o(.data)
+    dis_ieee_data_list_len                   0x00207f54   Data           1  dis.o(.data)
+    allowedPxpEnterDlps                      0x00207f82   Data           1  main.o(.data)
     g_pxp_linkloss_alert_level               0x00207fa8   Data           1  pxp_app.o(.data)
     gTimeParaValue                           0x00207fac   Data           4  pxp_app.o(.data)
     Image$$RAM_DATA_ON$$ZI$$Base             0x0020801c   Number         0  anon$$obj.o ABSOLUTE
@@ -1324,54 +1324,54 @@ Image Symbol Table
     vTimerLongPressCallback                  0x0080ed3f   Thumb Code    44  iohandle.o(.text)
     swTimerInit                              0x0080ed6b   Thumb Code   166  iohandle.o(.text)
     ChangeConnectionParameter                0x0080ee11   Thumb Code    38  iohandle.o(.text)
-    app_le_gap_init                          0x0080ee71   Thumb Code   348  main.o(.text)
-    app_le_profile_init                      0x0080efcd   Thumb Code    78  main.o(.text)
-    board_init                               0x0080f01b   Thumb Code    18  main.o(.text)
-    System_Handler                           0x0080f02d   Thumb Code    52  main.o(.text)
-    PxpEnterDlpsSet                          0x0080f061   Thumb Code    88  main.o(.text)
-    PxpExitDlpsInit                          0x0080f0b9   Thumb Code    56  main.o(.text)
-    DLPS_PxpCheck                            0x0080f0f1   Thumb Code     8  main.o(.text)
-    pwr_mgr_init                             0x0080f0f9   Thumb Code    52  main.o(.text)
-    task_init                                0x0080f12d   Thumb Code     4  main.o(.text)
-    main                                     0x0080f131   Thumb Code    52  main.o(.text)
-    DLPS_IORegister                          0x0080f1d9   Thumb Code    22  rtl876x_io_dlps.o(.text)
-    GPIO_DeInit                              0x0080f1f9   Thumb Code    12  rtl876x_gpio.o(.text)
-    GPIO_Init                                0x0080f205   Thumb Code   190  rtl876x_gpio.o(.text)
-    GPIO_StructInit                          0x0080f2c3   Thumb Code    26  rtl876x_gpio.o(.text)
-    GPIO_INTConfig                           0x0080f2dd   Thumb Code    18  rtl876x_gpio.o(.text)
-    GPIO_ClearINTPendingBit                  0x0080f2ef   Thumb Code     6  rtl876x_gpio.o(.text)
-    GPIO_MaskINTConfig                       0x0080f2f5   Thumb Code    18  rtl876x_gpio.o(.text)
-    GPIO_GetPin                              0x0080f307   Thumb Code    42  rtl876x_gpio.o(.text)
-    GPIO_GetNum                              0x0080f331   Thumb Code    38  rtl876x_gpio.o(.text)
-    GPIO_DBClkCmd                            0x0080f357   Thumb Code    28  rtl876x_gpio.o(.text)
-    RCC_PeriphClockCmd                       0x0080f37d   Thumb Code   292  rtl876x_rcc.o(.text)
-    RCC_SPIClkDivConfig                      0x0080f4a1   Thumb Code   112  rtl876x_rcc.o(.text)
-    RCC_I2CClkDivConfig                      0x0080f511   Thumb Code   110  rtl876x_rcc.o(.text)
-    RCC_UARTClkDivConfig                     0x0080f57f   Thumb Code   114  rtl876x_rcc.o(.text)
-    RCC_PeriClockConfig                      0x0080f5f1   Thumb Code   106  rtl876x_rcc.o(.text)
-    RCC_PeriFunctionConfig                   0x0080f65b   Thumb Code    90  rtl876x_rcc.o(.text)
-    ias_attr_write_cb                        0x0080f6d5   Thumb Code    86  ias.o(.text)
-    ias_add_service                          0x0080f72b   Thumb Code    60  ias.o(.text)
-    lls_set_parameter                        0x0080f779   Thumb Code    30  lls.o(.text)
-    lls_attr_read_cb                         0x0080f797   Thumb Code    98  lls.o(.text)
-    lls_attr_write_cb                        0x0080f7f9   Thumb Code    88  lls.o(.text)
-    lls_add_service                          0x0080f851   Thumb Code    60  lls.o(.text)
-    tps_set_parameter                        0x0080f89d   Thumb Code    30  tps.o(.text)
-    tps_attr_read_cb                         0x0080f8bb   Thumb Code    98  tps.o(.text)
-    tps_add_service                          0x0080f91d   Thumb Code    60  tps.o(.text)
-    bas_set_parameter                        0x0080f969   Thumb Code    40  bas.o(.text)
-    bas_battery_level_value_notify           0x0080f991   Thumb Code    24  bas.o(.text)
-    bas_battery_level_value_read_confirm     0x0080f9a9   Thumb Code    34  bas.o(.text)
-    bas_attr_read_cb                         0x0080f9cb   Thumb Code   104  bas.o(.text)
-    bas_cccd_update_cb                       0x0080fa33   Thumb Code    86  bas.o(.text)
-    bas_add_service                          0x0080fa89   Thumb Code    60  bas.o(.text)
-    kns_set_parameter                        0x0080fad5   Thumb Code    38  kns.o(.text)
-    kns_attr_read_cb                         0x0080fafb   Thumb Code    96  kns.o(.text)
-    kns_cccd_update_cb                       0x0080fbab   Thumb Code    82  kns.o(.text)
-    kns_add_service                          0x0080fbfd   Thumb Code    62  kns.o(.text)
-    dis_set_parameter                        0x0080fc51   Thumb Code   204  dis.o(.text)
-    dis_attr_read_cb                         0x0080fd1d   Thumb Code   354  dis.o(.text)
-    dis_add_service                          0x0080fe7f   Thumb Code    64  dis.o(.text)
+    DLPS_IORegister                          0x0080ee71   Thumb Code    22  rtl876x_io_dlps.o(.text)
+    GPIO_DeInit                              0x0080ee91   Thumb Code    12  rtl876x_gpio.o(.text)
+    GPIO_Init                                0x0080ee9d   Thumb Code   190  rtl876x_gpio.o(.text)
+    GPIO_StructInit                          0x0080ef5b   Thumb Code    26  rtl876x_gpio.o(.text)
+    GPIO_INTConfig                           0x0080ef75   Thumb Code    18  rtl876x_gpio.o(.text)
+    GPIO_ClearINTPendingBit                  0x0080ef87   Thumb Code     6  rtl876x_gpio.o(.text)
+    GPIO_MaskINTConfig                       0x0080ef8d   Thumb Code    18  rtl876x_gpio.o(.text)
+    GPIO_GetPin                              0x0080ef9f   Thumb Code    42  rtl876x_gpio.o(.text)
+    GPIO_GetNum                              0x0080efc9   Thumb Code    38  rtl876x_gpio.o(.text)
+    GPIO_DBClkCmd                            0x0080efef   Thumb Code    28  rtl876x_gpio.o(.text)
+    RCC_PeriphClockCmd                       0x0080f015   Thumb Code   292  rtl876x_rcc.o(.text)
+    RCC_SPIClkDivConfig                      0x0080f139   Thumb Code   112  rtl876x_rcc.o(.text)
+    RCC_I2CClkDivConfig                      0x0080f1a9   Thumb Code   110  rtl876x_rcc.o(.text)
+    RCC_UARTClkDivConfig                     0x0080f217   Thumb Code   114  rtl876x_rcc.o(.text)
+    RCC_PeriClockConfig                      0x0080f289   Thumb Code   106  rtl876x_rcc.o(.text)
+    RCC_PeriFunctionConfig                   0x0080f2f3   Thumb Code    90  rtl876x_rcc.o(.text)
+    ias_attr_write_cb                        0x0080f36d   Thumb Code    86  ias.o(.text)
+    ias_add_service                          0x0080f3c3   Thumb Code    60  ias.o(.text)
+    lls_set_parameter                        0x0080f411   Thumb Code    30  lls.o(.text)
+    lls_attr_read_cb                         0x0080f42f   Thumb Code    98  lls.o(.text)
+    lls_attr_write_cb                        0x0080f491   Thumb Code    88  lls.o(.text)
+    lls_add_service                          0x0080f4e9   Thumb Code    60  lls.o(.text)
+    tps_set_parameter                        0x0080f535   Thumb Code    30  tps.o(.text)
+    tps_attr_read_cb                         0x0080f553   Thumb Code    98  tps.o(.text)
+    tps_add_service                          0x0080f5b5   Thumb Code    60  tps.o(.text)
+    bas_set_parameter                        0x0080f601   Thumb Code    40  bas.o(.text)
+    bas_battery_level_value_notify           0x0080f629   Thumb Code    24  bas.o(.text)
+    bas_battery_level_value_read_confirm     0x0080f641   Thumb Code    34  bas.o(.text)
+    bas_attr_read_cb                         0x0080f663   Thumb Code   104  bas.o(.text)
+    bas_cccd_update_cb                       0x0080f6cb   Thumb Code    86  bas.o(.text)
+    bas_add_service                          0x0080f721   Thumb Code    60  bas.o(.text)
+    kns_set_parameter                        0x0080f76d   Thumb Code    38  kns.o(.text)
+    kns_attr_read_cb                         0x0080f793   Thumb Code    96  kns.o(.text)
+    kns_cccd_update_cb                       0x0080f843   Thumb Code    82  kns.o(.text)
+    kns_add_service                          0x0080f895   Thumb Code    62  kns.o(.text)
+    dis_set_parameter                        0x0080f8e9   Thumb Code   204  dis.o(.text)
+    dis_attr_read_cb                         0x0080f9b5   Thumb Code   354  dis.o(.text)
+    dis_add_service                          0x0080fb17   Thumb Code    64  dis.o(.text)
+    app_le_gap_init                          0x0080fb6d   Thumb Code   348  main.o(.text)
+    app_le_profile_init                      0x0080fcc9   Thumb Code    78  main.o(.text)
+    board_init                               0x0080fd17   Thumb Code    18  main.o(.text)
+    System_Handler                           0x0080fd29   Thumb Code    52  main.o(.text)
+    PxpEnterDlpsSet                          0x0080fd5d   Thumb Code    88  main.o(.text)
+    PxpExitDlpsInit                          0x0080fdb5   Thumb Code    56  main.o(.text)
+    DLPS_PxpCheck                            0x0080fded   Thumb Code     8  main.o(.text)
+    pwr_mgr_init                             0x0080fdf5   Thumb Code    52  main.o(.text)
+    task_init                                0x0080fe29   Thumb Code     4  main.o(.text)
+    main                                     0x0080fe2d   Thumb Code    52  main.o(.text)
     app_handle_authen_state_evt              0x0080fed5   Thumb Code   108  pxp_app.o(.text)
     app_handle_conn_param_update_evt         0x0080ff41   Thumb Code   124  pxp_app.o(.text)
     app_handle_conn_mtu_info_evt             0x0080ffbd   Thumb Code    20  pxp_app.o(.text)
@@ -1482,16 +1482,16 @@ Image Symbol Table
     __fplib_config_fpu_vfp                   0x00810b41   Thumb Code     0  fpinit.o(x$fpl$fpinit)
     __fplib_config_pureend_doubles           0x00810b41   Thumb Code     0  fpinit.o(x$fpl$fpinit)
     app_cb_table                             0x00810b44   Data          32  system_rtl8762c.o(.constdata)
-    ias_attr_tbl                             0x00810cc0   Data          84  ias.o(.constdata)
-    ias_cbs                                  0x00810d14   Data          12  ias.o(.constdata)
-    lls_attr_tbl                             0x00810d20   Data          84  lls.o(.constdata)
-    lls_cbs                                  0x00810d74   Data          12  lls.o(.constdata)
-    tps_attr_tbl                             0x00810d80   Data          84  tps.o(.constdata)
-    tps_cbs                                  0x00810dd4   Data          12  tps.o(.constdata)
-    bas_cbs                                  0x00810e50   Data          12  bas.o(.constdata)
-    GATT_UUID128_KNS_SERVICE                 0x00810e5c   Data          16  kns.o(.constdata)
-    kns_cbs                                  0x00810f14   Data          12  kns.o(.constdata)
-    dis_cbs                                  0x00811134   Data          12  dis.o(.constdata)
+    ias_attr_tbl                             0x00810c98   Data          84  ias.o(.constdata)
+    ias_cbs                                  0x00810cec   Data          12  ias.o(.constdata)
+    lls_attr_tbl                             0x00810cf8   Data          84  lls.o(.constdata)
+    lls_cbs                                  0x00810d4c   Data          12  lls.o(.constdata)
+    tps_attr_tbl                             0x00810d58   Data          84  tps.o(.constdata)
+    tps_cbs                                  0x00810dac   Data          12  tps.o(.constdata)
+    bas_cbs                                  0x00810e28   Data          12  bas.o(.constdata)
+    GATT_UUID128_KNS_SERVICE                 0x00810e34   Data          16  kns.o(.constdata)
+    kns_cbs                                  0x00810eec   Data          12  kns.o(.constdata)
+    dis_cbs                                  0x0081110c   Data          12  dis.o(.constdata)
     Region$$Table$$Base                      0x0081137c   Number         0  anon$$obj.o(Region$$Table)
     Load$$RAM_VECTOR_TABLE$$RO$$Base         0x008113bc   Number         0  anon$$obj.o ABSOLUTE
     Region$$Table$$Limit                     0x008113bc   Number         0  anon$$obj.o(Region$$Table)
@@ -1528,24 +1528,24 @@ Memory Map of the image
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x00207c00   0x00000124   Code   RO            6    .ram.dataon.data    system_rtl8762c.o
-    0x00207d24   0x00000228   Code   RO          466    .ram.dataon.data    rtl876x_io_dlps.o
+    0x00207d24   0x00000228   Code   RO          385    .ram.dataon.data    rtl876x_io_dlps.o
     0x00207f4c   0x00000004   Data   RW           14    .data               system_rtl8762c.o
-    0x00207f50   0x00000024   Data   RW          388    .data               main.o
-    0x00207f74   0x00000004   Data   RW          670    .data               kns.o
-    0x00207f78   0x0000002e   Data   RW          692    .data               dis.o
+    0x00207f50   0x00000004   Data   RW          592    .data               kns.o
+    0x00207f54   0x0000002e   Data   RW          614    .data               dis.o
+    0x00207f82   0x00000024   Data   RW          640    .data               main.o
     0x00207fa6   0x00000002   PAD
     0x00207fa8   0x00000008   Data   RW          718    .data               pxp_app.o
     0x00207fb0   0x0000006c   Data   RW          762    .data               overlay_mgr.o
     0x0020801c   0x00000010   Zero   RW           10    .bss                system_rtl8762c.o
     0x0020802c   0x0000000c   Zero   RW          174    .bss                app_task.o
     0x00208038   0x00000018   Zero   RW          276    .bss                iohandle.o
-    0x00208050   0x000000dc   Zero   RW          469    .bss                rtl876x_io_dlps.o
-    0x0020812c   0x00000004   Zero   RW          574    .bss                ias.o
-    0x00208130   0x00000008   Zero   RW          602    .bss                lls.o
-    0x00208138   0x00000008   Zero   RW          623    .bss                tps.o
-    0x00208140   0x00000008   Zero   RW          643    .bss                bas.o
-    0x00208148   0x00000004   Zero   RW          666    .bss                kns.o
-    0x0020814c   0x00000084   Zero   RW          689    .bss                dis.o
+    0x00208050   0x000000dc   Zero   RW          388    .bss                rtl876x_io_dlps.o
+    0x0020812c   0x00000004   Zero   RW          496    .bss                ias.o
+    0x00208130   0x00000008   Zero   RW          524    .bss                lls.o
+    0x00208138   0x00000008   Zero   RW          545    .bss                tps.o
+    0x00208140   0x00000008   Zero   RW          565    .bss                bas.o
+    0x00208148   0x00000004   Zero   RW          588    .bss                kns.o
+    0x0020814c   0x00000084   Zero   RW          611    .bss                dis.o
     0x002081d0   0x0000000c   Zero   RW          717    .bss                pxp_app.o
     0x002081dc   0x00000008   Zero   RW          760    .bss                overlay_mgr.o
     0x002081e4   0x000000e4   Zero   RW          921    .bss                c_w.l(rand.o)
@@ -1637,16 +1637,16 @@ Memory Map of the image
     0x0080e750   0x00000140   Code   RO            7    .text               system_rtl8762c.o
     0x0080e890   0x000000fc   Code   RO          172    .text               app_task.o
     0x0080e98c   0x000004e4   Code   RO          274    .text               iohandle.o
-    0x0080ee70   0x00000368   Code   RO          385    .text               main.o
-    0x0080f1d8   0x00000020   Code   RO          467    .text               rtl876x_io_dlps.o
-    0x0080f1f8   0x00000184   Code   RO          513    .text               rtl876x_gpio.o
-    0x0080f37c   0x00000358   Code   RO          551    .text               rtl876x_rcc.o
-    0x0080f6d4   0x000000a4   Code   RO          572    .text               ias.o
-    0x0080f778   0x00000124   Code   RO          600    .text               lls.o
-    0x0080f89c   0x000000cc   Code   RO          621    .text               tps.o
-    0x0080f968   0x0000016c   Code   RO          641    .text               bas.o
-    0x0080fad4   0x0000017c   Code   RO          664    .text               kns.o
-    0x0080fc50   0x00000284   Code   RO          687    .text               dis.o
+    0x0080ee70   0x00000020   Code   RO          386    .text               rtl876x_io_dlps.o
+    0x0080ee90   0x00000184   Code   RO          435    .text               rtl876x_gpio.o
+    0x0080f014   0x00000358   Code   RO          473    .text               rtl876x_rcc.o
+    0x0080f36c   0x000000a4   Code   RO          494    .text               ias.o
+    0x0080f410   0x00000124   Code   RO          522    .text               lls.o
+    0x0080f534   0x000000cc   Code   RO          543    .text               tps.o
+    0x0080f600   0x0000016c   Code   RO          563    .text               bas.o
+    0x0080f76c   0x0000017c   Code   RO          586    .text               kns.o
+    0x0080f8e8   0x00000284   Code   RO          609    .text               dis.o
+    0x0080fb6c   0x00000368   Code   RO          637    .text               main.o
     0x0080fed4   0x000007b4   Code   RO          715    .text               pxp_app.o
     0x00810688   0x0000007c   Code   RO          759    .text               overlay_mgr.o
     0x00810704   0x00000050   Code   RO          782    .text               startup_rtl8762c.o
@@ -1660,14 +1660,14 @@ Memory Map of the image
     0x00810b64   0x0000010c   Data   RO           12    .constdata          system_rtl8762c.o
     0x00810c70   0x00000026   Data   RO          175    .constdata          app_task.o
     0x00810c96   0x00000002   PAD
-    0x00810c98   0x00000028   Data   RO          387    .constdata          main.o
-    0x00810cc0   0x00000060   Data   RO          575    .constdata          ias.o
-    0x00810d20   0x00000060   Data   RO          603    .constdata          lls.o
-    0x00810d80   0x00000060   Data   RO          624    .constdata          tps.o
-    0x00810de0   0x0000007c   Data   RO          644    .constdata          bas.o
-    0x00810e5c   0x00000010   Data   RO          667    .constdata          kns.o
-    0x00810e6c   0x000000b4   Data   RO          668    .constdata          kns.o
-    0x00810f20   0x00000220   Data   RO          690    .constdata          dis.o
+    0x00810c98   0x00000060   Data   RO          497    .constdata          ias.o
+    0x00810cf8   0x00000060   Data   RO          525    .constdata          lls.o
+    0x00810d58   0x00000060   Data   RO          546    .constdata          tps.o
+    0x00810db8   0x0000007c   Data   RO          566    .constdata          bas.o
+    0x00810e34   0x00000010   Data   RO          589    .constdata          kns.o
+    0x00810e44   0x000000b4   Data   RO          590    .constdata          kns.o
+    0x00810ef8   0x00000220   Data   RO          612    .constdata          dis.o
+    0x00811118   0x00000028   Data   RO          639    .constdata          main.o
     0x00811140   0x00000220   Data   RO           13    .conststring        system_rtl8762c.o
     0x00811360   0x00000019   Data   RO          761    .conststring        overlay_mgr.o
     0x00811379   0x00000003   PAD
@@ -1685,21 +1685,21 @@ Memory Map of the image
     0x088000e6   0x00000002   PAD
     0x088000e8   0x00000038   Data   RO          173    .TRACE              app_task.o
     0x08800120   0x00000110   Data   RO          275    .TRACE              iohandle.o
-    0x08800230   0x00000012   Data   RO          386    .TRACE              main.o
-    0x08800242   0x00000002   PAD
-    0x08800244   0x0000002a   Data   RO          468    .TRACE              rtl876x_io_dlps.o
-    0x0880026e   0x00000002   PAD
-    0x08800270   0x00000052   Data   RO          573    .TRACE              ias.o
-    0x088002c2   0x00000002   PAD
-    0x088002c4   0x000000ea   Data   RO          601    .TRACE              lls.o
-    0x088003ae   0x00000002   PAD
-    0x088003b0   0x000000b2   Data   RO          622    .TRACE              tps.o
-    0x08800462   0x00000002   PAD
-    0x08800464   0x000000ce   Data   RO          642    .TRACE              bas.o
-    0x08800532   0x00000002   PAD
-    0x08800534   0x0000011a   Data   RO          665    .TRACE              kns.o
-    0x0880064e   0x00000002   PAD
-    0x08800650   0x0000009e   Data   RO          688    .TRACE              dis.o
+    0x08800230   0x0000002a   Data   RO          387    .TRACE              rtl876x_io_dlps.o
+    0x0880025a   0x00000002   PAD
+    0x0880025c   0x00000052   Data   RO          495    .TRACE              ias.o
+    0x088002ae   0x00000002   PAD
+    0x088002b0   0x000000ea   Data   RO          523    .TRACE              lls.o
+    0x0880039a   0x00000002   PAD
+    0x0880039c   0x000000b2   Data   RO          544    .TRACE              tps.o
+    0x0880044e   0x00000002   PAD
+    0x08800450   0x000000ce   Data   RO          564    .TRACE              bas.o
+    0x0880051e   0x00000002   PAD
+    0x08800520   0x0000011a   Data   RO          587    .TRACE              kns.o
+    0x0880063a   0x00000002   PAD
+    0x0880063c   0x0000009e   Data   RO          610    .TRACE              dis.o
+    0x088006da   0x00000002   PAD
+    0x088006dc   0x00000012   Data   RO          638    .TRACE              main.o
     0x088006ee   0x00000002   PAD
     0x088006f0   0x00000820   Data   RO          716    .TRACE              pxp_app.o
     0x08800f10   0x00000191   Data   RO          790    .TRACE              gap_utils.lib(gap_lib.o)

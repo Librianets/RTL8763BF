@@ -4,7 +4,6 @@
 ".\objects\system_rtl8762c.o"
 ".\objects\app_task.o"
 ".\objects\iohandle.o"
-".\objects\main.o"
 ".\objects\rtl876x_io_dlps.o"
 ".\objects\rtl876x_gpio.o"
 ".\objects\rtl876x_rcc.o"
@@ -14,10 +13,11 @@
 ".\objects\bas.o"
 ".\objects\kns.o"
 ".\objects\dis.o"
+".\objects\main.o"
 ".\objects\pxp_app.o"
 ".\objects\overlay_mgr.o"
 ".\objects\startup_rtl8762c.o"
---strict --scatter "..\include\app1.sct"
+--strict --scatter "..\include\app.sct"
 --diag_suppress=L6314,L6312 --datacompressor off --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\Listings\rtp8763_demo.map" -o .\Objects\rtp8763_demo.axf
